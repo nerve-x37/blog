@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Antibiyotik direncinin seçilim yoluyla yayılması</title>
+  <desc id="desc">Bir bakteri topluluğunda doğal çeşitlilik bulunur. Antibiyotik duyarlı bakterileri azaltırken direnç özelliği taşıyanlar hayatta kalabilir, çoğalabilir ve direnç genlerini yayabilir.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0 0 12 6 0 12z" fill="#62727a"/>
+    </marker>
+    <style>
+      .label { font: 700 25px Inter, Arial, sans-serif; fill: #183039; }
+      .caption { font: 400 19px Inter, Arial, sans-serif; fill: #52636a; }
+      .panel { fill: #fff; stroke: #d7e0df; stroke-width: 2; }
+      .sensitive { fill: #4a91b8; }
+      .resistant { fill: #d2793b; }
+      .arrow { stroke: #62727a; stroke-width: 4; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="660" rx="28" fill="#eef3f0"/>
+  <text x="600" y="58" text-anchor="middle" class="label">Antibiyotik bakterilere direnç öğretmez; dirençli olanları seçer</text>
+
+  <g transform="translate(35 108)">
+    <rect class="panel" width="245" height="430" rx="20"/>
+    <text x="122" y="54" text-anchor="middle" class="label">1. Çeşitlilik</text>
+    <text x="122" y="88" text-anchor="middle" class="caption">Toplulukta farklılıklar</text>
+    <circle class="sensitive" cx="70" cy="170" r="24"/>
+    <circle class="sensitive" cx="165" cy="160" r="21"/>
+    <circle class="sensitive" cx="108" cy="252" r="22"/>
+    <circle class="sensitive" cx="178" cy="330" r="24"/>
+    <circle class="resistant" cx="68" cy="342" r="20"/>
+    <circle class="sensitive" cx="173" cy="245" r="18"/>
+    <text x="122" y="397" text-anchor="middle" class="caption">Nadir direnç özellikleri</text>
+  </g>
+
+  <path class="arrow" d="M292 322h34"/>
+
+  <g transform="translate(340 108)">
+    <rect class="panel" width="245" height="430" rx="20"/>
+    <text x="122" y="54" text-anchor="middle" class="label">2. İlaç baskısı</text>
+    <text x="122" y="88" text-anchor="middle" class="caption">Antibiyotik kullanımı</text>
+    <rect x="69" y="190" width="108" height="54" rx="27" fill="#e1a34b" transform="rotate(-28 123 217)"/>
+    <path d="M113 167l27 49-46 26-28-49z" fill="#fff3d4" transform="rotate(-28 104 204)"/>
+    <path d="M102 203h60" stroke="#fff" stroke-width="4" transform="rotate(-28 132 203)"/>
+    <text x="122" y="315" text-anchor="middle" class="caption">Duyarlı bakteriler</text>
+    <text x="122" y="344" text-anchor="middle" class="caption">daha kolay etkilenir</text>
+  </g>
+
+  <path class="arrow" d="M597 322h34"/>
+
+  <g transform="translate(645 108)">
+    <rect class="panel" width="245" height="430" rx="20"/>
+    <text x="122" y="54" text-anchor="middle" class="label">3. Seçilim</text>
+    <text x="122" y="88" text-anchor="middle" class="caption">Dirençliler hayatta kalır</text>
+    <circle class="sensitive" cx="70" cy="180" r="18" opacity=".28"/>
+    <path d="m58 168 24 24m0-24-24 24" stroke="#62727a" stroke-width="4"/>
+    <circle class="sensitive" cx="172" cy="200" r="18" opacity=".28"/>
+    <path d="m160 188 24 24m0-24-24 24" stroke="#62727a" stroke-width="4"/>
+    <circle class="resistant" cx="121" cy="280" r="25"/>
+    <text x="122" y="345" text-anchor="middle" class="caption">Dirençli özellik</text>
+    <text x="122" y="374" text-anchor="middle" class="caption">önem kazanır</text>
+  </g>
+
+  <path class="arrow" d="M902 322h34"/>
+
+  <g transform="translate(950 108)">
+    <rect class="panel" width="215" height="430" rx="20"/>
+    <text x="107" y="54" text-anchor="middle" class="label">4. Yayılma</text>
+    <text x="107" y="88" text-anchor="middle" class="caption">Dirençli soy çoğalır</text>
+    <circle class="resistant" cx="69" cy="176" r="22"/>
+    <circle class="resistant" cx="145" cy="172" r="21"/>
+    <circle class="resistant" cx="104" cy="242" r="23"/>
+    <circle class="resistant" cx="62" cy="311" r="20"/>
+    <circle class="resistant" cx="151" cy="315" r="23"/>
+    <circle class="resistant" cx="106" cy="365" r="18"/>
+  </g>
+
+  <text x="600" y="602" text-anchor="middle" class="caption">Direnç doğal olarak ortaya çıkabilir; gereksiz antibiyotik kullanımı bu seçilimi hızlandırır.</text>
+</svg>

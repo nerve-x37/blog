@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanayi Çağı: Buhar, Fabrika ve Değişen Hayat — Valexirion</title>
+  <meta name="description" content="Sanayi Çağı'nı yaklaşık 1760'lardan başlayan sanayileşme; buhar, tekstil, fabrikalar, işçi yaşamı ve küresel etkileriyle inceleyin." />
+  <link rel="canonical" href="https://valexirion.com/sanayi-cagi.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Sanayi Çağı: Buhar, Fabrika ve Değişen Hayat" />
+  <meta property="og:description" content="İlk Sanayi Devrimi'nden seri üretime uzanan değişimi; enerji, emek, kentler ve eşitsizlikler üzerinden okuyun." />
+  <meta property="og:url" content="https://valexirion.com/sanayi-cagi.html" />
+  <meta property="og:image" content="https://valexirion.com/img/spinning-mule-1835.png" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sanayi Çağı: Buhar, Fabrika ve Değişen Hayat" />
+  <meta name="twitter:description" content="Makineleşme, fabrikalar ve Sanayi Devrimi'nin toplumlara farklı zamanlarda dokunan etkileri." />
+  <meta name="twitter:image" content="https://valexirion.com/img/spinning-mule-1835.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@300;400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    .industrial-figure { margin: 0 0 2.5rem; }
+    .industrial-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); }
+    .industrial-figure figcaption { margin-top: .6rem; color: var(--text-3); font-size: .82rem; }
+    .period-range { margin: 1.5rem 0; padding: 1rem 1.2rem; border-left: 3px solid #60a5fa; background: rgba(96, 165, 250, .08); border-radius: 0 var(--radius) var(--radius) 0; }
+    .period-index { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 1.5rem 0 2.5rem; }
+    .period-index a { padding: .9rem; border: 1px solid var(--border); border-radius: var(--radius); color: inherit; text-decoration: none; transition: border-color .2s, transform .2s; }
+    .period-index a:hover, .period-index a:focus-visible { border-color: #60a5fa; transform: translateY(-2px); }
+    .period-index strong, .period-index span { display: block; }
+    .period-index strong { margin-bottom: .3rem; color: var(--text-1); }
+    .period-index span { color: var(--text-3); font-size: .86rem; }
+    .industrial-timeline, .production-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 1.2rem 0 2rem; }
+    .industrial-timeline div, .production-steps div { padding: 1rem; border: 1px solid var(--border); border-radius: var(--radius); }
+    .industrial-timeline strong, .production-steps strong { display: block; margin-bottom: .35rem; color: var(--text-1); }
+    .industrial-timeline span, .production-steps span { color: var(--text-3); font-size: .9rem; }
+    .source-marker { font-size: .78em; vertical-align: super; text-decoration: none; }
+    @media (max-width: 760px) { .period-index, .industrial-timeline, .production-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 480px) { .period-index, .industrial-timeline, .production-steps { grid-template-columns: 1fr; } .industrial-figure img { border-radius: var(--radius); } }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Sanayi Çağı: Buhar, Fabrika ve Değişen Hayat",
+      "description": "Sanayileşmeyi enerji, üretim, emek ve küresel ilişkilerdeki dönüşümler üzerinden inceliyor.",
+      "image": "https://valexirion.com/img/spinning-mule-1835.png",
+      "mainEntityOfPage": "https://valexirion.com/sanayi-cagi.html",
+      "datePublished": "2026-11-13",
+      "dateModified": "2026-11-13",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="tarih">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9.003 9.003 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>&#8250;</span>
+        <a href="index.html#tarih">Tarih</a><span>&#8250;</span>
+        <span>Sanayi Çağı</span>
+      </div>
+      <span class="article-cat-badge">Tarih · Sanayi Çağı</span>
+      <h1 class="article-title">Sanayi Çağı:<br><em>Makine, Fabrika ve İnsan</em></h1>
+      <p class="article-subtitle">Buhar gücü ve makineler üretimi hızlandırdı; fakat bu dönüşümün arkasında kömür, sermaye, emek, küresel ticaret ve ağır toplumsal bedeller vardı.</p>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367 2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure class="industrial-figure">
+        <img src="img/spinning-mule-1835.png" alt="1835 tarihli gravürde, birden fazla ipliği birlikte eğirebilen mule tipi makine" fetchpriority="high" loading="eager" decoding="async"/>
+        <figcaption>Edward Baines'in 1835 tarihli pamuk üretimi kitabında yayımlanan gravür; Commons kaydında “Mule Jenny” olarak adlandırılır, makine tarih yazınında spinning mule (mule tipi eğirme makinesi) diye bilinir. Gerçek bir dönem baskısıdır ve kamu malı olarak işaretlenmiştir: <a href="https://commons.wikimedia.org/wiki/File:Baines_1835-Mule_Jenny.png" target="_blank" rel="noopener noreferrer">eser ve lisans kaydı</a>.</figcaption>
+      </figure>
+
+      <p class="article-lead"><strong>Kısa cevap:</strong> Sanayi Çağı, insan emeği ve hayvan gücüne dayalı üretimin makine, fosil yakıt ve fabrika düzeniyle dönüşmeye başladığı uzun dönemdir. İlk Sanayi Devrimi yaklaşık 1760'larda Britanya'da belirginleşti; başka ülke ve toplumlara farklı tarihlerde yayıldı. Bu değişim yalnızca yeni makineler değil, işin, kentin, ticaretin ve gündelik hayatın yeniden kurulması demekti.</p>
+
+      <nav class="period-index" aria-label="Sanayi Çağı konu başlıkları">
+        <a href="#tarih-araligi"><strong>Dönemin sınırları</strong><span>1760'lardan bugüne uzanan dönüşüm</span></a>
+        <a href="#neden-britanya"><strong>Neden Britanya?</strong><span>Kömür, ücretler, ticaret ve tartışmalar</span></a>
+        <a href="#uretim"><strong>Üretim nasıl değişti?</strong><span>Tekstilden buhar gücüne</span></a>
+        <a href="#insanlar"><strong>İşçiler ve kentler</strong><span>Yeni iş düzeni ve toplumsal bedeller</span></a>
+        <a href="#dalgalar"><strong>Sanayi dalgaları</strong><span>Elektrik, seri üretim ve dijitalleşme</span></a>
+      </nav>
+
+      <h2 id="tarih-araligi">Sanayi Çağı hangi yılları kapsar?</h2>
+      <p class="period-range"><strong>İlk Sanayi Devrimi için sık kullanılan yaklaşık aralık 1760–1840'tır.</strong> Bu tarihler özellikle Britanya'daki dönüşümü anlatır; dünya çapında aynı anda yaşanan bir başlangıç ve bitiş değildir. Sanayileşme 19. yüzyılda Avrupa'nın başka bölgelerine ve Kuzey Amerika'ya yayıldı; daha sonra farklı ülkeler kendi koşullarında sanayileşti. “Sanayi Çağı” ilk devrimden daha geniş bir dönemi ifade eder ve bugün de üretim biçimlerini etkilemeyi sürdürür.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a></p>
+      <div class="industrial-timeline" aria-label="Sanayileşmenin yaklaşık dönemleri">
+        <div><strong>1712</strong><span>Newcomen'ın madenlerden su çekmede kullanılan buhar makinesi</span></div>
+        <div><strong>1760–1840</strong><span>Britanya'da ilk sanayi dönüşümü: tekstil, kömür, demir ve buhar</span></div>
+        <div><strong>1825</strong><span>Stockton–Darlington hattı, buharlı demiryolu ulaşımının yeni aşaması</span></div>
+        <div><strong>1870–1914</strong><span>Elektrik, çelik, kimya ve içten yanmalı motorların yaygınlaşması</span></div>
+        <div><strong>20. yüzyıl</strong><span>Elektrifikasyon, seri üretim ve petrol temelli ulaşım</span></div>
+        <div><strong>20. yüzyılın sonu</strong><span>Elektronik, bilgisayar ve otomasyonun üretime katılması</span></div>
+      </div>
+
+      <h2 id="neden-britanya">Sanayi Devrimi neden önce Britanya'da başladı?</h2>
+      <p>Tek bir açıklama yok. Britanya'da kömür yataklarına erişim, ulaşım ve ticaret ağları, sermaye birikimi, ücret düzeyleri, teknik beceriler ve devlet politikaları birlikte etkili oldu. Ekonomi tarihçisi Robert C. Allen, Britanya'daki görece yüksek ücretler ile ucuz kömürün, emek tasarrufu sağlayan makineleri işletmeyi daha kârlı kıldığı tezini öne çıkarır. Bu, önemli bir akademik açıklamadır; fakat sanayileşmenin bütün nedenlerini tek başına açıklayan tartışmasız bir formül değildir.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a></p>
+      <p>Kömür, üretimde kullanılabilir enerji miktarını artırdı; ancak bu enerji “bedelsiz” değildi. Maden işçiliği tehlikeliydi, kömürün yakılması hava kirliliği ve sera gazı salımlarını büyüttü. Tarihçi E. A. Wrigley, fosil yakıtlara geçişi Britanya'daki sanayileşmenin önemli koşullarından biri olarak inceler; bu dönüşümün çevresel maliyetlerini de göz ardı etmemek gerekir.<a class="source-marker" href="#kaynak-2" aria-label="Kaynak 2">[2]</a></p>
+
+      <h2 id="uretim">Atölyeden fabrikaya: üretim nasıl dönüştü?</h2>
+      <p>Sanayileşme önce pamuklu tekstil gibi alanlarda belirginleşti. İplik eğirme ve dokuma makineleri, aynı sürede daha fazla ürün çıkarılmasını sağladı; üretim giderek ev ve küçük atölyelerden enerji kaynaklarına yakın büyük işyerlerine taşındı. Spinning mule, birden fazla ipliği aynı anda eğirerek tekstil üretiminin ölçeğini büyüten makinelerden biriydi. Görseldeki 1835 tarihli gravür, dönemin bu makineyi nasıl çizdiğine dair birincil kaynak niteliğindedir.</p>
+      <div class="production-steps" aria-label="Sanayi üretim sürecinin aşamaları">
+        <div><strong>Hammadde</strong><span>Pamuk, yün, demir cevheri ve kömürün sağlanması</span></div>
+        <div><strong>Makine ve enerji</strong><span>İplik, dokuma ve metal işlemenin mekanik güce bağlanması</span></div>
+        <div><strong>Fabrika düzeni</strong><span>İşin belirli saatlere, makinelere ve işbölümüne göre örgütlenmesi</span></div>
+        <div><strong>Ulaşım ve pazar</strong><span>Kanal, demiryolu ve gemilerle ürünlerin daha uzağa taşınması</span></div>
+      </div>
+      <p>Buhar makinesi James Watt ile başlamadı. Thomas Newcomen'ın 1712'de kullanılan atmosferik makinesi madenlerden su çekmeye yarıyordu; Watt'ın 18. yüzyılın ikinci yarısındaki geliştirmeleri yakıt verimliliğini artırdı ve makinenin farklı üretim alanlarında kullanılmasını kolaylaştırdı. Buhar gücü, tekstil makineleri, demir üretimi, kömür ve ulaşım birbirini besleyen değişimlerin parçalarıydı. Detaylar için <a href="tarihi-temel-teknoloji-icatlari.html">temel teknoloji icatları yazımıza</a> bakabilirsiniz.</p>
+      <p>1825'te açılan Stockton–Darlington demiryolu hattı ve sonraki demiryolu ağları, ham madde ve bitmiş ürünlerin taşınma hızını değiştirdi. 19. yüzyılın sonlarına doğru elektrik, çelik üretimi, kimya sanayisi ve petrol temelli motorlar yeni bir sanayileşme dalgası yarattı. Bunlar da bir anda her yerde kullanılmadı; altyapı, yatırım ve yerel ihtiyaçlara bağlı olarak yayıldı.</p>
+
+      <h2 id="insanlar">Fabrika, emek ve kent hayatı</h2>
+      <p>Fabrika üretimi, işi makinenin temposuna ve belirlenmiş çalışma saatlerine bağladı. İşçiler uzun mesailer, düşük ücretler, iş kazaları ve sağlıksız çalışma koşullarıyla karşı karşıya kalabiliyordu. Kadınlar ve çocuklar da özellikle tekstil ve maden işlerinde çalıştırıldı; ücret ve hukuki koruma eşit değildi. Bu koşullar her işyerinde aynı değildi, fakat işçi örgütlenmeleri, grevler ve fabrika düzenlemeleri bu eşitsizliklere karşı gelişti. Emma Griffin'in işçilerin tanıklıklarını inceleyen çalışması, sanayileşmeyi yalnızca makinelerin değil, onu yaşayan insanların gözünden okumaya yardımcı olur.<a class="source-marker" href="#kaynak-3" aria-label="Kaynak 3">[3]</a></p>
+      <p>Kırsaldan kentlere göç hızlandı; yeni iş imkânlarıyla birlikte kalabalık konutlar, altyapı yetersizliği ve halk sağlığı sorunları büyüdü. Zaman içinde kanalizasyon, temiz su, ulaşım ve kamu sağlığı düzenlemeleri şehir yaşamını değiştirdi. Bu sonuçlar yalnızca teknolojinin otomatik ürünü değildi: yerel yönetimler, işverenler, işçiler ve siyasi mücadeleler hangi koşulların iyileştirileceğini belirledi.</p>
+
+      <h2>Sanayileşmenin küresel bedeli ve bağlantıları</h2>
+      <p>Britanya fabrikalarının pamuk ihtiyacı, Amerika kıtasındaki köle emeğine dayalı plantasyonlarla ve küresel ticaret ağlarıyla bağlantılıydı. Hammadde üretimi, taşınması ve fabrikada işlenmesi farklı kıtalardaki insanların hayatını aynı zincire bağladı; ancak kazanç ve zorunlu emek eşit paylaşılmadı. Sanayi tarihini yalnızca Avrupa'daki makineleşme olarak anlatmak, bu emek ve kaynak akışını görünmez kılar.<a class="source-marker" href="#kaynak-4" aria-label="Kaynak 4">[4]</a></p>
+      <p>Sanayileşme daha sonra Avrupa ve Kuzey Amerika dışındaki toplumlara da yayıldı; kimi yerde yerel sanayi girişimleriyle, kimi yerde sömürgeci yönetimlerin kaynak ve ticaret düzeniyle şekillendi. Bu yüzden “geç sanayileşen” ülkeleri yalnızca geride kalmış gibi görmek yerine, küresel güç ilişkilerini ve farklı başlangıç koşullarını da hesaba katmak gerekir.</p>
+
+      <h2 id="dalgalar">Sanayi Çağı bitti mi?</h2>
+      <p>Hayır; “Sanayi Çağı” hâlâ içinde yaşadığımız üretim düzeninin önemli bir yönü. 20. yüzyılda elektrik şebekeleri, seri üretim, petrol ve otomobil; daha sonra elektronik, bilgisayarlar ve robotik üretim biçimlerini değiştirdi. Bazı tarihçiler bu dönüşümlere “ikinci” ve “üçüncü sanayi devrimleri” der; dalgaların başlangıç ve bitişleri kullanılan tanıma göre değişir.</p>
+      <p>Sanayileşme daha çok mal üretmeyi mümkün kıldı; aynı zamanda emek, enerji ve kaynak kullanımını yeni ölçeklere taşıdı. Bugün otomasyon ve yapay zekâ üzerine sorular da bu tarihin devamıdır: Üretkenlik artınca fayda kime ulaşıyor, işi kim yapıyor ve çevresel bedeli kim taşıyor? Otomobil üretiminin sonraki aşamasını <a href="arabanin-icadi.html">arabanın gelişim hikâyesinde</a>, teknoloji tarihinin uzun bağlantılarını ise <a href="teknolojik-kesifler-haritasi.html">keşifler haritasında</a> izleyebilirsiniz.</p>
+
+      <h2>Erken Modern Dönem'den Sanayi Çağı'na</h2>
+      <p>Sanayi Devrimi, daha önceki ticaret, bilim, enerji ve emek dönüşümlerinden kopuk biçimde ortaya çıkmadı. Bu geçişin öncesini <a href="erken-modern-donem.html">Erken Modern Dönem yazımızda</a> anlattık. Bir sonraki tarihsel adım ise sanayileşmenin farklı toplumlarda nasıl yayıldığını ve 20. yüzyılda üretim düzenini nasıl değiştirdiğini izlemek.</p>
+
+      <h2>Sanayi Çağı'ndan Bilgi ve Dijital Çağ'a</h2>
+      <p>Sanayileşme makinelerle fiziksel üretimi ölçeklendirirken bilgisayarlar ve ağlar bilginin işlenmesini ve paylaşılmasını büyüttü. Bu dönüşümü <a href="bilgi-ve-dijital-cag.html">Bilgi ve Dijital Çağ rehberinde</a> inceleyebilirsiniz.</p>
+
+      <h2>Kaynaklar ve görsel bilgisi</h2>
+      <ol>
+        <li id="kaynak-1">Robert C. Allen, <em>The British Industrial Revolution in Global Perspective</em>, Cambridge University Press, 2009. <a href="https://doi.org/10.1017/CBO9780511816680" target="_blank" rel="noopener noreferrer">Yayınevi DOI kaydı</a>.</li>
+        <li id="kaynak-2">E. A. Wrigley, <em>Energy and the English Industrial Revolution</em>, Cambridge University Press, 2010. <a href="https://doi.org/10.1017/CBO9780511779619" target="_blank" rel="noopener noreferrer">Yayınevi DOI kaydı</a>.</li>
+        <li id="kaynak-3">Emma Griffin, <em>Liberty's Dawn: A People's History of the Industrial Revolution</em>, Yale University Press, 2013. <a href="https://doi.org/10.12987/yale/9780300151800.001.0001" target="_blank" rel="noopener noreferrer">Yayınevi DOI kaydı</a>.</li>
+        <li id="kaynak-4">Edward E. Baptist, <em>The Half Has Never Been Told: Slavery and the Making of American Capitalism</em>, Basic Books, 2014.</li>
+        <li id="kaynak-gorsel">Edward Baines'in <em>History of the Cotton Manufacture in Great Britain</em> kitabında 1835'te yayımlanan spinning mule gravürü. Wikimedia Commons kaydında kamu malı (Public domain) olarak işaretlenmiştir; kaynak ve hak durumu: <a href="https://commons.wikimedia.org/wiki/File:Baines_1835-Mule_Jenny.png" target="_blank" rel="noopener noreferrer">eser, kaynak ve lisans kaydı</a>.</li>
+      </ol>
+      <p style="font-size:.85rem;color:var(--text-3)">1760–1840 aralığı, Britanya'daki ilk sanayi dönüşümünü anlatan yaklaşık bir dönemlendirmedir; sanayileşme başka toplumlarda farklı zaman ve koşullarda gelişti. Görsel 1835 tarihli gerçek bir gravürdür; fotoğraf veya çağdaş makine çizimi değildir.</p>
+      <p><a href="index.html#tarih">Tarih yazılarına dön</a></p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

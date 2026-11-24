@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Çin'de Hibrit Nükleer Santral İnşaatı — Valexirion</title>
+  <meta name="description" content="Çin'in Jiangsu eyaletindeki Xuwei projesi, iki Hualong One basınçlı su reaktörüyle bir yüksek sıcaklıklı gaz soğutmalı reaktörü birleştiriyor." />
+  <link rel="canonical" href="https://valexirion.com/cin-hibrit-nukleer-santral.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Çin'de Hibrit Nükleer Santral İnşaatı" />
+  <meta property="og:description" content="Xuwei projesi nükleer elektrik üretimini endüstriyel buhar ve ısıyla bir araya getirmeyi hedefliyor." />
+  <meta property="og:url" content="https://valexirion.com/cin-hibrit-nukleer-santral.html" />
+  <meta property="og:image" content="https://world-nuclear-news.org/images/articles/JiangsuXuweiNuclearEnergyHeatingPowerPlantProjectRendering(CNNC)_75866.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Çin'de Hibrit Nükleer Santral İnşaatı" />
+  <meta name="twitter:description" content="Xuwei projesi nükleer elektrik üretimini endüstriyel buhar ve ısıyla bir araya getirmeyi hedefliyor." />
+  <meta name="twitter:image" content="https://world-nuclear-news.org/images/articles/JiangsuXuweiNuclearEnergyHeatingPowerPlantProjectRendering(CNNC)_75866.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@300;400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    .plant-visual {
+      aspect-ratio: 16 / 9;
+      margin: 0 auto 2.5rem;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(125deg, #10243b, #1d5b72 52%, #70b1a2);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, .24);
+    }
+    .plant-visual img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .plant-note {
+      margin: 2rem 0;
+      padding: 1.25rem 1.5rem;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius);
+      background: var(--bg-2);
+    }
+    .plant-note p:last-child { margin-bottom: 0; }
+    @media (max-width: 768px) {
+      .plant-visual { border-radius: var(--radius); }
+      .plant-note { padding: 1rem; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Çin'de Hibrit Nükleer Santral İnşaatı",
+      "description": "Jiangsu'daki Xuwei projesinin reaktör bileşenlerini, endüstriyel ısı hedefini ve güncel inşaat aşamasını açıklıyor.",
+      "image": "https://world-nuclear-news.org/images/articles/JiangsuXuweiNuclearEnergyHeatingPowerPlantProjectRendering(CNNC)_75866.jpg",
+      "mainEntityOfPage": "https://valexirion.com/cin-hibrit-nukleer-santral.html",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="teknoloji">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9.003 9.003 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>&#8250;</span>
+        <a href="index.html#teknoloji">Teknoloji</a><span>&#8250;</span>
+        <span>Çin'de Hibrit Nükleer Santral İnşaatı</span>
+      </div>
+      <span class="article-cat-badge">Enerji · Nükleer Teknoloji</span>
+      <h1 class="article-title">Çin'de Dünyanın İlk<br><em>Hibrit Nükleer Santrali</em></h1>
+      <p class="article-subtitle">Jiangsu'daki Xuwei projesi, farklı türde üç reaktörü bir araya getirerek elektrikle birlikte sanayi için yüksek sıcaklıklı buhar üretmeyi hedefliyor.</p>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure class="plant-visual">
+        <img src="https://world-nuclear-news.org/images/articles/JiangsuXuweiNuclearEnergyHeatingPowerPlantProjectRendering(CNNC)_75866.jpg" alt="Jiangsu Xuwei nükleer ısı ve enerji santralinin planlanan yerleşimini gösteren proje çizimi" fetchpriority="high" loading="eager" decoding="async"/>
+        <figcaption style="font-size:.8rem;color:var(--text-3);margin-top:.5rem">Xuwei nükleer ısı ve enerji santrali için proje görselleştirmesi. Görsel: CNNC, <a href="https://www.world-nuclear-news.org/articles/cnnc-to-procure-contract-for-high-temperature-reactor" target="_blank" rel="noopener noreferrer">World Nuclear News üzerinden</a>.</figcaption>
+      </figure>
+
+      <p class="article-lead">Çin'in doğusundaki Jiangsu eyaletinde bulunan Xuwei Nükleer Isıtma ve Enerji Santrali projesi, farklı tasarımdaki nükleer reaktörleri tek bir ısı ve elektrik sisteminde buluşturmayı amaçlıyor. 2026 başında ilk ünitenin nükleer adasında beton dökümü başlamıştı; 8 Kasım'da ise projedeki yüksek sıcaklıklı gaz soğutmalı reaktörün nükleer adasına ilk beton döküldüğü bildirildi. Bu, santralin tamamlandığı veya elektrik üretmeye başladığı anlamına gelmiyor.</p>
+
+      <div class="plant-note">
+        <p><strong>“Hibrit” ne demek?</strong> Buradaki ifade füzyon ile fisyonun birleştirildiği deneysel bir reaktörü anlatmıyor. Proje, basınçlı su reaktörlerinden (PWR) ikisini yüksek sıcaklıklı gaz soğutmalı reaktörle (HTGR) aynı ısı-buhar sisteminde eşleştirmeyi tanımlıyor.</p>
+      </div>
+
+      <h2>Xuwei projesi nerede ve neler inşa ediliyor?</h2>
+      <p>Santral, Çin'in Jiangsu eyaletindeki Lianyungang kentinde planlanıyor. İlk aşamada iki Hualong One (HPR1000) basınçlı su reaktörü ve bir yüksek sıcaklıklı gaz soğutmalı reaktör bulunacak. Çin Ulusal Nükleer Şirketi (CNNC), bu üç üniteli tasarımı üçüncü nesil PWR ile dördüncü nesil HTGR'yi birleştiren “dünyanın ilk çift eşleştirme gösterim projesi” olarak nitelendiriyor. Dolayısıyla “dünyanın ilk” ifadesi bu belirli reaktör eşleştirmesi ve gösterim projesi iddiasına aittir; nükleer santrallerin daha önce ısı ve elektrik üretmediği anlamına gelmez.</p>
+
+      <h2>İnşaatta son durum: iki ayrı beton kilometre taşı</h2>
+      <p>Projenin ilk ünitesi olan Hualong One reaktörünün nükleer adasında ilk beton Ocak 2026'da döküldü. NucNet'in 8 Kasım 2026 tarihli haberine göre, ardından ilk aşamadaki HTGR ünitesinin nükleer adası için de ilk beton dökümü gerçekleştirildi. İki gelişme, Xuwei'nin farklı reaktör bileşenlerinde inşaatın sürdüğünü gösteriyor; tesisin işletmeye alınması içinse inşaat, ekipman montajı, devreye alma ve düzenleyici süreçlerin tamamlanması gerekiyor.</p>
+      <p>HTGR ünitesi, Xuwei projesinde “Chilong One” adıyla anılıyor. CNNC bu üniteyi mevcut HTR-PM yüksek sıcaklıklı gaz soğutmalı reaktörünün büyütülmüş bir devamı ve bu reaktör tipinin ilk ticari uygulaması olarak tanımlıyor. Bu nitelemeler proje sahibi ve şirket açıklamalarına dayalıdır; santral henüz işletme deneyimi sunmuş değildir.</p>
+
+      <h2>Reaktörler ısıyı nasıl birlikte kullanacak?</h2>
+      <p>Basınçlı su reaktörleri suyu ısıtarak buhar üretir; bu buhar türbinleri döndürerek elektrik üretiminde kullanılır. Xuwei tasarımında Hualong One ünitelerinden gelen birincil buhar önce arıtılmış suyu doymuş buhara dönüştürmek için kullanılacak. HTGR'den gelen yüksek sıcaklıklı ısı bu buharı ikinci kez ısıtarak daha yüksek sıcaklıkta, “kızgın buhar” olarak adlandırılan endüstriyel buhar sağlayacak.</p>
+      <p>Yüksek sıcaklıklı buhar, kimya ve petrokimya gibi sektörlerde çeşitli ısı gerektiren işlemlerde değerlendirilebilir. Böylece nükleer enerji yalnızca şebekeye elektrik vermek için değil, sanayi tesislerinin süreç ısısını sağlamak için de kullanılmaya çalışılıyor. Bu sistemin gerçek verimliliği, güvenlik performansı ve çevresel etkisi ancak tesis devreye girdikten ve işletme verileri elde edildikten sonra değerlendirilebilir.</p>
+
+      <h2>Hedeflenen üretim ve dikkat edilmesi gereken nokta</h2>
+      <p>CNNC'nin proje için açıkladığı hedefler arasında yılda 32,5 milyon ton endüstriyel buhar ve azami 11,5 milyar kilovatsaatin üzerinde elektrik bulunuyor. Şirket ayrıca bu üretimin yılda 7,26 milyon ton standart kömür kullanımını ve 19,6 milyon ton karbondioksit salımını önleyebileceğini öngörüyor. Bunlar işletme sonuçları değil, proje için açıklanmış tahminlerdir; gerçekleşecek miktarlar santralin performansına ve yerine geçtiği enerji kaynaklarına bağlı olacaktır.</p>
+      <p>Xuwei'nin dikkat çekici yanı bu nedenle “ilk” sıfatından çok, farklı sıcaklık ve kullanım gereksinimlerine sahip reaktörleri ortak bir endüstriyel buhar sistemi etrafında birleştirmeyi denemesidir. Proje, nükleer enerjinin ağır sanayi için süreç ısısı sağlayıp sağlayamayacağına dair önemli bir gösterim olacak; ancak maliyet, güvenlik ve emisyon sonuçları şimdilik hedef ve beklenti düzeyinde.</p>
+
+      <h2>Kaynaklar</h2>
+      <ol>
+        <li>NucNet, HTGR ünitesinde ilk beton dökümü ve proje ayrıntıları (8 Kasım 2026). <a href="https://www.nucnet.org/news/china-pours-first-concrete-for-htgr-at-world-s-first-hybrid-nuclear-power-station-11-1-2026" target="_blank" rel="noopener noreferrer">China Pours First Concrete For HTGR</a>.</li>
+        <li>NucNet, Xuwei'nin ilk ünitesinde ilk beton dökümü (Ocak 2026). <a href="https://www.nucnet.org/news/china-pours-first-concrete-for-hybrid-nuclear-power-station-project-1-5-2026" target="_blank" rel="noopener noreferrer">China Pours First Concrete For Hybrid Nuclear Power Station Project</a>.</li>
+        <li>World Nuclear News, proje tasarımı, reaktör bileşenleri ve buhar sistemi. <a href="https://www.world-nuclear-news.org/articles/cnnc-to-procure-contract-for-high-temperature-reactor" target="_blank" rel="noopener noreferrer">CNNC to procure contract for high-temperature reactor</a>.</li>
+        <li>Proje görseli: CNNC; World Nuclear News haberinde yayımlanan proje görselleştirmesi.</li>
+      </ol>
+      <p><a href="index.html#teknoloji">Teknoloji yazılarına dön</a></p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

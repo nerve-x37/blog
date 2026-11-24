@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    // Tema flaşını önle: CSS yüklenmeden önce doğru class'ı uygula
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      var html = document.documentElement;
+      html.classList.remove('light','dark');
+      html.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sebze ve Meyvelerin Evrimi &mdash; Valexirion</title>
+  <meta name="description" content="Sebze ve meyvelerin 130 milyon yıllık evrimsel yolculuğu: kökenleri, bölgesel gelişimleri, dünya genelindeki yayılımları ve günümüzde ulaştıkları çeşitlilik." />
+
+  <link rel="canonical" href="https://valexirion.com/sebze-meyve-evrimi.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Sebze ve Meyvelerin Evrimi: 130 Milyon Yıllık Lezzet Yolculuğu" />
+  <meta property="og:description" content="Sebze ve meyvelerin 130 milyon yıllık evrimsel yolculuğu: kökenleri, bölgesel gelişimleri, dünya genelindeki yayılımları ve günümüzde ulaştıkları çeşitlilik." />
+  <meta property="og:url" content="https://valexirion.com/sebze-meyve-evrimi.html" />
+  <meta property="og:image" content="https://valexirion.com/img/sebze.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sebze ve Meyvelerin Evrimi: 130 Milyon Yıllık Lezzet Yolculuğu" />
+  <meta name="twitter:description" content="Sebze ve meyvelerin 130 milyon yıllık evrimsel yolculuğu: kökenleri, bölgesel gelişimleri, dünya genelindeki yayılımları ve günümüzde ulaştıkları çeşitlilik." />
+  <meta name="twitter:image" content="https://valexirion.com/img/sebze.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Sebze ve Meyvelerin Evrimi: 130 Milyon Yıllık Lezzet Yolculuğu","description":"Sebze ve meyvelerin 130 milyon yıllık evrimsel yolculuğu: kökenleri, bölgesel gelişimleri, dünya genelindeki yayılımları ve günümüzde ulaştıkları çeşitlilik.","image":"https://valexirion.com/img/sebze.jpg","mainEntityOfPage":"https://valexirion.com/sebze-meyve-evrimi.html","inLanguage":"tr-TR","publisher":{"@type":"Organization","name":"Valexirion","url":"https://valexirion.com/"}}</script>
+</head>
+<body class="font-ui" data-page-category="bilim">
+<div id="scroll-progress" class="scroll-progress-bar"></div>
+<nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim"    class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih"    class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema"   class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik"    class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe"  class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga"     class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+
+      <!-- Sağ araçlar -->
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/>
+          </svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Men&uuml;y&uuml; a&ccedil;/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div><!-- /navbar-inner -->
+
+    <!-- Mobil menü paneli -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim"    class="mobile-link">Bilim</a>
+      <a href="index.html#tarih"    class="mobile-link">Tarih</a>
+      <a href="index.html#sinema"   class="mobile-link">Sinema</a>
+      <a href="index.html#muzik"    class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe"  class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga"     class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb"><a href="index.html">Ana Sayfa</a><span>&#8250;</span><a href="sebze-meyve-evrimi.html">Bilim</a><span>&#8250;</span><span>Sebze &amp; Meyve Evrimi</span></div>
+      <span class="article-cat-badge">Bilim</span>
+      <h1 class="article-title">
+        Sebze ve Meyvelerin Evrimi:<br>
+        <em>130 Milyon Y&#305;ll&#305;k Lezzet Yolculu&#287;u</em>
+      </h1>
+      <p class="article-subtitle">
+        &#199;i&#231;ekli bitkilerin (angiosperm) ilk ortaya &#231;&#305;k&#305;&#351;&#305;ndan g&uuml;n&uuml;m&uuml;z g&#305;da sistemlerine:
+        sebze ve meyvelerin evrimsel k&ouml;kenleri, b&ouml;lgesel geli&#351;im odaklar&#305;
+        ve d&uuml;nyaya yay&#305;l&#305;m s&uuml;re&ccedil;leri bilimsel kaynaklarla inceleniyor.
+      </p>
+
+        <div class="article-share">
+          <button class="share-btn" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            Payla&#351;
+          </button>
+        </div>
+      </div>
+  </header>
+
+  
+
+  
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+    <!-- Yazı kapak resmi -->
+    <div class="article-hero-img">
+      <img src="img/sebzemeyve1.webp" alt="Sebze ve Meyvelerin Evrimi: 130 Milyon Yıllık Lezzet Yolculuğu" loading="eager" onerror="this.parentElement.style.display='none'" decoding="async" fetchpriority="high">
+    </div>
+
+      <p class="article-lead">
+        Bir domates, bir elma ya da bir bro&ccedil;oli; bu s&#305;radan g&ouml;r&uuml;nen g&#305;dalar&#305;n arkas&#305;nda
+        130 milyon y&#305;ll&#305;k evrimsel bir hikâye yatar. Dar koridorlardan s&uuml;per marketlere,
+        orman ata e&#351;lerinden hibrit soylarına uzanan bu yolculuk; bitki biyolojisi,
+        insan uygarl&#305;&#287;&#305; ve k&#305;tasal g&ouml;&ccedil;lerin kesi&#351;im noktas&#305;nda &#351;ekillendi.
+      </p>
+
+      <h2>Angiospermlerin Do&#287;u&#351;u: Her &#351;eyin Ba&#351;lang&#305;c&#305;</h2>
+
+      <p>
+        Sebze ve meyvelerin evrimi, &ccedil;i&ccedil;ekli bitkiler anlam&#305;na gelen <strong>angiospermlerin</strong>
+        ortaya &#231;&#305;k&#305;&#351;&#305;yla ba&#351;lar. Kretase D&ouml;nemi&rsquo;nde (yakla&#351;&#305;k 130 milyon y&#305;l &ouml;nce)
+        sahne alan angiospermlerin en erken fosil kan&#305;tlar&#305; &Ccedil;in&rsquo;in Liaoning eyaletinde
+        bulunmu&#351;tur (<em>Nature</em>, 2002). Bu bitkiler; tohumlar&#305;n&#305; kapal&#305; bir yumurtal&#305;k
+        i&ccedil;inde ta&#351;&#305;malar&#305; sayesinde, a&ccedil;&#305;k tohumlu gym ospermlerden &ccedil;ok daha h&#305;zl&#305;
+        &#231;e&#351;itlenebildi.
+      </p>
+
+      <p>
+        Angiospermler, dinozorlar&#305;n hâlâ g&uuml;r&#252;lt&uuml;yle dola&#351;t&#305;&#287;&#305; bir d&uuml;nyada meyve
+        olu&#351;turdu. Meyve, asl&#305;nda bitkinin tohumu da&#287;&#305;tma stratejisidir: eti&#351;li ve tatl&#305;
+        bir yapı olu&#351;turarak hayvanlar&#305; &#231;eker, onlar&#305;n meyveyi yemesini ve tohumu
+        farkl&#305; bir noktaya ta&#351;&#305;mas&#305;n&#305; sa&#287;lar. Bu evrimsel muhteme&#351;am ortakl&#305;k,
+        hem bitkilerin hem de meyve yiyen canl&#305;lar&#305;n yararland&#305;&#287;&#305; bir sistem yaratt&#305;.
+      </p>
+
+      <h2>Evrimsel Merkezler: Saban&#305;n &#304;z Bıraktt&#305;&#287;&#305; Co&#287;rafyalar</h2>
+
+      <p>
+        Rus botanik&#231;i <strong>Nikolay Vavilov</strong>, 1920&rsquo;li ve 1930&rsquo;lu y&#305;llarda d&uuml;nyan&#305;n
+        d&ouml;rt bir yan&#305;nda saha ara&#351;t&#305;rmalar&#305; yaparak k&uuml;lt&uuml;r bitkilerinin k&ouml;ken
+        merkezlerini haritalad&#305;. Bug&uuml;n &ldquo;Vavilov Merkezleri&rdquo; olarak bilinen bu co&#287;rafyalar,
+        modern tar&#305;m&#305;n biyolojik mirasının kayna&#287;&#305;d&#305;r (<em>Vavilov, 1926; Studies on the
+        Origin of Cultivated Plants</em>):
+      </p>
+
+      <p>
+        <strong>1. Akdeniz Merkezi:</strong> Marul, kereviz, enginar, p&#305;rasa, soğan ve sarımsak
+        bu b&ouml;lgeden d&uuml;nyaya yay&#305;ld&#305;. M&Ouml; 5.000&rsquo;lere dayanan Fenike ve M&#305;s&#305;r
+        uygarl&#305;klar&#305;n&#305;n tar&#305;m kay&#305;tlar&#305; bu sebzeleri belgeler. Arpa ve bu&#287;day&#305;n da
+        kültüre al&#305;nd&#305;&#287;&#305; bu bölge; ılık, kurak yaz ve yağışlı kış iklimi sayesinde
+        sebze evrimi için ideal bir laboratuvar işlevi gördü.
+      </p>
+
+      <p>
+        <strong>2. Orta Do&#287;u ve Bereketli Hilal:</strong> Mercimek, nohut, bezelye, bak&#305;a
+        ve ilk tahılların anavatanıdır. M&Ouml; 10.000&rsquo;e uzanan Neolitik tar&#305;m devriminin
+        kalbi burasıdır. Do&#287;u Akdeniz ve Mezopotamya&rsquo;da ıslah edilen bu baklagiller,
+        insan beslenme tarihinin en k&#305;ymetli bileşenlerinden olmuştur (<em>Diamond, 1997;
+        Guns, Germs and Steel</em>).
+      </p>
+
+      <p>
+        <strong>3. G&uuml;ney ve Do&#287;u Asya:</strong> Pi&#351;mi&#351; mutfak k&uuml;lt&uuml;r&uuml;n&uuml;n ana malzemeleri
+        olan patlıcan, bambu filizi, Çin lahanası, salata turpu (daikon) ve bir çok
+        narenciye t&uuml;r&uuml; bu merkezden d&uuml;nyaya yayıldı. Hint Yar&#305;madas&#305;&rsquo;nda
+        zerdedal, biber ve k&ouml;knar gibi baharat bitkileri de evcille&#351;tirildi.
+      </p>
+
+      <p>
+        <strong>4. Meksika ve Orta Amerika:</strong> Domates, m&#305;s&#305;r, patates, kabak, avu&#231;i&ccedil;i,
+        vanilya, kakao ve kırmızı biber bu bölgenin insanl&#305;&#287;a arma&#287;an&#305;d&#305;r. Aztek
+        ve Maya uygarlıklar&#305;, bu bitkileri binlerce y&#305;l boyunca &#305;slah etti.
+        Domates&#8217;in atas&#305; olan Solanum pimpinellifolium, Peru ve Ekvador kıyılarına
+        özgüdür; fakat kültüre alınması Meksika&rsquo;da gerçekleşti (<em>Blanca ve diğerleri, 2012;
+        PLOS ONE</em>).
+      </p>
+
+      <p>
+        <strong>5. And Bölgesi (G&uuml;ney Amerika):</strong> Patates&#8217;in anavatanı Peru&rsquo;dur.
+        Bugün dünyada 5.000&rsquo;den fazla patates çeşidi bulunmakla birlikte bunların büyük
+        çoğunluğu And Dağları&rsquo;nda yaşayan yerel halklar tarafından yüzyıllar içinde
+        geliştirilmiştir. Quinoa, acı biber (ají), oca ve yacon da bu b&ouml;lgeden çıkan
+        önemli bitkilerdir (<em>Spooner ve diğerleri, 2005; PNAS</em>).
+      </p>
+
+      <h2>&#199;i&ccedil;ekli Bitkilerden Tabağa: Evcille&#351;tirme S&uuml;reci</h2>
+
+      <p>
+        Evcille&#351;tirme, bitkinin do&doğal seçilim yerine <strong>yapay seçilim</strong>le
+        şekillendirilmesi sürecidir. İnsan elleri, on binlerce yıl boyunca şu özellikleri
+        aradı: daha büyük meyve/tohum, daha az acılık veya toksinlik, çekirdeksizlik,
+        ince kabuk ve uzun raf ömrü. Ata domatesi olan yabani türden bugünkü çeşide giden
+        yolda meyve ağırlığı yaklaşık 1.000 kat arttı. Mısırın ilk ata bitkisi olan
+        <em>teosinte</em>&rsquo;den modern mısıra uzanan süreç, yaklaşık 9.000 yıl sürdü
+        (<em>Beadle, 1939; Genetics</em>).
+      </p>
+
+      <p>
+        Evcille&#351;tirmenin bir bedeli de vardır: genetik çeşitlilik kaybı. Tek tip
+        ticari çeşitlere olan bağımlılık, bitkileri hastalık ve iklim değişikliğine
+        karşı kırılgan kılmaktadır. 1845-1849 yılları arasında İrlanda&rsquo;yı kasıp kavuran
+        büyük kıtlık, tek bir patates çeşidine olan aşırı bağımlılığın trajedisidir;
+        <em>Phytophthora infestans</em> mantarı bu tek hat&#305; ortadan kaldırdığında,
+        bir milyon insan açlıktan hayatını kaybetti (<em>Donnelly, 2001; The Great Irish
+        Famine</em>).
+      </p>
+
+      <h2>Keşifler Çağı ve Küresel Yayılım</h2>
+
+      <p>
+        15. ve 16. yüzyıllardaki büyük coğrafi keşifler, bitki türlerinin kıtalar arasında
+        geçişini hızlandırdı. Bu süreç &ldquo;<strong>Kolomb Değişimi</strong>&rdquo; (<em>Columbian Exchange</em>)
+        olarak adlandırılır (<em>Crosby, 1972; The Columbian Exchange</em>). Amerikan kıtasından
+        Avrupa, Asya ve Afrika&rsquo;ya geçen bitkiler şunlardır: patates, domates, mısır,
+        kakao, tütün, kabak, fasulye türleri, kırmızı biber ve ananas. Bu bitkiler, özellikle
+        patates ve mısır, Avrupa nüfusunun patlamasına katkıda bulundu; tahmin edilene göre
+        bugün insanlığın günlük kalori alımının yüzde otuz beşi Amerikan kökenli bitkilerden
+        gelmektedir (<em>Mann, 2011; 1493</em>).
+      </p>
+
+      <p>
+        Ters yönde de önemli alışverişler yaşandı: Portakaller, limon, mango, pirinç, şeker
+        kamışı, buğday ve kahve Eski Dünya&rsquo;dan Amerika&rsquo;ya taşındı. Hindistan&rsquo;dan
+        uzak Asya&#8217;ya uzanan baharat yolları ile Arap tüccarlarının Doğu Afrika güzergâhları,
+        bitkilerin evcille&#351;tirilmesinden asırlarca önce de kıtalar arası taşınmasını
+        sağlıyordu.
+      </p>
+
+      <h2>Bölgesel Geli&#351;im Odakları ve Özgün Çe&#351;itler</h2>
+
+      <p>
+        <strong>Akdeniz Havzası:</strong> Zeytinin (<em>Olea europaea</em>) ilk kültüre
+        alınması M&Ouml; 6.000 yıllarına tarihlenmektedir. Bugün dünyada üretilen zeytinin
+        yaklaşık yüzde seksen biri Akdeniz havzasında yetiştirilmektedir (FAO, 2022).
+        Enginar, İspanya&#8217;dan gelen bir tür olan <em>Cynara scolymus</em>&rsquo;un
+        ıslah edilmiş hâlidir; kültüre alınması ise Kuzey Afrika ve Sicilya&rsquo;da
+        gerçekleşmiştir.
+      </p>
+
+      <p>
+        <strong>Çin ve Do&#287;u Asya:</strong> Şeftali (<em>Prunus persica</em>), Çin&rsquo;e
+        özgü bir türdür; arkeolojik kanıtlar Yangtze Nehri havzasında M&Ouml; 7.500&rsquo;e
+        kadar uzanmaktadır (<em>Zheng ve diğerleri, 2014; PLOS ONE</em>). Japon yemek
+        kültürünün temel malzemeleri olan bambu filizleri ve wasabi ise Japonya&#8217;nın
+        dağlık ve nemli habitatlarında şekillendi. Çay bitkisi (<em>Camellia sinensis</em>)
+        de güneybatı Çin&rsquo;den dünyaya açıldı.
+      </p>
+
+      <p>
+        <strong>Orta Asya Stepi:</strong> Elmanın (<em>Malus domestica</em>) anavatanı
+        Kazakistan&rsquo;ın Tian Şan dağ silsilesindeki yabani <em>Malus sieversii</em>
+        ormanlarıdır; genetik çalışmalar bu kökenin doğruluğunu kesin biçimde ortaya
+        koymuştur (<em>Velasco ve diğerleri, 2010; Nature Genetics</em>). Bugün dünyada
+        7.500&rsquo;den fazla elma çeşidi bulunmakta olup hepsi bu ata türden türemiştir.
+        Üzüm (<em>Vitis vinifera</em>) ise Kafkasya ve Yakın Doğu&rsquo;da evcilleştirilmiştir.
+      </p>
+
+      <p>
+        <strong>Sahra Alt&#305; Afrika:</strong> Kavun, karpuz ve bamya bu bölgeden çıkmıştır.
+        Karpuzun (<em>Citrullus lanatus</em>) en erken kültüre alınma kanıtları M&Ouml; 4.000&rsquo;e
+        tarihlenen Mısır kalıntılarında bulunmuştur. Tohta tarımı ile geçimini sağlayan
+        Orta Afrika toplulukları ise yüzyıllar içinde manyok, taro ve tatlı patatesi
+        kültüre aldı.
+      </p>
+
+      <h2>Günümüzde Sebze ve Meyve Biyolojisi: Gen Devrimi</h2>
+
+      <p>
+        20. yüzyılın ikinci yarısında başlayan Yeşil Devrim ve ardından gelen gen
+        mühendisliği çalışmaları, evcille&#351;tirme sürecini radikal biçimde hızlandırdı.
+        CRISPR-Cas9 teknolojisi ile domates&#8217;te raf ömrü uzatılmakta, buğdayda glüten
+        miktarı ayarlanmakta, muzda ise Panama hastalığına (<em>Fusarium oxysporum</em>)
+        karşı direnç kazandırılmaya çalışılmaktadır (<em>Nekrasov ve diğerleri, 2017;
+        Nature Plants</em>).
+      </p>
+
+      <p>
+        Bununla birlikte tohumun genetik çeşitliliğini koruma çalışmaları da ivme kazandı.
+        Norveç&rsquo;teki <strong>Svalbard Küresel Tohum Kasası</strong>, bugün itibarıyla
+        1,3 milyonun üzerinde tohum örneğine ev sahipliği yapmaktadır. Bu kasanın
+        amacı, iklim felaketi, savaş ya da toplu hastalık gibi bir krizde insanlığın
+        gıda kaynağını güvence altına almaktır.
+      </p>
+
+      <blockquote class="article-blockquote">
+        &ldquo;Bir meyveyi anlamak için onu yetiştiren toprağı, onu şekillendiren iklimi ve
+        onu yeyen medeniyeti anlamak gerekir.&rdquo;
+        &mdash; Michael Pollan, <em>The Botany of Desire</em>, 2001
+      </blockquote>
+
+      <h2>Sonuç: Tabağımızdaki Evrim</h2>
+
+      <p>
+        Bugün markette sıradan bir domates aldığınızda, Andes&#8217;lerin yabani topraklarından
+        yola çıkan, Maya bahçeleri ve İspanyol gemileri aracılığıyla dünyayı dolaşan,
+        İtalyan mutfağında tapınak statüsüne yükselen evrimsel bir yolculuğun ürününü
+        tutuyorsunuz. Sebze ve meyveler; yalnızca beslenme kaynağı değil, insan uygarlığının
+        biyolojik belleğidir.
+      </p>
+
+      <p>
+        Bu büyük tabloyu daha iyi anlamak için faydalı ve zararlı özellikleri ile
+        dünyanın dört bir yanındaki dağılımlarıyla <a href="sebzeler.html" style="color:var(--accent);text-decoration:underline;">sebzeler</a>
+        ve <a href="meyveler.html" style="color:var(--accent);text-decoration:underline;">meyveler</a>
+        hakkında hazırladığımız derinlemesine yazılarımızı okuyabilirsiniz.
+      </p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+<section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">&#304;lgili Yaz&#305;lar</h2>
+      <div class="related-grid">
+        <a href="sebzeler.html" class="related-card"><div class="related-img"><div style="width:100%;height:100%;background-image:url('img/sebze.jpg');background-size:cover;background-position:center;"></div></div><div class="related-body"><span class="related-cat">Bilim &mdash; Botanik</span><h3 class="related-card-title">Sebzeler: Faydalı ve Zararlı Özellikler</h3><p class="related-meta">Zeynep K&#305;l&#305;&#231; &middot; 14 dk</p></div></a>
+        <a href="meyveler.html" class="related-card"><div class="related-img"><div style="width:100%;height:100%;background-image:url('img/sebze.jpg');background-size:cover;background-position:center;"></div></div><div class="related-body"><span class="related-cat">Bilim &mdash; Botanik</span><h3 class="related-card-title">Meyveler: Sağlıklı ve Zararlı Türler</h3><p class="related-meta">Zeynep K&#305;l&#305;&#231; &middot; 12 dk</p></div></a>
+        <a href="evrim.html" class="related-card"><div class="related-img"><div style="width:100%;height:100%;background-image:url('img/evrim.png');background-size:cover;background-position:center;"></div></div><div class="related-body"><span class="related-cat">Bilim</span><h3 class="related-card-title">Darwin&#8217;in &#350;ifresi: Evrim Teorisi Nas&#305;l &#304;&#351;ler?</h3><p class="related-meta">Elif &#350;en &middot; 11 dk</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  
+
+    
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

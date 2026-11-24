@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    // Tema flaşını önle: CSS yüklenmeden önce doğru class'ı uygula
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      var html = document.documentElement;
+      html.classList.remove('light','dark');
+      html.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meyveler: Sağlıklı ve Zararlı Türler &mdash; Valexirion</title>
+  <meta name="description" content="Dünya genelindeki meyve türlerinin sağlığa etkileri, antioksidan içerikleri, hangi koşullarda zararlı hale geldiği ve bölgesel dağılımları hakkında bilimsel bir inceleme." />
+
+  <link rel="canonical" href="https://valexirion.com/meyveler.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Meyveler: Sağlıklı ve Zararlı Türler" />
+  <meta property="og:description" content="Dünya genelindeki meyve türlerinin sağlığa etkileri, antioksidan içerikleri, hangi koşullarda zararlı hale geldiği ve bölgesel dağılımları hakkında bilimsel bir inceleme." />
+  <meta property="og:url" content="https://valexirion.com/meyveler.html" />
+  <meta property="og:image" content="https://valexirion.com/img/meyve2.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Meyveler: Sağlıklı ve Zararlı Türler" />
+  <meta name="twitter:description" content="Dünya genelindeki meyve türlerinin sağlığa etkileri, antioksidan içerikleri, hangi koşullarda zararlı hale geldiği ve bölgesel dağılımları hakkında bilimsel bir inceleme." />
+  <meta name="twitter:image" content="https://valexirion.com/img/meyve2.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Meyveler: Sağlıklı ve Zararlı Türler","description":"Dünya genelindeki meyve türlerinin sağlığa etkileri, antioksidan içerikleri, hangi koşullarda zararlı hale geldiği ve bölgesel dağılımları hakkında bilimsel bir inceleme.","image":"https://valexirion.com/img/meyve2.jpg","mainEntityOfPage":"https://valexirion.com/meyveler.html","inLanguage":"tr-TR","publisher":{"@type":"Organization","name":"Valexirion","url":"https://valexirion.com/"}}</script>
+</head>
+<body class="font-ui" data-page-category="bilim">
+<div id="scroll-progress" class="scroll-progress-bar"></div>
+<nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim"    class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih"    class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema"   class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik"    class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe"  class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga"     class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+
+      <!-- Sağ araçlar -->
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/>
+          </svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Men&uuml;y&uuml; a&ccedil;/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div><!-- /navbar-inner -->
+
+    <!-- Mobil menü paneli -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim"    class="mobile-link">Bilim</a>
+      <a href="index.html#tarih"    class="mobile-link">Tarih</a>
+      <a href="index.html#sinema"   class="mobile-link">Sinema</a>
+      <a href="index.html#muzik"    class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe"  class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga"     class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb"><a href="index.html">Ana Sayfa</a><span>&#8250;</span><a href="sebze-meyve-evrimi.html">Sebze &amp; Meyve Evrimi</a><span>&#8250;</span><span>Meyveler</span></div>
+      <span class="article-cat-badge">Bilim</span>
+      <h1 class="article-title">
+        Meyveler: Sa&#287;l&#305;kl&#305; ve Zararl&#305; T&uuml;rler<br>
+        <em>Bilimsel Bir Rehber</em>
+      </h1>
+      <p class="article-subtitle">
+        Yaban mersinin antioksidanlarından greyfurtun ilaç etkile&#351;imlerine, avokadodan
+        ackee meyvesine: hangi meyve gerçekten koruyucu, hangisi belirli ko&#351;ullarda
+        tehlikeli olabilir? Güncel bilimsel literatüre dayalı kapsamlı bir inceleme.
+      </p>
+
+        <div class="article-share">
+          <button class="share-btn" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            Payla&#351;
+          </button>
+        </div>
+      </div>
+  </header>
+
+  
+
+  
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+    <!-- Yazı kapak resmi -->
+    <div class="article-hero-img">
+      <img src="img/meyveler1.webp" alt="Meyveler: Sağlıklı ve Zararlı Türler" loading="eager" onerror="this.parentElement.style.display='none'" decoding="async" fetchpriority="high">
+    </div>
+
+      <p class="article-lead">
+        Meyveler; yüz milyonlarca yıllık evrimsel süreçte bitkilerin tohumlarını yaymak
+        için geliştirdiği biyolojik bir mucizedir. Renkleri, kokuları ve tatlarıyla
+        çekicidirler. Peki ya sağlığa etkileri? Tüm meyveler eşit derecede faydalı
+        mıdır; yoksa bazıları beklenmedik riskler mi barındırır?
+      </p>
+
+      <h2>Bilimsel Olarak En Güçlü Antioksidan Kaynaklarından: Faydalı Meyveler</h2>
+
+      <p>
+        <strong>Yaban Mersini (<em>Vaccinium myrtillus</em>, <em>V. corymbosum</em>):</strong>
+        Kuzey Avrupa ve Kuzey Amerika&#8217;nın serin, asidik topraklarında yetişen bu küçük
+        meyve, bugün bilinen en zengin antioksidan kaynaklarından biridir. İçerdiği
+        <strong>antosiyanidin</strong> bileşikleri, oksidatif stresi azaltır, beyin
+        nöroplastisitesini destekler ve yaşa bağlı bilişsel gerilemeyi yavaşlatabilir
+        (<em>Devore ve diğerleri, 2012; Annals of Neurology</em>). Aynı zamanda LDL
+        kolesterolünü düşürücü etkileri birden fazla klinik çalışmayla doğrulanmıştır.
+        Finlandiya ve İsveç yabani yaban mersini üretiminde öne çıkan ülkelerdir.
+      </p>
+
+      <p>
+        <strong>Avokado (<em>Persea americana</em>):</strong> Meksika ve Orta Amerika
+        kökenli bu tropikal meyve, bugün Meksika, Dominik Cumhuriyeti ve Peru&#8217;da
+        yoğun biçimde yetiştirilmektedir. Sağlıklı <strong>tekli doymamış yağ asidi</strong>
+        olan oleik asidin mükemmel bir kaynağıdır; bu yağ asidi, kalp sağlığını
+        olumlu yönde etkilemekte, iyi huylu HDL kolestrolü artırarak kötü huylu LDL
+        kolesterolü düşürmektedir (<em>Wang ve diğerleri, 2015; JAM</em>). Yüksek
+        potasyum içeriği (100 gramda 485 mg, muzun üç katı) tansiyonu dengelemeye
+        yardımcı olur. Yüksek kalori değeri (100 gramda ~160 kcal) nedeniyle
+        porsiyon kontrolü önerilmektedir.
+      </p>
+
+      <p>
+        <strong>Nar (<em>Punica granatum</em>):</strong> İran ve Kafkasya kökenli
+        olan nar, M&Ouml; 3.000&#8217;den bu yana Orta Doğu ve Akdeniz mutfaklarının
+        ayrılmaz parçasıdır. Bugün Hindistan, İran, Çin ve Türkiye önemli üretici
+        ülkelerdir. Narın <strong>punikarajin</strong> ve <strong>punikalajin</strong>
+        bileşikleri bağırsak mikrobiyomunu olumlu yönde etkilemekte ve inflamasyonu
+        azaltmaktadır. Yapılan çalışmalar, nar suyunun düzenli tüketiminin
+        arteroskleroz (damar sertliği) ile ilişkili belirteçleri iyileştirdiğini
+        göstermektedir (<em>Aviram ve diğerleri, 2004; Clinical Nutrition</em>).
+        Nar suyu; varfarin, statin ve bazı antihipertansif ilaçlarla etkileşim
+        gösterebileceğinden ilaç kullanan bireylerin hekime danışması önerilir.
+      </p>
+
+      <p>
+        <strong>Kivi (<em>Actinidia deliciosa</em>):</strong> Çin&#8217;in Yangtze Nehri
+        havzasına özgü olan bu meyve, 20. yüzyılın başında Yeni Zelanda&#8217;ya götürülerek
+        ticari olarak yetiştirilmeye başlanmış ve &ldquo;kiwifruit&rdquo; adını almıştır.
+        Bugün Çin, İtalya ve Yeni Zelanda en büyük üreticilerdir. Kivi, C vitamini
+        içeriği açısından portakalı geride bırakır (100 gramda 92,7 mg). Ek olarak
+        içerdiği <strong>aktinidin</strong> enzimi, protein sindirimini destekler.
+        Uykusuzluk üzerine yapılan küçük ölçekli bir çalışmada yatmadan önce kivi
+        tüketiminin uyku kalitesini artırdığı gözlemlenmiştir (<em>Lin ve diğerleri,
+        2011; Asia Pacific Journal of Clinical Nutrition</em>).
+      </p>
+
+      <p>
+        <strong>Elma (<em>Malus domestica</em>):</strong> Orta Asya kökenli elma;
+        bugün Çin, ABD, Türkiye ve İtalya&#8217;da milyonlarca ton üretilmektedir.
+        &ldquo;Günde bir elma doktoru uzak tutar&rdquo; deyiminin bilimsel bir dayanağı vardır:
+        elma; kuersetin, kateşin ve klorojenik asit gibi flavonoidleri içermekte;
+        bu bileşikler kronik iltihabı azaltmakta ve kolorektal kanser riskini
+        düşürücü etki göstermektedir (<em>Jedrychowski ve diğerleri, 2010;
+        European Journal of Nutrition</em>). Kabuğunda konsantre olan bu
+        bileşikler nedeniyle elmanın kabuğuyla tüketilmesi önerilir.
+        Elma çekirdeği küçük miktarda amigdalin içerir; bu bileşik midede
+        hidrolize olarak siyanür açığa çıkarabilir. Birkaç çekirdek yutmak
+        zarar vermez; ancak büyük miktarlarda çiğneyerek yutmak sakıncalı olabilir.
+      </p>
+
+      <p>
+        <strong>Üzüm (<em>Vitis vinifera</em>):</strong> Kafkasya ve Orta Doğu
+        kökenlidir; bugün Çin, İtalya, Fransa ve İspanya önemli üretici ülkelerdir.
+        Üzümün koyu kabuk renginden gelen <strong>resveratrol</strong>, kardiyoprotektif
+        etkisiyle yoğun biçimde araştırılmaktadır. &ldquo;Fransız Paradoksu&rdquo; olarak
+        bilinen olguda Fransızların yüksek yağ tüketimine rağmen kalp hastalığı
+        oranlarının düşük olmasında kırmızı şarap tüketiminin etkisi tartışılmaktadır;
+        ancak bu ilişki henüz nedensellik değil korelasyon düzeyinde kalmaktadır.
+      </p>
+
+      <h2>Belirli Ko&#351;ullarda Dikkat Edilmesi Gereken ya da Zararlı Olabilecek Meyveler</h2>
+
+      <p>
+        <strong>Greyfurt (<em>Citrus paradisi</em>):</strong> Barbados kökenli bu
+        turunçgil, 18. yüzyılda yabani greyfurt ile tatlı portakalın melezi olarak
+        ortaya çıkmıştır. Bugün Çin, ABD ve Meksika önde gelen üreticilerdir.
+        Greyfurtun en önemli riski, <strong>CYP3A4 enzimi</strong> ile olan
+        etkileşimidir. Bu enzim, karaciğerde pek çok ilacın metabolizmasından
+        sorumludur. Greyfurtun içerdiği <strong>furokumarinler</strong> bu enzimi
+        baskılar; bu da statin&#8217;lerin, kalsiyum kanal blokörlerinin, bazı
+        antidepresanların ve immünosupresanların kanda normalin üzerinde birikip
+        toksik düzeylere ulaşmasına neden olabilir. Günde bir bardak greyfurt
+        suyu, bazı ilaçların etkinliğini onlarca saat boyunca artırabilir
+        (<em>Bailey ve diğerleri, 1998; British Journal of Clinical Pharmacology</em>).
+        Bu nedenle ilaç kullanan bireyler doktorlarına danışmadan düzenli greyfurt
+        tüketiminden kaçınmalıdır.
+      </p>
+
+      <p>
+        <strong>Ackee (<em>Blighia sapida</em>):</strong> Batı Afrika kökenli ve
+        Jamaika&#8217;nın milli meyvesi olan ackee, tam olarak olgunlaşmadan tüketildiğinde
+        son derece tehlikelidir. Ham ackee; <strong>hipoglisin A</strong> ve
+        <strong>hipoglisin B</strong> adlı toksinleri içerir. Bu toksinler, yağ
+        asidi oksidasyonunu bloke ederek şiddetli hipoglisemiye (kan şekeri
+        düşüklüğü) yol açar; bu durum &ldquo;Jamaika kusma hastalığı&rdquo; olarak bilinir
+        ve tedavisiz ölümle sonuçlanabilir (<em>Tanaka ve diğerleri, 1976;
+        Science</em>). Doğru biçimde olgunlaşmış ve hazırlanmış ackee güvenlidir;
+        bu nedenle Jamaika mutfağında temel bir yerü tutmaktadır. ABD&rsquo;ye ithalatı
+        FDA tarafından kısıtlanmaktadır.
+      </p>
+
+      <p>
+        <strong>Star Elması / Carambola (<em>Averrhoa carambola</em>):</strong>
+        Güneydoğu Asya&#8217;ya özgü olan bu meyve, Malezya, Hindistan ve Brezilya&#8217;da
+        yaygın biçimde yetiştirilmektedir. Sağlıklı bireyler için güvenli olan bu
+        meyve, kronik böbrek yetmezliği hastalarında ciddi nörolojik semptomlara
+        neden olabilir. İçerdiği böbrekler tarafından filtre edilemeyen <strong>karamboxin</strong>
+        toksin, biriktiğinde nörotoksisiteye yol açar; titreme, bilinç bulanıklığı ve
+        ölümle sonuçlanan vakalar bildirilmiştir
+        (<em>Chang ve diğerleri, 2002; Nephrology Dialysis Transplantation</em>).
+        Böbrek hastaları bu meyveyi kesinlikle tüketmemelidir.
+      </p>
+
+      <p>
+        <strong>Muz (<em>Musa</em> spp.):</strong> Papuya Yeni Gine&#8217;de yaklaşık
+        8.000 yıl önce kültüre alınan muz; bugün tropikal ülkelerde 1 milyar insanın
+        temel gıdası konumundadır. Hindistan, Çin, Endonezya ve Ekvador en büyük
+        üreticilerdir. Olgun muz, hızla emilen şeker içeriği (orta boy bir muzda
+        yaklaşık 14 gram toplam şeker) nedeniyle diyabet hastalarında porsiyon
+        kontrolü gerektirir; özellikle çok olgun muzlarda glikemik indeks önemli
+        ölçüde yükselir. Bununla birlikte; potasyum, B6 vitamini ve triptofan
+        içeriği açısından son derece değerli olan muz, hipertansiyon, kas kramplamaları
+        ve uyku kalitesi üzerinde olumlu etkiler göstermektedir.
+      </p>
+
+      <p>
+        <strong>Doğal Şekersiz Meyveler ve Aşırı Meyve Tüketimi:</strong>
+        Fruktoz aşırı tüketimi karaciğerde yağ birikimine yol açabilir; bu durum
+        &ldquo;non-alkolik yağlı karaciğer hastalığı&rdquo; (NAFLD) ile ilişkilendirilmiştir
+        (<em>Ouyang ve diğerleri, 2008; Journal of Hepatology</em>). Ancak bütün
+        meyveler, şeker içeriğiyle birlikte lif, su ve mikro besin ögeleri de sunar;
+        bu nedenle meyvedeki fruktozun işlenmiş gıdalardaki fruktozdan farklı bir
+        metabolik etkisi vardır. Günde 2&ndash;4 porsiyon meyve tüketimi, Dünya Sağlık
+        Örgütü ve Avrupa Gıda Güvenlik Otoritesi&#8217;nin (EFSA) önerdiği aralıktır.
+      </p>
+
+      <h2>Bölgesel Dağılım: Hangi Meyve Nerede Yetişir?</h2>
+
+      <p>
+        <strong>Tropikal Kuşak (Ekvator çevresi, 23°N &ndash; 23°S):</strong> Mango,
+        papaya, ananas, hindistan cevizi, ackee, durian, jackfruit, liçi ve
+        rambutan bu kuşağın karakteristik meyveleridir. Yıl boyu sıcak ve
+        nemli iklim, bu meyvelerin büyümesi için idealdir. Mango üretiminde
+        Hindistan küresel lideri konumundadır (dünya üretiminin yaklaşık yüzde kırkı).
+      </p>
+
+      <p>
+        <strong>Subtropikal Kuşak (23°&ndash;40° enlemler arası):</strong> Portakal,
+        mandalina, limon, greyfurt, zeytin, incir, nar, avokado ve kivi bu
+        bölgede yoğunlaşmaktadır. Akdeniz havzası, Orta Amerika ve Güney Çin bu
+        kuşağın en verimli bölgelerindendir. Türkiye; fındık, kayısı, kiraz,
+        ayva ve incir üretiminde dünyada lider ya da ilk beş ülke arasında
+        yer almaktadır (FAO, 2022).
+      </p>
+
+      <p>
+        <strong>Ilıman Kuşak (40°&ndash;60° enlemler arası):</strong> Elma, armut,
+        şeftali, erik, kiraz, üzüm, çilek, ahududu ve yaban mersini bu bölgede
+        yetişmektedir. Kuzey Avrupa, Kuzey Amerika ve Orta Asya&#8217;nın ılıman
+        bölgeleri bu ürünlerin anavatanıdır. Kışın soğuk, yazın serin ve ılık
+        olması bu meyvelerin olgunlaşması için vazgeçilmezdir.
+      </p>
+
+      <h2>Meyvelerin Besin Değerini Koruma</h2>
+
+      <p>
+        Taze meyve, her zaman en yüksek besin değerine sahip değildir. Araştırmalar,
+        hasatın hemen ardından hızlıca dondurulmuş meyvelerin C vitamini ve
+        antioksidan kapasitesi açısından taze ama uzun süreli depolanmış meyvelerden
+        daha iyi bir profil sergileyebildiğini göstermektedir (<em>Li ve diğerleri,
+        2017; Journal of Food Composition and Analysis</em>). Kurutulmuş meyveler
+        ise su kaybettiğinden şeker konsantrasyonu yükselir; bu nedenle porsiyon
+        boyutunun taze meyveden çok daha küçük tutulması gerekir. Meyve suları,
+        liften yoksun olduğundan glikemik tepkiyi taze meyveye kıyasla çok daha
+        hızlı yükseltir.
+      </p>
+
+      <blockquote class="article-blockquote">
+        &ldquo;Doğa, zehiri ilacın yanına koymuştur. Bilmek, ikisi arasındaki farkı görmektir.&rdquo;
+        &mdash; Paracelcus, 1493&ndash;1541
+      </blockquote>
+
+      <h2>Sonuç: Çeşitlilik ve Bilinç</h2>
+
+      <p>
+        Meyveler; milyonlarca yıllık evrimsel bir ilişkinin ürünü olarak insanlığın
+        en değerli besin kaynaklarından biridir. Ancak her meyve, her birey için,
+        her ko&#351;ulda aynı şekilde faydalı değildir. Böbrek hastalığından ilaç
+        kullanımına, diyabetten genetik yatkınlığa kadar pek çok faktör; hangi
+        meyvenin ne kadar ve nasıl tüketileceğini belirler. Bilimsel okuryazarlık
+        ve çeşitlilik, meyve tüketiminde temel rehberimiz olmalıdır.
+      </p>
+
+      <p>
+        Konunun devamı için <a href="sebzeler.html" style="color:var(--accent);text-decoration:underline;">Sebzeler: Faydalı ve Zararlı Özellikler</a>
+        yazımızı ve evrimsel arka plan için
+        <a href="sebze-meyve-evrimi.html" style="color:var(--accent);text-decoration:underline;">Sebze ve Meyvelerin Evrimi</a>
+        yazımızı okuyabilirsiniz.
+      </p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+<section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">&#304;lgili Yaz&#305;lar</h2>
+      <div class="related-grid">
+        <a href="sebze-meyve-evrimi.html" class="related-card"><div class="related-img"><div style="width:100%;height:100%;background-image:url('img/sebze.jpg');background-size:cover;background-position:center;"></div></div><div class="related-body"><span class="related-cat">Bilim &mdash; Botanik</span><h3 class="related-card-title">Sebze ve Meyvelerin Evrimi: 130 Milyon Yıllık Yolculuk</h3><p class="related-meta">Zeynep K&#305;l&#305;&#231; &middot; 18 dk</p></div></a>
+        <a href="sebzeler.html" class="related-card"><div class="related-img"><div style="width:100%;height:100%;background-image:url('img/sebze.jpg');background-size:cover;background-position:center;"></div></div><div class="related-body"><span class="related-cat">Bilim &mdash; Beslenme</span><h3 class="related-card-title">Sebzeler: Faydalı ve Zararlı Özellikler</h3><p class="related-meta">Zeynep K&#305;l&#305;&#231; &middot; 14 dk</p></div></a>
+        <a href="evrim.html" class="related-card"><div class="related-img"><div style="width:100%;height:100%;background-image:url('img/evrim.png');background-size:cover;background-position:center;"></div></div><div class="related-body"><span class="related-cat">Bilim</span><h3 class="related-card-title">Darwin&#8217;in &#350;ifresi: Evrim Teorisi Nasıl İşler?</h3><p class="related-meta">Elif &#350;en &middot; 11 dk</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  
+
+    
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

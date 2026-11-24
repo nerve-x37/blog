@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dünya Nasıl Oluştu? Başlangıcı, Süreci ve Kimyası — Valexirion</title>
+  <meta name="description" content="Dünya ne zaman ve ne kadar sürede oluştu? Güneş bulutsusundan gezegen oluşumuna, demir-nikel çekirdekten su ve atmosferin kökenine bilimsel bir rehber." />
+  <link rel="canonical" href="https://valexirion.com/dunya-nasil-olustu.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Dünya Nasıl Oluştu? Başlangıcı, Süreci ve Kimyası" />
+  <meta property="og:description" content="Gezegenimiz 4,54 milyar yıl önce hangi maddelerden ve nasıl oluştu? Oluşum sürecini ve bilinen zaman çizelgesini inceleyin." />
+  <meta property="og:url" content="https://valexirion.com/dunya-nasil-olustu.html" />
+  <meta property="og:image" content="https://valexirion.com/img/hl-tau-protoplanetary-disk.webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dünya Nasıl Oluştu? Başlangıcı, Süreci ve Kimyası" />
+  <meta name="twitter:description" content="Güneş bulutsusundan Dünya'nın katmanlarına: gezegenimizin oluşumu, kimyası ve zaman çizelgesi." />
+  <meta name="twitter:image" content="https://valexirion.com/img/hl-tau-protoplanetary-disk.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@300;400;700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    .earth-index, .earth-steps, .earth-materials { display: grid; gap: .75rem; margin: 1.4rem 0 2.2rem; }
+    .earth-index { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .earth-index a, .earth-steps div, .earth-materials div { padding: .95rem; border: 1px solid var(--border); border-radius: var(--radius); color: inherit; }
+    .earth-index a { text-decoration: none; }
+    .earth-index a:hover, .earth-index a:focus-visible { border-color: var(--accent); }
+    .earth-index strong, .earth-index span, .earth-steps strong, .earth-steps span, .earth-materials strong { display: block; }
+    .earth-index strong, .earth-steps strong, .earth-materials strong { margin-bottom: .35rem; color: var(--text-1); }
+    .earth-index span, .earth-steps span, .earth-materials p { color: var(--text-3); font-size: .9rem; }
+    .earth-steps { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .earth-materials { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    @media (max-width: 760px) { .earth-index, .earth-steps, .earth-materials { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 480px) { .earth-index, .earth-steps, .earth-materials { grid-template-columns: 1fr; } }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Dünya Nasıl Oluştu? Başlangıcı, Süreci ve Kimyası",
+      "description": "Dünya'nın Güneş bulutsusundan birikerek oluşumunu, yaşını ve oluşum sürecindeki demir, nikel, silikatlar ve uçucu maddelerin rolünü anlatan rehber.",
+      "image": "https://valexirion.com/img/hl-tau-protoplanetary-disk.webp",
+      "mainEntityOfPage": "https://valexirion.com/dunya-nasil-olustu.html",
+      "datePublished": "2026-11-13",
+      "dateModified": "2026-11-13",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="bilim">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a><a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a><a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a><a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a><a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a><a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a><a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a><a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a><a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb"><a href="index.html">Ana Sayfa</a><span>&#8250;</span><a href="index.html#bilim">Bilim</a><span>&#8250;</span><span>Yer Bilimleri</span></div>
+      <span class="article-cat-badge">Bilim · Yer Bilimleri</span>
+      <h1 class="article-title">Dünya Nasıl Oluştu?<br><em>Başlangıcı, süreci ve kimyası</em></h1>
+      <p class="article-subtitle">Gezegenimiz hangi maddelerden bir araya geldi, oluşumu ne zaman başladı ve ne kadar sürdü? Toz bulutlarından demir çekirdeğe uzanan öykü, tek bir kimyasal tepkimeden çok daha büyük bir süreç.</p>
+      <div class="article-meta">
+        <span class="article-date">13 Kasım 2026</span>
+        <span class="article-read-time">10 dk okuma</span>
+      </div>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367-2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure style="max-width:900px;margin:0 auto 2.5rem">
+        <div class="article-hero-img">
+          <img src="img/hl-tau-protoplanetary-disk.webp" alt="HL Tauri adlı genç yıldızın çevresindeki toz ve gaz diskinin ALMA ile elde edilmiş gözlem görüntüsü" fetchpriority="high" loading="eager" decoding="async" />
+        </div>
+        <figcaption style="font-size:.8rem;color:var(--text-3);margin-top:.65rem">Bu, yaklaşık 450 ışık yılı uzaktaki HL Tauri yıldızının çevresinde gözlenen gezegen öncesi disktir; Güneş Sistemi'nin ya da Dünya'nın fotoğrafı değildir. Görsel: <a href="https://commons.wikimedia.org/wiki/File:HL_Tau_protoplanetary_disk.jpg" target="_blank" rel="noopener noreferrer">ALMA (ESO/NAOJ/NRAO)</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.</figcaption>
+      </figure>
+
+      <p class="article-lead"><strong>Dünya, yaklaşık 4,54 milyar yıl önce genç Güneş'in çevresindeki toz ve kaya parçalarının kütleçekimiyle birleşmesi sonucu oluştu.</strong> Bu, tek seferde gerçekleşen bir olay ya da laboratuvardaki gibi tek bir kimyasal tepkime değildi. Küçük katı parçalar çarpışarak büyüdü; çarpışmaların ve iç ısının etkisiyle eriyen genç gezegen, zamanla metal çekirdeğini ve kayalık katmanlarını oluşturdu. Bilim insanları bu tarihi, meteoritle ve Dünya'nın en eski mineralleriyle yapılan izotop ölçümlerini karşılaştırarak belirliyor.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a><a class="source-marker" href="#kaynak-2" aria-label="Kaynak 2">[2]</a></p>
+
+      <nav class="earth-index" aria-label="Dünya'nın oluşum süreci">
+        <a href="#zaman"><strong>Ne zaman başladı?</strong><span>4,6 ve 4,54 milyar yıl</span></a>
+        <a href="#bulutsu"><strong>Nereden geldi?</strong><span>Güneş bulutsusu ve yapı taşları</span></a>
+        <a href="#kimya"><strong>Hangi maddeler?</strong><span>Demir, nikel ve silikatlar</span></a>
+        <a href="#olusum"><strong>Nasıl büyüdü?</strong><span>Tozdan gezegenimsiye</span></a>
+        <a href="#katmanlar"><strong>Katmanlar nasıl ayrıldı?</strong><span>Çekirdek, manto ve kabuk</span></a>
+        <a href="#ay"><strong>Ay'ın payı neydi?</strong><span>Büyük çarpışma ve belirsizlikler</span></a>
+      </nav>
+
+      <h2 id="zaman">Dünya'nın oluşumu ne zaman başladı ve ne kadar sürdü?</h2>
+      <p>Güneş Sistemi'nin oluşumu yaklaşık <strong>4,6 milyar yıl önce</strong> başladı. Daha hassas ölçümlerde, meteoritte bulunan Güneş Sistemi'nin en eski katı tanelerinin yaşı yaklaşık 4,567 milyar yıl olarak alınır. Dünya'nın yaşı ise yaklaşık <strong>4,54 milyar yıl</strong> kabul edilir. Bu sayı, bugün elimizde bulunan tek bir Dünya kayasının yaşını ölçmekten gelmez: Dünya'nın ilk kayaları büyük ölçüde yeniden işlenmiş veya yok olmuştur. Yaş hesabı, Dünya ve meteorite ait kurşun izotoplarını ve diğer radyometrik ölçümleri birlikte değerlendirir.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a><a class="source-marker" href="#kaynak-2" aria-label="Kaynak 2">[2]</a></p>
+      <p>“Tam olarak hangi gün başladı?” veya “oluşması tam kaç yıl sürdü?” sorularının tek bir kesin yanıtı yok. Dünya, toz ve gezegenimsilerin yörüngelerde birleşmesiyle aşamalı biçimde büyüdü; bu birikim ve çekirdeğin ayrışması on milyonlarca yıla yayıldı. Ay'ı oluşturan büyük çarpışmanın zamanı için farklı izotop ve dinamik modelleri farklı tarihler verir. NASA'nın Apollo örneklerinden aktardığı bir tahmin, Ay'ın Güneş Sistemi'nin oluşumundan yaklaşık 60 milyon yıl sonra meydana geldiğini söyler. Bu tür tarihler, Dünya'nın büyümesinin tek bir anda bitmediğini gösterir; kesin zaman çizelgesi araştırılmaya devam ediyor.<a class="source-marker" href="#kaynak-3" aria-label="Kaynak 3">[3]</a><a class="source-marker" href="#kaynak-4" aria-label="Kaynak 4">[4]</a></p>
+
+      <h2 id="bulutsu">Başlangıç noktası: genç Güneş'in çevresindeki bulutsu</h2>
+      <p>Güneş ve gezegenler, yoğun bir yıldızlararası gaz ve toz bulutunun kütleçekimiyle büzülmesiyle oluştu. Madde döndükçe merkezde genç Güneş, çevresinde ise gezegenlerin ham maddesini taşıyan yassı bir disk meydana geldi. Diskin iç kesimleri genç Güneş'e yakın olduğu için sıcaktı; burada kayaç ve metal oluşturabilen maddeler katı hâlde kalabilirken su buzu gibi uçucu maddelerin önemli bir bölümü daha soğuk dış bölgelere doğru yoğunlaşabiliyordu. NASA, iç Güneş Sistemi'ndeki kayaç gezegenlerin bu sıcaklık farkıyla ilişkisini açıklar.<a class="source-marker" href="#kaynak-5" aria-label="Kaynak 5">[5]</a></p>
+      <p>Güneş Sistemi'nin büyük bölümü hidrojen ve helyumdan oluşsa da Dünya gibi iç gezegenler, diskteki katı malzemelerin birikmesiyle şekillendi. Bu malzemeler arasında mikroskobik mineral ve metal taneleri, daha sonra da asteroit benzeri gezegenimsiler vardı. Dünya'ya “düşen” parçaların hepsi aynı değildi: Farklı yörüngelerde, sıcaklıklarda ve kimyasal koşullarda oluşmuş cisimler zaman içinde birleşti.</p>
+
+      <h2 id="kimya">Hangi elementler ve maddeler etkili oldu?</h2>
+      <p>“Hangi kimyasallar Dünya'yı oluşturdu?” sorusunu bir karışım tarifi gibi düşünmemek gerekir. Dünya, hazır bir bileşik şişesinden değil; elementleri ve mineralleri içeren katı cisimlerin çarpışıp birleşmesinden oluştu. Isı ve basınç arttıkça bu maddeler eridi, birbirleri içinde çözüldü ya da yoğunluklarına ve kimyasal ilgilerine göre farklı katmanlara ayrıldı.</p>
+      <div class="earth-materials">
+        <div><strong>Demir ve nikel</strong><p>Yoğun metalik demir-nikel damlacıkları eriyen genç Dünya'nın merkezine doğru battı ve çekirdeğin ana bileşenlerini oluşturdu.</p></div>
+        <div><strong>Oksijen, silisyum ve magnezyum</strong><p>Bu elementler, demir içeren olivin ve piroksen gibi silikat minerallerinin yapı taşlarıdır; manto ve kabuk büyük ölçüde kayalık malzemeden oluşur.</p></div>
+        <div><strong>Su ve diğer uçucular</strong><p>Hidrojen, karbon ve azot içeren maddeler ile su, Dünya'nın yapı taşlarında ve sonradan gelen cisimlerde bulunuyordu. Volkanik gaz çıkışı da erken atmosferin oluşumuna katkıda bulundu.</p></div>
+      </div>
+      <p>Erime sırasında elementlerin her biri aynı davranmadı. Demir gibi metalle daha kolay birleşen bazı elementler çekirdeğe taşınırken, silikat minerallerinde kalmayı tercih edenler mantoda yoğunlaştı. Dünya'nın bugünkü katmanlı yapısı hem fiziksel yoğunluk farklarının hem de kimyanın sonucudur. Çekirdeğin ana maddesi demir ve nikeldir; manto ise ağırlıklı olarak demir ve magnezyum içeren silikat kayaçlardan oluşur.<a class="source-marker" href="#kaynak-6" aria-label="Kaynak 6">[6]</a></p>
+
+      <h2 id="olusum">Tozdan gezegene: oluşumun aşamaları</h2>
+      <figure style="max-width:900px;margin:0 auto 2rem">
+        <div class="article-hero-img">
+          <img src="img/dunya-olusum-semasi.svg" alt="Güneş bulutsusundaki toz ve kaya parçalarının birleşerek gezegenimsileri, genç Dünya'yı ve sonunda demir-nikel çekirdek ile silikat mantoyu oluşturmasını gösteren şema" loading="lazy" decoding="async" />
+        </div>
+        <figcaption style="font-size:.8rem;color:var(--text-3);margin-top:.65rem">Oluşum aşamalarının özgün, sadeleştirilmiş şeması; ölçekli değildir.</figcaption>
+      </figure>
+      <div class="earth-steps" aria-label="Dünya'nın oluşumundaki temel aşamalar">
+        <div><strong>1 · Bulutsu çöktü</strong><span>Gaz ve toz kütleçekimiyle büzüldü; merkezde Güneş, çevresinde dönen bir disk oluştu.</span></div>
+        <div><strong>2 · Katılar birleşti</strong><span>Mineral ve metal taneleri çarpışıp daha büyük kümelere ve gezegenimsilere dönüştü.</span></div>
+        <div><strong>3 · Genç Dünya büyüdü</strong><span>Gezegenimsiler çarpışıp birleşti. Darbeler, sıkışma ve radyoaktif bozunma iç ısıyı artırdı.</span></div>
+        <div><strong>4 · İç katmanlar ayrıştı</strong><span>Erimiş metal merkeze çöktü; silikat kayaçlar manto ve ilk kabuğu oluşturdu.</span></div>
+      </div>
+      <p>Bu süreçte çarpışmalar yalnızca madde eklemedi; aynı zamanda büyük miktarda enerji açığa çıkarıp yüzeyin ve iç kısmın ısınmasına yol açtı. Genç Dünya'nın bazı dönemlerde geniş ölçüde erimiş olması, yoğun metalin silikat malzemeden ayrılıp merkeze ilerlemesini kolaylaştırdı. Gezegen soğudukça ilk kabuklar oluştu, volkanik gaz çıkışı ve yüzeye ulaşan uçucu maddeler atmosfer ile su döngüsünün temellerine katkı verdi.<a class="source-marker" href="#kaynak-6" aria-label="Kaynak 6">[6]</a></p>
+
+      <h2 id="katmanlar">Dünya'nın katmanları ve suyun kökeni</h2>
+      <p>Bugün Dünya'yı kabuk, manto ve çekirdek olarak tanımlarız; bunlar bir anda hazır hâle gelmedi. Metalin aşağı çökmesi ve kayalık silikatların üstte kalması, ilk kimyasal ayrışmanın temeliydi. Daha sonra soğuyan yüzeyde kabuk oluştu. Gezegenin ilk dönemlerinden kalma kayaçların çoğu jeolojik süreçlerle değişti; Batı Avustralya'da bulunan yaklaşık 4,4 milyar yıllık zirkon taneleri ise erken kabuğun ve suyla etkileşen ortamların izlerini taşıyabilir. Bunlar Dünya'nın tam yaşını tek başına vermez, ancak yüzeyin çok erken dönemde soğumaya başladığına dair ipuçlarıdır.<a class="source-marker" href="#kaynak-2" aria-label="Kaynak 2">[2]</a></p>
+      <p>Okyanuslardaki suyun kaynağı da tek bir kaynağa indirgenemez. Dünya'nın içinden volkanik gaz çıkışıyla salınan su buharı, su taşıyan asteroit benzeri cisimlerin katkısı ve erken dönemdeki diğer süreçler birlikte değerlendirilir. Kuyruklu yıldızların ne kadar katkı yaptığı ve suyun ne zaman yüzeyde kalıcı hâle geldiği hâlâ araştırılır; Dünya'nın suyunun tamamının tek tür bir gök cisminden geldiğini kesin bir gerçek gibi sunmak doğru olmaz.</p>
+
+      <h2 id="ay">Ay'ı oluşturan çarpışma: önemli ama ayrıntıları tartışmalı</h2>
+      <figure style="max-width:900px;margin:0 auto 2rem">
+        <div class="article-hero-img">
+          <img src="img/apollo-17-tracys-rock.webp" alt="Apollo 17 astronotu Harrison Schmitt'in Ay yüzeyindeki büyük Tracy's Rock kayasının yanında durduğu panoramik fotoğraf" loading="lazy" decoding="async" />
+        </div>
+        <figcaption style="font-size:.8rem;color:var(--text-3);margin-top:.65rem">Apollo 17 sırasında Ay'da görüntülenen Tracy's Rock; Ay'ın jeolojik geçmişinden örnekler toplandı. Bu fotoğraf Ay'ı oluşturan çarpışmayı değil, çok daha sonraki bir keşif görevini gösterir. Fotoğraf: Eugene A. Cernan/NASA; panoramik birleştirme: Grunpfnul, <a href="https://commons.wikimedia.org/wiki/File:Apollo_17_Harrison_H._Schmitt_and_Tracy%27s_Rock_-_AS17-140-21493%2BAS17-140-21497_2025.jpg" target="_blank" rel="noopener noreferrer">Public Domain</a>.</figcaption>
+      </figure>
+      <p>En çok kabul gören açıklamaya göre Ay, genç Dünya'ya Mars büyüklüğüne yakın bir gök cisminin çarpmasının ardından yörüngeye saçılan maddelerden oluştu. Apollo görevlerinde getirilen Ay kayaçlarının kimyasal ve izotop özellikleri, Dünya ile Ay'ın ortak bir oluşum geçmişi olduğu fikrini destekledi. Ancak çarpan cismin özellikleri, çarpışmanın geometrisi ve kesin zamanı konusunda araştırmalar sürüyor. Günümüzde tek bir çarpışma modeli bütün ayrıntıları tartışmasız biçimde açıklamıyor.<a class="source-marker" href="#kaynak-3" aria-label="Kaynak 3">[3]</a></p>
+
+      <h2>Özetle</h2>
+      <p>Dünya, yaklaşık 4,54 milyar yıl önce Güneş'in çevresindeki katı toz, mineral ve metal parçalarının kütleçekimiyle birleşmesiyle oluştu; büyümesi ve iç katmanlarına ayrılması on milyonlarca yıla yayıldı. Demir ve nikel çekirdekte yoğunlaşırken oksijen, silisyum ve magnezyum içeren silikatlar kayalık manto ve kabuğu oluşturdu. Su ve atmosferin gelişimi birden çok kaynağa ve uzun bir jeolojik tarihe bağlı. Bilim, bu sürecin ana hatlarını ortaya koysa da kesin başlangıç anı, süresi ve bazı kimyasal kaynaklar hâlâ yeni ölçümlerin konusu.</p>
+
+      <h2>Kaynaklar ve ileri okuma</h2>
+      <ol>
+        <li id="kaynak-1">NASA, <a href="https://science.nasa.gov/solar-system/solar-system-facts/" target="_blank" rel="noopener noreferrer">“Solar System Facts — Formation”</a>. Güneş Sistemi'nin gaz ve toz bulutundan oluşması ve gezegenlerin birikerek büyümesi.</li>
+        <li id="kaynak-2">U.S. Geological Survey (USGS), <a href="https://pubs.usgs.gov/gip/geotime/age.html" target="_blank" rel="noopener noreferrer">“Age of the Earth”</a>. Dünya'nın yaklaşık 4,54 milyar yıllık yaşının radyometrik ve meteorit verileriyle belirlenmesi; eski zirkonlar ve Dünya'nın en yaşlı kayaçları.</li>
+        <li id="kaynak-3">NASA, <a href="https://science.nasa.gov/moon/formation/" target="_blank" rel="noopener noreferrer">“Moon Formation”</a>. Apollo Ay örneklerinin büyük çarpışma hipotezine katkısı ve Ay oluşum zamanı için yaklaşık 60 milyon yıllık tahmin.</li>
+        <li id="kaynak-4">Hiroko Nagahara ve Kazuhito Ozawa, <a href="https://doi.org/10.2183/pjab.77.167" target="_blank" rel="noopener noreferrer">“The timescale of accretion and core formation of the Earth inferred from Hf-W isotope systematics”</a>, <em>Proceedings of the Japan Academy, Series B</em>, 77(9), 2001. Dünya'nın birikme ve çekirdek oluşum süresinin izotop modelleriyle değerlendirilmesi.</li>
+        <li id="kaynak-5">NASA, <a href="https://science.nasa.gov/earth/facts/" target="_blank" rel="noopener noreferrer">“Earth Facts”</a>. Dünya'nın kayalık gezegen olarak yapısı ve Güneş Sistemi'ndeki oluşum bağlamı.</li>
+        <li id="kaynak-6">U.S. Geological Survey (USGS), <a href="https://pubs.usgs.gov/gip/interior/" target="_blank" rel="noopener noreferrer">“The Interior of the Earth”</a>. Kabuk, manto ve çekirdeğin yapısı ve bileşimine ilişkin genel bakış.</li>
+        <li id="kaynak-7">ALMA (ESO/NAOJ/NRAO), <a href="https://commons.wikimedia.org/wiki/File:HL_Tau_protoplanetary_disk.jpg" target="_blank" rel="noopener noreferrer">“HL Tau protoplanetary disk”</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. HL Tauri çevresindeki gezegen öncesi diskin radyo gözlemi.</li>
+        <li id="kaynak-8">Eugene A. Cernan/NASA; panoramik birleştirme: Grunpfnul, Wikimedia Commons, <a href="https://commons.wikimedia.org/wiki/File:Apollo_17_Harrison_H._Schmitt_and_Tracy%27s_Rock_-_AS17-140-21493%2BAS17-140-21497_2025.jpg" target="_blank" rel="noopener noreferrer">“Apollo 17 ... Tracy's Rock”</a>, Public Domain.</li>
+      </ol>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p>Merak et. Sorgula. Keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a><a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a><a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a><a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a><a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a><a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a><a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    // Tema flaşını önle: CSS yüklenmeden önce doğru class'ı uygula
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      var html = document.documentElement;
+      html.classList.remove('light','dark');
+      html.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Okyanuslar: D&uuml;nyan&#305;n Mavi Kalbi &mdash; Valexirion</title>
+  <meta name="description" content="Beş büyük okyanus, Mariana Çukuru, okyanus asidifikasyonu, plastik kirliliği ve hydrothermal ekosistemler hakkında kapsamlı bir inceleme." />
+
+  <link rel="canonical" href="https://valexirion.com/okyanuslar.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Okyanuslar: Dünyanın Mavi Kalbi" />
+  <meta property="og:description" content="Beş büyük okyanus, Mariana Çukuru, okyanus asidifikasyonu, plastik kirliliği ve hydrothermal ekosistemler hakkında kapsamlı bir inceleme." />
+  <meta property="og:url" content="https://valexirion.com/okyanuslar.html" />
+  <meta property="og:image" content="https://valexirion.com/img/ocean.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Okyanuslar: Dünyanın Mavi Kalbi" />
+  <meta name="twitter:description" content="Beş büyük okyanus, Mariana Çukuru, okyanus asidifikasyonu, plastik kirliliği ve hydrothermal ekosistemler hakkında kapsamlı bir inceleme." />
+  <meta name="twitter:image" content="https://valexirion.com/img/ocean.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Okyanuslar: Dünyanın Mavi Kalbi","description":"Beş büyük okyanus, Mariana Çukuru, okyanus asidifikasyonu, plastik kirliliği ve hydrothermal ekosistemler hakkında kapsamlı bir inceleme.","image":"https://valexirion.com/img/ocean.jpg","mainEntityOfPage":"https://valexirion.com/okyanuslar.html","inLanguage":"tr-TR","publisher":{"@type":"Organization","name":"Valexirion","url":"https://valexirion.com/"}}</script>
+</head>
+<body class="font-ui" data-page-category="doga">
+<div id="scroll-progress" class="scroll-progress-bar"></div>
+<nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim"    class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih"    class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema"   class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik"    class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe"  class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga"     class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+
+      <!-- Sağ araçlar -->
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/>
+          </svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Men&uuml;y&uuml; a&ccedil;/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div><!-- /navbar-inner -->
+
+    <!-- Mobil menü paneli -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim"    class="mobile-link">Bilim</a>
+      <a href="index.html#tarih"    class="mobile-link">Tarih</a>
+      <a href="index.html#sinema"   class="mobile-link">Sinema</a>
+      <a href="index.html#muzik"    class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe"  class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga"     class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb"><a href="index.html">Ana Sayfa</a><span>&#8250;</span><a href="dinozorlar.html">Do&#287;a</a><span>&#8250;</span><span>Okyanuslar</span></div>
+      <span class="article-cat-badge">Doğa</span>
+      <h1 class="article-title">
+        Okyanuslar: D&uuml;nyan&#305;n Mavi Kalbi<br>
+        <em>Derinlik, &#304;klim ve Ke&#351;fedilmemi&#351; D&uuml;nyalar</em>
+      </h1>
+      <p class="article-subtitle">
+        D&uuml;nya y&uuml;zeyinin y&uuml;zde yetmi&#351; birini kaplayan okyanuslar; iklimi d&uuml;zenler, oksijen
+        &uuml;retir ve milyonlarca t&uuml;re ev sahipli&#287;i yapar. Mariana &Ccedil;ukuru&rsquo;ndan Arktika buz
+        &ouml;rt&uuml;s&uuml;ne, hydrothermal kaynaklardan plastik krizine kapsaml&#305; bir bak&#305;&#351;.
+      </p>
+
+        <div class="article-share">
+          <button class="share-btn" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            Payla&#351;
+          </button>
+        </div>
+      </div>
+  </header>
+
+<!-- Dinozorlar sayfasına sidebar kart — sol tarafa sabitlenmiş -->
+  <aside style="max-width:280px;margin:2rem auto 0;padding:0 1.5rem;">
+    <a href="dinozorlar.html" style="display:block;border-radius:14px;overflow:hidden;
+       box-shadow:0 6px 32px rgba(0,0,0,.18);text-decoration:none;
+       background-image:url('img/dinozor.jpg');background-size:cover;background-position:center;
+       color:#fff;transition:transform .2s,box-shadow .2s;"
+       onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 40px rgba(0,0,0,.25)'"
+       onmouseout="this.style.transform='none';this.style.boxShadow='0 6px 32px rgba(0,0,0,.18)'">
+      <div style="padding:1.4rem 1.6rem 0.6rem;">
+        <span style="display:inline-block;font-size:.65rem;font-weight:700;letter-spacing:.12em;
+          text-transform:uppercase;background:rgba(255,255,255,.15);
+          padding:.25rem .6rem;border-radius:4px;margin-bottom:.6rem;">Do&#287;a</span>
+        <h3 style="font-size:1.05rem;font-weight:700;margin:0 0 .5rem;line-height:1.35;">
+          Dinozorlar D&ouml;nemi
+        </h3>
+        <p style="font-size:.82rem;opacity:.85;margin:0 0 .6rem;line-height:1.55;">
+          Triyas&rsquo;tan Kretase&rsquo;ye, T. rex&rsquo;ten Chicxulub&rsquo;a&nbsp;&mdash;
+          186 milyon y&#305;ll&#305;k dinozor &ccedil;a&#287;&#305;n&#305; ke&#351;fet.
+        </p>
+      </div>
+      <div style="padding:.5rem 1.6rem 1rem;border-top:1px solid rgba(255,255,255,.12);">
+        <span style="font-size:.8rem;font-weight:600;">
+          Okumaya devam et &rsaquo;
+        </span>
+      </div>
+    </a>
+  </aside>
+
+    
+
+  
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+    <!-- Yazı kapak resmi -->
+    <div class="article-hero-img">
+      <img src="img/okyanus1.jpg" alt="Okyanuslar: Dünyanın Mavi Kalbi" loading="eager" onerror="this.parentElement.style.display='none'" decoding="async" fetchpriority="high">
+    </div>
+
+      <p class="article-lead">
+        D&uuml;nya&rsquo;y&#305; &ldquo;Mavi Gezegen&rdquo; yapan okyanuslar, y&uuml;zeyin y&uuml;zde yetmi&#351; birini
+        kapliyor ve toplam su hacminin y&uuml;zde doksan yedisini bar&#305;nd&#305;r&#305;yor. &#304;nsan
+        t&uuml;r&uuml; Mars&rsquo;&#305; ke&#351;fetmeden &ouml;nce kendi gezegeni &uuml;zerindeki denizlerin
+        derinliklerini ke&#351;fetmeyi hen&uuml;z tamamlayamad&#305;. Mariana &Ccedil;ukuru&rsquo;nun taban&#305;,
+        Ay y&uuml;zeyinden daha az ziyaret edilmi&#351;tir.
+      </p>
+
+      <p>
+        Okyanuslar yaln&#305;zca su de&#287;ildir; iklimi d&uuml;zenleyen, oksijen &uuml;reten, milyonlarca
+        t&uuml;re ev sahipli&#287;i yapan ve insanl&#305;&#287;&#305;n besin, enerji ile ticaret altyap&#305;s&#305;n&#305;
+        ta&#351;&#305;yan karma&#351;&#305;k bir sistemdir. Ancak bu sistem, insan faaliyetlerinin yaratt&#305;&#287;&#305;
+        bask&#305;lar alt&#305;nda tarihinin en kritik d&ouml;n&uuml;m noktas&#305;ndad&#305;r.
+      </p>
+
+      <h2>D&uuml;nya&rsquo;n&#305;n Be&#351; Okyanusu</h2>
+
+      <p>
+        Tarihsel olarak d&ouml;rt okyanus tan&#305;mlan&#305;rken, Uluslararas&#305; Hidrografi &Ouml;rg&uuml;t&uuml;
+        (IHO) 2021 y&#305;l&#305;nda G&uuml;ney Okyanusu&rsquo;nu (Antarktika Okyanusu) be&#351;inci okyanus
+        olarak resm&icirc; stat&uuml;ye kavu&#351;turdu.
+      </p>
+
+      <p>
+        <strong>Pasifik Okyanusu:</strong> Y&uuml;zey alan&#305; yakla&#351;&#305;k 165 milyon km&sup2; ile
+        d&uuml;nyan&#305;n en b&uuml;y&uuml;k okyanusudur; D&uuml;nya&rsquo;n&#305;n toplam y&uuml;zey alan&#305;n&#305;n &uuml;&ccedil;te
+        birini kaplar. En derin noktas&#305;, t&uuml;m d&uuml;nya okyanuslar&#305;n&#305;n da en derin
+        noktas&#305; olan Mariana &Ccedil;ukuru&rsquo;dur (11.034 metre). Pasifik; Japonya,
+        Endonezya, Filipinler ve Peru gibi &ccedil;ok farkl&#305; k&uuml;lt&uuml;rleri &ccedil;evreler,
+        &ldquo;Ate&#351; &Ccedil;emberi&rdquo; (Ring of Fire) tektonik ku&#351;a&#287;&#305;na ev sahipli&#287;i yapar.
+      </p>
+
+      <p>
+        <strong>Atlantik Okyanusu:</strong> Yakla&#351;&#305;k 106 milyon km&sup2;. Avrupa ve Afrika
+        k&#305;y&#305;lar&#305; ile Amerika k&#305;talar&#305; aras&#305;nda k&ouml;pr&uuml; kurar. Ortas&#305;nda uzanan Orta
+        Atlantik S&#305;rt&#305;, d&uuml;nyan&#305;n en uzun da&#287; zinciridir (yakla&#351;&#305;k 16.000 km).
+        Kuzey Atlantik Derin Suyu (NADW) global termohalin sirk&uuml;lasyonunun
+        itici g&uuml;c&uuml;d&uuml;r; bu &ldquo;okyanus band&#305;&rdquo; d&uuml;nya iklimini d&uuml;zenler.
+      </p>
+
+      <p>
+        <strong>Hint Okyanusu:</strong> Yakla&#351;&#305;k 70 milyon km&sup2;. Muson iklimiyle
+        &#351;ekillenen ve d&uuml;nyan&#305;n en s&#305;cak okyanusu olma &ouml;zelli&#287;ini ta&#351;&#305;yan
+        bu okyanus, Hint Yar&#305;madas&#305;, Do&#287;u Afrika ve G&uuml;neydo&#287;u Asya aras&#305;ndaki
+        ticareti binlerce y&#305;ld&#305;r y&ouml;netmi&#351;tir.
+      </p>
+
+      <p>
+        <strong>Arktika (Kuzey Buz) Okyanusu:</strong> Yakla&#351;&#305;k 14 milyon km&sup2; ile
+        en k&uuml;&ccedil;&uuml;k okyanus. Kuzey Kutubu&rsquo;nu &ccedil;evreler ve y&#305;l boyunca b&uuml;y&uuml;k b&ouml;l&uuml;m&uuml;
+        buz &ouml;rt&uuml;s&uuml;yle kapl&#305;d&#305;r. &#304;klim de&#287;i&#351;ikli&#287;i nedeniyle bu &ouml;rt&uuml; h&#305;zla
+        erimektedir: NASA verilerine g&ouml;re Arktika deniz buzu alan&#305; 1979&rsquo;dan
+        bu yana on y&#305;lda yakla&#351;&#305;k y&uuml;zde on &uuml;&ccedil; oran&#305;nda azalmaktad&#305;r.
+      </p>
+
+      <p>
+        <strong>G&uuml;ney (Antarktika) Okyanusu:</strong> 60&deg; g&uuml;ney enleminin
+        g&uuml;neyinde yer alan bu okyanus Antarktika k&#305;tas&#305;n&#305; &ccedil;evreler.
+        Antarktik Sir&uuml;mpolar Ak&#305;nt&#305;s&#305; (ACC), d&uuml;nyan&#305;n en g&uuml;&ccedil;l&uuml; okyanus
+        ak&#305;nt&#305;s&#305;d&#305;r ve k&uuml;resel &#305;s&#305; ile besin da&#287;&#305;l&#305;m&#305;nda kritik rol oynar.
+      </p>
+
+      <h2>Mariana &Ccedil;ukuru: Bilinmeyenin En Derini</h2>
+
+      <p>
+        Pasifik&rsquo;te, Filipinler&rsquo;in do&#287;usunda yer alan Mariana &Ccedil;ukuru, okyanus
+        taban&#305;n&#305;n en derin noktas&#305;d&#305;r. Challenger Deep olarak adland&#305;r&#305;lan bu
+        noktan&#305;n derinli&#287;i 10.994 metre olarak &ouml;l&ccedil;&uuml;lm&uuml;&#351;t&uuml;r (NOAA, 2010).
+        Buraya yerle&#351;tirilseydi Everest Da&#287;&#305; h&acirc;l&acirc; 2 km su alt&#305;nda kalırdı.
+      </p>
+
+      <p>
+        &#304;lk insanl&#305; dalmay&#305; 1960 y&#305;l&#305;nda Jacques Piccard ve Don Walsh,
+        Trieste batiskriyle ger&ccedil;ekle&#351;tirdi. 2012&rsquo;de y&ouml;netmen James Cameron
+        tek ba&#351;&#305;na Deepsea Challenger ile bu noktaya ula&#351;t&#305;. 2019&rsquo;da Victor
+        Vescovo &ouml;zel yap&#305;m DSV Limiting Factor arac&#305;yla 10.928 metreye inerek
+        yeni bir dal&#305;&#351; rekoru k&#305;rd&#305;. H&acirc;l&acirc; bu derinlikte birden fazla t&uuml;rde
+        amfipod, polisaet solucan&#305; ve tek h&uuml;creli organizma ke&#351;fedilmektedir.
+      </p>
+
+      <h2>Deniz Biyopolilik&ccedil;ili&#287;i: Ya&#351;am&#305;n Anahtar&#305;</h2>
+
+      <p>
+        Okyanuslar, D&uuml;nya&rsquo;daki t&uuml;m ya&#351;am habitatlar&#305;n&#305;n yakla&#351;&#305;k y&uuml;zde doksanadokuzunu
+        olu&#351;tururken, ke&#351;fedilen deniz t&uuml;rlerinin say&#305;s&#305; 240.000 civar&#305;ndad&#305;r.
+        Bilim insanlar&#305; toplam deniz t&uuml;rlerinin 700.000 ile 1 milyon aras&#305;nda
+        oldu&#287;unu tahmin etmektedir. Bu fark, okyanuslar&#305;n ne kadar az incelendi&#287;ini
+        g&ouml;zler &ouml;n&uuml;ne serer.
+      </p>
+
+      <p>
+        Mercan resifleri, deniz y&uuml;zeyinin yaln&#305;zca y&uuml;zde ikisini kaplamalar&#305;na
+        kar&#351;&#305;n, t&uuml;m deniz t&uuml;rlerinin yakla&#351;&#305;k y&uuml;zde yirmi be&#351;ine ev sahipli&#287;i yapar.
+        &ldquo;Denizin ya&#287;mur ormanlar&#305;&rdquo; olarak bilinen bu ekosistemler, bal&#305;k
+        avlanmas&#305;ndan turizme, f&#305;rt&#305;na korumas&#305;ndan yeni ila&ccedil; molek&uuml;llerine kadar
+        y&#305;ll&#305;k 375 milyar dolar de&#287;erinde hizmet &uuml;retmektedir (Reef Check Vakf&#305;, 2022).
+      </p>
+
+      <blockquote class="article-blockquote">
+        &ldquo;Okyanus olmadan nefes al&#305;namaz. D&uuml;nya&rsquo;n&#305;n oksijeninin en az yar&#305;s&#305;
+        denizlerdeki fitoplanktonlardan gelir.&rdquo;
+        &mdash; Sylvia Earle, NOAA Ba&#351; Bilimcisi ve Ulusal Co&#287;rafya K&acirc;&#351;ifi
+      </blockquote>
+
+      <h2>Okyanus Ak&#305;nt&#305;lar&#305; ve K&uuml;resel &#304;klim</h2>
+
+      <p>
+        Okyanuslar, G&uuml;ne&#351;&rsquo;ten gelen &#305;s&#305;n&#305;n yakla&#351;&#305;k y&uuml;zde doksanını emer ve bu
+        &#305;s&#305;y&#305; k&uuml;resel &ouml;l&ccedil;ekte yeniden da&#287;&#305;t&#305;r. Termohalin sirk&uuml;lasyon (THC),
+        suyun tuzluluk ve s&#305;cakl&#305;k farkl&#305;l&#305;klar&#305;ndan kaynaklanan yo&#287;unluk fark&#305;yla
+        hareket etti&#287;i bir &ldquo;b&uuml;y&uuml;k band&rdquo; olu&#351;turur; bu band t&uuml;m okyanuslar&#305;
+        birbirine ba&#287;lar.
+      </p>
+
+      <p>
+        Kuzey Atlantik&rsquo;te y&uuml;zey sular&#305; so&#287;uyup tuzlu h&acirc;le gelince dibe batar
+        ve g&uuml;neye do&#287;ru derin bir ak&#305;nt&#305; olu&#351;turur. Bu mekanizma (AMOC: Atlantik
+        Meridyonel Devridaim Sirk&uuml;lasyonu) Avrupa&rsquo;n&#305;n &#305;l&#305;man iklimini sa&#287;lar.
+        Bilim insanlar&#305; AMOC&rsquo;un zay&#305;flamas&#305;n&#305;n Kuzey Avrupa&rsquo;da k&#305;&#351; s&#305;cakl&#305;klar&#305;n&#305;
+        dramatik bi&ccedil;imde d&uuml;&#351;&uuml;rebilece&#287;i ve Sahra ya&#287;&#305;&#351; rejimini de&#287;i&#351;tirebilece&#287;i
+        konusunda uyar&#305;yor (<em>Science</em>, 2023).
+      </p>
+
+      <h2>Okyanus Asidifikasyonu: Sessiz Kriz</h2>
+
+      <p>
+        Sanayi devrimi &ouml;ncesinde okyanus y&uuml;zeyinin pH de&#287;eri yakla&#351;&#305;k 8,2 iken,
+        g&uuml;n&uuml;m&uuml;zde 8,05&ndash;8,1&rsquo;e gerilemi&#351;tir. Bu de&#287;i&#351;im yakla&#351;&#305;k y&uuml;zde yirmi
+        alt&#305; asidite art&#305;&#351;&#305;na kar&#351;&#305;l&#305;k gelir. Okyanuslar, atmosfere sal&#305;nan
+        CO&#8322;&rsquo;nin yakla&#351;&#305;k y&uuml;zde otuzunu emer; bu s&uuml;re&ccedil;te karbonik asit olu&#351;ur
+        ve su asile&#351;ir.
+      </p>
+
+      <p>
+        Artan asidite, karbonатl&#305; kabuk ve iskelet olu&#351;turan mercan, istiridye, midye
+        ve plankton t&uuml;rlerini do&#287;rudan etkiler. Mevcut e&#287;ilim s&uuml;rd&uuml;&#287;&uuml;nde 2100
+        y&#305;l&#305;na kadar okyanus pH&rsquo;&#305;n&#305;n 7,7&ndash;7,8&rsquo;e d&uuml;&#351;ece&#287;i hesaplanmaktad&#305;r
+        (IPCC AR6, 2021).
+      </p>
+
+      <h2>Plastik Kirlili&#287;i: Okyanuslardaki &#304;nsan &#304;zi</h2>
+
+      <p>
+        Bug&uuml;n okyanuslarda 150&ndash;170 milyon ton plastik bulundu&#287;u tahmin
+        edilmektedir. Her y&#305;l 8 milyon ton yeni plastik denizlere kar&#351;&#305;&#351;maktad&#305;r.
+        &ldquo;B&uuml;y&uuml;k Pasifik &Ccedil;&ouml;p Y&#305;&#287;&#305;n&#305;&rdquo; (Great Pacific Garbage Patch), Fransa
+        y&uuml;zeyinin yakla&#351;&#305;k iki kat&#305; b&uuml;y&uuml;kl&uuml;&#287;&uuml;nde ve a&#287;&#305;rl&#305;kl&#305; olarak
+        mikroplastiklerden olu&#351;maktad&#305;r. Bu par&ccedil;ac&#305;klar bal&#305;k ve deniz ku&#351;lar&#305;n&#305;n
+        ba&#287;&#305;rsaklar&#305;nda, hatta insan kan&#305;nda tespit edilmi&#351;tir (Heindler ve
+        di&#287;erleri, <em>Environmental Pollution</em>, 2017).
+      </p>
+
+      <h2>Hydrothermal Kaynaklar: G&uuml;ne&#351;siz Ya&#351;am</h2>
+
+      <p>
+        1977 y&#305;l&#305;nda Alvin denizalt&#305;s&#305;yla yap&#305;lan bir ke&#351;if, biyoloji anlay&#305;&#351;&#305;m&#305;z&#305;
+        k&ouml;kten sarst&#305;: Galapagos A&ccedil;&#305;&#287;&#305;&rsquo;nda, derin deniz taban&#305;nda s&#305;cak su
+        f&#305;&#351;k&#305;ran hydrothermal kaynaklar&#305;n (siyah bacalar) etraf&#305;nda g&uuml;ne&#351; &#305;&#351;&#305;&#287;&#305;na
+        gerek duymayan canl&#305; ekosistemler ke&#351;fedildi. Kemosintez yapan bakterileri
+        temel alan bu ekosistemler; t&uuml;p solucanlar&#305;, k&ouml;rle&#351;mi&#351; yen ge&ccedil;ler ve
+        devasa istiridyelerden olu&#351;maktad&#305;r. Bu ke&#351;if, &ldquo;ya&#351;am yaln&#305;zca g&uuml;ne&#351;
+        enerjisiyle m&uuml;mk&uuml;nd&uuml;r&rdquo; dogmas&#305;n&#305; y&#305;kt&#305; ve J&uuml;piter&rsquo;in uydusu
+        Europa&rsquo;n&#305;n alt&#305;ndaki buzul alt&#305; okyanusunda ya&#351;am aray&#305;&#351;&#305;na bilimsel
+        zemin haz&#305;rlad&#305;.
+      </p>
+
+      <h2>Sonu&ccedil;: Okyanus Bir Sistemdir</h2>
+
+      <p>
+        Okyanuslar, iklim sistemi, besin &uuml;retimi, oksijen dengesi ve biyopolilik&ccedil;ilik
+        a&ccedil;&#305;s&#305;ndan D&uuml;nya&rsquo;n&#305;n en kritik bile&#351;enidir. Sa&#287;l&#305;kl&#305; bir okyanus sistemi
+        olmadan insan medeniyetinin s&uuml;rd&uuml;r&uuml;lebilirli&#287;i m&uuml;mk&uuml;n de&#287;ildir.
+      </p>
+
+      <p>
+        &#304;nsan t&uuml;r&uuml; okyanuslar&#305;n yaln&#305;zca y&uuml;zde yirmisini ke&#351;fetmi&#351;tir. &Ouml;n&uuml;m&uuml;zdeki
+        on y&#305;l, otonom denizalt&#305;lar ve yapay zek&acirc; destekli haritalama sayesinde
+        bu oran h&#305;zla artacak. Derinlikte bizi ne bekliyor bilmiyoruz; ama biliyoruz
+        ki bilmemek, korumamam&#305;z&#305;n gerek&ccedil;esi olamaz.
+      </p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+<section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">&#304;lgili Yaz&#305;lar</h2>
+      <div class="related-grid">
+        <a href="dinozorlar.html" class="related-card"><div class="related-img"><img src="img/dinozor.webp" alt="Dinozorlar Dönemi: 186 Milyon Yıllık Yaşayan Canlılar ve Büyük Yıkım" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/></div><div class="related-body"><span class="related-cat">Do&#287;a</span><h3 class="related-card-title">Dinozorlar D&ouml;nemi: 186 Milyon Y&#305;ll&#305;k Ya&#351;ayan C&acirc;nl&#305;lar ve B&uuml;y&uuml;k Y&#305;k&#305;m</h3><p class="related-meta">Can &Ouml;zkan &middot; 15 dk</p></div></a>
+        <a href="evrim.html" class="related-card"><div class="related-img"><img src="img/evrim.webp" alt="Darwin’in Şifresi: Evrim Teorisi Nasıl İşler?" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/></div><div class="related-body"><span class="related-cat">Bilim</span><h3 class="related-card-title">Darwin&rsquo;in &#350;ifresi: Evrim Teorisi Nas&#305;l &#304;&#351;ler?</h3><p class="related-meta">Elif &#350;en &middot; 11 dk</p></div></a>
+        <a href="mantar.html" class="related-card"><div class="related-img"><img src="img/mantar.webp" alt="Mantar Ağının Dili: Ormanların Altındaki İnternet" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/></div><div class="related-body"><span class="related-cat">Bilim</span><h3 class="related-card-title">Mantar A&#287;&#305;n&#305;n Dili: Ormanlar&#305;n Alt&#305;ndaki &#304;nternet</h3><p class="related-meta">Elif &#350;en &middot; 9 dk</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  
+
+    
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

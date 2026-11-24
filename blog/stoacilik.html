@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stoacılık Nedir? Antik Felsefeden Günlük Yaşama — Valexirion</title>
+  <meta name="description" content="Zenon’dan Epiktetos, Seneca ve Marcus Aurelius’a Stoacılığın tarihini, erdem anlayışını ve günlük yaşamdaki anlamını kaynaklarla inceliyoruz." />
+  <link rel="canonical" href="https://valexirion.com/stoacilik.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Stoacılık Nedir? Antik Felsefeden Günlük Yaşama" />
+  <meta property="og:description" content="Stoacılığı duygusuzluk ya da edilgenlik değil; erdem, akıl ve toplumsal sorumluluk üzerine kurulu bir yaşam felsefesi olarak tanıyın." />
+  <meta property="og:url" content="https://valexirion.com/stoacilik.html" />
+  <meta property="og:image" content="https://valexirion.com/img/stoa-attalos-athens.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stoacılık Nedir? Antik Felsefeden Günlük Yaşama" />
+  <meta name="twitter:description" content="Antik Stoacıların erdem, duygu, kader ve gündelik yaşam hakkındaki düşünceleri." />
+  <meta name="twitter:image" content="https://valexirion.com/img/stoa-attalos-athens.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@300;400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Stoacılık Nedir? Antik Felsefeden Günlük Yaşama",
+      "description": "Zenon’dan Epiktetos, Seneca ve Marcus Aurelius’a Stoacılığın tarihini, erdem anlayışını ve günlük yaşamdaki anlamını kaynaklarla inceliyoruz.",
+      "image": "https://valexirion.com/img/stoa-attalos-athens.jpg",
+      "mainEntityOfPage": "https://valexirion.com/stoacilik.html",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="felsefe">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>&#8250;</span>
+        <a href="index.html#felsefe">Felsefe</a><span>&#8250;</span>
+        <span>Antik Felsefe</span>
+      </div>
+      <span class="article-cat-badge">Felsefe · Antik Felsefe</span>
+      <h1 class="article-title">Stoacılık Nedir?<br><em>Antik Felsefeden Günlük Yaşama</em></h1>
+      <p class="article-subtitle">Dış koşullar her zaman elimizde olmayabilir; fakat onlara nasıl karşılık verdiğimizi düşünmek mümkündür. Stoacılık bu fikri bir sloganın ötesinde, erdem, akıl, doğa ve başkalarına karşı sorumluluk üzerine kurulmuş kapsamlı bir felsefeye dönüştürdü.</p>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367-2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure style="max-width:720px;margin:0 auto 2.5rem">
+        <div class="article-hero-img">
+          <img src="img/stoa-attalos-athens.webp" alt="Atina’daki Stoa of Attalos’un günümüzde görülen cephesi" fetchpriority="high" loading="eager" decoding="async"/>
+        </div>
+        <figcaption style="font-size:.75rem;line-height:1.6;color:var(--text-3);margin-top:.65rem">
+          Atina’daki Stoa of Attalos’un günümüzde görülen cephesi. Zenon’un ders verdiği Boyalı Revak (Stoa Poikile) bu yapı değildir; fotoğraf başka bir Atina stoasını gösterir. Fotoğraf: <a href="https://commons.wikimedia.org/wiki/User:Julian_Lupyan" target="_blank" rel="noopener noreferrer">Julian Lupyan</a> / <a href="https://commons.wikimedia.org/wiki/File:Stoa_of_Attalos,_Athens,_Greece.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener noreferrer">CC0 1.0</a>.
+        </figcaption>
+      </figure>
+
+      <p class="article-lead">
+        Stoacılık, gündelik dilde çoğu zaman “duygularını bastırmak” ya da “başına gelen her şeye katlanmak” diye özetlenir. Oysa antik Stoacılar için mesele hissizleşmek değildi. Önemli olan, ilk tepkiyle verdiğimiz yargıyı ayırt etmek; kararlarımızı akıl, erdem ve başkalarına karşı görevlerimiz doğrultusunda şekillendirmekti.
+      </p>
+      <p>
+        MÖ 3. yüzyılın başlarında Atina’da ortaya çıkan bu felsefe, yüzyıllar boyunca farklı düşünürlerce geliştirildi. Kıbrıslı Zenon ve Khrysippos’tan Roma döneminin Seneca, Epiktetos ve Marcus Aurelius’una uzanan Stoacılık, yalnızca kişisel dayanıklılık öğüdü değil; insanın doğa, toplum ve kendi karakteri içindeki yerini açıklamaya çalışan bir düşünce sistemiydi.
+      </p>
+
+      <h2>Stoacılık nerede ve nasıl ortaya çıktı?</h2>
+      <p>
+        Stoacılığın kurucusu sayılan Kıbrıslı Zenon, Atina’da derslerini <em>Stoa Poikile</em> — “Boyalı Revak” — olarak bilinen kamusal yapıda verdi. Okulun adı bu revaktan gelir. Zenon’un düşüncesi Sokrates’ten ve Kiniklerden etkilenmişti; ancak Stoacılar, erdemli yaşamı yalnızca geleneklere meydan okumak ya da maddi ihtiyaçları en aza indirmek olarak görmedi.
+      </p>
+      <p>
+        İlk dönem Stoacılığının eserlerinin çoğu günümüze ulaşmadı. Okulun görüşlerini, daha sonraki Stoacı yazarların metinlerinden ve Cicero, Diogenes Laertios gibi başka kaynakların aktarımlarından yeniden kuruyoruz. Zenon’dan sonra Khrysippos’un öğretileri sistemleştirmede belirleyici olduğu kabul edilir; yine de erken Stoacıların her konuda aynı fikirde olduğunu varsaymak doğru olmaz.
+      </p>
+      <p>
+        Stoacılığın Roma dünyasındaki en tanınan temsilcileri Seneca, Epiktetos ve Marcus Aurelius’tur; ancak bunlar aynı konumdan konuşmuyordu. Seneca Roma siyasetinin merkezinde bulunmuş bir yazar, Epiktetos kölelik yaşamış ve daha sonra öğretmenlik yapmış bir filozoftu. Marcus Aurelius ise imparatorluk görevleri sırasında kendine yönelik notlar tuttu. Bu farklı yaşamlar, felsefenin gündelik ve kamusal sorumluluklarla ilişkisini görünür kılar.
+      </p>
+
+      <h2>Bir yaşam felsefesi: mantık, doğa ve etik</h2>
+      <p>
+        Antik Stoacılık genellikle birbiriyle bağlantılı üç alanda ele alınır: mantık, doğa felsefesi ve etik. Mantık, nasıl düşündüğümüzü ve bir iddianın gerekçesini; doğa felsefesi, evrenin nasıl işlediğini; etik ise nasıl yaşamak gerektiğini araştırıyordu. Bu alanlar ayrı dersler gibi görünse de Stoacılar için bir bütündü: Dünyayı ve kendi yargılarımızı anlamadan iyi eylemin ne olduğunu kavramak mümkün değildi.
+      </p>
+      <p>
+        Bugün “Stoacılık” çoğunlukla etik öğretileriyle anılıyor. Ancak antik Stoacıların evrenin akla uygun, neden-sonuç ilişkileriyle örülü bir düzen olduğu fikri, etik anlayışlarını da biçimlendiriyordu. Bu kozmoloji modern bilimin bulgularıyla özdeş değildir; antik bir doğa anlayışıdır. Stoacıların günümüze kalan öğütlerini tarihsel bağlamından koparıp çağdaş terapi ya da kişisel gelişim yöntemiymiş gibi sunmamak gerekir.
+      </p>
+
+      <h2>Stoacılara göre iyi yaşam nedir?</h2>
+      <p>
+        Stoacı etik için iyi yaşamın merkezinde <em>erdem</em> bulunur. Bilgelik, adalet, cesaret ve ölçülülük dört temel erdem olarak öne çıkar. Erdem, yalnızca doğruyu bilmek değil; belirsizlikte iyi muhakeme etmek, adil davranmak, korkuya rağmen doğru olanı yapmak ve arzularını ölçülü yönetmek gibi karakter ve eylem alışkanlıklarını kapsar.
+      </p>
+      <p>
+        Stoacılar sağlık, para, ün veya toplumsal konumun kendiliğinden ahlaki iyilik olmadığını savunuyordu. Bunları “tercih edilir kayıtsızlar” arasında sayabiliyorlardı: Sağlık çoğu durumda hastalığa, güvenli barınma yoksunluğa tercih edilebilir; fakat bunlara sahip olmak tek başına iyi bir insan olmayı, kaybetmek de ahlaki değersizliği göstermez. “Kayıtsız” demek önemsiz veya hiç umursanmaması gereken demek değildir; bunlar erdemle aynı türden ahlaki değer taşımaz.
+      </p>
+      <p>
+        Bu ayrım, talihsizlik yaşayan kişiyi suçlamak için kullanılmamalı. Hastalık, yoksulluk ve şiddet gerçek zararlardır; bunların etkileri “sadece zihinde” değildir. Stoacı iddia daha sınırlıdır: Dış koşulların tümünü ahlaki iyilik veya kötülükle eşitlememek ve koşullar ne olursa olsun nasıl davranacağımızı düşünmek. Başkalarının acısını azaltmak, adalet aramak ve somut yardım sunmak da erdemli eylemin parçasıdır.
+      </p>
+
+      <h2>“Kontrolümde olanlar” ne demek?</h2>
+      <p>
+        Epiktetos’un <em>El Kitabı</em>’nın açılışında, bazı şeylerin bize bağlı olduğu; bazı şeylerin ise bütünüyle bizim gücümüzde olmadığı ayrımı yapılır. Yargılarımız, niyetlerimiz ve seçimlerimiz ilk gruptadır. Bedenimizin her yönü, başkalarının kararları, itibarımız, makamımız ve sonuçlar ise bütünüyle bize bağlı değildir.
+      </p>
+      <p>
+        Bu, “sonuç umurumda değil” ya da “değiştiremeyeceğim hiçbir şey için çabalamam” demek değildir. Bir sınava hazırlanmak, birine destek olmak veya haksızlığa karşı çıkmak bizim seçimimiz olabilir; sonucu ise başka kişiler, koşullar ve şans da etkiler. Stoacı yaklaşım, sonucu garanti edemediğimiz için çabadan vazgeçmek yerine, eylemin niteliğine odaklanmayı önerir.
+      </p>
+      <p>
+        Örneğin bir toplantıda fikrin reddedildiğinde, reddin kendisi ile “bu, benim değersiz olduğumu kanıtlıyor” yargısını ayırabilirsin. Önce hangi gerekçelerin sunulduğunu anlamak; sonra fikrini geliştirmek, itiraz etmek veya başka bir yol seçmek senin karar alanındadır. Başkalarının tepkisini ya da nihai kararı tamamen yönetemezsin. Bu ayrım duyguyu sihirli biçimde ortadan kaldırmaz; ilk duygusal tepki ile onun ardından kurduğumuz yorum arasında düşünme alanı açabilir.
+      </p>
+
+      <h2>Stoacılık duygusuzluk değildir</h2>
+      <p>
+        “Stoacı insan üzülmez, korkmaz, öfkelenmez” düşüncesi, antik öğretiyi bugünkü anlamıyla yanlış okur. Stoacılar ani bedensel ve duygusal tepkilerin her zaman seçilerek ortaya çıkmadığını kabul ediyordu. Felsefi çalışma, bu tepkilerin ardından verdiğimiz yargıları incelemek ve yıkıcı tutkuların yanlış değerlendirmelerle beslenmesini önlemek üzerineydi.
+      </p>
+      <p>
+        Stoacıların hedefi hissizleşmek değil, akla aykırı ve aşırı tutkuların davranışlarımızı yönetmesini azaltmaktı. Bilge kişiye atfedilen neşe, temkin ve iyi niyet gibi olumlu duygulanımlar da Stoacı düşüncede yer bulur. Kayıp karşısında üzülmek ya da tehlike karşısında korku hissetmek, kişinin ahlaki başarısızlığı olarak görülmemeli; asıl soru bu duygularla ne yaptığımızdır.
+      </p>
+      <p>
+        Bu nokta önemlidir: Duyguları bastırmak, acıyı inkâr etmek veya gerektiğinde profesyonel destek almamak Stoacılığın zorunlu sonucu değildir. Antik felsefeyi çağdaş psikolojik tedavinin yerine koymak da doğru olmaz. Stoacı metinler düşünme ve karakter üzerine tarihsel kaynaklardır; sağlık hizmeti ya da terapi kılavuzu değildir.
+      </p>
+
+      <h2>Stoacı olmak, toplumdan çekilmek değildir</h2>
+      <p>
+        Stoacılığın kişisel dayanıklılık tarafı popüler anlatılarda öne çıkar; fakat adalet ve toplumsal bağ da kurucu unsurlardır. Stoacılar insanları ortak akla katılabilen, dolayısıyla daha geniş bir insan topluluğunun üyeleri olarak düşünüyordu. Bu kozmopolit bakış, kişinin yalnızca kendi çıkarını değil, ailesi, komşuları ve daha geniş toplum karşısındaki görevlerini de hesaba katmasını gerektirir.
+      </p>
+      <p>
+        Marcus Aurelius’un kendine yazdığı notlarda başkalarıyla birlikte çalışma ve insanın toplumsal doğası sık sık hatırlatılır. Bu metinler, imparatorun yayımlamak üzere hazırladığı düzenli bir felsefe kitabı değil, kişisel düşünme notlarıdır. Yine de gücün ve statünün ahlaki sorumluluğu ortadan kaldırmadığını düşünmek için elverişli bir örnek sunarlar.
+      </p>
+      <p>
+        Dolayısıyla Stoacı “kabullenme”, haksızlığı normalleştirmek veya önlenebilir zarara seyirci kalmak değildir. Kontrolümüz dışında kalan bir duruma verilen ilk yanıt ile onu değiştirmek için üstlenilen sorumluluk farklı şeylerdir. Adalet, elimizdeki imkânlar ölçüsünde müdahale etmeyi; bilgelik ise hangi müdahalenin gerçekten yararlı olacağını tartmayı gerektirir.
+      </p>
+
+      <h2>Günlük hayatta Stoacı düşünme: kısa bir alıştırma</h2>
+      <p>
+        Stoacı metinler, düşünceyi soyut bir teori olarak bırakmayıp gündelik kararlara taşımaya çalışır. Bir sorunla karşılaştığında şu sorular yararlı bir başlangıç olabilir:
+      </p>
+      <ol>
+        <li><strong>Olayı yargıdan ayır:</strong> Tam olarak ne oldu? Buna eklediğim yorum veya varsayım ne?</li>
+        <li><strong>Etkileyebileceklerimi belirle:</strong> Hangi seçim, hazırlık veya konuşma gerçekten benim sorumluluğumda?</li>
+        <li><strong>Erdemleri sor:</strong> Bu durumda bilgelik, adalet, cesaret ve ölçülülük nasıl bir davranış gerektiriyor?</li>
+        <li><strong>Sonucu garanti sayma:</strong> Elimden geleni yaparken sonucu etkileyen başka koşullar olduğunu hatırla.</li>
+        <li><strong>Başkalarını hesaba kat:</strong> Kararımın yakın çevreme ve daha geniş topluluğa etkisi ne?</li>
+      </ol>
+      <p>
+        Bu sorular bütün sorunları çözmez ve tek doğru yanıtı otomatik olarak üretmez. Ama dürtüsel tepki ile düşünülmüş eylem arasında bir duraklama yaratabilir. Stoacılar için felsefenin değeri de yalnızca iyi sözler bilmek değil; gündelik seçimlerde karakteri çalıştırmaktı.
+      </p>
+
+      <h2>Bugün Stoacılığı nasıl okumalı?</h2>
+      <p>
+        Günümüzün Stoacılık ilgisi, belirsizlik ve stres karşısında dayanıklılık arayışıyla ilişkili. Bununla birlikte sosyal medyada dolaşan “hiçbir şeyi umursama”, “duygularını kapat” veya “her şey zihninde” gibi formüller, antik okulun kapsamını daraltır. Stoacılık, başımıza gelenleri tek başına kontrol edebileceğimizi söylemez; dış dünyayı, toplumu ve başkalarına karşı sorumluluklarımızı da düşünür.
+      </p>
+      <p>
+        Bir başka dikkat noktası, Stoacıların doğa ve kader anlayışının günümüz dünya görüşüyle aynı olmadığını unutmamaktır. Antik metinleri bugünkü psikoloji ve bilimsel kavramlarla bire bir eşleştirmek anakronizme yol açabilir. Çağdaş okur bu metinlerden yararlı sorular çıkarabilir; ancak onları kendi dönemlerinin kavramları ve amaçları içinde okumalıdır.
+      </p>
+      <p>
+        Stoacılığın kalıcı çağrısı, her şeyi kontrol edebileceğimize dair bir vaat değil; kontrolün sınırlarını fark ederken karakter, eylem ve ortak yaşam için sorumluluk alabilmektir. Dış koşulların belirsizliği karşısında bu yaklaşım, kayıtsızlığa değil, daha dikkatli bir katılıma davet eder.
+      </p>
+
+      <h2>Kaynaklar ve ileri okuma</h2>
+      <ol>
+        <li>“Stoicism.” <em>Stanford Encyclopedia of Philosophy</em>. Stoacı okulun tarihi, mantık-doğa-etik bütünlüğü ve temel kavramları. <a href="https://plato.stanford.edu/entries/stoicism/" target="_blank" rel="noopener noreferrer">SEP maddesi</a>.</li>
+        <li>“Stoicism.” <em>Internet Encyclopedia of Philosophy</em>. Zenon, Khrysippos, erdem, tercih edilir kayıtsızlar ve Roma dönemi Stoacıları. <a href="https://iep.utm.edu/stoicism/" target="_blank" rel="noopener noreferrer">IEP maddesi</a>.</li>
+        <li>“Seneca.” <em>Stanford Encyclopedia of Philosophy</em>. Seneca’nın yaşamı, eserleri ve felsefeyi uygulama olarak ele alışı. <a href="https://plato.stanford.edu/entries/seneca/" target="_blank" rel="noopener noreferrer">SEP Seneca maddesi</a>.</li>
+        <li>Epiktetos. <em>El Kitabı (Enchiridion)</em>. Çev. Thomas Wentworth Higginson; Project Gutenberg e-kitap no. 45109. Birincil kaynak; çeviri eski İngilizcedir. <a href="https://www.gutenberg.org/ebooks/45109" target="_blank" rel="noopener noreferrer">Project Gutenberg metni</a>.</li>
+        <li>Marcus Aurelius. <em>Kendime Düşünceler (Meditations)</em>. Çev. George Long; Project Gutenberg e-kitap no. 2680. Birincil kaynak; çeviri eski İngilizcedir. <a href="https://www.gutenberg.org/ebooks/2680" target="_blank" rel="noopener noreferrer">Project Gutenberg metni</a>.</li>
+      </ol>
+      <p style="font-size:.85rem;color:var(--text-3)">Bilgi kesim tarihi: 11 Kasım 2026. Antik Stoacılığın erken dönem metinlerinin çoğu kayıptır; bu nedenle kurucu düşünürlerin öğretileri kısmen daha sonraki yazarların aktarımlarından yeniden kurulmaktadır. Güncel gündelik örnekler, tarihsel öğretiyi açıklamak içindir; psikolojik ya da tıbbi tavsiye değildir.</p>
+      <p><a href="ilk-filozoflar-iyonya.html">İlgili yazı: İlk Filozoflar Nerede Ortaya Çıktı? İyonya’dan Şüpheciliğe</a></p>
+    </div>
+  </article>
+
+  <section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">İlgili Yazılar</h2>
+      <div class="related-grid">
+        <a href="ilk-filozoflar-iyonya.html" class="related-card">
+          <div class="related-img"><img src="img/miletus-theatre-philosophy.webp" alt="Miletos antik kentindeki tiyatro kalıntıları" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"/></div>
+          <div class="related-body"><span class="related-cat">Antik Felsefe</span><h3 class="related-card-title">İlk Filozoflar Nerede Ortaya Çıktı? İyonya’dan Şüpheciliğe</h3></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

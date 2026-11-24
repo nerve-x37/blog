@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      document.documentElement.classList.remove('light','dark');
+      document.documentElement.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Kavram Rehberi — Valexirion</title>
+  <meta name="description" content="Bilim, tarih, felsefe, teknoloji ve doğadan temel kavramları kısa açıklamalar ve ilgili yazılarla keşfedin." />
+  <link rel="canonical" href="https://valexirion.com/kavram-rehberi.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Kavram Rehberi — Valexirion" />
+  <meta property="og:description" content="Bilim, tarih, felsefe, teknoloji ve doğadan temel kavramları kısa açıklamalar ve ilgili yazılarla keşfedin." />
+  <meta property="og:url" content="https://valexirion.com/kavram-rehberi.html" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Kavram Rehberi — Valexirion" />
+  <meta name="twitter:description" content="Temel kavramları kısa açıklamalar ve ilgili yazılarla keşfedin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Kavram Rehberi",
+      "description": "Bilim, tarih, felsefe, teknoloji ve doğadan temel kavramlar.",
+      "url": "https://valexirion.com/kavram-rehberi.html",
+      "inLanguage": "tr-TR",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Valexirion",
+        "url": "https://valexirion.com/"
+      }
+    }
+  </script>
+  <style>
+    .concept-page .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .concept-page {
+      width: min(1160px, 100%);
+      margin: 0 auto;
+      padding: calc(64px + 3.5rem) 1.5rem 5rem;
+    }
+    .concept-intro {
+      max-width: 760px;
+      margin: 0 auto 2.5rem;
+      text-align: center;
+    }
+    .concept-eyebrow {
+      margin-bottom: 0.7rem;
+      color: var(--accent);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .concept-intro h1 {
+      margin-bottom: 0.85rem;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.3rem);
+      font-weight: 900;
+      line-height: 1.12;
+    }
+    .concept-intro > p:last-child {
+      max-width: 660px;
+      margin: 0 auto;
+      color: var(--text-2);
+      font-family: 'Merriweather', serif;
+      font-size: 0.98rem;
+      line-height: 1.85;
+    }
+    .concept-controls {
+      display: grid;
+      gap: 1rem;
+      margin: 0 auto 1.5rem;
+    }
+    .concept-search-wrap {
+      position: relative;
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .concept-search-icon {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      width: 19px;
+      height: 19px;
+      color: var(--text-3);
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    .concept-search {
+      width: 100%;
+      min-height: 50px;
+      padding: 0.75rem 1rem 0.75rem 2.9rem;
+      border: 1px solid var(--border-2);
+      border-radius: var(--radius);
+      outline: none;
+      background: var(--bg-2);
+      color: var(--text);
+      font: inherit;
+      font-size: 1rem;
+    }
+    .concept-search:focus-visible,
+    .concept-filter:focus-visible,
+    .concept-link:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+    .concept-filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .concept-filter {
+      min-height: 44px;
+      padding: 0.55rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--bg);
+      color: var(--text-2);
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: color var(--transition), border-color var(--transition), background var(--transition);
+    }
+    .concept-filter:hover,
+    .concept-filter[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .concept-result-count {
+      min-height: 1.5em;
+      margin: 0 0 1rem;
+      color: var(--text-3);
+      font-size: 0.86rem;
+      text-align: center;
+    }
+    .concept-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+    .concept-card {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      padding: 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-2);
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+      scroll-margin-top: 6rem;
+    }
+    .concept-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-2);
+      box-shadow: var(--shadow);
+    }
+    .concept-category {
+      align-self: flex-start;
+      margin-bottom: 0.8rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .concept-card h2 {
+      margin-bottom: 0.55rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.22rem;
+      line-height: 1.3;
+    }
+    .concept-card > p:first-of-type {
+      flex: 1;
+      margin-bottom: 1rem;
+      color: var(--text-2);
+      font-family: 'Merriweather', serif;
+      font-size: 0.88rem;
+      line-height: 1.75;
+    }
+    .concept-card .concept-context {
+      flex: 0 0 auto;
+      margin: -0.2rem 0 0.9rem;
+      padding-left: 0.7rem;
+      border-left: 2px solid var(--accent);
+      color: var(--text-3);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.76rem;
+      line-height: 1.6;
+    }
+    .concept-card .concept-related {
+      flex: 0 0 auto;
+      margin: 0 0 0.75rem;
+      color: var(--text-3);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      line-height: 1.6;
+    }
+    .concept-related a {
+      color: var(--accent);
+      text-underline-offset: 2px;
+    }
+    .concept-link {
+      align-self: flex-start;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--accent);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-underline-offset: 3px;
+    }
+    .concept-link:hover { text-decoration: underline; }
+    .concept-empty {
+      margin: 2rem 0;
+      color: var(--text-2);
+      text-align: center;
+    }
+    .concept-empty[hidden],
+    .concept-card[hidden] { display: none; }
+    @media (max-width: 900px) {
+      .concept-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 600px) {
+      .concept-page {
+        padding: calc(64px + 2rem) max(1rem, env(safe-area-inset-left)) 3.5rem;
+        padding-right: max(1rem, env(safe-area-inset-right));
+      }
+      .concept-intro { margin-bottom: 1.75rem; }
+      .concept-intro > p:last-child { font-size: 0.91rem; }
+      .concept-grid { grid-template-columns: minmax(0, 1fr); gap: 0.75rem; }
+      .concept-card { padding: 1.05rem; }
+    }
+  </style>
+</head>
+<body class="font-ui">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <main id="main-content" class="concept-page">
+    <header class="concept-intro">
+      <p class="concept-eyebrow">Valexirion · Keşfet</p>
+      <h1>Kavram Rehberi</h1>
+      <p>Bilimden tarihe, felsefeden teknolojiye uzanan temel kavramları kısa açıklamalarla keşfedin. Her kavram, konuyu daha derinlemesine ele alan bir yazıya bağlanır.</p>
+    </header>
+
+    <section class="concept-controls" aria-label="Kavram arama ve filtreleri">
+      <div class="concept-search-wrap">
+        <svg class="concept-search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="10.8" cy="10.8" r="6.8" stroke-width="2"/>
+          <path d="m16 16 4.5 4.5" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <label class="sr-only" for="concept-search">Kavramlarda ara</label>
+        <input id="concept-search" class="concept-search" type="search" placeholder="Kavram ara..." autocomplete="off" />
+      </div>
+      <div class="concept-filters" role="group" aria-label="Kategoriye göre filtrele">
+        <button class="concept-filter" type="button" data-filter="all" aria-pressed="true">Tümü</button>
+        <button class="concept-filter" type="button" data-filter="science" aria-pressed="false">Bilim</button>
+        <button class="concept-filter" type="button" data-filter="history" aria-pressed="false">Tarih</button>
+        <button class="concept-filter" type="button" data-filter="philosophy" aria-pressed="false">Felsefe</button>
+        <button class="concept-filter" type="button" data-filter="technology" aria-pressed="false">Teknoloji</button>
+        <button class="concept-filter" type="button" data-filter="nature" aria-pressed="false">Doğa</button>
+        <button class="concept-filter" type="button" data-filter="culture" aria-pressed="false">Kültür</button>
+      </div>
+    </section>
+
+    <p id="concept-result-count" class="concept-result-count" aria-live="polite">18 kavram</p>
+    <section id="concept-grid" class="concept-grid" aria-label="Kavramlar">
+      <article class="concept-card" id="concept-algorithm" data-category="technology" data-keywords="adım kural problem içerik sıralama öneri">
+        <span class="concept-category">Teknoloji</span>
+        <h2>Algoritma</h2>
+        <p>Bir problemi çözmek veya bir işi tamamlamak için izlenen, belirli ve sıralı adımlar bütünüdür. Dijital platformlar içerikleri sıralarken algoritmalardan yararlanır.</p>
+        <p class="concept-context"><strong>Bağlam:</strong> Bir platformda tek ve değişmez bir “algoritma” yoktur; kullanılan sistemler ve sıralama ölçütleri değişebilir.</p>
+        <p class="concept-related"><strong>Bağlantılı kavramlar:</strong> <a href="#concept-yapay-zeka">Yapay Zekâ</a> · <a href="#concept-quantum-computer">Kuantum Bilgisayar</a></p>
+        <a class="concept-link" href="sosyal-medya-algoritmalari.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-athenian-democracy" data-category="history" data-keywords="antik yunan yurttaş doğrudan demokrasi">
+        <span class="concept-category">Tarih</span>
+        <h2>Atina Demokrasisi</h2>
+        <p>MÖ 5. yüzyıl Atina’sında yurttaşların kamusal kararlara doğrudan katıldığı yönetim biçimidir. Katılım hakkı toplumun yalnızca belirli bir kesimini kapsıyordu.</p>
+        <p class="concept-context"><strong>Kapsam:</strong> Kadınlar, köleleştirilmiş insanlar ve yerleşik yabancılar siyasi yurttaşlık haklarından dışlanmıştı.</p>
+        <p class="concept-related"><strong>Bağlantılı kavramlar:</strong> <a href="#concept-ionia">İyonya</a> · <a href="#concept-stoicism">Stoacılık</a></p>
+        <a class="concept-link" href="atina-demokrasisi.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-biophilia" data-category="nature" data-keywords="doğa canlılar insan bağlantı">
+        <span class="concept-category">Doğa</span>
+        <h2>Biyofili</h2>
+        <p>İnsanların canlılara ve doğal dünyaya yakınlık duyma eğilimini anlatan kavramdır. Doğayla ilişkinin sağlık ve yaşam alanlarıyla kesişimini de ele alır.</p>
+        <p class="concept-context"><strong>Bağlam:</strong> Doğaya yakınlığın herkeste aynı olduğu veya her yeşil alanın sağlığı iyileştirdiği kanıtlanmış bir yasa değildir.</p>
+        <p class="concept-related"><strong>Bağlantılı kavramlar:</strong> <a href="#concept-microbiome">Mikrobiyom</a></p>
+        <a class="concept-link" href="biyofili.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-hawking-radiation" data-category="science" data-keywords="kara delik kuantum enerji">
+        <span class="concept-category">Bilim</span>
+        <h2>Hawking Işıması</h2>
+        <p>Kuantum etkileri nedeniyle kara deliklerin enerji kaybedebileceğini öngören kuramsal ışıma sürecidir. Bu öngörü, kuantum fiziği ile kütleçekimini bir araya getirir.</p>
+        <p class="concept-context"><strong>Gözlem notu:</strong> Astrofiziksel kara deliklerden gelen Hawking ışıması doğrudan gözlenmiş değildir; laboratuvar benzetimleri ayrı değerlendirilir.</p>
+        <p class="concept-related"><strong>Bağlantılı kavramlar:</strong> <a href="#concept-black-hole">Kara Delik</a> · <a href="#concept-event-horizon">Olay Ufku</a></p>
+        <a class="concept-link" href="kara-delikler.html">Kara delikleri keşfet <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-hyperthymesia" data-category="science" data-keywords="otobiyografik bellek kişisel geçmiş anı hafıza">
+        <span class="concept-category">Bilim</span>
+        <h2>Hipertimezi</h2>
+        <p>Kişinin kendi yaşamındaki olayları olağanüstü ayrıntıyla hatırlamasıyla tanımlanan nadir bellek özelliğidir; her tür bilginin kusursuz hatırlanması anlamına gelmez.</p>
+        <a class="concept-link" href="hipertimezi.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-ionia" data-category="history" data-keywords="iyonya anadolu felsefe doğa filozofları">
+        <span class="concept-category">Tarih</span>
+        <h2>İyonya</h2>
+        <p>Antik Çağ’da Batı Anadolu kıyılarında yer alan bölge. Milet gibi kentlerde doğayı akıl yürütmeyle açıklamaya çalışan erken düşünce gelenekleri gelişti.</p>
+        <p class="concept-related"><strong>Bağlantılı kavramlar:</strong> <a href="#concept-athenian-democracy">Atina Demokrasisi</a> · <a href="#concept-stoicism">Stoacılık</a></p>
+        <a class="concept-link" href="ilk-filozoflar-iyonya.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-black-hole" data-category="science" data-keywords="olay ufku uzay kütleçekim yıldız">
+        <span class="concept-category">Bilim</span>
+        <h2>Kara Delik</h2>
+        <p>Kütleçekiminin çok güçlü olduğu ve olay ufkunun içinden ışığın bile kaçamadığı uzay-zaman bölgesidir. Varlıkları çevrelerindeki madde ve ışık üzerindeki etkilerinden anlaşılır.</p>
+        <p class="concept-related"><strong>Bağlantılı kavramlar:</strong> <a href="#concept-event-horizon">Olay Ufku</a> · <a href="#concept-hawking-radiation">Hawking Işıması</a></p>
+        <a class="concept-link" href="kara-delikler.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-quantum-computer" data-category="science" data-keywords="kuantum bit hesaplama süperpozisyon">
+        <span class="concept-category">Bilim</span>
+        <h2>Kuantum Bilgisayar</h2>
+        <p>Klasik bitler yerine kuantum bitlerinden yararlanan hesaplama sistemidir. Her işte daha hızlı değildir; bazı özel problem türlerinde avantaj sağlaması beklenir.</p>
+        <p class="concept-related"><strong>Bağlantılı kavramlar:</strong> <a href="#concept-algorithm">Algoritma</a> · <a href="#concept-yapay-zeka">Yapay Zekâ</a></p>
+        <a class="concept-link" href="kuantum-bilgisayarlar.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-seasons" data-category="nature" data-keywords="eksen eğikliği güneş yörünge yaz kış">
+        <span class="concept-category">Doğa</span>
+        <h2>Mevsimler</h2>
+        <p>Yıl içindeki mevsim değişimleri, Dünya’nın eksen eğikliği ve Güneş çevresindeki dolanımıyla oluşur; temel neden Dünya’nın Güneş’e yaklaşıp uzaklaşması değildir.</p>
+        <a class="concept-link" href="mevsimler.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-mesopotamia" data-category="history" data-keywords="dicle fırat uygarlıklar şehirler antik">
+        <span class="concept-category">Tarih</span>
+        <h2>Mezopotamya</h2>
+        <p>Dicle ve Fırat nehirleri çevresindeki tarihî bölgedir. Sümer, Akad, Babil ve Asur gibi farklı toplumlara ve kent uygarlıklarına ev sahipliği yaptı.</p>
+        <p class="concept-related"><strong>Bağlantılı kavram:</strong> <a href="#concept-ziggurat">Ziggurat</a></p>
+        <a class="concept-link" href="mezopotamya-tarih.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-microbiome" data-category="science" data-keywords="mikroorganizma bağırsak bakteri insan">
+        <span class="concept-category">Bilim</span>
+        <h2>Mikrobiyom</h2>
+        <p>Belirli bir ortamda yaşayan mikroorganizmaların ve genetik materyallerinin bütünüdür. İnsan mikrobiyomu; bağırsaklar, beslenme ve sağlık araştırmalarında incelenir.</p>
+        <a class="concept-link" href="bagirsaklarinizda-sakli-sirlar.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-event-horizon" data-category="science" data-keywords="kara delik sınır ışık olay ufku">
+        <span class="concept-category">Bilim</span>
+        <h2>Olay Ufku</h2>
+        <p>Kara deliğin çevresinde, içinden dışarıya hiçbir sinyalin ulaşamadığı sınırdır. Katı bir yüzey değil, uzay-zamandaki fiziksel bir sınır olarak tanımlanır.</p>
+        <p class="concept-related"><strong>Bağlantılı kavramlar:</strong> <a href="#concept-black-hole">Kara Delik</a> · <a href="#concept-hawking-radiation">Hawking Işıması</a></p>
+        <a class="concept-link" href="kara-delikler.html">Kara delikleri keşfet <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-progressive-house" data-category="culture" data-keywords="müzik elektronik dans dj kulüp">
+        <span class="concept-category">Kültür</span>
+        <h2>Progressive House</h2>
+        <p>Katmanların ve ritmin zaman içinde aşamalı biçimde geliştiği elektronik dans müziği türüdür. Uzun geçişler ve atmosferik yapı sık görülen özelliklerindendir.</p>
+        <a class="concept-link" href="progressive-house.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-simulation-hypothesis" data-category="philosophy" data-keywords="simülasyon gerçeklik platon matrix hipotez">
+        <span class="concept-category">Felsefe</span>
+        <h2>Simülasyon Hipotezi</h2>
+        <p>Deneyimlediğimiz gerçekliğin ileri bir uygarlık tarafından üretilmiş bir simülasyon olabileceğini öne süren felsefi düşünce deneyidir; kanıtlanmış bir bilimsel sonuç değildir.</p>
+        <a class="concept-link" href="matrix.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-stoicism" data-category="philosophy" data-keywords="antik yunan erdem kontrol yaşam">
+        <span class="concept-category">Felsefe</span>
+        <h2>Stoacılık</h2>
+        <p>Antik Yunan’da doğan felsefe geleneğidir. Erdemli yaşamı, yargılarımızı ve etkileyebileceğimiz şeylere odaklanmayı merkeze alır.</p>
+        <p class="concept-related"><strong>Bağlantılı kavramlar:</strong> <a href="#concept-ionia">İyonya</a> · <a href="#concept-athenian-democracy">Atina Demokrasisi</a></p>
+        <a class="concept-link" href="stoacilik.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-transhumanism" data-category="technology" data-keywords="insan biyoteknoloji yapay zeka geliştirme gelecek">
+        <span class="concept-category">Teknoloji</span>
+        <h2>Transhümanizm</h2>
+        <p>Bilim ve teknolojinin insan yetilerini dönüştürme veya geliştirme olasılıklarını savunan ve tartışan düşünce akımları için kullanılan genel addır.</p>
+        <p class="concept-related"><strong>Bağlantılı kavramlar:</strong> <a href="#concept-yapay-zeka">Yapay Zekâ</a> · <a href="#concept-quantum-computer">Kuantum Bilgisayar</a></p>
+        <a class="concept-link" href="transhumanizm-insan-robot-gelecegi.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-yapay-zeka" data-category="technology" data-keywords="makine öğrenmesi dil modeli yapay zeka">
+        <span class="concept-category">Teknoloji</span>
+        <h2>Yapay Zekâ</h2>
+        <p>Bilgisayar sistemlerinin öğrenme, örüntü tanıma veya dil işleme gibi görevleri yerine getirmesini sağlayan yöntemler alanıdır. Tek bir teknoloji ya da bilinç türü değildir.</p>
+        <p class="concept-related"><strong>Bağlantılı kavramlar:</strong> <a href="#concept-algorithm">Algoritma</a> · <a href="#concept-quantum-computer">Kuantum Bilgisayar</a> · <a href="#concept-transhumanism">Transhümanizm</a></p>
+        <a class="concept-link" href="yapay-zeka.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="concept-card" id="concept-ziggurat" data-category="history" data-keywords="sümer tapınak basamaklı yapı mezopotamya">
+        <span class="concept-category">Tarih</span>
+        <h2>Ziggurat</h2>
+        <p>Antik Mezopotamya kentlerinde inşa edilen, üst üste yükselen teraslardan oluşan tapınak yapısıdır. Basamaklı biçimiyle çevresindeki kent dokusunda öne çıkardı.</p>
+        <p class="concept-related"><strong>Bağlantılı kavram:</strong> <a href="#concept-mesopotamia">Mezopotamya</a></p>
+        <a class="concept-link" href="sumerler-uygarligi.html">İlgili yazıyı oku <span aria-hidden="true">→</span></a>
+      </article>
+    </section>
+    <p id="concept-empty" class="concept-empty" hidden>Bu aramayla eşleşen kavram bulunamadı. Başka bir sözcük deneyin.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+          <a href="kavram-rehberi.html" class="footer-cat-link" aria-current="page">Kavram Rehberi</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+        <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+  <script>
+    (function () {
+      var search = document.getElementById('concept-search');
+      var cards = Array.prototype.slice.call(document.querySelectorAll('.concept-card'));
+      var filters = Array.prototype.slice.call(document.querySelectorAll('.concept-filter'));
+      var count = document.getElementById('concept-result-count');
+      var empty = document.getElementById('concept-empty');
+      var activeCategory = 'all';
+
+      function normalize(value) {
+        return value.toLocaleLowerCase('tr').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ı/g, 'i');
+      }
+
+      function updateResults() {
+        var query = normalize(search.value.trim());
+        var visibleCount = 0;
+
+        cards.forEach(function (card) {
+          var matchesCategory = activeCategory === 'all' || card.dataset.category === activeCategory;
+          var searchableText = normalize(card.textContent + ' ' + (card.dataset.keywords || ''));
+          var matchesQuery = !query || searchableText.indexOf(query) !== -1;
+          var visible = matchesCategory && matchesQuery;
+          card.hidden = !visible;
+          if (visible) visibleCount += 1;
+        });
+
+        count.textContent = visibleCount + ' kavram gösteriliyor';
+        empty.hidden = visibleCount > 0;
+      }
+
+      search.addEventListener('input', updateResults);
+      filters.forEach(function (button) {
+        button.addEventListener('click', function () {
+          activeCategory = button.dataset.filter;
+          filters.forEach(function (filter) {
+            filter.setAttribute('aria-pressed', String(filter === button));
+          });
+          updateResults();
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

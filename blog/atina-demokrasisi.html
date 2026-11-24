@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atina Demokrasisi: Halk Kimdi, Kimler Dışarıda Kaldı? — Valexirion</title>
+  <meta name="description" content="Antik Atina demokrasisi nasıl işliyordu? Halk meclisi, kura ve yurttaşlık sınırları; kadınlar, köleleştirilmiş insanlar ve yabancılar hangi haklardan yoksundu?" />
+  <link rel="canonical" href="https://valexirion.com/atina-demokrasisi.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Atina Demokrasisi: Halk Kimdi, Kimler Dışarıda Kaldı?" />
+  <meta property="og:description" content="Halk meclisi, kura ile görev ve yurttaşlığın sınırları: Antik Atina demokrasisine kaynaklar eşliğinde bir bakış." />
+  <meta property="og:url" content="https://valexirion.com/atina-demokrasisi.html" />
+  <meta property="og:image" content="https://valexirion.com/img/athens-pnyx-assembly.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Atina Demokrasisi: Halk Kimdi, Kimler Dışarıda Kaldı?" />
+  <meta name="twitter:description" content="Antik Atina'da yönetime katılım, halk meclisi ve yurttaşlığın dışlayıcı sınırları." />
+  <meta name="twitter:image" content="https://valexirion.com/img/athens-pnyx-assembly.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Atina Demokrasisi: Halk Kimdi, Kimler Dışarıda Kaldı?",
+      "description": "Antik Atina demokrasisi nasıl işliyordu? Halk meclisi, kura ve yurttaşlık sınırları; kadınlar, köleleştirilmiş insanlar ve yabancılar hangi haklardan yoksundu?",
+      "image": "https://valexirion.com/img/athens-pnyx-assembly.jpg",
+      "mainEntityOfPage": "https://valexirion.com/atina-demokrasisi.html",
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-08",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="tarih">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>&#8250;</span>
+        <a href="index.html#tarih">Tarih</a><span>&#8250;</span>
+        <span>Antik Yunan</span>
+      </div>
+      <span class="article-cat-badge">Tarih · Antik Yunan</span>
+      <h1 class="article-title">Atina Demokrasisi<br><em>Halk kimdi, kimler dışarıda kaldı?</em></h1>
+      <p class="article-subtitle">Yurttaşlar mecliste konuşup oy kullanıyor, bazı kamu görevleri kura ile dağıtılıyordu. Fakat “halk” denilen siyasi topluluk Atina'da yaşayan herkesi kapsamıyordu. Bu düzen hem doğrudan katılımın erken örneklerinden biriydi hem de keskin sınırlarla çevriliydi.</p>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367-2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure style="max-width:720px;margin:0 auto 2.5rem">
+        <div class="article-hero-img">
+          <img src="img/athens-pnyx-assembly.webp" alt="Antik Atina'da yurttaş meclisinin toplandığı Pnyks tepesinin kayalık alanı" fetchpriority="high" loading="eager" decoding="async"/>
+        </div>
+        <figcaption style="font-size:.75rem;line-height:1.6;color:var(--text-3);margin-top:.65rem">
+          Antik Atina halk meclisinin toplandığı Pnyks platosu. Fotoğraf: George E. Koronaios / <a href="https://commons.wikimedia.org/wiki/File:The_Pnyx_plateau_on_July_11,_2021.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.
+        </figcaption>
+      </figure>
+
+      <p class="article-lead">Antik Atina demokrasisi, özellikle MÖ 5. ve 4. yüzyıllarda yurttaşların kamusal kararlara doğrudan katıldığı bir yönetim biçimiydi. Bugünkü temsilî demokrasilerden farklı olarak yurttaşlar mecliste kendileri konuşup oy verebiliyor, bazı görevler kura yoluyla üstleniliyordu. Ancak bu katılım hakkı şehirde yaşayan herkese açık değildi; yurttaşlığın sınırları nüfusun büyük bölümünü siyasi kararların dışında bırakıyordu.</p>
+
+      <h2>Demokrasi nasıl işliyordu?</h2>
+      <p>Atina'da halk meclisi, yani <em>ekklesia</em>, yurttaşların savaş, barış, kamu harcamaları ve kararlar hakkında tartışıp oy kullandığı başlıca kurumlardan biriydi. Toplantılar Pnyks tepesinde yapılırdı. Konuların hazırlanmasında 500 üyeli Konsey (<em>boulē</em>) rol oynuyor; halk mahkemeleri ve yıllık görevler yönetim sisteminin diğer parçalarını oluşturuyordu.</p>
+      <p>Birçok kamu görevinin kura ile dağıtılması, yönetimin yalnızca kalıcı bir seçkin grubun elinde toplanmasını önlemeyi amaçlıyordu. Bazı askerî ve mali görevlerde ise seçim yapılıyordu. Uygulamalar dönem içinde değişti; “Atina demokrasisi” tek biçimli, hiç değişmeden yürüyen bir sistem değildi.</p>
+
+      <h2>“Halk” kimlerden oluşuyordu?</h2>
+      <p>Siyasi haklar, belirli yurttaşlık koşullarını taşıyan yetişkin erkeklere aitti. Aristoteles'e atfedilen <em>Atinalıların Anayasası</em>, yurttaş kaydının 18 yaşında yapıldığını ve dönemin yurttaşlık kurallarını anlatır. MÖ 5. yüzyılda Perikles'le ilişkilendirilen yasa, yurttaşlığı anne ve babası da yurttaş olan kişilerle sınırlandırdı.</p>
+      <p>Atina'da yaşayan kadınlar mecliste oy kullanamıyor veya siyasi görev üstlenemiyordu. Yerleşik yabancılar (<em>metoikoi</em>) ile köleleştirilmiş insanlar da siyasi yurttaşlık haklarından dışlanmıştı. Dolayısıyla “halk yönetimi”, Atina sakinlerinin tamamının kendi yönetimine katıldığı anlamına gelmiyordu. Eski kaynakların ve modern araştırmacıların nüfus tahminleri değişse de yurttaşlar toplam nüfusun yalnızca bir bölümünü oluşturuyordu.</p>
+
+      <h2>Birincil kaynakları nasıl okumalı?</h2>
+      <p>Antik Atina'yı anlatan kaynakların çoğu, siyasi haklardan yararlanan erkek yurttaşlar tarafından yazıldı. Perikles'in Thukydides'te aktarılan cenaze konuşması, Atina'nın eşitlik ve katılım ideallerini över; ancak bu bir tören konuşmasıdır, toplumun her üyesinin deneyimini tarafsız biçimde kaydeden bir nüfus raporu değildir.</p>
+      <p>Aristoteles'in <em>Atinalıların Anayasası</em> ise yurttaşlık kuralları ve kurumlar hakkında ayrıntı verir. Bu metin de kendi tarihsel bağlamında değerlendirilmelidir. Konuşmaları, yasaları ve kurum tariflerini arkeolojik bulgularla birlikte okuyarak hem sistemin nasıl işlediğini hem de kaynakların neleri dışarıda bıraktığını daha iyi anlayabiliriz.</p>
+
+      <h2>Bugünkü demokrasiyle aynı mı?</h2>
+      <p>Modern demokrasiler çoğunlukla seçilmiş temsilciler, geniş hukuki yurttaşlık ve eşit siyasi haklar ilkelerine dayanır. Atina'da ise uygun yurttaşlar birçok kararı doğrudan mecliste tartışıp alıyordu; siyasi üyelik dar ve dışlayıcıydı. Bu nedenle antik sistemi bugünkü ölçülere göre doğrudan “tam demokrasi” diye nitelemek yanıltıcı olabilir.</p>
+      <p>Yine de Atina örneği, ortak kararların nasıl alınacağı, yurttaşların kamusal sorumlulukları ve çoğunluğun gücünün nasıl sınırlanacağı üzerine düşünce tarihinde önemli bir yer tutar. Tarihsel değeri, bugünkü demokrasinin aynısını kurmuş olmasında değil; doğrudan katılımın imkânlarını ve dışlama bedellerini görünür kılmasındadır.</p>
+
+      <h2>Kaynaklar</h2>
+      <ol>
+        <li>Cartwright, M. <em>Athenian Democracy</em>. World History Encyclopedia. Meclis, Konsey, kura ile görev ve siyasi katılımın sınırlarına genel bakış. <a href="https://www.worldhistory.org/Athenian_Democracy/" target="_blank" rel="noopener noreferrer">World History Encyclopedia</a>.</li>
+        <li>Aristoteles'e atfedilen, H. Rackham çevirisi. <em>Athenaion Politeia (Atinalıların Anayasası)</em>, bölüm 26 ve 42. Yurttaşlık koşulları ve genç yurttaşların kaydı hakkında antik kaynak. <a href="https://www.perseus.tufts.edu/hopper/text?doc=Aristot.+Ath.+Pol.+26" target="_blank" rel="noopener noreferrer">Perseus Digital Library, bölüm 26</a>; <a href="https://www.perseus.tufts.edu/hopper/text?doc=Aristot.+Ath.+Pol.+42" target="_blank" rel="noopener noreferrer">bölüm 42</a>.</li>
+        <li>Thukydides. <em>Peloponez Savaşı</em>, 2.35–2.46 (Perikles'in cenaze konuşması). Atina'nın kendisini nasıl sunduğunu gösteren birincil kaynak; törensel retorik bağlamıyla okunmalıdır. <a href="https://www.perseus.tufts.edu/hopper/text?doc=Thuc.+2.35&fromdoc=Perseus%3Atext%3A1999.01.0200" target="_blank" rel="noopener noreferrer">Perseus Digital Library, 2.35</a>.</li>
+        <li>American School of Classical Studies at Athens. <em>The Athenian Agora Excavations</em>. Agora alanındaki arkeolojik araştırma ve yayın kayıtları. <a href="https://www.agathe.gr/research" target="_blank" rel="noopener noreferrer">Agora araştırma arşivi</a>.</li>
+        <li>George E. Koronaios. <em>The Pnyx plateau on July 11, 2021</em>. Pnyks fotoğrafı; <a href="https://commons.wikimedia.org/wiki/File:The_Pnyx_plateau_on_July_11,_2021.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons kaydı</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
+      </ol>
+      <p style="font-size:.85rem;color:var(--text-3)">Antik kurumlar yüzyıllar içinde değişti; burada özellikle MÖ 5. ve 4. yüzyıl Atinasına odaklanılmıştır. Antik metinler kendi amaçları ve sınırlılıkları gözetilerek kullanılmıştır. Kaynaklar 8 Kasım 2026 tarihinde kontrol edildi.</p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p>Merak et. Sorgula. Keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

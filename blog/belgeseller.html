@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    // Tema flaşını önle: CSS yüklenmeden önce doğru class'ı uygula
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      var html = document.documentElement;
+      html.classList.remove('light','dark');
+      html.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+
+  
+
+  
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belgesel Rehberi: Konularına Göre İzleme Seçkisi — Valexirion</title>
+  <meta name="description" content="Doğa, sağlık, toplum, bilim, tarih ve spor belgeselleri: her yapımın ne anlattığını, ne düşündürdüğünü ve IMDb izleyici puanını keşfedin." />
+  <link rel="canonical" href="https://valexirion.com/belgeseller.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Belgesel Rehberi: Konularına Göre İzleme Seçkisi" />
+  <meta property="og:description" content="Doğa, sağlık, toplum, bilim, tarih ve spor belgesellerini konuları ve izleyici puanlarıyla keşfedin." />
+  <meta property="og:url" content="https://valexirion.com/belgeseller.html" />
+  <meta property="og:image" content="https://valexirion.com/img/aslan.png" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Belgesel Rehberi: Konularına Göre İzleme Seçkisi" />
+  <meta name="twitter:description" content="Doğa, sağlık, toplum, bilim, tarih ve spor belgesellerini konuları ve izleyici puanlarıyla keşfedin." />
+  <meta name="twitter:image" content="https://valexirion.com/img/aslan.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Belgesel Rehberi: Konularına Göre İzleme Seçkisi","description":"Doğa, sağlık, toplum, bilim, tarih ve spor belgesellerini konuları ve IMDb izleyici puanlarıyla keşfedin.","image":"https://valexirion.com/img/aslan.png","mainEntityOfPage":"https://valexirion.com/belgeseller.html","inLanguage":"tr-TR","publisher":{"@type":"Organization","name":"Valexirion","url":"https://valexirion.com/"}}</script>
+</head>
+<body class="font-ui" data-page-category="belgesel">
+<div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- ============================================
+       NAVBAR (yazı sayfasında aynı navbar kullanılır)
+       ============================================ -->
+      <nav id="navbar" class="navbar">
+    <div class="navbar-inner">
+
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-dot">&#9679;</span> Valexirion
+      </a>
+
+      <!-- Masaüstü menüsü -->
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim"    class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih"    class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema"   class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik"    class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe"  class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga"     class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+
+      <!-- Sağ araçlar -->
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/>
+          </svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Men&uuml;y&uuml; a&ccedil;/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div><!-- /navbar-inner -->
+
+    <!-- Mobil menü paneli -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim"    class="mobile-link">Bilim</a>
+      <a href="index.html#tarih"    class="mobile-link">Tarih</a>
+      <a href="index.html#sinema"   class="mobile-link">Sinema</a>
+      <a href="index.html#muzik"    class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe"  class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga"     class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+ <!-- ============================================
+     YAZI BAŞLIK ALANI
+     ============================================ -->
+<header class="article-header">
+  <div class="article-header-inner">
+
+    <!-- Breadcrumb -->
+    <div class="article-breadcrumb">
+      <a href="index.html">Ana Sayfa</a>
+      <span>›</span>
+      <a href="belgeseller.html">Belgeseller</a>
+      <span>›</span>
+      <span>En İyi Belgeseller</span>
+    </div>
+
+    <!-- Kategori -->
+    <span class="article-cat-badge">Belgesel İncelemeleri</span>
+
+    <!-- Başlık -->
+    <h1 class="article-title">
+      Belgesel <br>
+      <em>İzleme Rehberi</em>
+    </h1>
+
+    <!-- Açıklama -->
+    <p class="article-subtitle">
+      Bir belgeseli seçerken yalnızca konusunu değil, hangi soruları sorduğunu ve izleyicide nasıl bir düşünce bıraktığını da bilmek istersiniz. Bu rehberde yapımları konu başlıklarına göre ayırıyor; ayrı yazı sayfalarında ne anlattıklarını, ne ifade ettiklerini ve IMDb izleyici puanlarını açıklıyoruz.
+    </p>
+
+      <div class="article-share">
+        <button class="share-btn"
+          onclick="navigator.share ? navigator.share({title: document.title, url: location.href}) : navigator.clipboard.writeText(location.href)"
+          aria-label="Paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684"/>
+          </svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ============================================
+       YAZI İÇERİĞİ
+       Asıl metin burada yer alır
+       .article-content ile okunabilirlik stilleri uygulanır
+       Geniş satır aralığı, okunabilir font boyutu
+       ============================================ -->
+    <!-- ============================================
+       REKLAM ALANI 1 — 728x90 (Leaderboard)
+       Banner reklam için placeholder
+       Gerçek reklam kodu ile değiştirilebilir
+       ============================================ -->
+  
+
+  
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <div class="article-hero-img"><img src="img/belgesel1.webp" alt="Belgesel kategorisi" loading="eager" decoding="async" fetchpriority="high"></div>
+      <h2>Belgesel Alt Kategorileri</h2>
+      <p>İlginizi çeken konuyu seçerek ilgili belgesellerin tanıtımlarına geçin. Her ayrı yazıda yapımın konusu, anlattığı meselenin önemi ve IMDb izleyici puanı yer alır. Puanlar izleyici oylarının ortalamasıdır; zamanla değişebilir ve tek başına izleme önerisi sayılmaz.</p>
+      <div class="doc-category-stack">
+        <div class="doc-category-card"><h3>Doğa &amp; Çevre</h3><p>Okyanusları, vahşi yaşamı ve farklı habitatları keşfedin; insan faaliyetlerinin ekosistemleri nasıl değiştirdiğini ve koruma çalışmalarının neleri mümkün kıldığını görün.</p><a href="belgesel-doga.html">Doğa ve çevre belgesellerini keşfet</a></div>
+        <div class="doc-category-card"><h3>Sağlık &amp; Yaşam</h3><p>Gıda üretimi, reçeteli ilaçlar, hızlı moda ve tüketim alışkanlıkları üzerinden gündelik seçimlerimizin sağlıkla ve büyük endüstrilerle bağlantısını inceleyin.</p><a href="belgesel-saglik.html">Sağlık ve yaşam belgesellerini keşfet</a></div>
+        <div class="doc-category-card"><h3>Siyaset &amp; Toplum</h3><p>Savaş, protesto, polislik ve finans sistemi üzerine yapımlarla gücün nasıl kullanıldığını, kararların kimleri etkilediğini ve toplumların nasıl değiştiğini sorgulayın.</p><a href="belgesel-siyasi.html">Siyaset ve toplum belgesellerini keşfet</a></div>
+        <div class="doc-category-card"><h3>Bilim &amp; Tarih</h3><p>Evrenin ve yaşamın kökeninden yakın tarihe ve spor kültürüne uzanan anlatılarla keşiflerin, dönüm noktalarının ve insan hikâyelerinin izini sürün.</p><a href="belgesel-bilim-tarih.html">Bilim ve tarih belgesellerini keşfet</a></div>
+      </div>
+
+    </div><!-- /article-content -->
+  </article>
+
+  <!-- ============================================
+       REKLAM ALANI 2 — 300x250 (Rectangle)
+       Yazı ortası reklam alanı
+       Gerçek reklam kodu buraya yapıştırılabilir
+       ============================================ -->
+  
+
+  
+
+<!-- ============================================
+       İLGİLİ YAZILAR
+       Okuyucuya önerilen ilgili içerikler
+       Manuel olarak düzenlenebilir
+       ============================================ -->
+    <section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">İlgili Yazılar</h2>
+      <div class="related-grid">
+        <a href="antik-medeniyetler.html" class="related-card">
+          <div class="related-img">
+            <img src="img/medeniyetler.webp" alt="Antik Medeniyetlerin Yıkılışı: Roma, Mezopotamya ve Mısır" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Tarih</span>
+            <h3 class="related-card-title">Antik Medeniyetlerin Yıkılışı: Roma, Mezopotamya ve Mısır</h3>
+            <p class="related-meta">Naz Kaya &middot; 12 dk</p>
+          </div>
+        </a>
+        <a href="muzik.html" class="related-card">
+          <div class="related-img">
+            <img src="img/muzik1.webp" alt="Dünyanın Müzik Türleri: Pop'tan Trance'e" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Muzik</span>
+            <h3 class="related-card-title">Dünyanın Müzik Türleri: Pop'tan Trance'e</h3>
+            <p class="related-meta">Kaan Arslan &middot; 14 dk</p>
+          </div>
+        </a>
+        <a href="dune.html" class="related-card">
+          <div class="related-img">
+            <img src="img/dune.webp" alt="Dune Evreni: Çöl Gezegeninin Derinliklerinde" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Sinema</span>
+            <h3 class="related-card-title">Dune Evreni: Çöl Gezegeninin Derinliklerinde</h3>
+            <p class="related-meta">Mert Ozturk &middot; 10 dk</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- FOOTER -->
+      <!-- ============================================
+       REKLAM ALANI 3 — 728x90 (Footer Leaderboard)
+       Yazı sonunda, footer öncesi reklam alanı
+       ============================================ -->
+  
+
+  
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

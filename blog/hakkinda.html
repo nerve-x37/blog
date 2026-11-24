@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      document.documentElement.classList.remove('light','dark');
+      document.documentElement.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Hakkında — Valexirion</title>
+  <meta name="description" content="Valexirion; insanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız bir dijital yayındır." />
+
+  <link rel="canonical" href="https://valexirion.com/hakkinda.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Hakkında — Valexirion" />
+  <meta property="og:description" content="Valexirion; insanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız bir dijital yayındır." />
+  <meta property="og:url" content="https://valexirion.com/hakkinda.html" />
+  <meta property="og:locale" content="tr_TR" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  
+
+  <link rel="stylesheet" href="style.css" />
+  
+
+  <style>
+    .policy-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: calc(64px + 2.5rem) 1.5rem 5rem;
+    }
+    .policy-wrap h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      font-weight: 900;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+    .policy-wrap .policy-date {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.82rem;
+      color: var(--text-3);
+      margin-bottom: 2.5rem;
+      display: block;
+    }
+    .policy-wrap h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 2.4rem 0 0.75rem;
+    }
+    .policy-wrap p,
+    .policy-wrap li {
+      font-family: 'Merriweather', serif;
+      font-size: 0.96rem;
+      line-height: 1.9;
+      color: var(--text-2);
+    }
+    .policy-wrap ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin: 0.5rem 0 1rem;
+    }
+    .policy-wrap ul li {
+      margin-bottom: 0.35rem;
+    }
+    .policy-wrap a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .policy-wrap a:hover {
+      opacity: 0.8;
+    }
+    .policy-divider {
+      width: 44px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+      margin: 0.5rem 0 2rem;
+      opacity: 0.8;
+    }
+    .policy-highlight {
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.25rem;
+      border-radius: 0 6px 6px 0;
+      margin: 1.25rem 0;
+    }
+    .policy-highlight p {
+      margin: 0;
+      font-size: 0.91rem;
+    }
+
+    /* ===== Responsive / tüm cihazlar ===== */
+    .policy-wrap {
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: max(1.5rem, env(safe-area-inset-left));
+      padding-right: max(1.5rem, env(safe-area-inset-right));
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+    .policy-wrap code {
+      font-size: 0.85em;
+      padding: 0.1em 0.4em;
+      border-radius: 4px;
+      background: var(--bg-2);
+      overflow-wrap: anywhere;
+    }
+    .policy-wrap strong { color: var(--text); }
+    @media (max-width: 900px) {
+      .policy-wrap { padding-top: calc(64px + 2rem); padding-bottom: 4rem; }
+    }
+    @media (max-width: 600px) {
+      .policy-wrap {
+        padding: calc(64px + 1.5rem) 1.1rem 3.5rem;
+        padding-left: max(1.1rem, env(safe-area-inset-left));
+        padding-right: max(1.1rem, env(safe-area-inset-right));
+      }
+      .policy-wrap h1 { font-size: 1.65rem; }
+      .policy-wrap h2 { font-size: 1.1rem; margin-top: 2rem; line-height: 1.35; }
+      .policy-wrap p, .policy-wrap li { font-size: 0.93rem; line-height: 1.8; }
+      .policy-wrap ul { padding-left: 1.25rem; }
+      .policy-highlight { padding: 0.85rem 1rem; }
+      .policy-highlight p { font-size: 0.88rem; }
+    }
+    @media (max-width: 360px) {
+      .policy-wrap { padding-left: 0.9rem; padding-right: 0.9rem; }
+      .policy-wrap h1 { font-size: 1.45rem; }
+      .policy-wrap p, .policy-wrap li { font-size: 0.9rem; }
+    }
+    @media (min-width: 1400px) {
+      .policy-wrap { max-width: 820px; }
+    }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body class="font-ui">
+
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <nav id="navbar" class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim"     class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih"     class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema"    class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik"     class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe"   class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel"  class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga"      class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Men&uuml;y&uuml; a&ccedil;/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim"     class="mobile-link">Bilim</a>
+      <a href="index.html#tarih"     class="mobile-link">Tarih</a>
+      <a href="index.html#sinema"    class="mobile-link">Sinema</a>
+      <a href="index.html#muzik"     class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe"   class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel"  class="mobile-link">Belgesel</a>
+      <a href="index.html#doga"      class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="policy-wrap">
+      <h1>Hakkında</h1>
+      <span class="policy-date">Son güncelleme: 8 Kasım 2026</span>
+      <div class="policy-divider"></div>
+
+      <p>Valexirion; insanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız bir dijital yayındır. Bilim, tarih, sinema, müzik, felsefe, belgesel, doğa ve teknoloji alanlarında derinlemesine yazılar yayımlıyoruz.</p>
+
+      <h2 id="yayin-ilkeleri">Kaynak ve Hazırlama İlkeleri</h2>
+      <p>Amacımız karmaşık konuları anlaşılır kılarken okuyucunun bilgiyi nereden geldiğine kadar takip edebilmesini sağlamaktır. Bilimsel ve teknik konularda kaynakların niteliğini, bulguların sınırlarını ve henüz kesinleşmemiş noktaları gözetiriz.</p>
+      <ul>
+        <li><strong>Kaynak seçimi:</strong> Konuya göre hakemli araştırmalara, bilimsel dergilere, resmî kurum ve veri setlerine, birincil belgelere ve uzmanlık kitaplarına öncelik veririz. Tek bir araştırmayı bilimsel uzlaşı gibi sunmayız; önemli iddiaları mümkün olduğunda birbirinden bağımsız kaynaklarla karşılaştırırız.</li>
+        <li><strong>Kaynak gösterimi:</strong> Bilimsel ve teknik yazılarda temel kaynakları yazının sonunda göstermeye özen gösteririz. Erişilebilir olduğunda yayıncıya, DOI kaydına veya resmî belgeye doğrudan bağlantı verir; kaynağın desteklediği bulgularla yazarın yorumunu birbirinden ayırırız.</li>
+        <li><strong>Hazırlama süreci:</strong> Önce yazının kapsamını ve temel sorusunu belirler, konuyla ilgili kaynakları inceler, bilgileri karşılaştırır ve metni açık bir dille düzenleriz. Hızla değişen alanlarda bilgilerin hangi tarih veya döneme ait olduğunu belirtmeye özen gösteririz.</li>
+        <li><strong>Belirsizlik ve sınırlar:</strong> Araştırmalar arasında görüş ayrılığı varsa veya kanıtlar sınırlıysa bunu saklamayız. Bir yazıdaki kaynakça, konunun tamamını kapsadığı ya da her iddianın kesinleştiği anlamına gelmez.</li>
+      </ul>
+
+      <h2>Düzeltme ve Geri Bildirim</h2>
+      <p>Bir yazıda hata, eksik kaynak veya yanıltıcı ifade fark ederseniz ilgili yazının bağlantısını ve mümkünse dayandığınız kaynağı <a href="iletisim.html">iletişim sayfamızdan</a> bize iletebilirsiniz. Bildirimi inceler; gerekli gördüğümüzde metni düzeltir ve önemli değişiklikleri yazıda güncelleme notuyla belirtiriz.</p>
+
+      <h2>Bilgilendirme Notu</h2>
+      <p>İçeriklerimiz genel bilgilendirme ve öğrenme amacı taşır; kişiye özel tıbbi, hukuki veya mali tavsiye yerine geçmez.</p>
+
+      <h2>Reklam ve Finansman</h2>
+      <p>Site, bağımsız olarak yayımlanır ve gelirini Google AdSense reklamlarından elde edebilir. Reklamlar editoryal içeriği etkilemez; reklam çerezleri yalnızca onayınızla yüklenir.</p>
+
+      <p>Bize ulaşmak için <a href="iletisim.html">İletişim</a> sayfasını kullanabilirsiniz.</p>
+
+    </div>
+  </main>
+
+  <!-- Reklam — alt -->
+  
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

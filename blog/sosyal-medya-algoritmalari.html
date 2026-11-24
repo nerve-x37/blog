@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sosyal Medya Algoritmaları Nasıl Çalışır? — Valexirion</title>
+  <meta name="description" content="Instagram, TikTok ve YouTube akışları neye göre sıralanıyor? Öneri sistemlerinin sinyallerini, etkilerini, sınırlarını ve kullanıcı kontrollerini inceliyoruz." />
+  <link rel="canonical" href="https://valexirion.com/sosyal-medya-algoritmalari.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Sosyal Medya Algoritmaları Nasıl Çalışır?" />
+  <meta property="og:description" content="Akışın arkasındaki öneri sistemleri: platformlar hangi sinyalleri kullanıyor, neyi görünür kılıyor ve kullanıcılar neleri değiştirebiliyor?" />
+  <meta property="og:url" content="https://valexirion.com/sosyal-medya-algoritmalari.html" />
+  <meta property="og:image" content="https://valexirion.com/img/social-media-app-icons-phone.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sosyal Medya Algoritmaları Nasıl Çalışır?" />
+  <meta name="twitter:description" content="Instagram, TikTok ve YouTube öneri sistemlerine ve bu akışların etkilerine anlaşılır bir bakış." />
+  <meta name="twitter:image" content="https://valexirion.com/img/social-media-app-icons-phone.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Sosyal Medya Algoritmaları Nasıl Çalışır?",
+      "description": "Instagram, TikTok ve YouTube akışları neye göre sıralanıyor? Öneri sistemlerinin sinyallerini, etkilerini, sınırlarını ve kullanıcı kontrollerini inceliyoruz.",
+      "image": "https://valexirion.com/img/social-media-app-icons-phone.jpg",
+      "mainEntityOfPage": "https://valexirion.com/sosyal-medya-algoritmalari.html",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="teknoloji">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>&#8250;</span>
+        <a href="index.html#teknoloji">Teknoloji</a><span>&#8250;</span>
+        <span>Dijital Kültür</span>
+      </div>
+      <span class="article-cat-badge">Teknoloji · Dijital Kültür</span>
+      <h1 class="article-title">Sosyal Medya<br><em>Algoritmaları Nasıl Çalışır?</em></h1>
+      <p class="article-subtitle">Akışında neden bu gönderi var, öteki neden yok? Instagram, TikTok ve YouTube’un öneri sistemleri hangi sinyallere bakıyor; bu sistemler keşfi kolaylaştırırken ne tür soruları da beraberinde getiriyor?</p>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367-2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure style="max-width:720px;margin:0 auto 2.5rem">
+        <div class="article-hero-img">
+          <img src="img/social-media-app-icons-phone.webp" alt="Bir akıllı telefon ekranında görünen sosyal medya uygulaması simgeleri" fetchpriority="high" loading="eager" decoding="async"/>
+        </div>
+        <figcaption style="font-size:.75rem;line-height:1.6;color:var(--text-3);margin-top:.65rem">
+          Akıllı telefon ekranındaki sosyal medya uygulamaları. Fotoğraf: Mike MacKenzie; <a href="https://www.vpnsrus.com/" target="_blank" rel="noopener noreferrer">VPNsRus</a> / <a href="https://commons.wikimedia.org/wiki/File:Social_Media_App_Icons_On_The_Screen_of_A_Smartphone.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>.
+        </figcaption>
+      </figure>
+
+      <p class="article-lead">
+        Sosyal medyada “algoritma” denince çoğu zaman, gizli bir formülün her kullanıcıya ne düşeceğine karar verdiği düşünülür. Gerçekte gördüğümüz akışlar, çok sayıda modelin, kuralın ve ürün kararının birlikte çalıştığı öneri ve sıralama sistemleriyle oluşur. Her platformun amacı ve kullandığı sinyaller farklıdır; üstelik bu sistemlerin tamamı dışarıdan görülemez.
+      </p>
+      <p>
+        Bu sistemler, milyonlarca olası gönderi arasından hangilerinin sana gösterilmeye değer olabileceğini tahmin etmeye çalışır. Bir videoyu sonuna kadar izlemek, bir gönderiyi kaydetmek ya da bir hesabı takip etmek; açıkça yaptığın seçimlerdir. Hızla kaydırıp geçmen, duraksaman veya tekrar izlemen de dolaylı sinyallere dönüşebilir. Ancak bunların hiçbiri ilginin kusursuz ölçüsü değildir.
+      </p>
+
+      <h2>“Algoritma” tek bir şey değil</h2>
+      <p>
+        Teknik anlamda algoritma, bir işi gerçekleştirmek için izlenen adımlar bütünüdür. Sosyal platformlarda bu kelime; içerik seçen, sıralayan, öneren, reklam gösteren ve kuralları uygulayan farklı sistemleri anlatmak için kullanılır. Örneğin Instagram, 2023’te Feed, Stories, Explore ve Reels gibi alanlarda farklı sıralama sistemleri bulunduğunu açıkladı. TikTok’un “Sana Özel” akışı ile YouTube’un ana sayfa ve “Sıradaki” önerileri de birbirinden ayrı amaçlara ve bağlamlara sahip.
+      </p>
+      <p>
+        Bir öneri sistemi kabaca üç soruya yanıt arar: Önünde hangi içerikler var? Bunlardan hangileri ilgini çekebilir? Hangi sırada gösterilmeleri daha anlamlı? Sistemin yanıtları, senin geçmiş davranışların ve içeriğin özellikleri hakkındaki tahminlere dayanır. Platformlar bu sürecin bazı parçalarını anlatsa da, ağırlıkların ve kuralların tümünü kamuya açmaz; sistemler de zaman içinde güncellenir.
+      </p>
+
+      <h2>Bir gönderi akışa nasıl girer?</h2>
+      <p>
+        Uygulamaya girdiğinde sistem önce gösterilebilecek içerikleri belirler. Bu havuz, takip ettiğin hesapların son gönderilerini içerebilir; keşif alanlarında ise takip etmediğin üreticilerin videoları da aday olabilir. Ardından modeller, her içeriğin sana ne kadar uygun olabileceğini tahmin eder. Tahminler sıralamayı etkiler; reklamlar, güvenlik kuralları, içerik çeşitliliği ve ürünün kendi düzenlemeleri de son akışta rol oynayabilir.
+      </p>
+      <p>
+        Bu, bir içeriğin mutlaka “en iyi” veya “en doğru” olduğu anlamına gelmez. Sistem belirli bir amaca uygun olabilecek içeriği üst sıralara taşımaya çalışır. Amaç platformun tasarımına göre ilgi, izleme, bağlantı kurma, memnuniyet ya da bunların bir bileşimi olabilir. Modelin tahmini ile senin gerçek ihtiyacın her zaman örtüşmez.
+      </p>
+
+      <h2>Hangi sinyaller kullanılıyor?</h2>
+      <p>
+        Platformların kamuya açık açıklamalarında sık karşılaşılan sinyaller şunlardır:
+      </p>
+      <ul>
+        <li><strong>Etkileşimler:</strong> Beğeni, yorum, paylaşım, kaydetme, takip ve “ilgilenmiyorum” gibi açık geri bildirimler.</li>
+        <li><strong>İzleme davranışı:</strong> İçeriğin ne kadar izlendiği, tamamlanıp tamamlanmadığı, tekrar açılıp açılmadığı ya da hızla geçilip geçilmediği. Bunun ağırlığı platforma ve içerik türüne göre değişir.</li>
+        <li><strong>İçerik bilgisi:</strong> Başlık, açıklama, konu, etiket, ses, görsel veya video biçimi ve paylaşım zamanı.</li>
+        <li><strong>İlişki ve bağlam:</strong> Hangi hesaplarla sık etkileşim kurduğun, bir videodan sonra ne izlediğin veya belirli bir konuya ilgi gösterip göstermediğin.</li>
+        <li><strong>Geri bildirim ve tahmini memnuniyet:</strong> Kullanıcı anketleri ve “bu öneri neden gösteriliyor?” gibi özelliklerden gelen yanıtlar da bazı sistemlere dâhil olabilir.</li>
+      </ul>
+      <p>
+        Bir sinyalin anlamı bağlama bağlıdır. Bir videoyu sonuna kadar izlemek ilgini çektiğini gösterebilir; ama belki yalnızca otomatik oynatılmıştır. Bir tartışmalı gönderiye yorum yazmak, onu desteklediğin anlamına gelmez. Bu nedenle platformlar tek bir harekete dayanmak yerine farklı göstergeleri birleştirdiklerini söylüyor.
+      </p>
+
+      <h2>Instagram, TikTok ve YouTube: Benzerlikler, farklı öncelikler</h2>
+      <p>
+        <strong>Instagram</strong>, kendi açıklamasına göre Feed, Stories, Explore ve Reels için farklı sıralama sistemleri kullanıyor. Feed’de takip edilen kişilerin gönderilerinin yanında, önerilen hesaplardan içerikler ve reklamlar da bulunabiliyor. Son dönemdeki etkileşimlerin, gönderinin bilgileri ve içeriği paylaşan hesapla geçmiş etkileşimlerin sıralamayı etkileyebildiği belirtiliyor. Bunlar Meta’nın kendi açıklamalarıdır; bağımsız bir denetim sonucu değildir.
+      </p>
+      <p>
+        <strong>TikTok</strong>, “Sana Özel” akışının beğeni, paylaşım, yorum, takip ve izleme gibi kullanıcı etkileşimlerini; ayrıca video açıklaması, ses ve etiket gibi içerik bilgilerini değerlendirdiğini söylüyor. Şirketin yayımladığı açıklamada, daha uzun videonun baştan sona izlenmesi güçlü bir ilgi göstergesi; aynı ülkede bulunmak gibi etkenler ise daha zayıf bir sinyal örneği olarak veriliyor. TikTok ayrıca takipçi sayısının öneri sisteminde doğrudan bir sıralama faktörü olmadığını belirtiyor. Bu, şirketin kamuya açık beyanıdır; algoritmanın tümünün bağımsız biçimde doğrulandığı anlamına gelmez.
+      </p>
+      <p>
+        <strong>YouTube</strong>, ana sayfa ve izleme sırasında açılan “Sıradaki” alanında kişiselleştirilmiş öneriler sunuyor. Şirketin mühendislik açıklamasında izleme ve arama geçmişi, tıklama, izleme süresi, beğeni ve kullanıcı anketleri gibi farklı sinyallerden söz ediliyor. Yani sistem yalnızca çok tıklanan videoları herkese göstermek için değil, izleyicinin geçmiş tercihleriyle uyuşabilecek içerikleri bulmak üzere tasarlanmış durumda. Yine bu açıklama YouTube’un kendi ürün anlatımıdır.
+      </p>
+      <p>
+        Bu örnekler, “Instagram algoritması” ya da “TikTok algoritması” diye tek bir sabit formül olmadığını gösteriyor. Uygulamanın farklı bölümleri, farklı izleme alışkanlıkları ve ürün hedefleri için ayrı sistemler kullanabilir; aynı platformda gördüğün sıralama da zaman içinde değişebilir.
+      </p>
+
+      <h2>Öneri akışı neyi değiştiriyor?</h2>
+      <p>
+        Kronolojik akışta, takip ettiğin bir hesabın yeni gönderisi zaman sırasına göre görünürdü. Öneri akışı ise yalnızca “kim ne paylaştı?” sorusunu değil, “bunu senin önüne ne zaman ve hangi sırada koyalım?” sorusunu da yanıtlıyor. Bu, kullanıcıların takip etmedikleri üreticileri, niş toplulukları veya yeni konuları keşfetmesini kolaylaştırabilir. Küçük bir üreticinin içeriği, takipçi çevresinin dışına da taşabilir.
+      </p>
+      <p>
+        Öte yandan içerik üreticileri ve işletmeler, erişimlerinin yalnızca takipçi sayılarına bağlı olmadığını deneyimliyor. İzlenme süresi, paylaşım, kaydetme ve ilk izleyici tepkileri gibi metrikler, platformların açıkladığı sinyaller arasında. Bu da üreticileri daha hızlı dikkat çekmeye, formatı ve paylaşım zamanını denemeye, performans verilerini yakından takip etmeye yöneltiyor. Fakat “şu saatte paylaş, şu kadar saniye tut” gibi tavsiyeler evrensel bir algoritma kuralı değildir; platform ve izleyiciye göre değişen pratiklerdir.
+      </p>
+      <p>
+        Tavsiye sistemleri arama ve takip etme yükünü azaltır. Aynı zamanda görünürlük, özel ve sürekli güncellenen sistemlerin kararlarına daha fazla bağlı hâle gelir. Bir gönderinin geniş kitlelere ulaşması, içeriğin değerinin tek başına kanıtı değildir; görünmemesi de değersiz olduğunu göstermez. Sıralama, içerik kalitesiyle birlikte tahminler, rekabet, kişiselleştirme ve platform kurallarının ortak sonucudur.
+      </p>
+
+      <h2>Yankı odası mı, keşif alanı mı?</h2>
+      <p>
+        Kişiselleştirme bir yandan ilgini çeken içerikleri bulur, diğer yandan geçmiş tercihlerine fazla yaslanırsa benzer içerikleri tekrar tekrar gösterebilir. Bu olasılık “filtre balonu” veya “yankı odası” tartışmalarının temelinde yer alır. Ancak her kullanıcının zorunlu olarak kapalı bir bilgi çevresine hapsolduğunu söylemek, araştırmaların gösterdiğinden daha kesin bir iddia olur.
+      </p>
+      <p>
+        Facebook haber akışını inceleyen Bakshy, Messing ve Adamic’in 2015 tarihli çalışması, farklı görüşleri içeren haberlerle karşılaşmada hem sıralama sisteminin hem de kullanıcıların kendi seçimlerinin rol oynadığını buldu. Araştırma, ABD’de Facebook kullanan kişiler ve belirli haber içerikleri üzerineydi; bütün platformlara veya günümüzdeki öneri akışlarına doğrudan genellenemez. Yine de insanların yalnızca algoritma tarafından yönlendirildiği ya da yalnızca kendi seçimleriyle karşılaştığı yönündeki iki basit açıklamanın da eksik olduğunu gösterir.
+      </p>
+      <p>
+        Ulusal Bilimler, Mühendislik ve Tıp Akademileri’nin 2024 tarihli gençlerin sağlığı raporu, öneri sistemlerinin tekrar eden geri bildirim döngüleri ve içerik görünürlüğü üzerinden olası etkilerini tartışıyor; sosyal medyanın yarar ve zararlarının kişiye, kullanıma ve bağlama göre değiştiğini vurguluyor. Raporda sağlıkla ilgili meta-analizlerin etkileri genellikle küçük, ilişkileri ise zayıf olarak nitelendiriliyor. Bu yüzden tek bir akış deneyimini herkes için aynı sonuç doğuruyormuş gibi sunmamak gerekir.
+      </p>
+      <p>
+        Buradaki temel soru yalnızca “algoritma zararlı mı?” değil. Hangi davranışı ödüllendiriyor, hangi içerikleri öne çıkarıyor, kullanıcıya ne kadar açıklama ve kontrol sunuyor, araştırmacılar sistemi ne ölçüde inceleyebiliyor? Bu soruların yanıtı ürün tasarımı ve iş modelinden ayrı düşünülemez. Reklamla gelir elde eden platformlarda dikkat ve erişim ekonomik değer taşır; ancak şirketler, önerilerin yalnızca ekranda geçirilen süreyi artırmak üzere tasarlandığını değil, memnuniyet ve güvenlik gibi başka hedefleri de kullandıklarını belirtiyor. Bu hedeflerin gerçek etkisini değerlendirmek için daha fazla bağımsız veriye ihtiyaç var.
+      </p>
+
+      <h2>Akışını nasıl etkileyebilirsin?</h2>
+      <p>
+        Kullanıcı tek başına sistemin çalışma biçimini değiştiremez; ama verdiği geri bildirimlerle önerilerin yönünü etkileyebilir. Uygulamaların menü adları ve özellikleri güncellenebileceğinden, aşağıdaki seçenekler genel yöntemlerdir:
+      </p>
+      <ul>
+        <li>İlgini çekmeyen içerikte “İlgilenmiyorum” seçeneğini kullan; mümkünse nedenini belirt.</li>
+        <li>Bir konuyu daha az görmek istiyorsan ilgili hesapları sessize al, takibi bırak veya konuya ait içerikleri gizle.</li>
+        <li>İzleme ve arama geçmişini gözden geçir; YouTube gibi hizmetlerde önerileri etkileyen geçmişi duraklatma ya da temizleme kontrollerini incele.</li>
+        <li>Instagram’da “Takip Edilenler” veya “Favoriler” gibi akış seçenekleri mevcutsa, öneriler yerine takip ettiğin hesapların gönderilerine öncelik vermek için kullan.</li>
+        <li>Arada yeni kaynakları kendin ara ve farklı hesapları takip et; öneri sistemine yalnızca otomatik akıştan sinyal gitmez.</li>
+      </ul>
+      <p>
+        Bu adımlar akışı tamamen tarafsız veya kronolojik hâle getirmez; yalnızca sisteme yeni tercih sinyalleri verir. Ayrıca gizlilik ayarlarını değiştirmek, bir sistemin içeriği sıralama yöntemini bütünüyle kapatmakla aynı şey değildir.
+      </p>
+
+      <h2>Sonuç: Görünürlük, seçim ve sorumluluk</h2>
+      <p>
+        Sosyal medya öneri sistemleri, büyük içerik havuzlarında gezinmeyi kolaylaştırırken neyin görünür olacağını da etkiler. Davranışlarımızdan öğrenirler; aynı zamanda hangi sinyalleri topladıkları, neyi başarı saydıkları ve ne kadar açıklama yaptıkları platformların ürün kararlarıdır. Dolayısıyla akış, sadece kullanıcının seçimi ya da sadece makinenin kararı değildir: ikisinin, içerik üreticilerinin, platform tasarımının ve ticari modelin etkileşiminden çıkar.
+      </p>
+      <p>
+        Bu sistemleri anlamanın en sağlıklı yolu, onları sihirli ve her şeyi bilen bir “algoritma” olarak görmek değil; tahminleri, sınırları ve çıkarları olan ürünler olarak incelemektir. Kullanıcı kontrolleri değerlidir, ama şeffaflığın ve bağımsız araştırmanın yerini tutmaz. Bir gönderinin neden karşımıza çıktığını sorabilmek kadar, platformların bu soruya anlaşılır yanıt verebilmesi de önemlidir.
+      </p>
+
+      <h2>Kaynaklar ve ileri okuma</h2>
+      <ol>
+        <li>Mosseri, A. (2023). <em>Instagram Ranking Explained</em>, 31 Mayıs 2023. Instagram’ın Feed, Stories, Explore ve Reels sistemleri hakkındaki açıklaması; şirket kaynağıdır. <a href="https://about.instagram.com/blog/announcements/instagram-ranking-explained/" target="_blank" rel="noopener noreferrer">Instagram açıklaması</a>.</li>
+        <li>TikTok (2020). <em>How TikTok Recommends Videos #ForYou</em>, 18 Haziran 2020. “Sana Özel” akışında kullanıldığını belirttiği sinyaller ve öneri kontrolleri; şirket kaynağıdır. <a href="https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you" target="_blank" rel="noopener noreferrer">TikTok açıklaması</a>.</li>
+        <li>Goodrow, C. (2021). <em>On YouTube’s recommendation system</em>, 15 Eylül 2021. YouTube önerilerinin ana sayfa ve “Sıradaki” bölümündeki işleyişi ve sinyaller; şirket kaynağıdır. <a href="https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/" target="_blank" rel="noopener noreferrer">YouTube açıklaması</a>.</li>
+        <li>Meta (2023). <em>How AI Ranks Content on Facebook and Instagram</em>, 29 Haziran 2023. Yapay zekâ sıralama sistemleri, tahminler ve sistem kartları hakkında şirket açıklaması. <a href="https://about.fb.com/news/2023/06/how-ai-ranks-content-on-facebook-and-instagram/" target="_blank" rel="noopener noreferrer">Meta açıklaması</a>.</li>
+        <li>Bakshy, E., Messing, S. ve Adamic, L. A. (2015). “Exposure to ideologically diverse news and opinion on Facebook.” <em>Science</em>, 348(6239), 1130–1132. Facebook haber akışında farklı görüşlere maruz kalmada sıralama ve kullanıcı seçimlerini inceleyen araştırma. <a href="https://doi.org/10.1126/science.aaa1160" target="_blank" rel="noopener noreferrer">DOI: 10.1126/science.aaa1160</a>.</li>
+        <li>National Academies of Sciences, Engineering, and Medicine (2024). <em>Social Media and Adolescent Health</em>, özellikle “Summary” bölümü. Gençlerin sosyal medya deneyimlerinin yararları, riskleri ve kanıtların sınırlarını değerlendiren uzlaşı raporu. <a href="https://doi.org/10.17226/27396" target="_blank" rel="noopener noreferrer">National Academies raporu</a>.</li>
+        <li>YouTube Help. <em>Manage your recommendations &amp; search results</em>. İzleme geçmişi ve önerilere verilen geri bildirimleri yönetme talimatları. <a href="https://support.google.com/youtube/answer/6342839?hl=en" target="_blank" rel="noopener noreferrer">YouTube Yardım Merkezi</a>.</li>
+      </ol>
+      <p style="font-size:.85rem;color:var(--text-3)">Bilgi kesim tarihi: 11 Kasım 2026. Platform işleyişine ilişkin ifadeler, aksi belirtilmedikçe şirketlerin kamuya açık açıklamalarını özetler; bağımsız denetim sonucu değildir. Araştırma sonuçları yalnızca kendi örneklemleri ve yöntemleri kapsamında yorumlanmalıdır.</p>
+      <p><a href="instagram-tarihi.html">İlgili yazı: Instagram’ın tarihi ve ürün dönüşümü</a></p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p>Merak et. Sorgula. Keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

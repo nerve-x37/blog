@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jül Sezar: Roma Cumhuriyeti, Savaşlar ve Suikast — Valexirion</title>
+  <meta name="description" content="Jül Sezar'ın Galya seferlerinden Rubicon'u geçişine, Kleopatra ile ittifakından 15 Mart suikastına uzanan hayatı güvenilir kaynaklarla." />
+  <link rel="canonical" href="https://valexirion.com/julius-caesar.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Jül Sezar: Roma Cumhuriyeti, Savaşlar ve Suikast" />
+  <meta property="og:description" content="Galya'daki fetihlerden Rubicon'a, Kleopatra ile ittifaktan 15 Mart suikastına: Jül Sezar'ın yükselişi ve Roma Cumhuriyeti'nin dönüşümü." />
+  <meta property="og:url" content="https://valexirion.com/julius-caesar.html" />
+  <meta property="og:image" content="https://valexirion.com/img/julius-caesar-tusculum.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jül Sezar: Roma Cumhuriyeti, Savaşlar ve Suikast" />
+  <meta name="twitter:description" content="Jül Sezar'ın iktidara yükselişi, iç savaşları ve öldürülmesinin Roma'ya etkisi." />
+  <meta name="twitter:image" content="https://valexirion.com/img/julius-caesar-tusculum.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@300;400;700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Jül Sezar: Roma Cumhuriyeti, Savaşlar ve Suikast",
+      "description": "Jül Sezar'ın Galya seferlerinden Rubicon'u geçişine, Kleopatra ile ittifakından 15 Mart suikastına uzanan hayatı güvenilir kaynaklarla.",
+      "image": "https://valexirion.com/img/julius-caesar-tusculum.jpg",
+      "mainEntityOfPage": "https://valexirion.com/julius-caesar.html",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="tarih">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9.003 9.003 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>&#8250;</span>
+        <a href="index.html#tarih">Tarih</a><span>&#8250;</span>
+        <span>Antik Roma</span>
+      </div>
+      <span class="article-cat-badge">Tarih · Antik Roma</span>
+      <h1 class="article-title">Jül Sezar<br><em>Roma'yı Değiştiren General</em></h1>
+      <p class="article-subtitle">Galya'daki fetihlerden Rubicon'u geçişine, Kleopatra ile ittifaktan 15 Mart suikastına: Bir adamın yükselişi, Cumhuriyet'in krizi ve ölümünden sonra başlayan yeni düzen.</p>
+      <div class="article-meta">
+        <span class="article-date">12 Kasım 2026</span>
+        <span class="article-read-time">11 dk okuma</span>
+      </div>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure class="article-hero-img article-hero-img--portrait">
+        <img src="img/julius-caesar-tusculum.webp" alt="Jül Sezar'a ait olduğu kabul edilen Tusculum mermer büstü, Torino Museo di Antichità koleksiyonunda" fetchpriority="high" loading="eager" decoding="async"/>
+        <figcaption style="font-size:.8rem;color:var(--text-3);margin-top:.5rem">MÖ 45–44'e tarihlenen Tusculum büstü, Jül Sezar'ın portresi olarak tanımlanır; Torino Museo di Antichità, env. 2089. Fotoğraf: Marie-Lan Taÿ Pamart, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Head_of_Julius_Caesar_from_Tusculum_MAntTorino_2089_n01.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf ve lisans kaydı</a>; <a href="https://museireali.beniculturali.it/catalogo-museo-di-antichita/#/dettaglio/837426_Testa%20di%20Cesare%20da%20Tusculum" target="_blank" rel="noopener noreferrer">müze kataloğu</a>.</figcaption>
+      </figure>
+
+      <p class="article-lead"><strong>Jül Sezar, Roma Cumhuriyeti'nin en güçlü siyasetçilerinden biriydi; ancak Roma'nın ilk imparatoru değildi.</strong> MÖ 100'de doğan Gaius Julius Caesar, Galya'daki askerî başarılarıyla büyük bir servet ve sadık bir ordu kazandı. Senato ile yaşadığı iktidar mücadelesi onu MÖ 49'da Rubicon Nehri'ni geçerek iç savaşa sürükledi. Zaferinin ardından diktatörlük yetkilerini genişletti; MÖ 44'te senatörlerin düzenlediği suikastta öldürüldü. Ölümü Cumhuriyet'i kurtarmadı: Roma'yı yeni bir iç savaşa ve sonunda imparatorluk yönetimine taşıdı.</p>
+
+      <h2>Roma'nın siyaset sahnesinde yükseliş</h2>
+      <p>Sezar, Roma'nın eski soylu ailelerinden Julius soyuna mensuptu. Bu köken ona itibar sağlasa da gençliğindeki Roma, bugünkü anlamıyla demokratik bir devlet değildi; siyasal güç, senato, seçilmiş magistralar, halk meclisleri ve nüfuzlu aileler arasında paylaşılıyor, servet ve kişisel bağlantılar seçimlerde büyük rol oynuyordu. Sezar da bu düzen içinde görevler üstlenerek, borçlanarak ve kalabalık halk desteği arayarak yükseldi. MÖ 60 dolaylarında, Pompeius ve Crassus'la kurduğu siyasi ittifak konsüllüğe giden yolunu açtı. Bu birliktelik resmî bir devlet kurumu değil, tarafların çıkarlarına dayanan kırılgan bir güç anlaşmasıydı.</p>
+      <p>MÖ 59'da konsül olan Sezar, görev süresinin ardından Galya'da uzun süreli askerî komuta elde etti. Roma siyasetinin nasıl kurumlar, kişisel ittifaklar ve güç mücadeleleriyle şekillendiğini <a href="siyasi-tarih.html">siyasi tarih yazımızda</a> daha geniş çerçevede ele alıyoruz. Sezar'ın sonraki hamleleri de yalnızca askerî dehasıyla değil, bu siyasi rekabetin kuralları ve sınırlarıyla anlaşılabilir.</p>
+
+      <h2>Galya seferleri: zafer, propaganda ve yıkım</h2>
+      <p>MÖ 58 ile 50 arasında Sezar, bugünkü Fransa'nın büyük bölümünü ve çevresindeki toprakları kapsayan Galya'da seferler yürüttü. Helvetler, Belgae ve Galyalı topluluklarla çatışmalar, Roma'nın bölgedeki nüfuzunu genişletti. MÖ 52'de Vercingetorix'in önderliğinde birleşen güçler Alesia'da kuşatıldı ve teslim oldu. Bu zafer Sezar'ın Roma'daki ününü ve ordusu üzerindeki etkisini olağanüstü artırdı; aynı zamanda Galya'nın Roma egemenliğine alınmasının önünü açtı.</p>
+      <p>Bu savaşları anlatırken Sezar'ın kendi metni olan <em>Commentarii de Bello Gallico</em> temel kaynaklardan biridir. Fakat eser tarafsız bir günlük değildir: Sezar olayları üçüncü kişi ağzından aktarır, kararlarını gerekçelendirir ve Roma'daki siyasi rakiplerine seslenir. Askerî başarılarını anlatan bu metni, fetihlerin yerel topluluklar üzerindeki yıkıcı sonuçlarını da hesaba katarak okumak gerekir. Savaş, ölümler, esir alınma ve köleleştirme Galya'nın Roma yönetimine girmesinin parçasıydı; bu süreci yalnızca başarılı bir komutanın macerası gibi sunmak, bedelini görünmez kılar.</p>
+      <p>Sezar'ın askeri gücü arttıkça Roma'daki rakipleri, onun komutasını bırakıp özel bir yurttaş olarak şehre dönmesini istedi. Pompeius'la siyasi ortaklığı da Crassus'un MÖ 53'te ölmesinden sonra çözülmüştü. Sezar için komutayı kaybetmek, mahkemeler ve siyasi misillemeler karşısında savunmasız kalmak anlamına gelebilirdi. Gerilim, Cumhuriyet kurumlarının kişisel rekabeti yönetme kapasitesini aşmaya başladı.</p>
+
+      <h2>Rubicon'u geçiş ve Pompeius'la savaş</h2>
+      <p>MÖ 49'un başında Sezar, ordusuyla birlikte Rubicon'u geçti. Bu küçük nehrin önemi coğrafyasından değil, İtalya'ya eyalet ordusuyla girmenin Roma yasalarına ve siyasi teamüllerine aykırı olmasından geliyordu. Sezar'ın bu kararı, silahlı bir iç savaşın başlangıcıydı. “Alea iacta est” — “zar atıldı” — sözü antik anlatılarda ona atfedilir; ancak bu cümleyi olay anında söylediği kesin bir tutanakla doğrulanmış değildir.</p>
+      <p>Pompeius ve senatörlerin bir bölümü Roma'dan çekilip doğuya geçti. Sezar İtalya'da hızla ilerledi, ardından Yunanistan'da Pompeius'un kuvvetleriyle karşı karşıya geldi. MÖ 48'de Pharsalus Savaşı'nı kazandı. Yenilgiye uğrayan Pompeius Mısır'a kaçtı, fakat Mısır sarayındaki güç sahipleri tarafından öldürüldü. Sezar kısa süre sonra İskenderiye'ye ulaştığında, ülke genç kral Ptolemaios XIII ile kız kardeşi Kleopatra VII arasındaki taht mücadelesinin içindeydi.</p>
+      <p>Sezar, Kleopatra'yla siyasi bir ittifak kurdu ve Mısır'daki çatışmalara dahil oldu. Aralarındaki ilişkinin kişisel boyutu antik yazarların ilgisini çekse de bu birliktelik, Mısır tahtı ve Roma'nın Akdeniz'deki çıkarları bağlamından ayrı düşünülemez. Kleopatra'nın iktidarını koruması iki taraf için de stratejik önem taşıyordu. Sezar'ın Mısır seferi ve sonrasındaki askerî zaferleri, onu Roma dünyasında rakipsiz bir konuma yaklaştırdı.</p>
+
+      <h2>Diktatörlük, reformlar ve artan kuşku</h2>
+      <p>Roma'ya dönen Sezar, bir dizi siyasi ve idari düzenleme yaptı. Takvimi güneş yılına yaklaştıran Jülyen takvimi MÖ 46'da uygulanmaya başladı; bu reform, Mısırlı astronomların bilgisinden de yararlandı. Takvimde yılın uzunluğu 365 gün olarak belirlendi ve dört yılda bir artık gün eklendi. Sezar ayrıca borç ve yerleşim sorunlarına yönelik adımlar attı, bazı eyaletlerde yurttaşlık ve yönetim düzenlemeleri yaptı, senatonun üye sayısını artırdı. Bu kararlar devletin işleyişini değiştirdi; fakat hepsi aynı ölçüde kalıcı veya eşitlikçi sonuçlar doğurmadı.</p>
+      <p>Sezar farklı tarihlerde diktatörlük yetkisi aldı; MÖ 44'te kendisine ömür boyu diktatör unvanı verildi. Roma'da “diktatör” sözcüğü, geleneksel olarak kriz anlarında sınırlı süreyle verilen olağanüstü bir magistralığı ifade ediyordu. Yetkinin süresiz hâle gelmesi, Cumhuriyet'in makamlarını ortadan kaldırmasa da gücün tek kişide toplanacağı kaygısını büyüttü. Sezar'ın heykelleri, onurlandırılma biçimleri ve krallıkla ilişkilendirilen semboller etrafında yaşanan tartışmalar, senatörlerin korkularını besledi. Bununla birlikte suikastçıların hepsinin aynı gerekçeyle hareket ettiğini ya da öldürmenin Cumhuriyet'i yeniden işler kılacak ortak bir planı bulunduğunu söylemek mümkün değildir.</p>
+      <p>Roma Cumhuriyeti, tek bir tarihte ve tek bir kişinin kararıyla sona ermedi. Sezar'ın iktidarı, uzun süredir devam eden toplumsal eşitsizliklerin, askerlerin komutanlarına bağlılığının ve siyasi şiddetin büyüdüğü bir dönemin parçasıydı. Onun reformlarının bazıları sonraki yönetimlerce sürdürüldü; fakat diktatörlüğü, Senato'nun kolektif otoritesiyle tek liderin fiilî gücü arasındaki gerilimi keskinleştirdi.</p>
+
+      <h2>Mart İdleri: suikast ve komplocular</h2>
+      <p>MÖ 44 yılının 15 Mart günü — Roma takviminde Mart İdleri — Sezar, senatonun toplantısı için Pompeius Tiyatrosu kompleksindeki toplantı yerine gitti. Aralarında Marcus Junius Brutus, Gaius Cassius Longinus ve Decimus Brutus'un bulunduğu bir grup senatör onu çevreleyerek öldürdü. Antik kaynaklar suikasta çok sayıda kişinin katıldığını bildirir; ayrıntılar yazarlar arasında değişir. Plutarkhos ve Suetonius olaydan yaklaşık bir yüzyıl sonra yazdıkları için anlatıları değerli olmakla birlikte, çağdaş tutanaklar olarak değerlendirilmemelidir.</p>
+      <p>Komplocular, Sezar'ın tek adam yönetimine ve olası bir krallığa yöneldiğini düşünüyor; onu ortadan kaldırmanın Cumhuriyet'i koruyacağını umuyordu. Fakat suikast sonrasında bir yönetim planı üzerinde uzlaşamadılar. Sezar'ın destekçileri ve halkın öfkesi Roma'da yeni bir krize yol açtı. Brutus ile Cassius, Roma'dan ayrılmak zorunda kaldı; suikastın ardından güç boşluğu, intikam ve yeni ittifaklar için zemin hazırladı.</p>
+      <p>“Et tu, Brute?” yani “Sen de mi, Brutus?” sözü, Sezar'ın kesin olarak kaydedilmiş son cümlesi değildir; bu biçimiyle Shakespeare'in <em>Julius Caesar</em> oyunuyla yaygınlaştı. Plutarkhos ve Suetonius gibi antik yazarlar farklı rivayetler aktarır; Suetonius, bazı anlatılarda Yunanca “Sen de mi, evladım?” sözünün geçtiğini söylerken Sezar'ın hiç konuşmadan öldüğünü belirten rivayeti de kaydeder. Bu nedenle dramatik alıntıyı tarihsel kesinlik gibi sunmamak gerekir.</p>
+
+      <h2>Bir suikast Cumhuriyet'i kurtarmadı</h2>
+      <p>Sezar'ın ölümünden sonra Roma'da barış değil, yeni bir iç savaş dönemi başladı. Sezar'ın evlat edindiği varisi Octavianus; Marcus Antonius ve Lepidus'la birlikte İkinci Triumvirlik'i kurdu. Brutus ile Cassius'un orduları MÖ 42'de Philippi'de yenildi. Ardından triumvirler kendi aralarında da güç mücadelesine girdi. Octavianus, Antonius ve Kleopatra'yı MÖ 31'de Actium'da yenerek üstünlüğü ele aldı; MÖ 27'de Augustus unvanını aldı. Roma'nın ilk imparatoru olarak kabul edilen kişi Sezar değil, Augustus'tur.</p>
+      <p>Sezar'ın adı daha sonra hükümdarlık unvanlarına dönüştü ve Roma siyasetinin hafızasında askeri deha, halkçı lider, diktatör ve Cumhuriyet'i yıkan kişi gibi farklı biçimlerde yaşadı. Onu tek bir kahraman ya da tek bir kötü karakter olarak anlatmak yerine, yükselişini mümkün kılan kurumları, fetihlerin bedelini ve suikastın çözemediği siyasi sorunları birlikte görmek daha açıklayıcıdır. Roma tarihinin sonraki evreleri için <a href="roma-bizans-anadolu-konstantinopolis.html">Roma ve Bizans döneminde imparatorluğun dönüşümüne</a> de göz atabilirsiniz.</p>
+
+      <h2>Kısa zaman çizelgesi</h2>
+      <ul>
+        <li><strong>MÖ 100:</strong> Gaius Julius Caesar Roma'da doğdu.</li>
+        <li><strong>MÖ 60 dolayları:</strong> Pompeius ve Crassus'la siyasi ittifak kurdu.</li>
+        <li><strong>MÖ 58–50:</strong> Galya seferlerini yürüttü; Alesia'da Vercingetorix'i yenilgiye uğrattı.</li>
+        <li><strong>MÖ 49:</strong> Rubicon'u geçmesiyle iç savaş başladı.</li>
+        <li><strong>MÖ 48:</strong> Pharsalus'ta Pompeius'u yendi; Mısır'da Kleopatra'yla ittifak kurdu.</li>
+        <li><strong>MÖ 46–44:</strong> Takvim reformu dahil çeşitli düzenlemeler yaptı; MÖ 44'te ömür boyu diktatör ilan edildi.</li>
+        <li><strong>MÖ 44, 15 Mart:</strong> Senatörlerin suikastında öldürüldü.</li>
+        <li><strong>MÖ 27:</strong> Octavianus Augustus unvanını aldı ve Roma'nın ilk imparatoru oldu.</li>
+      </ul>
+
+      <h2>Kaynaklar ve ileri okuma</h2>
+      <ol>
+        <li>Gaius Julius Caesar, <em>Commentarii de Bello Gallico</em> (Galya Savaşı üzerine); birincil kaynak, yazarın siyasi bakış açısı dikkate alınmalıdır. <a href="https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.02.0001" target="_blank" rel="noopener noreferrer">Perseus Digital Library</a>.</li>
+        <li>Plutarkhos, <em>Caesar'ın Yaşamı</em>; daha sonraki dönemde yazılmış antik biyografi. <a href="https://www.perseus.tufts.edu/hopper/text?doc=Plut.+Caes." target="_blank" rel="noopener noreferrer">Perseus Digital Library</a>.</li>
+        <li>Suetonius, <em>Divus Julius</em>; imparatorluk döneminde kaleme alınmış biyografik anlatı. <a href="https://www.perseus.tufts.edu/hopper/text?doc=Suet.+Jul." target="_blank" rel="noopener noreferrer">Perseus Digital Library</a>.</li>
+        <li>Adrian Goldsworthy, <em>Caesar: Life of a Colossus</em>, Yale University Press. <a href="https://yalebooks.yale.edu/book/9780300126891/caesar/" target="_blank" rel="noopener noreferrer">Yale University Press kitap kaydı</a>.</li>
+        <li>Encyclopaedia Britannica, <a href="https://www.britannica.com/biography/Julius-Caesar-Roman-ruler" target="_blank" rel="noopener noreferrer">“Julius Caesar”</a>; biyografi ve Roma'daki siyasi rolüne genel bakış.</li>
+        <li>Musei Reali Torino, Museo di Antichità, <a href="https://museireali.beniculturali.it/catalogo-museo-di-antichita/#/dettaglio/837426_Testa%20di%20Cesare%20da%20Tusculum" target="_blank" rel="noopener noreferrer">Tusculum'dan Sezar başı katalog kaydı</a>, envanter 2089. Fotoğraf: Marie-Lan Taÿ Pamart, <a href="https://commons.wikimedia.org/wiki/File:Head_of_Julius_Caesar_from_Tusculum_MAntTorino_2089_n01.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, CC BY 4.0.</li>
+      </ol>
+      <p style="font-size:.85rem;color:var(--text-3)">Sezar'ın kendi anlatısı, Plutarkhos ve Suetonius'un biyografileri farklı dönem ve amaçlarla yazılmıştır; tartışmalı ayrıntılar kesin olgular gibi sunulmamıştır. “Et tu, Brute?” Shakespeare'in ünlü dramatik ifadesidir, doğrulanmış son söz değildir. Kaynaklar 12 Kasım 2026 tarihinde kontrol edildi.</p>
+    </div>
+  </article>
+
+  <section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">İlgili Yazılar</h2>
+      <div class="related-grid">
+        <a href="roma-bizans-anadolu-konstantinopolis.html" class="related-card"><div class="related-img"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Ephesus_-_Celsus_Library.jpg" alt="Roma döneminde Efes'teki Celsus Kütüphanesi" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"/></div><div class="related-body"><span class="related-cat">Roma ve Bizans</span><h3 class="related-card-title">Roma ve Bizans Döneminde Anadolu: Konstantinopolis’in Yükselişi</h3></div></a>
+        <a href="atina-demokrasisi.html" class="related-card"><div class="related-img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Parthenon_from_west.jpg/960px-Parthenon_from_west.jpg" alt="Atina Akropolisi'ndeki Parthenon Tapınağı" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"/></div><div class="related-body"><span class="related-cat">Antik Yunan</span><h3 class="related-card-title">Atina Demokrasisi: Yurttaşlık, Halk Meclisi ve Sınırlar</h3></div></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

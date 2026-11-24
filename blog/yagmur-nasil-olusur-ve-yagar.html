@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yağmur Nasıl Oluşur ve Yeryüzüne Nasıl Yağar? — Valexirion</title>
+  <meta name="description" content="Su buharı bulutta nasıl damlacıklara dönüşür, damlalar nasıl büyüyüp düşer? Yağmurun oluşumunu ve başlıca yağış türlerini keşfedin." />
+  <link rel="canonical" href="https://valexirion.com/yagmur-nasil-olusur-ve-yagar.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Yağmur Nasıl Oluşur ve Yeryüzüne Nasıl Yağar?" />
+  <meta property="og:description" content="Buharlaşmadan bulut damlacıklarının büyümesine ve yağmurun yere ulaşmasına kadar atmosferde neler yaşanıyor?" />
+  <meta property="og:url" content="https://valexirion.com/yagmur-nasil-olusur-ve-yagar.html" />
+  <meta property="og:image" content="https://valexirion.com/img/yagmur-taitung.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yağmur Nasıl Oluşur ve Yeryüzüne Nasıl Yağar?" />
+  <meta name="twitter:description" content="Yağmur damlalarının bulutlarda nasıl oluşup büyüdüğünü, ardından neden ve nasıl düştüğünü öğrenin." />
+  <meta name="twitter:image" content="https://valexirion.com/img/yagmur-taitung.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@300;400;700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Yağmur Nasıl Oluşur ve Yeryüzüne Nasıl Yağar?",
+      "description": "Su buharı bulutta nasıl damlacıklara dönüşür, damlalar nasıl büyüyüp düşer? Yağmurun oluşumunu ve başlıca yağış türlerini keşfedin.",
+      "image": "https://valexirion.com/img/yagmur-taitung.jpg",
+      "mainEntityOfPage": "https://valexirion.com/yagmur-nasil-olusur-ve-yagar.html",
+      "datePublished": "2026-11-13",
+      "dateModified": "2026-11-13",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="doga">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a><a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a><a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a><a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a><a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9.003 9.003 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a><a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a><a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a><a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a><a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb"><a href="index.html">Ana Sayfa</a><span>&#8250;</span><a href="index.html#doga">Doğa</a><span>&#8250;</span><span>Meteoroloji</span></div>
+      <span class="article-cat-badge">Doğa · Meteoroloji</span>
+      <h1 class="article-title">Yağmur Nasıl Oluşur ve <em>Yeryüzüne Nasıl Yağar?</em></h1>
+      <p class="article-subtitle">Su buharı görünmez hâlde yükselir, bulutlarda küçücük damlacıklara dönüşür; bazıları büyür, düşer ve yere ulaşır. Bir yağmur damlasının atmosferdeki yolculuğunu adım adım izleyelim.</p>
+      <div class="article-meta">
+        <span class="article-date">13 Kasım 2026</span>
+        <span class="article-read-time">7 dk okuma</span>
+      </div>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure style="max-width:780px;margin:0 auto 2.5rem">
+        <div class="article-hero-img">
+          <img src="img/yagmur-taitung.jpg" alt="Taitung Seaside Park yakınlarında bir bulutun altından denize doğru inen yağmur çizgileri" fetchpriority="high" loading="eager" decoding="async" />
+        </div>
+        <figcaption style="font-size:.8rem;color:var(--text-3);margin-top:.5rem">Tayvan’daki Taitung Seaside Park yakınlarında buluttan denize düşen yağmur. Fotoğraf: <a href="https://commons.wikimedia.org/wiki/File:Rain_falling_from_cloud_near_Taitung_Seaside_Park.jpg" target="_blank" rel="noopener noreferrer">Tzuhsun Hsu / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>.</figcaption>
+      </figure>
+
+      <p class="article-lead">Yağmur, bulutun içindeki suyun bir anda yere dökülmesi değildir. Su önce buharlaşır, nemli hava yükselip soğur, görünmez buhar bulut damlacıklarına ya da buz kristallerine dönüşür. Bu parçacıklar bulut içinde büyüyüp yerçekiminin etkisiyle düşecek kadar ağırlaştığında yağış başlar. Fakat bulutun altındaki hava kuruysa, düşen damlaların bir kısmı yere ulaşmadan yeniden buharlaşabilir.</p>
+
+      <h2>Yolculuk suyun havaya karışmasıyla başlar</h2>
+      <p>Güneş, denizleri, gölleri, akarsuları ve nemli toprağı ısıtır. Su yüzeyinden ayrılan moleküller atmosfere su buharı olarak geçer; bitkiler de yapraklarından su salarak havadaki neme katkıda bulunur. Bu buhar rüzgârlarla başka bölgelere taşınabilir. Bu nedenle yağmurun düştüğü yerdeki su, mutlaka yakındaki bir göl ya da denizden buharlaşmış olmak zorunda değildir.</p>
+      <p>Hava yükseldiğinde çevresindeki basınç azalır; hava paketi genişler ve soğur. Yükselme, güneşle ısınan zeminin havayı yukarı itmesiyle, farklı sıcaklıktaki hava kütlelerinin karşılaşmasıyla ya da nemli havanın dağ yamacına tırmanmaya zorlanmasıyla başlayabilir. Hava soğudukça su buharını taşıma kapasitesi azalır. Bağıl nem doygunluğa yaklaşıp sıcaklık çiy noktasına indiğinde yoğuşma başlayabilir.</p>
+
+      <h2>Bulutun içinde neler var?</h2>
+      <p>Yoğuşma çoğu zaman atmosferdeki mikroskobik parçacıkların çevresinde gerçekleşir. Toz, deniz tuzu, duman ve diğer küçük parçacıklar bulut damlalarının oluşmasına zemin sağlar. Bulut, gökyüzünde asılı duran tek bir su kütlesi değil; hava akımlarıyla taşınan çok sayıda küçük sıvı damlacık ve, sıcaklık yeterince düşükse, buz kristalinden oluşan bir topluluktur.</p>
+      <p>Bu damlacıkların çoğu başlangıçta yağmur damlasından çok daha küçüktür. Yükselen hava akımları ve hava direnci onları bir süre bulut içinde tutabilir. Bu yüzden gökyüzünde bulut görmek, mutlaka yağmur yağacağı anlamına gelmez. Bulut içindeki parçacıkların büyümesi, nem ve sıcaklık koşullarının uygun olması gerekir.</p>
+
+      <h2>Küçük damlalar nasıl büyür?</h2>
+      <p>Ilık bulutlarda damlacıklar farklı hızlarda ve büyüklüklerde hareket eder. Daha iri olanlar, yolları üzerindeki küçük damlacıklarla çarpışıp birleşebilir. Bu <em>çarpışma-birleşme</em> süreci tekrarlandıkça bazı damlalar büyür ve çevrelerinden daha fazla su toplar. Buluttaki hava hareketi, damlaların birbirine ne sıklıkta rastlayacağını etkiler.</p>
+      <p>Soğuk bulutlarda ise sıvı damlacıklarla buz kristalleri aynı anda bulunabilir. Su buharı, uygun koşullarda buz kristallerinin üzerine çökelerek onları büyütür; kristaller birbirine tutunup daha iri parçalar da oluşturabilir. Bu parçacıklar aşağı inerken altlarındaki hava tabakası donma noktasının üzerindeyse eriyip yağmura dönüşür. Hava sütunu daha soğuk kalırsa yere kar veya başka tür katı yağış ulaşabilir. Her yağmur aynı yolla oluşmaz; bulutun sıcaklığı ve dikey hava hareketleri hangi sürecin baskın olacağını belirler.</p>
+
+      <h2>Damla ne zaman düşer?</h2>
+      <p>Bir damla büyüdükçe ağırlığı artar; sonunda yerçekiminin aşağı çeken etkisi, onu yukarıda tutan hava akımlarına ve hava direncine üstün gelir. Damla buluttan ayrılıp düşmeye başlar. Ancak “bulut artık damlayı taşıyamadı” açıklaması tek başına yeterli değildir: damlanın nasıl büyüdüğü, çevresindeki hava akımları ve bulutun altındaki koşullar birlikte rol oynar.</p>
+      <p>Yağmur damlaları çizimlerdeki sivri uçlu gözyaşı biçiminde değildir. Küçük damlalar yüzey gerilimi nedeniyle yaklaşık küreseldir; büyüdükçe hava direnci alt kısımlarını basıklaştırabilir. Çok iri damlalar ise dengesizleşip daha küçük damlalara parçalanabilir.</p>
+      <p>Düşen her damla yere varmaz. Bulut tabanının altında hava kuruysa damla çevresine buharlaşabilir; yağış yere ulaşmadan havada kaybolmuş gibi görünür. Bu olaya <em>virga</em> denir. Yağışın yere ulaşıp ulaşmaması, yalnızca buluttaki üretime değil, aşağıdaki hava katmanlarının nemine ve sıcaklığına da bağlıdır.</p>
+
+      <h2>Yağmurun farklı biçimleri</h2>
+      <ul>
+        <li><strong>Konvektif sağanak:</strong> Güneşle ısınan hava hızla yükselir. Dikey gelişen bulutlar kısa süreli, yerel ve yoğun sağanaklara; koşullar uygunsa gök gürültülü fırtınalara yol açabilir.</li>
+        <li><strong>Cephe yağışı:</strong> Sıcak ve soğuk hava kütleleri karşılaştığında daha hafif hava yükselir. Geniş alanlara yayılan, daha uzun süreli yağış oluşabilir.</li>
+        <li><strong>Orografik yağış:</strong> Nemli hava dağ yamacında yükselip soğur ve yağış bırakabilir. Dağın rüzgâr alan tarafı daha yağışlı olurken öte yanında daha kuru bir yağış gölgesi gelişebilir.</li>
+      </ul>
+
+      <h2>Yere düştükten sonra</h2>
+      <p>Yere ulaşan suyun bir bölümü toprağa sızar; bir bölümü yüzeyden akarak dere ve nehirlere karışır, bir bölümü bitkiler ve su yüzeyleri aracılığıyla yeniden atmosfere döner. Bu süreçler su döngüsünün parçalarıdır. Okyanusların bu döngüdeki rolünü ve bulutlarla iklim arasındaki daha geniş bağlantıları <a href="bulutlar-yagmur-okyanus.html">“Bulutlar, Yağmur ve Okyanus”</a> yazımızda ele alıyoruz.</p>
+      <p>Bir yağmur damlasının yere ulaşması, görünmeyen buharın yükselmesinden bulutun içindeki mikroskobik çarpışmalara kadar uzanan bir dizi koşulun aynı anda gerçekleşmesine bağlıdır. Atmosferin bu hassas dengesi, neden bazen kısa ve şiddetli sağanaklar gördüğümüzü, bazen de saatlerce süren ince bir yağmur altında kaldığımızı açıklar.</p>
+
+      <h2>Kaynaklar</h2>
+      <ol>
+        <li>National Geographic Society, <a href="https://education.nationalgeographic.org/resource/precipitation/" target="_blank" rel="noopener noreferrer">“Precipitation”</a> — yoğuşma çekirdekleri, yağış parçacıklarının büyümesi ve yağmur damlalarının biçimi.</li>
+        <li>NASA Global Precipitation Measurement, <a href="https://gpm.nasa.gov/education/water-cycle" target="_blank" rel="noopener noreferrer">“The Water Cycle”</a> — buharlaşma, yoğuşma ve yağışın su döngüsündeki yeri.</li>
+        <li>Fotoğraf: Tzuhsun Hsu, <a href="https://commons.wikimedia.org/wiki/File:Rain_falling_from_cloud_near_Taitung_Seaside_Park.jpg" target="_blank" rel="noopener noreferrer">Taitung Seaside Park yakınında buluttan düşen yağmur</a>, Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>.</li>
+      </ol>
+    </div>
+  </article>
+
+  <section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">İlgili Yazılar</h2>
+      <div class="related-grid">
+        <a href="bulutlar-yagmur-okyanus.html" class="related-card"><div class="related-img"><img src="img/bulut.jpg" alt="Uzaydan görülen geniş bir fırtına bulutu" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"/></div><div class="related-body"><span class="related-cat">Doğa</span><h3 class="related-card-title">Bulutlar, Yağmur ve Okyanus: Dünyanın Büyük Su Makinesi</h3></div></a>
+        <a href="yagmur-mutluluk.html" class="related-card"><div class="related-img"><img src="img/yağmur1.webp" alt="Yapraklar üzerinde birikmiş yağmur damlaları" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"/></div><div class="related-body"><span class="related-cat">Bilim</span><h3 class="related-card-title">Yağmur Yağdığında Neden Mutlu Hissederiz?</h3></div></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a><p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p></div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a><a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a><a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a><a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a><a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal"><a href="hakkinda.html" class="footer-link">Hakkında</a><a href="iletisim.html" class="footer-link">İletişim</a><a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a><a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a><a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

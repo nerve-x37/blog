@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuantum Bilgisayarlar Gerçekten Neyi Değiştirebilir? — Valexirion</title>
+  <meta name="description" content="Kuantum bilgisayarlar hangi problemlerde avantaj sağlayabilir, hangilerinde sağlamaz? NIST ve hakemli bilimsel araştırmalarla güncel durum." />
+  <link rel="canonical" href="https://valexirion.com/kuantum-bilgisayarlar.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Kuantum Bilgisayarlar Gerçekten Neyi Değiştirebilir?" />
+  <meta property="og:description" content="Kuantum bilgisayarların kimya, malzeme bilimi ve şifreleme üzerindeki olası etkileri; yetenekleri ve sınırları." />
+  <meta property="og:url" content="https://valexirion.com/kuantum-bilgisayarlar.html" />
+  <meta property="og:image" content="https://valexirion.com/img/quantum-system-one.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kuantum Bilgisayarlar Gerçekten Neyi Değiştirebilir?" />
+  <meta name="twitter:description" content="Kuantum bilgisayarların gerçekçi kullanım alanları, bugünkü ilerlemeler ve henüz aşılamayan engeller." />
+  <meta name="twitter:image" content="https://valexirion.com/img/quantum-system-one.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Kuantum Bilgisayarlar Gerçekten Neyi Değiştirebilir?",
+      "description": "Kuantum bilgisayarlar hangi problemlerde avantaj sağlayabilir, hangilerinde sağlamaz? NIST ve hakemli bilimsel araştırmalarla güncel durum.",
+      "image": "https://valexirion.com/img/quantum-system-one.jpg",
+      "mainEntityOfPage": "https://valexirion.com/kuantum-bilgisayarlar.html",
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-08",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="teknoloji">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>&#8250;</span>
+        <a href="index.html#teknoloji">Teknoloji</a><span>&#8250;</span>
+        <span>Kuantum Hesaplama</span>
+      </div>
+      <span class="article-cat-badge">Teknoloji · Kuantum Hesaplama</span>
+      <h1 class="article-title">Kuantum Bilgisayarlar<br><em>Gerçekten neyi değiştirebilir?</em></h1>
+      <p class="article-subtitle">Kuantum bilgisayarlar her işi daha hızlı yapan sihirli makineler değil. Güçleri, belirli fiziksel ve matematiksel problemleri farklı biçimde işleyebilmelerinde; önlerindeki en büyük engel ise hatalara açık kübitleri güvenilir ölçekte çalıştırmak.</p>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367-2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure style="max-width:720px;margin:0 auto 2.5rem">
+        <div class="article-hero-img">
+          <img src="img/quantum-system-one.webp" alt="IBM Quantum System One kuantum bilgisayarı, cam muhafaza içinde" fetchpriority="high" loading="eager" decoding="async"/>
+        </div>
+        <figcaption style="font-size:.75rem;line-height:1.6;color:var(--text-3);margin-top:.65rem">
+          Fotoğraf: OJB Quantum / <a href="https://commons.wikimedia.org/wiki/File:IBM_Quantum_System_One.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.
+        </figcaption>
+      </figure>
+
+      <p class="article-lead">Kuantum bilgisayarlarla ilgili haberlerde “milyonlarca olasılığı aynı anda deniyor” ya da “yakında bütün şifreleri kıracak” gibi iddialara sık rastlanıyor. Gerçek tablo daha özgül: kuantum işlemciler bazı algoritmalar için klasik bilgisayarlardan farklı bir hesaplama yolu sunuyor; fakat ölçüm, gürültü ve hata düzeltme gereksinimleri bu avantajı pratik bir ürüne dönüştürmeyi zorlaştırıyor.</p>
+
+      <h2>Kübit, süperpozisyon ve ölçüm — kısa açıklama</h2>
+      <p>Klasik bilgisayar bilgiyi bitlerle, yani 0 veya 1 değerleriyle temsil eder. Kuantum bilgisayarın temel birimi olan kübit, ölçülmeden önce 0 ve 1 durumlarının kuantum birleşiminde bulunabilir. Birden çok kübit dolaşık hâle getirilebilir; kuantum algoritmaları bu durumların genliklerini girişim yoluyla düzenleyerek bazı sonuçları güçlendirip bazılarını bastırır. Ölçüm yapıldığında ise tek bir sonuç elde edilir.</p>
+      <p>Bu, bilgisayarın bütün cevapları paralel biçimde hesaplayıp kullanıcıya vermesi demek değildir. Algoritma, doğru cevabı ölçme olasılığını artıracak biçimde tasarlanmalıdır. Kuantum mekaniğinin bu özellikleri belirli hesaplamalarda avantaj sağlayabilir; sıradan e-posta, oyun, web gezintisi ya da her tür veri işlemi için otomatik bir hız artışı sağlamaz.</p>
+
+      <h2>Nerede fark yaratma ihtimali daha yüksek?</h2>
+      <h3>Moleküller ve yeni malzemeler</h3>
+      <p>Moleküllerin ve katı maddelerin elektron davranışları doğası gereği kuantum mekaniğine uyar. Bu sistemleri klasik bilgisayarla ayrıntılı simüle etmek, sistem büyüdükçe zorlaşabilir. Hata düzeltilmiş, yeterince büyük bir kuantum bilgisayar gelecekte moleküler enerji düzeylerini, katalizörleri, batarya malzemelerini veya başka kuantum sistemlerini modellemeye yardımcı olabilir. Bilimsel derlemeler bunu umut verici uygulama alanlarından biri olarak gösteriyor; fakat aday uygulama olması, bugün ilaç veya pil geliştirme sürecinde üstünlük sağladığı anlamına gelmiyor.</p>
+      <h3>Şifreleme ve dijital güvenlik</h3>
+      <p>Yeterince büyük ve hataya dayanıklı bir kuantum bilgisayar, Shor algoritmasıyla bazı yaygın açık anahtarlı şifreleme yöntemlerinin dayandığı matematik problemlerini çözebilir. Ancak bugünkü cihazlar bu ölçekte güvenilir hesaplama yapabilen makineler değil. Yine de veriler yıllarca gizli kalacaksa, gelecekteki risk şimdiden planlama gerektiriyor: NIST 2024’te kuantum saldırılarına karşı tasarlanmış ilk üç post-kuantum kriptografi standardını yayımladı. Bunlar kuantum bilgisayarda çalışan algoritmalar değil; klasik cihazlarda çalışan, kuantuma dirençli yeni şifreleme standartlarıdır.</p>
+      <h3>Özel matematiksel problemler</h3>
+      <p>Shor’un çarpanlara ayırma algoritması ve Grover’ın arama yaklaşımı, kuantum hesaplamanın bilinen kuramsal örnekleridir. Ancak kuramsal hızlanma tek başına yeterli değildir: gerçek donanımın hata oranı, gerekli mantıksal kübit sayısı, iletişim ve hata düzeltme maliyeti hesaba katılmalıdır. Genel amaçlı bir optimizasyon hızlandırıcısı gibi çalıştığı kanıtlanmış değildir; belirli problemlerde pratik avantaj olup olmadığı aktif bir araştırma konusudur.</p>
+
+      <h2>İlerleme var; ama “hatasız kuantum bilgisayar” henüz yok</h2>
+      <p>2024’te <em>Nature</em> dergisinde yayımlanan Willow çalışması, yüzey kodundaki mantıksal kübit büyüklüğü artırılırken hata düzeltmenin hata oranını azaltabildiğini gösterdi. Google’ın 105 fiziksel kübitli işlemcisiyle yapılan deney, ölçek büyüdükçe hata düzeltmenin eşiğin altında çalışabildiğine dair önemli bir adım olarak raporlandı. Bu, uzun ve güvenilir hesaplamalar yapabilecek, genel amaçlı ve hatasız bir kuantum bilgisayarın tamamlandığı anlamına gelmiyor.</p>
+      <p>Fiziksel kübitler çevresel etkilere ve kontrol hatalarına duyarlıdır. Faydalı bir mantıksal kübit oluşturmak için çok sayıda fiziksel kübit ve sürekli hata tespiti gerekebilir. Büyük bir hesaplama için hata düzeltme, donanım ve algoritmaların birlikte gelişmesi gerekir. Bu yüzden tek başına “kaç kübit var?” sayısı, bir bilgisayarın hangi işi güvenilir biçimde yapabildiğini açıklamaz.</p>
+
+      <h2>Ne zaman günlük hayatı etkiler?</h2>
+      <p>Kuantum bilgisayarlar büyük olasılıkla evde kullandığımız dizüstü bilgisayarların yerini almayacak. Eğer ölçeklenebilir, hata düzeltilmiş sistemler geliştirilirse, daha olası model uzmanların kuantum donanımını bulut üzerinden belirli bilimsel hesaplar için kullanmasıdır. Bunun günlük yaşama etkisi doğrudan cihaz satın almak değil; yeni malzemeler, kimyasal süreçler veya güvenlik altyapısındaki iyileşmeler olabilir.</p>
+      <p>Bu alanın bilimsel ilerlemesi gerçek, fakat zaman çizelgesi belirsiz. En dürüst yanıt şu: kuantum bilgisayarlar her şeyi değiştirmeyecek; bazı dar ama önemli problem sınıflarını çözme biçimimizi değiştirebilir. Bu dönüşümün ne zaman ve hangi uygulamalarda ekonomik olarak anlamlı olacağı ise henüz gösterilmiş değil.</p>
+
+      <h2>Kaynaklar</h2>
+      <ol>
+        <li>National Institute of Standards and Technology (NIST). <em>What is Quantum Information Science?</em> Kuantum bilgisayarlar, sensörler ve iletişim araştırmaları için kurumsal genel bakış. <a href="https://www.nist.gov/quantum-information-science" target="_blank" rel="noopener noreferrer">NIST</a>.</li>
+        <li>Au-Yeung, R. et al. (2024). “Quantum algorithms for scientific computing.” <em>Reports on Progress in Physics</em>, 87(11). Kuantum algoritmalarının bilimsel hesaplamadaki imkânlarını ve aşılması gereken sorunları inceleyen hakemli derleme. <a href="https://doi.org/10.1088/1361-6633/ad85f0" target="_blank" rel="noopener noreferrer">doi:10.1088/1361-6633/ad85f0</a>.</li>
+        <li>Acharya, R. et al. (2025). “Quantum error correction below the surface code threshold.” <em>Nature</em>, 638, 920–926. Willow işlemcisinde hata düzeltme ölçeklenmesine ilişkin hakemli çalışma. <a href="https://www.nature.com/articles/s41586-024-08449-y" target="_blank" rel="noopener noreferrer">Nature makalesi</a>.</li>
+        <li>National Institute of Standards and Technology (NIST). <em>Post-Quantum Cryptography Standards</em>. 2024’te yayımlanan kuantuma dirençli kriptografi standartları ve geçiş çalışmaları. <a href="https://csrc.nist.gov/projects/post-quantum-cryptography" target="_blank" rel="noopener noreferrer">NIST PQC projesi</a>.</li>
+        <li>Preskill, J. (2018). “Quantum Computing in the NISQ era and beyond.” <em>Quantum</em>, 2, 79. Gürültülü ara dönem kuantum cihazlarının yetenek ve sınırlılıklarına dair hakemli makale. <a href="https://doi.org/10.22331/q-2018-08-06-79" target="_blank" rel="noopener noreferrer">doi:10.22331/q-2018-08-06-79</a>.</li>
+        <li>Gidney, C. &amp; Ekerå, M. (2021). “How to factor 2048 bit RSA integers in 8 hours using 20 million noisy qubits.” <em>Quantum</em>, 5, 433. Büyük ölçekli şifre çözmenin donanım gereksinimlerine dair kaynak temelli tahmin; mevcut cihazın gösterilmiş kabiliyeti değildir. <a href="https://doi.org/10.22331/q-2021-04-15-433" target="_blank" rel="noopener noreferrer">doi:10.22331/q-2021-04-15-433</a>.</li>
+      </ol>
+      <p style="font-size:.85rem;color:var(--text-3)">Kaynaklar 8 Kasım 2026 tarihinde kontrol edildi. Uygulama örnekleri potansiyel araştırma alanlarıdır; sonuçlar, hakemli çalışmaların gösterdiği kapsamla sınırlı aktarılmıştır.</p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p>Merak et. Sorgula. Keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

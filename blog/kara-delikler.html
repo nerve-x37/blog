@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      document.documentElement.classList.remove('light','dark');
+      document.documentElement.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kara Delikler: Evrenin En Gizemli Nesneleri — Hawking Işıması, Türler ve Galaksi Evrimi — Valexirion</title>
+  <meta name="description" content="Singülariteden olay ufkuna, Hawking ışımasından M87*'nin 3.000 ışık yılı uzunluğundaki jetine — NASA, EHT ve Science dergisi kaynaklarıyla kara deliklerin tam anatomisi." />
+
+  <link rel="canonical" href="https://valexirion.com/kara-delikler.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Kara Delikler: Evrenin En Gizemli Nesneleri — Hawking Işıması, Türler ve Galaksi Evrimi — Valexirion" />
+  <meta property="og:description" content="Singülariteden olay ufkuna, Hawking ışımasından M87*'nin jetine — NASA ve EHT kaynaklarıyla kara deliklerin tam anatomisi." />
+  <meta property="og:url" content="https://valexirion.com/kara-delikler.html" />
+  <meta property="og:image" content="https://valexirion.com/img/stephen.png" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kara Delikler: Evrenin En Gizemli Nesneleri — Valexirion" />
+  <meta name="twitter:description" content="NASA ve EHT kaynaklarıyla kara deliklerin tam anatomisi — Hawking ışıması, türler ve galaksi evrimi." />
+  <meta name="twitter:image" content="https://valexirion.com/img/stephen.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  
+
+  <link rel="stylesheet" href="style.css" />
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Kara Delikler: Evrenin En Gizemli Nesneleri — Hawking Işıması, Türler ve Galaksi Evrimi","description":"Singülaritekten olay ufkuna, Hawking ışımasından M87*'nin 3.000 ışık yılı uzunluğundaki jetine — NASA, EHT ve Science dergisi kaynaklarıyla kara deliklerin tam anatomisi.","image":"https://valexirion.com/img/stephen.png","mainEntityOfPage":"https://valexirion.com/kara-delikler.html","inLanguage":"tr-TR","publisher":{"@type":"Organization","name":"Valexirion","url":"https://valexirion.com/"}}</script>
+</head>
+<body class="font-ui" data-page-category="bilim">
+
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <nav id="navbar" class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim"     class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih"     class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema"    class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik"     class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe"   class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel"  class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga"      class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Men&uuml;y&uuml; a&ccedil;/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim"     class="mobile-link">Bilim</a>
+      <a href="index.html#tarih"     class="mobile-link">Tarih</a>
+      <a href="index.html#sinema"    class="mobile-link">Sinema</a>
+      <a href="index.html#muzik"     class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe"   class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel"  class="mobile-link">Belgesel</a>
+      <a href="index.html#doga"      class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a>
+        <span>&#8250;</span>
+        <a href="index.html#bilim">Bilim</a>
+        <span>&#8250;</span>
+        <span>Astrofizik</span>
+      </div>
+      <span class="article-cat-badge">Astrofizik</span>
+      <h1 class="article-title">
+        Kara Delikler: Evrenin En Gizemli Nesneleri<br>
+        <em>Hawking I&#351;&#305;mas&#305;, T&uuml;rler ve Galaksi Evrimi</em>
+      </h1>
+      <p class="article-subtitle">
+        Işığın bile kaçamadığı, zamanın durduğu, maddenin sonsuz yoğunlukta bir noktaya ezildiği bu nesneler — kara delikler — evrenin en aşırı ve en gizemli yapılarıdır. Milyonumuzun güneşten daha kütleli devlerden, birkaç kilometre çaplı yıldız kalıntılarına kadar uzanan bu ailenin her üyesi evrenin işleyişinde kritik bir rol oynar. NASA, Olay Ufku Teleskobu (EHT), Science ve Nature dergilerinin 2025–2026 güncel verilerinden derlenen bu yazıda kara deliklerin anatomisini, türlerini, Hawking ışımasının devrimi ve galaksi evrrimindeki devasa etkilerini ele alıyoruz.
+      </p>
+      <div class="article-share">
+        <button class="share-btn" onclick="navigator.share ? navigator.share({title: document.title, url: location.href}) : navigator.clipboard.writeText(location.href)" aria-label="Paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Payla&#351;
+        </button>
+      </div>
+    </div>
+  </header>
+
+  
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+
+      <div class="article-hero-img">
+        <img src="img/stephen1.webp" alt="Kara Delikler — Evrenin En Gizemli Nesneleri" loading="eager" onerror="this.parentElement.style.display='none'" decoding="async" fetchpriority="high">
+      </div>
+
+      <p class="article-lead">
+        1915'te Einstein genel görelilik denklemlerini yayımladığında, denklemlerin kaçınılmaz bir çözümü olduğunu fark etti: uzay-zamanın o kadar eğilebileceği, ışığın bile içinden çıkamayacağı bölgeler. Einstein bu sonucu kabul etmek istemedi ve "gerçekte böyle nesneler oluşamaz" diye not düştü. Yanılıyordu. Bugün NASA'nın Chandra, Hubble, NICER ve James Webb uzay teleskopları onlarca kara deliği aktif olarak izlemektedir. Samanyolu'muzun merkezinde, Güneş'in 4 milyon katı kütlesinde Yay A* (Sagittarius A*) adını verdiğimiz bir dev kara delik bulunmaktadır. Ve 6 Temmuz 2026 itibarıyla bilim insanları yeni bir çığır açıcı keşfi tartışmaktadır: Paderborn ve Weizmann Enstitüsü'nün ortak çalışması, Hawking ışımasının laboratuvar koşullarında daha önce düşünüldüğünden çok daha basit bir mekanizmayla ortaya çıktığını gösterdi.
+      </p>
+
+      <!-- BÖLÜM 1 -->
+      <h2>Kara Delik Nedir? Temel Tanım ve Anatomisi</h2>
+
+      <p>
+        NASA'nın resmi tanımına göre kara delik, çekim kuvvetinin o kadar aşırı yoğunlaştığı bir uzay-zaman bölgesidir ki içinden hiçbir şey — ışık dahil — kaçamaz. Bu olağanüstü yoğunluk, kütlenin son derece küçük bir hacme sıkıştırılmasından kaynaklanır; Güneş'in kütlesini yaklaşık 3 km yarıçaplı bir küreye sığdırdığınızda bir kara delik elde edersiniz. NASA Imagine the Universe kaynaklarına göre kara deliğin iki temel bileşeni vardır:
+      </p>
+
+      <!-- Anatomi kutusu -->
+      <div style="background: var(--bg-secondary,#f8f9fa); border-left:4px solid var(--accent,#2563eb); padding:1.5rem 2rem; margin:2rem 0; border-radius:0 8px 8px 0;">
+        <p style="font-weight:700; margin-bottom:0.8rem; font-size:1.05rem;">&#11088; Kara Deliğin Anatomisi — NASA Science, Mart 2026</p>
+        <ul style="margin:0; padding-left:1.2rem; line-height:2.2; font-size:0.94rem;">
+          <li><strong>Singülarite (Tekillik):</strong> Kara deliğin merkezinde maddenin teorik olarak sonsuz yoğunluğa ve sıfır hacme sıkıştığı nokta. Burada fizik yasaları çöker; genel görelilik kendi sınırına ulaşır. NASA'ya göre burası "her şeyin son durağıdır."</li>
+          <li><strong>Olay Ufku (Event Horizon):</strong> Kara deliğin "yüzeyi" sayılabilecek sınır — fiziksel değil, geometrik bir sınır. Bu noktanın içinde kurtulma hızı ışık hızını aşar; dolayısıyla içeri giren hiçbir şey geri dönemez. Olay ufkunun boyutu <em>Schwarzschild yarıçapı</em> ile belirlenir.</li>
+          <li><strong>Akresyon Diski (Accretion Disk):</strong> Kara deliğin etrafında spiral çizerek içeri düşen gaz ve tozdan oluşan parlak disk. NASA Science'a göre kara deliğin görünen ana ışık kaynağı bu diskdir. Disk maddesi olay ufkuna yaklaştıkça ışık hızına yakın hıza ulaşır; Einstein'ın görelilik etkisiyle bize doğru dönen taraf daha parlak ve mavi, uzaklaşan taraf daha sönük ve kırmızı görünür.</li>
+          <li><strong>Korona:</strong> İç akresyon diskinin üzerinde, milyar derecedeki seyrek, türbülanslı manyetik parçacık bulutu. Yüksek enerjili X-ışını kaynağıdır; şekli ve özellikleri hâlâ araştırılmaktadır.</li>
+          <li><strong>Rölatif Jetler:</strong> Bazı kara deliklerden manyetik alanlar aracılığıyla olay ufkunun iki kutbundan fırlayan ışık hızına yakın madde ve enerji akışları. M87*'deki jet 3.000 ışık yılı uzunluğundadır.</li>
+          <li><strong>Foton Halkası (Photon Ring):</strong> Olay ufku gölgesinin kenarında beliren ince ışık halkası — ışığın kara delik etrafında defalarca yörüngede döndükten sonra kaçtığı bölge.</li>
+          <li><strong>Olay Ufku Gölgesi:</strong> Gerçek olay ufkunun yaklaşık iki katı büyüklüğünde karanlık bölge; 2019 ve 2022'de EHT tarafından görüntülendi.</li>
+        </ul>
+      </div>
+
+      <p>
+        NASA Science'ın Anatomi sayfasında vurgulandığı üzere kara delikleri doğrudan görmek mümkün değildir — ışığı ne yayarlar ne yansıtırlar. Astronomlar onları çevrelerindeki madde üzerindeki etkilerinden, akresyon diskinin ışımasından, gravitasyonel dalga sinyallerinden ve komşu yıldızların yörüngelerinden tespit eder.
+      </p>
+
+      <!-- BÖLÜM 2 -->
+      <h2>Kara Deliklerin Türleri: Dört Kategori</h2>
+
+      <p>
+        NASA Science Types sayfasına (Mart 2026) göre astronomlar kara delikleri kütlelerine göre dört ana kategoriye ayırır:
+      </p>
+
+      <div class="table-card">
+        <p style="font-weight:700; margin-bottom:0.75rem; font-size:1rem;">&#127757; Kara Delik Türleri — NASA Science &amp; National Geographic 2025–2026</p>
+        <div class="table-scroll"><table class="info-table">
+          <thead>
+            <tr style="border-bottom:2px solid var(--border,#e2e8f0);">
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Tür</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Kütle Aralığı</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Oluşum</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Örnek</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Yıldız Kütleli</strong><br><em>(Stellar-mass)</em></td>
+              <td style="padding:0.4rem 0.6rem;">~3 – birkaç yüz Güneş kütlesi</td>
+              <td style="padding:0.4rem 0.6rem;">20+ Güneş kütlesindeki yıldızların çekirdeğinin çökmesi (süpernova)</td>
+              <td style="padding:0.4rem 0.6rem;">Cygnus X-1; Samanyolu'nda tahminen 100 milyon adet</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Orta Kütleli</strong><br><em>(Intermediate-mass)</em></td>
+              <td style="padding:0.4rem 0.6rem;">100 – 10.000+ Güneş kütlesi</td>
+              <td style="padding:0.4rem 0.6rem;">Kesin bilinmiyor; yıldız birleşmeleri veya erken evren süreçleri</td>
+              <td style="padding:0.4rem 0.6rem;">GW190521 birleşmesi → 142 Güneş kütleli (LIGO, 2019); 50.000 Güneş kütleli Hubble adayı</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Süper Kütleli</strong><br><em>(Supermassive)</em></td>
+              <td style="padding:0.4rem 0.6rem;">Yüz binler – milyarlarca Güneş kütlesi</td>
+              <td style="padding:0.4rem 0.6rem;">Her büyük galaksinin merkezinde; tam oluşum mekanizması araştırılıyor</td>
+              <td style="padding:0.4rem 0.6rem;">Yay A*: 4 milyon Güneş kütlesi; M87*: 6,5 milyar; Holmberg 15A: 40+ milyar</td>
+            </tr>
+            <tr>
+              <td style="padding:0.4rem 0.6rem;"><strong>Primordiyal (İlksel)</strong><br><em>(Primordial)</em></td>
+              <td style="padding:0.4rem 0.6rem;">Asteroid kütlesinden büyük kütlelere kadar (teorik)</td>
+              <td style="padding:0.4rem 0.6rem;">Big Bang'in ilk saniyelerindeki aşırı yoğunluk dalgalanmaları</td>
+              <td style="padding:0.4rem 0.6rem;">Henüz doğrudan gözlemlenmedi; Hawking tarafından önerildi</td>
+            </tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <p>
+        NASA'nın Imagine the Universe kaynağında açıklandığı üzere Samanyolu'nda şimdiye kadar yaklaşık 50 onaylanmış veya şüphe duyulan yıldız kütleli kara delik tespit edilmiş; ancak sadece galaksimizde 100 milyona kadar bulunduğu tahmin edilmektedir. Büyük galaksilerin neredeyse tamamının merkezinde süper kütleli birer kara delik barındırdığı artık genel kabul görmektedir.
+      </p>
+
+      <!-- BÖLÜM 3 -->
+      <h2>Kara Delikler Nasıl Oluşur?</h2>
+
+      <p>
+        NASA'nın açıklamasına göre yıldız kütleli kara deliklerin oluşumu şu şekilde gerçekleşir: Güneş'ten 20 kat ya da daha fazla kütleye sahip bir yıldız nükleer yakıtını tükettiğinde, çekirdeği kendi ağırlığıyla içe doğru çöker. Bu çöküş bir süpernova patlamasını tetikler ve yıldızın dış katmanlarını uzaya fırlatır. Geride kalan çekirdek, bilinen hiçbir kuvvetin durduramayacağı kadar yoğunlaşırsa kara deliğe dönüşür — yaklaşık 3 Güneş kütlesi bu dönüşüm için gereken eşiktir.
+      </p>
+
+      <p>
+        Süper kütleli kara deliklerin kökeni ise hâlâ açık bir araştırma alanıdır. NASA Science, evrenin ilk milyar yılında bazı süper kütleli kara deliklerin zaten oluştuğunu gösterdiğini aktarıyor. Bunların erken evrende çöken süper kütleli yıldızlardan başlayıp ardından akresyon ve galaksi birleşmeleriyle büyüdükleri düşünülüyor. Galaksi boyutu ile merkezdeki kara delik kütlesi arasındaki güçlü korelasyon, ikisinin evriminin birbirine derinden bağlı olduğuna işaret ediyor.
+      </p>
+
+      <!-- BÖLÜM 4 -->
+      <h2>Hawking Işıması: Kara Delikler Tamamen Siyah Değil</h2>
+
+      <p>
+        1974 yılına kadar kara delikler "nihai kozmik süpürge" olarak görülüyordu — içine giren hiçbir şeyin çıkamadığı mutlak karanlık nesneler. O yıl Cambridge Üniversitesi'nden Stephen Hawking, kuantum alan teorisini kara delik fiziğiyle birleştirerek çarpıcı bir sonuca ulaştı: Kara delikler tamamen kara değil. Olay ufkuna yakın bölgede kuantum süreçleri nedeniyle zayıf bir termal ışıma yayarlar.
+      </p>
+
+      <p>
+        Hawking ışımasının mekanizması şöyle açıklanır: Kuantum mekaniğine göre "boş uzay" gerçekten boş değildir; sürekli olarak sanal parçacık-antiparçacık çiftleri oluşur ve hemen yok olur. Olay ufkunun tam sınırında böyle bir çift oluştuğunda, bir parçacık olay ufkunun içine düşebilirken diğeri dışarı kaçar — ve bu kaçan parçacık gerçek radyasyon olarak gözlemlenebilir. Kara delik bu süreçte kütle kaybeder ve çok uzun bir zaman diliminde tamamen buharlaşır.
+      </p>
+
+      <blockquote class="article-blockquote">
+        "Hawking ışıması sıcaklığı kara deliğin kütlesiyle ters orantılıdır: küçük kara delikler sıcak, süper kütleli olanlar ise kozmik mikrodalga arka planından bile soğuktur."
+      </blockquote>
+
+      <!-- Hawking detay kutusu -->
+      <div style="background: var(--bg-secondary,#f8f9fa); border:1px solid var(--border,#e2e8f0); padding:1.5rem 2rem; margin:2rem 0; border-radius:8px;">
+        <p style="font-weight:700; margin-bottom:0.75rem; font-size:1rem;">&#9883; Hawking Işımasının Temel Gerçekleri</p>
+        <ul style="margin:0; padding-left:1.2rem; line-height:2.1; font-size:0.93rem;">
+          <li><strong>Önerildiği yıl:</strong> 1974 — Stephen Hawking, <em>Nature</em> dergisinde yayımladı</li>
+          <li><strong>Sıcaklık formülü:</strong> T = ℏc³ / (8πGMk) — kütle arttıkça sıcaklık düşer</li>
+          <li><strong>1 Güneş kütleli kara deliğin buharlaşma süresi:</strong> ~10⁶⁷ yıl (evrenin yaşının katrilyonlarca katı)</li>
+          <li><strong>Kozmik mikrodalga arka planı sıcaklığı:</strong> 2,7 K — mevcut yıldız kütleli kara delikler bundan daha soğuk; bu nedenle şu an net kütle kaybetmiyorlar</li>
+          <li><strong>Gözlenme durumu:</strong> Astrofiziksel kara delikler için henüz doğrudan tespit edilemedi (çok zayıf sinyal); laboratuvarda optik analog sistemler ve Bose-Einstein yoğuşmaları ile ölçüldü</li>
+          <li><strong>Bilgi paradoksu:</strong> Hawking ışıması termal göründüğünden içeri giren madde hakkında bilgi taşımıyor görünür — bu "bilgi paradoksu" fiziğin en büyük açık problemlerinden biri</li>
+          <li><strong>Temmuz 2026 gelişmesi:</strong> Paderborn ve Weizmann Enstitüsü, doğrusal olmayan dalga kılavuzu sistemiyle olay ufku modelini oluşturdu ve Hawking ışımasının önceki teorilerden çok daha basit bir mekanizmayla ortaya çıktığını gösterdi</li>
+        </ul>
+      </div>
+
+      <p>
+        Hawking ışıması yalnızca kara deliklerle sınırlı değildir. Radboud Üniversitesi'nden Heino Falcke, Michael Wondrak ve Walter van Suijlekom'un 2024'te yayımladıkları çalışma, aynı kuantum sürecinin nötron yıldızları dahil diğer astronomik nesnelere de uygulandığını ortaya koydu. Evrenimizdeki her şey, çok çok yavaş da olsa, bu yolla buharlaşıyor olabilir.
+      </p>
+
+      <!-- BÖLÜM 5 -->
+      <h2>Kara Deliklerin Evrendeki Rolü: Galaksilerden Zaman Dokusuna</h2>
+
+      <h3>1. Galaksi Evrimi ve Geri Besleme Mekanizması</h3>
+      <p>
+        Süper kütleli kara deliklerin yalnızca galaksi merkezlerindeki birer dev olmadığı, galaksilerin evrimini aktif olarak şekillendirdiği artık bilim çevrelerinde geniş kabul görüyor. NASA'nın Chandra X-ışını gözlemevi ve diğer teleskopların topladığı verilere göre aktif süper kütleli kara delikler (aktif galaksi çekirdekleri — AGN) muazzam miktarda enerjiyi akresyon diski ışıması ve rölatif jetler yoluyla galaksinin gazına ve çevresine pompalar. Bu "geri besleme" etkisi, galaksideki yeni yıldız oluşumunu ya bastırır ya da tetikler — kara deliğin galaksisiyle ortak bir evrim geçirdiğinin kanıtıdır.
+      </p>
+
+      <h3>2. Rölatif Jetler: Kozmosun En Güçlü Enerji Fışkırtıcıları</h3>
+      <p>
+        Ocak 2026'da <em>Astronomy &amp; Astrophysics</em> dergisinde yayımlanan ve Olay Ufku Teleskobu işbirliğinin sonuçlarını aktaran çalışma, M87* kara deliğinin jetinin kaynağına ışık tuttu. Çalışmada kara deliğin gölgesi ile 3.000 ışık yılı uzunluğundaki jetin tabanı arasındaki bağlantı ilk kez görüntülenerek kanıtlandı. Olay ufkunun yalnızca onda biri kadar uzakta, sıkıştırılmış bir emisyon bölgesinden fırlatılan bu jet, manyetik alan konfigürasyonu ve kara deliğin dönme enerjisinin özgün bir kombinasyonundan güç alıyor. Science Times'ın Nisan 2026 tarihli analizine göre bu keşif, galaksi evrimini, kozmik enerji geri beslemesini ve erken evrenin anlaşılmasını doğrudan etkiliyor.
+      </p>
+
+      <h3>3. Gravitasyonel Dalga Fabrikaları</h3>
+      <p>
+        İki kara deliğin birleşmesi, uzay-zamanı titreştiren gravitasyonel dalgalar üretir. LIGO ve Virgo gözlemevleri 2015'ten bu yana 90'dan fazla birleşme olayı tespit etmiştir. Bu dalgaların ölçülmesi, hem kara deliklerin kütlelerini hem de spin parametrelerini belirlemek için güçlü bir araç sunmaktadır. GW190521 birleşmesi, 142 Güneş kütleli bir orta kütleli kara delik ürettiğinden, yıldız kütleli ile süper kütleli arasındaki "kara delik kütlesi boşluğu"nun nasıl köprülendiğine ilişkin önemli ipuçları verdi.
+      </p>
+
+      <h3>4. Uzay-Zamanı Bükmek: Gravitasyonel Mercek Etkisi</h3>
+      <p>
+        Kara deliklerin aşırı kütleçekimi, çevrelerinden geçen ışığın yolunu büker — buna gravitasyonel mercekleme (gravitational lensing) denir. Uzaktaki galaksilerin, süper kütleli kara deliğin önünden geçen ışığı nedeniyle çarpık ya da çoğaltılmış görüntüleri, kozmologların hem kara delikleri hem de karanlık madde dağılımını haritalandırmasına olanak tanır. NASA'nın Hubble ve James Webb teleskopları bu etkiyi düzenli olarak gözlemlemektedir.
+      </p>
+
+      <!-- BÖLÜM 6 -->
+      <h2>Olay Ufku Teleskobu: Kara Delikleri Görüntülemek</h2>
+
+      <p>
+        Nisan 2019'da insanlık tarihinde ilk kez bir kara deliğin görüntüsü yayımlandı: M87 galaksisinin merkezindeki dev, 6,5 milyar Güneş kütleli M87*. Kızıl turuncu bir halka ortasında karanlık bir leke. Bu halka aslında kara deliğin olay ufku gölgesiydi; çevresindeki ışık ise yüzlerce milyon dereceye ulaşan akresyon diskinin parlaması ve gravitasyonel merceklenmeyle biçimlenmiş foton halkasından oluşuyordu.
+      </p>
+
+      <p>
+        Mayıs 2022'de EHT, bu kez Samanyolu'nun kendi merkezindeki kara deliği — Yay A* (Sagittarius A*) — görüntüledi. Bu çok daha zor bir görevdi; çünkü Yay A*, M87*'den 1.000 kat daha küçük olduğundan gaz ve tozun olay ufkunun çevresinde tur süresi yalnızca dakikalar mertebesindeydi ve görüntü sürekli titreşiyordu. EHT ekibi bu sorunun üstesinden gelmek için yüzlerce anlık görüntüyü birleştirdi.
+      </p>
+
+      <blockquote class="article-blockquote">
+        "Yerküre büyüklüğündeki sanal bir teleskopla, New York'tan bir Viyana menüsünü okuyabilecek kadar yüksek çözünürlüğe ulaştık."
+        <footer>— <em>EHT İşbirliği, M87* ilk görüntü duyurusu, Nisan 2019</em></footer>
+      </blockquote>
+
+      <!-- BÖLÜM 7: Güncel keşifler kutusu -->
+      <h2>2025–2026 Güncel Keşifler ve Gelişmeler</h2>
+
+      <div style="background: var(--bg-secondary,#f8f9fa); border:1px solid var(--border,#e2e8f0); padding:1.5rem 2rem; margin:2rem 0; border-radius:8px;">
+        <p style="font-weight:700; margin-bottom:0.75rem; font-size:1rem;">&#128313; Kara Delik Bilimindeki Son Gelişmeler</p>
+        <ul style="margin:0; padding-left:1.2rem; line-height:2.1; font-size:0.93rem;">
+          <li><strong>Ocak 2026 — M87* jet kaynağı:</strong> EHT, kara deliğin gölgesiyle 3.000 ışık yıllık jetin tabanı arasındaki bağlantıyı ilk kez görüntüledi. <em>(Astronomy &amp; Astrophysics, 28 Ocak 2026)</em></li>
+          <li><strong>Mart 2026 — Oxford BlackHolistic Konferansı:</strong> Yıldız kütlelisinden milyarlarca Güneş kütlesine kadar tüm kara deliklerden akan akresyon ve jetlerde ortak ölçekleme örüntüleri tespit edildi; yeni araştırma yolları belirlendi.</li>
+          <li><strong>Nisan 2026 — Singülarite fiziği:</strong> Science Times, EHT verileri ve GRMHD simülasyonlarını birleştiren yeni çalışmayı derledi; M87*'nin manyetik alan geometrisi ile kara delik spini arasındaki bağlantı daraltıldı.</li>
+          <li><strong>Haziran 2026 — ScienceDaily:</strong> Hawking ışıması yerine nötrino fabrikası güçlendirilen kara delik bulgusuna ilişkin yeni çalışma yayımlandı; beklenen kara delik yerine nötrino kaynağı tespit edildi.</li>
+          <li><strong>6 Temmuz 2026 — Paderborn &amp; Weizmann:</strong> Doğrusal olmayan dalga kılavuzu sisteminde olay ufku analog modeli oluşturuldu; Hawking ışımasının önceki varsayımdan çok daha basit bir mekanizmayla ortaya çıktığı gösterildi.</li>
+          <li><strong>James Webb (2025–2026):</strong> Evrenin ilk milyar yılında zaten dev kara deliklerin bulunduğuna dair yeni kanıtlar; erken evren süper kütleli kara delik oluşum modelleri revize ediliyor.</li>
+          <li><strong>ngEHT (Gelecek):</strong> Yeni nesil EHT hedefleri: kara delik spinini ölçmek, SMBHs'in birleşmesini gözlemlemek, ergosfer içinde kare sürüklemeyi tespit etmek.</li>
+        </ul>
+      </div>
+
+      <!-- BÖLÜM 8 -->
+      <h2>Kara Delikler Hakkında Yaygın Yanılgılar</h2>
+
+      <p>
+        <strong>"Kara delikler her şeyi emer."</strong> — Hayır. NASA'nın açıkladığına göre Güneş aniden aynı kütlede bir kara deliğe dönüşseydi, Dünya'nın yörüngesi değişmezdi. Kara delikler çekim alanları bakımından aynı kütledeki diğer cisimlerden farklı değildir; tehlikeleri yalnızca çok küçük bir alanı son derece yoğun biçimde doldurmaları, dolayısıyla çok yakına gitmenin geri dönüşsüz bir olay ufkuna geçiş anlamına gelmesidir.
+      </p>
+
+      <p>
+        <strong>"Spaghettification" yalnızca kurgu."</strong> — Gerçek bir fizik sürecidir. Olay ufkuna yaklaşan bir nesne, ayaklarına çekilen kuvvet başına çekilen kuvvetten çok daha güçlü olduğu için dikey yönde uzayıp yatay yönde sıkışır. National Geographic bu süreci "makarna gibi uzama" olarak tanımlar.
+      </p>
+
+      <p>
+        <strong>"Kara delikler sonsuza dek yaşar."</strong> — Hawking ışıması teorisi, yeterince büyük bir zaman ölçeğinde tüm kara deliklerin buharlaşacağını öngörür. Bir Güneş kütleli kara delik için bu süre 10⁶⁷ yıldır — evrenin şimdiki yaşının milyonlarca katı. Süper kütleli olanlar için çok daha uzun.
+      </p>
+
+      <!-- Kaynak kutusu -->
+      <div style="background: var(--bg-secondary,#f8f9fa); border:1px solid var(--border,#e2e8f0); padding:1.5rem 2rem; margin:2rem 0; border-radius:8px;">
+        <p style="font-weight:700; margin-bottom:0.75rem; font-size:1rem;">&#128218; Bu Yazıda Başvurulan Kaynaklar</p>
+        <ul style="margin:0; padding-left:1.2rem; line-height:2; font-size:0.92rem;">
+          <li>NASA Science (Mart 2026). <em>Black Holes — Types.</em> science.nasa.gov/universe/black-holes/types</li>
+          <li>NASA Science (Mart 2026). <em>Black Holes — Anatomy.</em> science.nasa.gov/universe/black-holes/anatomy</li>
+          <li>NASA (2023). <em>What Are Black Holes?</em> nasa.gov/universe/what-are-black-holes</li>
+          <li>NASA Imagine the Universe. <em>Black Holes.</em> imagine.gsfc.nasa.gov/science/objects/black_holes1.html</li>
+          <li>National Geographic (Ağustos 2025). <em>What Is a Black Hole?</em> nationalgeographic.com</li>
+          <li>Britannica (Haziran 2026). <em>Black hole; Hawking radiation.</em> britannica.com</li>
+          <li>QuantumZeitgeist (Ocak 2026). <em>Hawking Radiation: The Definitive 2026 Guide to Black Hole Evaporation.</em></li>
+          <li>Zamin.uz (6 Temmuz 2026). <em>The Secret of Hawking Radiation: Scientists Discover a New Mechanism.</em> — Paderborn &amp; Weizmann çalışması</li>
+          <li>Universe Today (Haziran 2025). <em>Everything in the Universe Could Decay from Hawking Radiation.</em> — Radboud Üniversitesi (Falcke, Wondrak, van Suijlekom)</li>
+          <li>Wikipedia (Haziran 2026). <em>Hawking radiation.</em></li>
+          <li>Daily Galaxy (Ocak 2026). <em>First-Ever Black Hole Imaged Caught Launching a 3,000-Light-Year Jet.</em> — EHT, Astronomy &amp; Astrophysics, 28 Ocak 2026</li>
+          <li>Science Times (Nisan 2026). <em>Exploring Singularity Physics from Black Holes and Accretion Disks to the Event Horizon Telescope.</em></li>
+          <li>arXiv (Şubat 2026). <em>Future Perspectives on Black Hole Jet Mechanisms.</em> arxiv.org/abs/2602.11094</li>
+          <li>arXiv (Haziran 2026). <em>BlackHolistic 2026 meeting report.</em> Oxford, Mart 2026 konferansı.</li>
+          <li>ScienceNotes (Güncelleme Mayıs 2026). <em>Black Hole — Definition, Formation, Types, and Mysteries.</em></li>
+          <li>ScienceDaily (Haziran 2026). <em>Scientists expected a black hole but found a neutrino factory powered by stars.</em></li>
+          <li>Big Think / Starts With A Bang (2022). <em>How does Hawking radiation lead to black hole evaporation?</em> — Ethan Siegel</li>
+          <li>IOPscience, Journal of Physics: Conference Series (Haziran 2026). <em>Research Methods of Hawking Radiation.</em></li>
+        </ul>
+      </div>
+
+      <!-- BÖLÜM 9: Sonuç -->
+      <h2>Sonuç: Karanlığın İçinden Evrenin Sırları</h2>
+
+      <p>
+        Kara delikler, fiziğin iki büyük sütununun — genel görelilik ve kuantum mekaniği — tam olarak bir araya gelmediği sınır noktasıdır. Singülarite bu çatışmanın sembolüdür: yasalar çöker, zaman anlamsızlaşır. Ama bu kırılma noktası aynı zamanda fırsattır; kara delikleri anlamak, fiziğin eksik parçalarını tamamlamak anlamına gelir.
+      </p>
+
+      <p>
+        Hawking ışımasının laboratuvarda analog kanıtlarla doğrulanmaya başlaması, bilgi paradoksunun çözüm yollarının aranması ve yeni nesil EHT'nin kara deliklerin spinini doğrudan ölçmeyi hedeflemesi — tüm bunlar bu alanın en heyecan verici keşiflerinin henüz önümüzde olduğuna işaret ediyor. Ve belki de en derin soru şu: Singülaritede gerçekten ne oluyor? Bu sorunun yanıtı yalnızca kara delikleri değil, uzay, zaman ve maddenin özünü de açıklayabilir.
+      </p>
+
+    </div><!-- /article-content -->
+  </article>
+
+  
+
+  <section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">&#304;lgili Yaz&#305;lar</h2>
+      <div class="related-grid">
+        <a href="gezegen.html" class="related-card">
+          <div class="related-img"><img src="img/gezegen.webp" alt="Yaşanabilir Gezegenler" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/></div>
+          <div class="related-body">
+            <span class="related-cat">Bilim</span>
+            <h3 class="related-card-title">Ya&#351;anabilir Gezegenler: Kozmik Kom&#351;ular Ne Kadar Uzakta?</h3>
+            <p class="related-meta">Valexirion &middot; 13 dk</p>
+          </div>
+        </a>
+        <a href="yapay-zeka.html" class="related-card">
+          <div class="related-img"><img src="img/yapayzekaart1.webp" alt="Yapay Zeka AGI" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/></div>
+          <div class="related-body">
+            <span class="related-cat">Bilim &amp; Teknoloji</span>
+            <h3 class="related-card-title">Yapay Zeka: AGI S&#305;n&#305;r&#305;na Ne Kadar Kald&#305;?</h3>
+            <p class="related-meta">Valexirion &middot; 14 dk</p>
+          </div>
+        </a>
+        <a href="volkanlar.html" class="related-card">
+          <div class="related-img"><img src="img/mantar.webp" alt="Volkanlar: Dünya'nın Ateşli Kalbi" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/></div>
+          <div class="related-body">
+            <span class="related-cat">Do&#287;a</span>
+            <h3 class="related-card-title">Volkanlar: D&uuml;nya'n&#305;n Ate&#351;li Kalbi</h3>
+            <p class="related-meta">Valexirion &middot; 16 dk</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>
