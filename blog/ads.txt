@@ -1,3 +1,0 @@
-# AdSense onayından sonra doldurulacak.
-# Onay sonrası bu notu silip aşağıdaki satırı kendi yayıncı kimliğinle ekle:
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

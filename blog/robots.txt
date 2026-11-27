@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://valexirion.com/sitemap.xml
