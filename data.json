@@ -9,6 +9,20 @@
   },
   "articles": [
     {
+      "href": "hayvanlarin-evcillestirilmesi-nerede-ne-zaman.html",
+      "img": "img/hayvan-evcillestirme-surusu.webp",
+      "imageCredit": "Zeynel Cebeci · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Goats_%26_Sheep_Flock,_Adana_2016-12-04_01-1.jpg",
+      "category": "tarih",
+      "subcategory": "arkeoloji",
+      "badge": "Arkeoloji",
+      "title": "Hayvanlar Nerede ve Ne Zaman Evcilleştirildi?",
+      "excerpt": "Köpekten keçiye, attan tavuğa: hayvanların evcilleştirilme coğrafyalarını, yaklaşık tarihlerini ve yayılma yollarını arkeolojik kaynaklarla keşfedin.",
+      "author": "Can Özkan",
+      "date": "27 Kas 2026",
+      "readTime": "12 dk"
+    },
+    {
       "href": "turkiyede-unesco-doga-alanlari.html",
       "img": "img/turkiye-pamukkale-unesco.webp",
       "imageCredit": "Slyronit · CC BY-SA 4.0",
@@ -2137,6 +2151,15 @@
     }
   ],
   "recentArticles": [
+    {
+      "href": "hayvanlarin-evcillestirilmesi-nerede-ne-zaman.html",
+      "img": "img/hayvan-evcillestirme-surusu.webp",
+      "imageCredit": "Zeynel Cebeci · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Goats_%26_Sheep_Flock,_Adana_2016-12-04_01-1.jpg",
+      "category": "Arkeoloji",
+      "title": "Hayvanlar Nerede ve Ne Zaman Evcilleştirildi?",
+      "meta": "27 Kas 2026 · 12 dk"
+    },
     {
       "href": "turkiyede-unesco-doga-alanlari.html",
       "img": "img/turkiye-pamukkale-unesco.webp",
