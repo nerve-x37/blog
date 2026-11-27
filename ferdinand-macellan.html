@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferdinand Macellan: Seferi, İsyan ve Ölümü — Valexirion</title>
+  <meta name="description" content="Macellan'ın İspanya adına çıktığı seferi, gemilerdeki isyanı, Pasifik geçişini ve Mactan'daki ölümünü birincil kaynaklar ışığında inceliyoruz." />
+  <link rel="canonical" href="https://valexirion.com/ferdinand-macellan.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Ferdinand Macellan: Seferi, İsyan ve Ölümü" />
+  <meta property="og:description" content="Beş gemiyle başlayan sefer, isyanlar ve ağır kayıplar arasında dünyanın çevresini dolaşan ilk kayıtlı yolculuğa dönüştü." />
+  <meta property="og:url" content="https://valexirion.com/ferdinand-macellan.html" />
+  <meta property="og:image" content="https://valexirion.com/img/ferdinand-macellan-loc-engraving.webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ferdinand Macellan: Seferi, İsyan ve Ölümü" />
+  <meta name="twitter:description" content="Macellan'ın seferi, gemilerdeki isyan ve Mactan'daki sonu." />
+  <meta name="twitter:image" content="https://valexirion.com/img/ferdinand-macellan-loc-engraving.webp" />
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@300;400;700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Ferdinand Macellan: Seferi, İsyan ve Ölümü",
+      "description": "Macellan'ın İspanya adına çıktığı seferi, gemilerdeki isyanı, Pasifik geçişini ve Mactan'daki ölümünü birincil kaynaklar ışığında inceliyoruz.",
+      "image": "https://valexirion.com/img/ferdinand-macellan-loc-engraving.webp",
+      "mainEntityOfPage": "https://valexirion.com/ferdinand-macellan.html",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="tarih">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9.003 9.003 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>&#8250;</span>
+        <a href="index.html#tarih">Tarih</a><span>&#8250;</span>
+        <span>Keşifler Tarihi</span>
+      </div>
+      <span class="article-cat-badge">Tarih · Keşifler Tarihi</span>
+      <h1 class="article-title">Ferdinand Macellan<br><em>İsyan, Keşifler ve Son Sefer</em></h1>
+      <p class="article-subtitle">Baharat Adaları’na ulaşmak için batıya açılan beş gemi, okyanusları aşan ilk kayıtlı dünya turuna dönüştü. Komutanıysa yolculuğun sonunu göremedi.</p>
+      <div class="article-meta">
+        <span class="article-date">12 Kasım 2026</span>
+        <span class="article-read-time">10 dk okuma</span>
+      </div>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure class="article-hero-img">
+        <img src="img/ferdinand-macellan-loc-engraving.webp" alt="Ferdinand Macellan'ı elinde küre ve pergel tutarken gösteren 1886 tarihli gravür" fetchpriority="high" loading="eager" decoding="async"/>
+        <figcaption style="font-size:.8rem;color:var(--text-3);margin-top:.5rem">Ferdinand Macellan'ı betimleyen 1886 tarihli gravür. Yaşadığı dönemden kalma bir portre değil, sonraki yüzyılda yapılmış bir tasvirdir. <a href="https://www.loc.gov/pictures/item/93515233/" target="_blank" rel="noopener noreferrer">Library of Congress katalog kaydı</a>; <a href="https://commons.wikimedia.org/wiki/File:Fernando_Magellan,_half-length_portrait,_facing_left;_holding_globe_and_compass_LCCN93515233.tif" target="_blank" rel="noopener noreferrer">Wikimedia Commons dosyası</a>, kamu malı.</figcaption>
+      </figure>
+
+      <p class="article-lead"><strong>Macellan dünyanın çevresini dolaşan ilk seferin komutanıydı; fakat bu yolculuğu tamamlayamadı.</strong> Portekizli denizci, İspanya adına çıktığı 1519 seferinde Güney Amerika'nın güneyindeki geçitten Pasifik'e ulaştı ve 1521'de Filipinler'de öldü. Beş gemiyle başlayan yolculuğu, Juan Sebastián Elcano komutasındaki <em>Victoria</em>'nın 1522'de İspanya'ya dönmesiyle tamamlandı. Seferin öyküsü yalnızca keşiflerden değil; krallıklar arasındaki rekabetten, mürettebat isyanlarından ve yerel siyasi ittifakların sonuçlarından da oluşur.</p>
+
+      <h2>Portekizli denizciden İspanya'nın kaptanına</h2>
+      <p>Fernão de Magalhães, bugün yaygın olarak Ferdinand Macellan adıyla bilinir. Yaklaşık 1480'de Portekiz'de doğdu ve genç yaşta Portekiz'in Asya seferlerinde görev aldı. Hint Okyanusu'na ve Malakka'ya uzanan bu deneyim, onu uzak deniz yolları ve baharat ticareti konusunda tecrübeli bir denizci yaptı. O dönemde karanfil ve küçük Hindistan cevizi gibi ürünlerin kaynağı olan Moluccas'a ulaşmak, Avrupa krallıkları için büyük ekonomik ve siyasi önem taşıyordu.</p>
+      <p>Macellan, Moluccas'a doğudan değil batıdan ulaşacak bir rota önerdi. Portekiz Kralı I. Manuel'den destek alamayınca 1517'de İspanya'ya geçti. İspanya Kralı I. Carlos, projeyi kabul ederek ona beş gemi ve yaklaşık 270 kişilik bir mürettebat sağladı. Bu karar yalnızca bir denizcilik girişimi değildi: İspanya ve Portekiz, denizaşırı ticaret yolları ile yeni topraklar üzerindeki hak iddiaları konusunda rekabet ediyordu. Macellan'ın Portekizli kimliği de İspanyol kaptanların ona duyduğu güveni baştan zedeledi.</p>
+      <p>1494 tarihli Tordesillas Antlaşması, İspanya ile Portekiz'in denizaşırı iddialarını bir sınır çizgisine göre paylaştırmayı amaçlamıştı. Fakat dünyanın öte tarafındaki Moluccas'ın bu çizginin hangi tarafında kaldığı, boylamı kesin biçimde ölçmenin güç olduğu bir çağda tartışmalıydı. Macellan'ın batı rotası bu yüzden yalnızca bir ticaret yolu arayışı değil, İspanya'nın baharat adaları üzerindeki iddiasını güçlendirme girişimiydi. Seferin başarısı, kimin hangi adaya hak iddia edebileceği sorusunu da beraberinde getirecekti.</p>
+      <p>Bu rekabeti, Avrupa'daki güç mücadelelerinin daha geniş bağlamında <a href="siyasi-tarih.html">siyasi tarihe genel bakışımızda</a> ele alıyoruz. Macellan'ın seferi de dönemin devlet rekabetinden bağımsız, yalnızca kişisel cesaretle açıklanabilecek bir yolculuk değildi.</p>
+
+      <h2>San Julián'da isyan: komutan kendi filosuna karşı</h2>
+      <p>Filo Eylül 1519'da İspanya'dan ayrıldı ve Güney Amerika kıyıları boyunca güneye ilerledi. Aranan geçidin nerede olduğu bilinmiyordu; soğuk hava, erzak kaygısı ve yolculuğun uzaması mürettebatın sabrını tüketiyordu. 1520'de San Julián limanında İspanyol kaptanların bir bölümü Macellan'a karşı ayaklandı. İsyanın arkasında yalnızca sert koşullar değil, Portekizli bir komutanın İspanyol filosunu yönetmesine duyulan siyasi güvensizlik de vardı.</p>
+      <p>Macellan isyanı bastırdı. Kaptan Gaspar de Quesada idam edildi; Juan de Cartagena ise karaya bırakıldı. Bu sert kararlar filonun dağılmasını önledi, ancak komutanla mürettebat arasındaki gerilimi ortadan kaldırmadı. Sefer sırasında <em>Santiago</em> fırtınada parçalandı; boğazı geçerken <em>San Antonio</em> da filodan ayrılıp İspanya'ya döndü. Beş gemilik filo, yola çıktıktan yaklaşık bir yıl sonra üç gemiye düşmüştü.</p>
+
+      <h2>Macellan Boğazı'ndan Pasifik'e</h2>
+      <p>Macellan, 1520 sonbaharında Güney Amerika'nın güney ucunda Atlantik'ten batıya geçiş sağlayan bir boğaz buldu. Dar kanallar, sert rüzgârlar ve karmaşık kıyılar yüzünden geçiş haftalar sürdü. Bugün Macellan Boğazı olarak anılan bu geçit, Avrupa denizciliği açısından yeni bir rota ortaya koydu. Navigasyon araçlarının ve haritaların deniz yolculuklarını nasıl dönüştürdüğünü <a href="tarihi-temel-teknoloji-icatlari.html">teknoloji tarihindeki dönüm noktaları yazımızda</a> da inceliyoruz.</p>
+      <figure style="max-width:620px;margin:1.5rem auto 2rem">
+        <img src="img/external-media-placeholder.svg" data-external-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/The_First_Map_of_the_Strait_of_Magellan%2C_1520_WDL3972.png/960px-The_First_Map_of_the_Strait_of_Magellan%2C_1520_WDL3972.png" alt="Pigafetta'nın Macellan Boğazı haritası; Carlo Amoretti'nin 1800 baskısından" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:var(--radius-lg)" />
+        <figcaption style="font-size:.8rem;color:var(--text-3);margin-top:.5rem">Antonio Pigafetta'nın Macellan Boğazı haritası, Carlo Amoretti'nin 1800 tarihli baskısındaki çoğaltımdan. <a href="https://commons.wikimedia.org/wiki/File:The_First_Map_of_the_Strait_of_Magellan,_1520_WDL3972.png" target="_blank" rel="noopener noreferrer">Wikimedia Commons eser kaydı</a>, kamu malı.</figcaption>
+      </figure>
+      <p>Boğazın batısında karşılaştıkları büyük okyanusa Macellan, görece sakin görünen sular nedeniyle <em>Mar Pacifico</em> adını verdi. Fakat okyanus adının çağrıştırdığı kadar kolay değildi. Filo, Pasifik'i geçerken yaklaşık üç ay boyunca yiyecek ve su sıkıntısı çekti; hastalık ve açlık mürettebatı zayıflattı. Macellan, okyanusu aşmanın ne kadar uzun süreceğini doğru tahmin edememişti.</p>
+      <p>Pigafetta'nın günlüğü, bu uzun geçişi yalnızca haritadaki bir çizgi olarak değil, gemide yaşayan insanların deneyimi olarak da kaydeder: erzak azaldı, hastalıklar yayıldı ve mürettebat karaya çıkıp su ile yiyecek bulmayı bekledi. Filo önce Guam'a, ardından Filipinler'e ulaştığında, adalar arasındaki deniz bilgisi ve yerel ticaret ağları Avrupalı denizcilerin yolculuğunu mümkün kıldı. Bu karşılaşmaları yalnızca Macellan'ın rotası üzerinden anlatmak, bölge halklarının kendi dünyasını ve hareketliliğini arka plana iter.</p>
+      <p>Yolculuğun haritasını çıkarmak da bugünkü anlamda kesin koordinatlar kaydetmek değildi. Denizciler yön bulmak için pusula ve gök cisimlerinden yararlanıyor, hız ve yön tahminlerinden hareketle kat edilen mesafeyi hesaplıyordu. Enlem hakkında gözlem yapılabilse de boylamı güvenilir biçimde belirlemek çok daha zordu; hassas deniz kronometreleri henüz yoktu. Bu yüzden bir boğazı bulmak, onu geçmek ve rotayı başkalarının izleyebileceği biçimde kaydetmek ayrı ayrı zorluklardı.</p>
+      <p>Macellan Pasifik'i keşfeden ilk insan değildi: Okyanus, kıyılarında ve adalarında yaşayan halklar tarafından çok uzun zamandır biliniyordu. Seferin tarihsel önemi, Avrupalıların Güney Amerika'nın güneyinden geçerek Pasifik'i aşması ve Avrupa'dan batıya uzanan güzergâhı kayda geçirmesiydi. Filipinler'e ulaştıklarında da orayı “insanlık için keşfetmiş” olmadılar; takımadalar yüzyıllardır yerleşimlere ve siyasi topluluklara ev sahipliği yapıyordu.</p>
+
+      <h2>Cebu ittifakı ve Mactan'daki ölüm</h2>
+      <p>Filo 1521'de Filipinler'e ulaştı. Cebu'da Macellan yerel yöneticilerle ilişki kurdu; ticaret, siyasi ittifak ve Hristiyanlığa geçiş seferin bölgedeki faaliyetlerini şekillendirdi. Cebu hükümdarının Mactan'la yaşadığı anlaşmazlıkta Macellan'dan yardım istediği aktarılır. Mactan'ın lideri Lapulapu ise İspanyol komutanın otoritesini kabul etmedi.</p>
+      <p>Macellan, Mactan'a karşı küçük bir kuvvetle harekete geçti. Antonio Pigafetta'nın sefer sırasında tuttuğu anlatıya göre, gemiler sığ sularda kıyıya yeterince yaklaşamadı; karaya çıkan adamlar yerel savaşçıların saldırısıyla karşılaştı. Pigafetta, Macellan'ın bacağından yaralandığını ve geri çekilme sırasında çevresinin sarıldığını yazar. Macellan 27 Nisan 1521'de öldürüldü. Pigafetta'nın anlatısında cesedini geri almak mümkün olmaz; olayın ayrıntıları, seferin tek bir Avrupalı tanığın gözünden aktarıldığı dikkate alınarak okunmalıdır.</p>
+      <p>Gerilim Macellan'ın ölümüyle bitmedi. Pigafetta, Cebu hükümdarının yeni İspanyol yöneticileri bir ziyafete çağırdığını; kendisinin yüzündeki yaradan dolayı gemide kaldığını ve karaya gidenlerin öldürüldüğünü anlatır. Günlük, tercüman Enrique'nin olayda rolü olduğuna dair bir suçlamayı da aktarır. Bu iddianın arka planını ve tarafların niyetini bağımsız kaynaklarla doğrulamak zordur; bu nedenle kesinleşmiş bir komplo gibi değil, hayatta kalan bir sefer katılımcısının tanıklığı olarak değerlendirilmelidir.</p>
+      <p>Mactan'daki yenilgi, ateşli silahların ve gemilerin her çatışmada kesin üstünlük sağlayacağı varsayımını boşa çıkardı. Macellan, yerel rekabetin içine girerek taraflardan biri olmuş; askeri müdahalesinin riskini de olduğundan küçük görmüştü. Onun ölümü, hem seferin komutasını hem Cebu'da kurduğu siyasi düzeni sarstı.</p>
+
+      <h2>Macellan'dan sonra: dünyayı dolaşan sefer</h2>
+      <p>Komutanın ölümünden sonra yolculuk devam etti. Azalan mürettebat nedeniyle <em>Concepción</em> yakıldı; kalan gemiler Moluccas'a ulaşıp baharat yükledi. Sonunda yalnızca <em>Victoria</em>, Elcano'nun komutasında batıya dönerek 1522'de İspanya'ya vardı. Yaklaşık 270 kişiyle başlayan filodan 18 kişi bu gemiyle geri döndü.</p>
+      <p>Bu nedenle “Macellan dünyanın çevresini dolaşan ilk kişiydi” demek yanıltıcıdır. Dünyanın çevresini dolaşan, Macellan'ın başlattığı ve Elcano'nun tamamladığı seferdi. Bu yolculuk Dünya'nın yuvarlak olduğunu ilk kez kanıtlamadı; bu bilgi seferden önce de biliniyordu. Sefer, okyanusların ve kıtalar arasındaki mesafelerin Avrupalıların tahmin ettiğinden ne kadar büyük olduğunu gösterdi ve deniz yoluyla dünya çevresinde kesintisiz bir rota kurulabileceğini belgeledi.</p>
+      <p>Yolculuğun tamamlanması, rotanın düzenli ticaret için elverişli olduğu anlamına da gelmiyordu. Batıdan Moluccas'a giden güzergâh çok uzun, tehlikeli ve erzak açısından zordu; dönüşte de <em>Victoria</em> tek başına ve büyük kayıplarla ilerledi. Sefer, İspanya'ya baharat taşıdı ve coğrafi bilgiyi genişletti, ancak Portekiz'in doğu rotasıyla rekabet edebilecek kolay bir ticaret hattı kurmadı. Keşif başarısı ile ekonomik sürdürülebilirlik aynı şey değildi.</p>
+
+      <h2>Keşif, iktidar ve anlatının sınırları</h2>
+      <p>Macellan'ın hikâyesi tek bir kahramanın bilinmeyene atılması olarak anlatıldığında, seferin arkasındaki imparatorluk rekabeti ve Filipinler'deki yerel siyasi aktörler görünmez hâle gelir. Seferin Avrupalılar için yeni olan rotaları, bölge halklarının daha önce bilmediği yerler değildi. Benzer şekilde, Pigafetta'nın günlüğü paha biçilmez bir birincil kaynak olsa da mürettebatın, yerel toplulukların ve çatışmaların tüm taraflarını eşit biçimde temsil etmez.</p>
+      <p>Pigafetta'nın kaydı yine de yalnızca kaptanların kararlarını anlatmaz. Sefer güzergâhındaki adaları, karşılaşılan ürünleri ve bazı yerel sözcükleri de not eder; böylece tarihçiler için dönemin deniz yolculuğuna ve Avrupalıların karşılaşmalarına dair eşsiz ayrıntılar bırakır. Fakat bir gözlemcinin yazdığı, onun anlayabildiği ve hatırlamayı seçtiği kadardır. Günlük, yerel toplumların kendi anlatılarının yerine geçmez; seferin Avrupa merkezli bakışını da görünür kılar.</p>
+      <p>Macellan, boğazın geçilmesine ve Pasifik rotasının kayda geçirilmesine öncülük etti; fakat kendi seferinin son durağı Mactan oldu. Bu yolculuğun mirası, coğrafi bilginin genişlemesi kadar, keşif çağının ticaret, iktidar ve sömürgecilikle iç içe geçmiş tarihini de hatırlatır.</p>
+
+      <h2>Kaynaklar</h2>
+      <ol>
+        <li>Antonio Pigafetta. <em>Primo viaggio intorno al mondo</em> (yaklaşık 1525); seferin birincil tanıklığı. İngilizce çeviri ve açıklamalı metin: Blair ve Robertson, <em>The Philippine Islands, 1493–1898</em>, cilt 33. <a href="https://www.gutenberg.org/files/42884/42884-h/42884-h.htm" target="_blank" rel="noopener noreferrer">Project Gutenberg dijital nüshası</a>.</li>
+        <li>Encyclopaedia Britannica. <em>Ferdinand Magellan</em>. Biyografi, seferin rotası ve Macellan'ın Mactan'daki ölümü. <a href="https://www.britannica.com/biography/Ferdinand-Magellan" target="_blank" rel="noopener noreferrer">Britannica</a>.</li>
+        <li>Encyclopaedia Britannica. <em>Treaty of Tordesillas</em>. İspanya ve Portekiz'in denizaşırı iddialarını bölen 1494 antlaşmasının tarihsel bağlamı. <a href="https://www.britannica.com/event/Treaty-of-Tordesillas" target="_blank" rel="noopener noreferrer">Britannica</a>.</li>
+        <li>Royal Museums Greenwich. <em>Ferdinand Magellan</em>. Sefer ve denizcilik tarihi bağlamı. <a href="https://www.rmg.co.uk/stories/topics/ferdinand-magellan" target="_blank" rel="noopener noreferrer">Royal Museums Greenwich</a>.</li>
+        <li>HISTORY.com Editors. <em>Ferdinand Magellan</em>. Sefer kronolojisi, isyan, Pasifik geçişi ve 1522'de dönüş. <a href="https://www.history.com/articles/ferdinand-magellan" target="_blank" rel="noopener noreferrer">HISTORY.com</a>.</li>
+        <li>Library of Congress. <em>Fernando Magellan, half-length portrait, facing left; holding globe and compass</em>, 1886 gravürü, LCCN 93515233. <a href="https://www.loc.gov/pictures/item/93515233/" target="_blank" rel="noopener noreferrer">Katalog kaydı ve kullanım bilgisi</a>; <a href="https://commons.wikimedia.org/wiki/File:Fernando_Magellan,_half-length_portrait,_facing_left;_holding_globe_and_compass_LCCN93515233.tif" target="_blank" rel="noopener noreferrer">Wikimedia Commons dosyası</a>.</li>
+        <li>Antonio Pigafetta'nın boğaz haritası; Carlo Amoretti'nin 1800 tarihli baskısında çoğaltılmıştır. <a href="https://commons.wikimedia.org/wiki/File:The_First_Map_of_the_Strait_of_Magellan,_1520_WDL3972.png" target="_blank" rel="noopener noreferrer">Wikimedia Commons eser kaydı</a>, kamu malı.</li>
+      </ol>
+      <p style="font-size:.85rem;color:var(--text-3)">Macellan'ın seferi, Pasifik'in Avrupalılar tarafından bilinmeyen bir yer olduğu anlamına gelmez; okyanus ve adaları yerel halklar tarafından çok daha önce biliniyordu. İlk dünya çevresi seferini Macellan başlatmış, Elcano komutasındaki mürettebat tamamlamıştır. Kaynaklar 12 Kasım 2026 tarihinde kontrol edildi.</p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

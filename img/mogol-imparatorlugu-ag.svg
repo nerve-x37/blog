@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">Moğol İmparatorluğu'nun genişlemesi ve bölünmesi</title>
+  <desc id="desc">1206'dan itibaren kurulan imparatorluğun batıya genişlemesini, 1258 Bağdat'ın alınmasını ve farklı hanlıkların ortaya çıkışını gösteren şematik tarih çizgisi.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8efd9"/>
+      <stop offset="1" stop-color="#e7d8b7"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" x2="1">
+      <stop offset="0" stop-color="#9f6941"/>
+      <stop offset="1" stop-color="#506f68"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="640" rx="28" fill="url(#sky)"/>
+  <circle cx="1020" cy="126" r="63" fill="#d9a24e" opacity=".8"/>
+  <path d="M0 405c176-63 337-30 475 4s354 42 725-42v273H0z" fill="#899579"/>
+  <path d="M0 476c166-43 318-15 492 17s407 29 708-31v178H0z" fill="#536f66"/>
+  <text x="64" y="76" fill="#31413b" font-family="Georgia,serif" font-size="38" font-weight="700" letter-spacing="2">MOĞOL İMPARATORLUĞU</text>
+  <text x="66" y="115" fill="#59675a" font-family="Arial,sans-serif" font-size="19" letter-spacing="2">BOZKIRDAN AVRASYA'YA · 1206–14. YÜZYIL</text>
+  <path d="M155 276c213-97 386-74 574 17s222 91 318 16" fill="none" stroke="#f4e7ca" stroke-width="16" stroke-linecap="round"/>
+  <path d="M155 276c213-97 386-74 574 17s222 91 318 16" fill="none" stroke="url(#route)" stroke-width="7" stroke-linecap="round"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(155 276)">
+      <circle r="24" fill="#9f6941" stroke="#f7ecd5" stroke-width="7"/>
+      <text y="-66" fill="#35443b" font-size="22" font-weight="700">1206</text>
+      <text y="-39" fill="#59675a" font-size="16">Onon'da kurultay</text>
+      <rect x="-91" y="40" width="182" height="32" rx="12" fill="#33433d"/>
+      <text y="61" fill="#f8efd9" font-size="15" font-weight="700">CENGİZ HAN</text>
+    </g>
+    <g transform="translate(400 237)">
+      <circle r="24" fill="#9f6941" stroke="#f7ecd5" stroke-width="7"/>
+      <text y="-66" fill="#35443b" font-size="22" font-weight="700">1219–1221</text>
+      <text y="-39" fill="#59675a" font-size="16">Hârizmşah seferi</text>
+      <rect x="-91" y="40" width="182" height="32" rx="12" fill="#33433d"/>
+      <text y="61" fill="#f8efd9" font-size="15" font-weight="700">BATIYA GENİŞLEME</text>
+    </g>
+    <g transform="translate(644 293)">
+      <circle r="24" fill="#8a7650" stroke="#f7ecd5" stroke-width="7"/>
+      <text y="-66" fill="#35443b" font-size="22" font-weight="700">1258</text>
+      <text y="-39" fill="#59675a" font-size="16">Bağdat alındı</text>
+      <rect x="-91" y="40" width="182" height="32" rx="12" fill="#33433d"/>
+      <text y="61" fill="#f8efd9" font-size="15" font-weight="700">İLHANLILAR</text>
+    </g>
+    <g transform="translate(882 326)">
+      <circle r="24" fill="#537a70" stroke="#f7ecd5" stroke-width="7"/>
+      <text y="-66" fill="#35443b" font-size="22" font-weight="700">1260</text>
+      <text y="-39" fill="#59675a" font-size="16">Aynicâlût</text>
+      <rect x="-91" y="40" width="182" height="32" rx="12" fill="#33433d"/>
+      <text y="61" fill="#f8efd9" font-size="15" font-weight="700">MEMLÜK ZAFERİ</text>
+    </g>
+    <g transform="translate(1048 285)">
+      <circle r="24" fill="#537a70" stroke="#f7ecd5" stroke-width="7"/>
+      <text y="-66" fill="#35443b" font-size="22" font-weight="700">SONRASI</text>
+      <text y="-39" fill="#59675a" font-size="16">farklı hanlıklar</text>
+      <rect x="-92" y="40" width="184" height="32" rx="12" fill="#33433d"/>
+      <text y="61" fill="#f8efd9" font-size="15" font-weight="700">ÇOK MERKEZLİ DÜZEN</text>
+    </g>
+  </g>
+  <rect x="54" y="548" width="1092" height="54" rx="17" fill="#33433d"/>
+  <text x="600" y="582" fill="#f4e7ca" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" text-anchor="middle">ALTIN ORDA · ÇAĞATAY · İLHANLI · YUAN</text>
+</svg>

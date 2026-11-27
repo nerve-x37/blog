@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Göçmen kuşlar ve Boğaz geçişi</title>
+  <desc id="desc">Avrupa ve Asya kıyıları arasındaki Boğaz üzerinde göç eden kuşları, rotaları ve yön bulma ipuçlarını gösteren özgün şematik illüstrasyon.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9ddf1"/>
+      <stop offset="1" stop-color="#eef6f3"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d91a9"/>
+      <stop offset="1" stop-color="#153d5d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="650" fill="url(#sky)"/>
+  <circle cx="980" cy="106" r="52" fill="#f3c96e"/>
+  <g fill="none" stroke="#f8e6ae" stroke-width="3">
+    <circle cx="980" cy="106" r="73"/>
+    <path d="M980 12v-8m0 196v-8m94-86h8m-196 0h8m152-66 6-6m-138 138 6-6m132 0 6 6M845 32l6 6"/>
+  </g>
+  <path d="M0 316c84-14 145-42 215-43 83-1 116 29 194 24 64-4 123-23 193-14 59 8 103 29 163 29 79 0 129-27 210-22 81 5 137 32 225 25v335H0Z" fill="url(#water)"/>
+  <path d="M0 0h305c14 54-3 100-31 139-22 30-33 62-25 91 8 27 33 49 24 76-10 34-51 54-84 75-44 28-83 70-111 118H0Z" fill="#6e866b"/>
+  <path d="M1200 0H908c-14 49 0 94 27 132 22 31 37 60 29 89-8 29-34 51-24 79 10 31 49 55 80 74 47 29 89 71 116 119h64Z" fill="#778c70"/>
+  <path d="M105 250c38-30 75-27 110 0m-91 30c31-23 61-23 91 0m-72 29c23-16 46-16 68 0M990 244c36-28 72-26 107 0m-87 30c30-22 59-22 88 0m-69 29c23-15 44-15 66 0" fill="none" stroke="#d7e4bf" stroke-width="8" stroke-linecap="round"/>
+  <path d="M254 173c172 24 252 63 342 83 92 20 154 23 222 3 81-24 147-73 218-107" fill="none" stroke="#f5d276" stroke-width="7" stroke-dasharray="14 14" stroke-linecap="round"/>
+  <path d="M276 199c158 23 228 60 328 79 93 18 153 15 222-7 81-26 143-66 196-94" fill="none" stroke="#f7fcff" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#20354b">
+    <path d="M383 167c17-17 32-18 50-2 16-9 31-7 44 6-18-8-30-8-43-1-18-12-33-13-51-3Z"/>
+    <path d="M534 207c17-17 32-18 50-2 16-9 31-7 44 6-18-8-30-8-43-1-18-12-33-13-51-3Z"/>
+    <path d="M684 230c17-17 32-18 50-2 16-9 31-7 44 6-18-8-30-8-43-1-18-12-33-13-51-3Z"/>
+    <path d="M835 203c17-17 32-18 50-2 16-9 31-7 44 6-18-8-30-8-43-1-18-12-33-13-51-3Z"/>
+    <path d="M922 158c17-17 32-18 50-2 16-9 31-7 44 6-18-8-30-8-43-1-18-12-33-13-51-3Z"/>
+  </g>
+  <g fill="#f5f7f2" font-family="Arial,sans-serif" font-size="24" font-weight="700">
+    <text x="84" y="215">Avrupa</text>
+    <text x="1030" y="215">Asya</text>
+    <text x="537" y="365">İstanbul Boğazı</text>
+  </g>
+  <g fill="#263e53" font-family="Arial,sans-serif" font-size="18" font-weight="700">
+    <text x="344" y="118">Güneş pusulası</text>
+    <text x="671" y="110">Manyetik alan</text>
+    <text x="805" y="287">Kıyı ve arazi işaretleri</text>
+  </g>
+  <g fill="none" stroke="#263e53" stroke-width="3" stroke-linecap="round">
+    <path d="M426 127 449 160"/>
+    <path d="M744 119 765 190"/>
+    <path d="M894 277 926 247"/>
+  </g>
+  <g fill="none" stroke="#a9e3eb" stroke-width="4" opacity=".8">
+    <path d="M415 444c32-16 64-16 96 0m-69 27c22-11 43-11 65 0"/>
+    <path d="M745 488c32-16 64-16 96 0m-69 27c22-11 43-11 65 0"/>
+  </g>
+  <g fill="#f5f7f2" font-family="Arial,sans-serif" font-size="17">
+    <text x="40" y="607">Şematik rota; göç yönü ve kullanılan işaretler türe, mevsime ve koşullara göre değişir.</text>
+  </g>
+</svg>
