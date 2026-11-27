@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Türkiye'deki UNESCO Alanları: 22 Dünya Mirası, Camili ve Kula-Salihli — Valexirion</title>
+  <meta name="description" content="Türkiye'nin UNESCO Dünya Mirası Listesi'ndeki 22 alanını fotoğraflarıyla keşfedin; Camili Biyosfer Rezervi ve Kula-Salihli Küresel Jeoparkı'nı inceleyin." />
+  <link rel="canonical" href="https://valexirion.com/turkiyede-unesco-doga-alanlari.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Türkiye'deki UNESCO Alanları: 22 Dünya Mirası, Camili ve Kula-Salihli" />
+  <meta property="og:description" content="Türkiye'nin 22 Dünya Mirası alanı, Camili Biyosfer Rezervi ve Kula-Salihli Küresel Jeoparkı." />
+  <meta property="og:url" content="https://valexirion.com/turkiyede-unesco-doga-alanlari.html" />
+  <meta property="og:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/The_travertine_terraces_of_Pamukkale_4.jpg/1280px-The_travertine_terraces_of_Pamukkale_4.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Türkiye'deki UNESCO Alanları: 22 Dünya Mirası, Camili ve Kula-Salihli — Valexirion" />
+  <meta name="twitter:description" content="Türkiye'nin 22 Dünya Mirası alanını, Camili Biyosfer Rezervi'ni ve Kula-Salihli Küresel Jeoparkı'nı inceleyin." />
+  <meta name="twitter:image" content="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/The_travertine_terraces_of_Pamukkale_4.jpg/1280px-The_travertine_terraces_of_Pamukkale_4.jpg" />
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    .trunesco-content { max-width: 1200px; }
+    .trunesco-content > .article-lead,
+    .trunesco-content > h2,
+    .trunesco-content > p:not(.article-lead),
+    .trunesco-content > .trunesco-note,
+    .trunesco-content > .trunesco-sources { max-width: 850px; }
+    .trunesco-hero { max-width: 1000px; margin: 0 auto 2.5rem; }
+    .trunesco-hero .article-hero-img, .trunesco-figure img { overflow: hidden; border-radius: var(--radius-lg); }
+    .trunesco-hero img { display: block; width: 100%; max-height: 570px; object-fit: cover; object-position: center 50%; }
+    .trunesco-hero figcaption, .trunesco-figure figcaption { margin-top: .7rem; color: var(--text-3); font-size: .82rem; line-height: 1.65; }
+    .trunesco-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .85rem; margin: 1.7rem 0 2.2rem; }
+    .trunesco-fact { padding: 1.1rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-2); }
+    .trunesco-fact strong { display: block; margin-bottom: .35rem; color: var(--text-1); font: 700 1rem 'Inter', sans-serif; }
+    .trunesco-fact span { display: block; color: var(--text-3); font-size: .88rem; line-height: 1.6; }
+    .trunesco-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; margin: 1.4rem 0 2.4rem; }
+    .trunesco-card { display: flex; min-width: 0; flex-direction: column; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--bg-2); }
+    .trunesco-card figure { margin: 0; }
+    .trunesco-card img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+    .trunesco-card figcaption { margin: 0; padding: .65rem .85rem; color: var(--text-3); font-size: .74rem; line-height: 1.5; }
+    .trunesco-card-body { display: flex; flex: 1; flex-direction: column; padding: .2rem 1rem 1rem; }
+    .trunesco-card h3 { margin: .25rem 0 .45rem; font-size: 1.1rem; line-height: 1.35; }
+    .trunesco-card p { margin: .35rem 0 .85rem; font-size: .88rem; line-height: 1.65; }
+    .trunesco-card .unesco-link { margin-top: auto; padding-top: .35rem; font: 600 .82rem 'Inter', sans-serif; }
+    .trunesco-tag { display: inline-block; margin-bottom: .35rem; color: var(--text-3); font: 600 .72rem 'Inter', sans-serif; letter-spacing: .03em; text-transform: uppercase; }
+    .trunesco-note { margin: 1.3rem 0 2rem; padding: 1rem 1.2rem; border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: var(--radius); background: var(--bg-2); color: var(--text-2); line-height: 1.75; }
+    .trunesco-figure { margin: 1.8rem 0 2.2rem; padding: 1rem; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--bg-2); }
+    .trunesco-figure img { display: block; width: 100%; max-height: 500px; object-fit: cover; }
+    .trunesco-sources { overflow-wrap: anywhere; }
+    .trunesco-sources li { margin-bottom: .85rem; }
+    @media (max-width: 760px) {
+      .trunesco-facts { grid-template-columns: 1fr; }
+      .trunesco-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 520px) {
+      .trunesco-figure { padding: .6rem; }
+      .trunesco-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Türkiye'deki UNESCO Alanları: 22 Dünya Mirası, Camili ve Kula-Salihli",
+      "description": "Türkiye'deki 22 Dünya Mirası alanı ile UNESCO biyosfer rezervi ve küresel jeoparklarını görselleriyle listeleyen rehber.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/The_travertine_terraces_of_Pamukkale_4.jpg/1280px-The_travertine_terraces_of_Pamukkale_4.jpg",
+      "mainEntityOfPage": "https://valexirion.com/turkiyede-unesco-doga-alanlari.html",
+      "datePublished": "2026-11-14",
+      "dateModified": "2026-11-14",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="tarih">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a><a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a><a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a><a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a><a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9.003 9.003 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a><a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a><a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a><a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a><a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb"><a href="index.html">Ana Sayfa</a><span>&#8250;</span><a href="index.html#tarih">Tarih</a><span>&#8250;</span><span>UNESCO Alanları</span></div>
+      <span class="article-cat-badge">Tarih · UNESCO</span>
+      <h1 class="article-title">Türkiye'deki <em>UNESCO Alanları</em></h1>
+      <p class="article-subtitle">22 Dünya Mirası alanı, UNESCO Biyosfer Rezervi Camili ve Kula-Salihli Küresel Jeoparkı.</p>
+      <div class="article-meta">
+        <span class="article-date">14 Kasım 2026</span>
+        <span class="article-read-time">9 dk okuma</span>
+      </div>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content trunesco-content">
+      <figure class="trunesco-hero">
+        <div class="article-hero-img">
+          <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/The_travertine_terraces_of_Pamukkale_4.jpg/1280px-The_travertine_terraces_of_Pamukkale_4.jpg" alt="Denizli'deki Pamukkale travertenlerinin beyaz terasları" fetchpriority="high" loading="eager" decoding="async" />
+        </div>
+        <figcaption>Pamukkale'nin doğal traverten terasları. Fotoğraf: Slyronit / Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. <a href="https://commons.wikimedia.org/wiki/File:The_travertine_terraces_of_Pamukkale_4.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf ve lisans kaydı</a>.</figcaption>
+      </figure>
+
+      <p class="article-lead"><strong>Türkiye'nin resmî UNESCO Dünya Mirası Listesi'nde 22 alan bulunuyor: 20 kültürel, 2 karma.</strong> Aşağıda bu 22 kaydın her biri konumu, kayıt yılı, kısa tanımı ve fotoğrafıyla yer alıyor. Camili Biyosfer Rezervi ile Kula-Salihli Küresel Jeoparkı da farklı UNESCO programlarındaki statüleriyle ayrıca listeleniyor.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a></p>
+
+      <div class="trunesco-facts" aria-label="Türkiye'deki UNESCO alanlarının özeti">
+        <div class="trunesco-fact"><strong>22 Dünya Mirası alanı</strong><span>Kültür ve Turizm Bakanlığı'nın resmî listesinde kayıtlı.</span></div>
+        <div class="trunesco-fact"><strong>20 kültürel · 2 karma</strong><span>Göreme-Kapadokya ve Pamukkale-Hierapolis karma alanlardır.</span></div>
+        <div class="trunesco-fact"><strong>2 ayrı UNESCO programı</strong><span>Camili biyosfer rezervi; Kula-Salihli küresel jeoparkıdır.</span></div>
+      </div>
+
+      <h2>UNESCO Dünya Mirası Listesi'ndeki 22 alan</h2>
+      <p>Kayıt yılları ve alan adları Kültür ve Turizm Bakanlığı'nın Dünya Mirası Listesi'ne göredir. Her karttaki bağlantı UNESCO'nun resmî alan kaydına gider.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a></p>
+      <div class="trunesco-grid" aria-label="Türkiye'nin 22 UNESCO Dünya Mirası alanı">
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Istanbul%2C_T%C3%BCrkiye_%2C_Suleymaniye_Mosque_%28_Ank_Kumar%2C_Infosys_Limited_%29_02.jpg/960px-Istanbul%2C_T%C3%BCrkiye_%2C_Suleymaniye_Mosque_%28_Ank_Kumar%2C_Infosys_Limited_%29_02.jpg" alt="İstanbul'daki Süleymaniye Camii ve tarihî yarımada" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Ank Kumar · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Istanbul,_Türkiye_,_Suleymaniye_Mosque_(_Ank_Kumar,_Infosys_Limited_)_02.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 1985</span><h3>İstanbul'un Tarihi Alanları</h3><p><strong>İstanbul.</strong> Tarihî yarımada, Süleymaniye ve Zeyrek gibi kentsel alanlarıyla Roma, Bizans ve Osmanlı dönemlerinden izler taşır.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/356/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Divri%C4%9Fi_Great_Mosque_and_Hospital%2C_Sivas_Province.jpg" alt="Sivas'taki Divriği Ulu Camii ve Darüşşifası" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Panegyrics of Granovetter · <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Divri%C4%9Fi_Great_Mosque_and_Hospital,_Sivas_Province.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 1985</span><h3>Divriği Ulu Camii ve Darüşşifası</h3><p><strong>Sivas.</strong> 13. yüzyıl yapısı, taş işçiliği ve cami-darüşşifa bütünlüğüyle öne çıkar.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/358/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg/960px-Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg" alt="Hattuşa'daki Aslanlı Kapı" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Lion_Gate,_Hattusa_13_(cropped).jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 1986</span><h3>Hattuşa: Hitit Başkenti</h3><p><strong>Çorum, Boğazkale.</strong> Hitit İmparatorluğu'nun başkentinin surları, tapınak alanları ve kaya kutsal alanı Yazılıkaya bu arkeolojik peyzajın parçalarıdır.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/377/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Mount_Nemrut_-_East_Terrace_%284961323529%29.jpg/960px-Mount_Nemrut_-_East_Terrace_%284961323529%29.jpg" alt="Nemrut Dağı doğu terasında anıtsal heykeller" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Klearchos Kapoutsis · <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Mount_Nemrut_-_East_Terrace_(4961323529).jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 1987</span><h3>Nemrut Dağı</h3><p><strong>Adıyaman, Kahta.</strong> Kommagene Kralı I. Antiochos'un tümülüsü ve doğu-batı teraslarındaki dev heykeller alanın başlıca anıtlarıdır.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/448/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Xanthus%2C_tomb_of_the_Nereids%2C_podium.jpg" alt="Xanthos'taki Nereidler Anıtı'nın kaidesi" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Jona Lendering · <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener noreferrer">CC0</a> · <a href="https://commons.wikimedia.org/wiki/File:Xanthus,_tomb_of_the_Nereids,_podium.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 1988</span><h3>Xanthos-Letoon</h3><p><strong>Antalya ve Muğla.</strong> Likya'nın önemli kentlerinden Xanthos ile Leto'ya adanmış kutsal alan Letoon, bölgenin siyasi ve dini tarihini yansıtır.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/484/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/20180107_Safranbolu_1945_%2839101010504%29.jpg/960px-20180107_Safranbolu_1945_%2839101010504%29.jpg" alt="Safranbolu'nun geleneksel Osmanlı evleri" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Ray Swi-hymn · <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:20180107_Safranbolu_1945_(39101010504).jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 1994</span><h3>Safranbolu Şehri</h3><p><strong>Karabük.</strong> Geleneksel Osmanlı kent dokusu; evleri, çarşısı ve tarihî yapılarıyla büyük ölçüde korunmuştur.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/614/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Walls_of_Troy_%282%29.jpg/960px-Walls_of_Troy_%282%29.jpg" alt="Troya arkeolojik alanındaki antik surlar" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: CherryX · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Walls_of_Troy_(2).jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 1998</span><h3>Troya Arkeolojik Alanı</h3><p><strong>Çanakkale.</strong> Üst üste kurulmuş yerleşim katmanları, Ege dünyasının binlerce yıllık tarihini ve arkeolojik değişimini gösterir.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/849/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Selimiye_Camii%2C_Edirne_09.jpg/960px-Selimiye_Camii%2C_Edirne_09.jpg" alt="Edirne'deki Selimiye Camii" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: "Yahia" · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Selimiye_Camii,_Edirne_09.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2011</span><h3>Selimiye Camii ve Külliyesi</h3><p><strong>Edirne.</strong> Mimar Sinan'ın 16. yüzyılda tasarladığı külliye, camisi, kubbesi ve kent siluetindeki yeriyle Osmanlı mimarisinin başyapıtlarındandır.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1366/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg/960px-%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg" alt="Konya'daki Çatalhöyük Neolitik yerleşiminin kalıntıları" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Murat Özsoy 1958 · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:%C3%87atalh%C3%B6y%C3%BCk,_7400_BC,_Konya,_Turkey_-_UNESCO_World_Heritage_Site,_08.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2012</span><h3>Çatalhöyük Neolitik Alanı</h3><p><strong>Konya, Çumra.</strong> Neolitik yerleşim; bitişik evleri, duvar resimleri ve tarım-topluluk yaşamına ilişkin buluntularıyla bilinir.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1405/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Acropolis_-_Bergama_%28Pergamon%29_-_Turkey_-_10_%285747249729%29.jpg/960px-Acropolis_-_Bergama_%28Pergamon%29_-_Turkey_-_10_%285747249729%29.jpg" alt="Bergama antik kentinin akropolü" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Adam Jones · <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Acropolis_-_Bergama_(Pergamon)_-_Turkey_-_10_(5747249729).jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2014</span><h3>Bergama Çok Katmanlı Kültürel Peyzaj Alanı</h3><p><strong>İzmir, Bergama.</strong> Akropol, Asklepion ve çevredeki tarihî katmanlar, antik kentin kültürel peyzajını oluşturur.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1457/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Cumalikizik_Village.jpg/960px-Cumalikizik_Village.jpg" alt="Bursa Cumalıkızık köyündeki geleneksel evler" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Jocelyn Erskine-Kellie · <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Cumalikizik_Village.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2014</span><h3>Bursa ve Cumalıkızık</h3><p><strong>Bursa.</strong> İlk Osmanlı başkentinin külliyeleri ile Cumalıkızık'ın tarihî kırsal yerleşimi birlikte değerlendirilir.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1452/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Diyarbakir_walls.JPG/960px-Diyarbakir_walls.JPG" alt="Diyarbakır'ın tarihî surları" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Brian Dell · Public Domain · <a href="https://commons.wikimedia.org/wiki/File:Diyarbakir_walls.JPG" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2015</span><h3>Diyarbakır Kalesi ve Hevsel Bahçeleri</h3><p><strong>Diyarbakır.</strong> Surlar, Hevsel Bahçeleri ve Dicle Nehri arasındaki tarihî-kültürel ilişki alanın temel değeridir.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1488/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Ephesus_Celsus_Library_Fa%C3%A7ade.jpg/960px-Ephesus_Celsus_Library_Fa%C3%A7ade.jpg" alt="Efes antik kentindeki Celsus Kütüphanesi cephesi" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Benh LIEU SONG · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Ephesus_Celsus_Library_Fa%C3%A7ade.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2015</span><h3>Efes</h3><p><strong>İzmir, Selçuk.</strong> Antik kent; Celsus Kütüphanesi, anıtsal caddeleri ve farklı dönemlere ait arkeolojik kalıntılarıyla öne çıkar.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1018/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Ani-_Tigran_Honents_Kilisesi.jpg/960px-Ani-_Tigran_Honents_Kilisesi.jpg" alt="Ani'deki Tigran Honents Kilisesi" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Citrat · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Ani-_Tigran_Honents_Kilisesi.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2016</span><h3>Ani Arkeolojik Alanı</h3><p><strong>Kars.</strong> Orta Çağ'da önemli bir kent olan Ani, surları, kiliseleri ve farklı dönemlerden mimari kalıntılarıyla tanınır.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1518/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/The_Temple_of_Aphrodite%2C_built_in_the_Ionic_order_in_stages_during_the_Roman_period_%28from_1st_century_BC_to_2nd_century_AD%29_and_later_converted_into_a_Christian_basilica%2C_Aphrodisias%2C_Caria%2C_Turkey_%2820300922019%29.jpg/960px-The_Temple_of_Aphrodite%2C_built_in_the_Ionic_order_in_stages_during_the_Roman_period_%28from_1st_century_BC_to_2nd_century_AD%29_and_later_converted_into_a_Christian_basilica%2C_Aphrodisias%2C_Caria%2C_Turkey_%2820300922019%29.jpg" alt="Aphrodisias'taki Afrodit Tapınağı" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_Temple_of_Aphrodite,_built_in_the_Ionic_order_in_stages_during_the_Roman_period_(from_1st_century_BC_to_2nd_century_AD)_and_later_converted_into_a_Christian_basilica,_Aphrodisias,_Caria,_Turkey_(20300922019).jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2017</span><h3>Aphrodisias</h3><p><strong>Aydın, Karacasu.</strong> Antik kent, Afrodit Tapınağı ve mermer heykeltıraşlığıyla bağlantılı arkeolojik mirasıyla bilinir.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1519/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/G%C3%B6bekli_Tepe%2C_Urfa.jpg/960px-G%C3%B6bekli_Tepe%2C_Urfa.jpg" alt="Şanlıurfa'daki Göbeklitepe kazı alanı ve T biçimli dikilitaşlar" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Teomancimit · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:G%C3%B6bekli_Tepe,_Urfa.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2018</span><h3>Göbeklitepe</h3><p><strong>Şanlıurfa.</strong> MÖ 10. ve 9. binyıllara tarihlenen anıtsal yapıları, avcı-toplayıcı toplulukların inanç ve ortak yaşamına dair bulgular sunar.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1572/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Hittite_lions%2C_Arslantepe_01.jpg/960px-Hittite_lions%2C_Arslantepe_01.jpg" alt="Malatya'daki Arslantepe Höyüğü'nden taş aslan heykelleri" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Zeynel Cebeci · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Hittite_lions,_Arslantepe_01.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2021</span><h3>Arslantepe Höyüğü</h3><p><strong>Malatya.</strong> Yerleşim katmanları, özellikle MÖ 4. binyıl sonundaki saray kompleksi ve erken yönetim yapılarıyla önem taşır.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1622/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Gordion_Early_Phrygian_East_Gate.jpg/960px-Gordion_Early_Phrygian_East_Gate.jpg" alt="Ankara yakınlarındaki Gordion antik kentinin doğu kapısı" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Gordion Archive, Penn Museum · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Gordion_Early_Phrygian_East_Gate.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2023</span><h3>Gordion</h3><p><strong>Ankara, Polatlı.</strong> Friglerin başkenti; sit alanı, savunma yapıları ve çevredeki tümülüsleriyle tanınır.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1669/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Afyonkarahisar_Ulu_Cami.jpg/960px-Afyonkarahisar_Ulu_Cami.jpg" alt="Afyonkarahisar Ulu Camii'nin ahşap direkli iç mekânı" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: User:Fbegemenfb · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Afyonkarahisar_Ulu_Cami.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2023</span><h3>Anadolu'nun Orta Çağ Dönemi Ahşap Hipostil Camileri</h3><p><strong>Afyonkarahisar, Ankara, Eskişehir, Kastamonu ve Konya.</strong> Ahşap direkli ve tavanlı camilerden oluşan seri miras alanıdır.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1694/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/The_Bath-Gymnasium_complex_at_Sardis%2C_late_2nd_-_early_3rd_century_AD%2C_Sardis%2C_Turkey_%2817098680002%29.jpg/960px-The_Bath-Gymnasium_complex_at_Sardis%2C_late_2nd_-_early_3rd_century_AD%2C_Sardis%2C_Turkey_%2817098680002%29.jpg" alt="Manisa'daki Sardes antik kentinden hamam-gymnasium kompleksi" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Carole Raddato · <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_Bath-Gymnasium_complex_at_Sardis,_late_2nd_-_early_3rd_century_AD,_Sardis,_Turkey_(17098680002).jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Kültürel · 2025</span><h3>Sardes Antik Kenti ve Bintepeler Lidya Tümülüsleri</h3><p><strong>Manisa.</strong> Lidya Krallığı'nın başkenti Sardes ile Bintepeler'deki anıtsal mezar höyükleri birlikte korunur.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/1739/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Cappadocia_Chimneys_Wikimedia_Commons.jpg/960px-Cappadocia_Chimneys_Wikimedia_Commons.jpg" alt="Nevşehir'deki Kapadokya peribacaları ve volkanik kaya oluşumları" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Benh LIEU SONG · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Cappadocia_Chimneys_Wikimedia_Commons.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Karma · 1985</span><h3>Göreme Milli Parkı ve Kapadokya</h3><p><strong>Nevşehir.</strong> Volkanik kaya oluşumları, kaya oyma kiliseler ve yerleşim alanları doğal ve kültürel miras olarak birlikte listelenmiştir.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/357/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/The_travertine_terraces_of_Pamukkale_4.jpg/960px-The_travertine_terraces_of_Pamukkale_4.jpg" alt="Denizli'deki Pamukkale travertenlerinin beyaz terasları" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Slyronit · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_travertine_terraces_of_Pamukkale_4.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">Karma · 1988</span><h3>Pamukkale-Hierapolis</h3><p><strong>Denizli.</strong> Traverten terasları ile Hierapolis antik kentinin kalıntıları, doğal ve kültürel değerleriyle tek bir miras alanıdır.</p><a class="unesco-link" href="https://whc.unesco.org/en/list/485/" target="_blank" rel="noopener noreferrer">UNESCO alan kaydı</a></div>
+        </article>
+      </div>
+
+      <h2>UNESCO'nun diğer programlarındaki alanlar</h2>
+      <div class="trunesco-grid" aria-label="Dünya Mirası Listesi dışındaki UNESCO program alanları">
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/The_Camili_%28Macahel%29_1.jpg/960px-The_Camili_%28Macahel%29_1.jpg" alt="Artvin'deki Camili (Macahel) biyosfer rezervi" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: Leplebi · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_Camili_(Macahel)_1.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">UNESCO İnsan ve Biyosfer Programı</span><h3>Camili (Macahel) Biyosfer Rezervi</h3><p><strong>Artvin, Borçka.</strong> Türkiye'nin UNESCO biyosfer rezervidir; 22 Dünya Mirası alanı sayısına dahil değildir.</p><a class="unesco-link" href="https://www.unesco.org/en/mab/camili" target="_blank" rel="noopener noreferrer">UNESCO program kaydı</a></div>
+        </article>
+
+        <article class="trunesco-card">
+          <figure>
+            <img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Kula_Volkanik_Jeopark%C4%B1.jpg/960px-Kula_Volkanik_Jeopark%C4%B1.jpg" alt="Manisa'daki Kula-Salihli jeoparkının volkanik arazi şekilleri" loading="lazy" decoding="async" />
+            <figcaption>Fotoğraf: ToprakM · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Kula_Volkanik_Jeopark%C4%B1.jpg" target="_blank" rel="noopener noreferrer">Fotoğraf kaydı</a></figcaption>
+          </figure>
+          <div class="trunesco-card-body"><span class="trunesco-tag">UNESCO Küresel Jeoparklar Ağı</span><h3>Kula-Salihli UNESCO Küresel Jeoparkı</h3><p><strong>Manisa.</strong> Volkanik şekilleri ve jeolojik mirasıyla tanınır; Dünya Mirası Listesi'ndeki 22 alanın dışında ayrı bir UNESCO programında yer alır.</p><a class="unesco-link" href="https://www.unesco.org/en/iggp/geoparks/kula-salihli" target="_blank" rel="noopener noreferrer">UNESCO program kaydı</a></div>
+        </article>
+      </div>
+
+      <h2>Kaynaklar</h2>
+      <ol class="trunesco-sources">
+        <li id="kaynak-1">T.C. Kültür ve Turizm Bakanlığı, Kültür Varlıkları ve Müzeler Genel Müdürlüğü, <a href="https://kvmgm.ktb.gov.tr/TR-44423/dunya-miras-listesi.html" target="_blank" rel="noopener noreferrer">Dünya Miras Listesi</a> — Türkiye'deki 22 kayıt, kayıt yılları ve karma alan bilgisi.</li>
+        <li id="kaynak-2">UNESCO Dünya Miras Merkezi, <a href="https://whc.unesco.org/en/list/" target="_blank" rel="noopener noreferrer">Dünya Mirası Listesi</a> — alan kartlarında her varlığın resmî kaydına bağlantı verilmiştir.</li>
+        <li id="kaynak-3">UNESCO İnsan ve Biyosfer Programı, <a href="https://www.unesco.org/en/mab/camili" target="_blank" rel="noopener noreferrer">Camili Biyosfer Rezervi</a>.</li>
+        <li id="kaynak-4">UNESCO Küresel Jeoparklar, <a href="https://www.unesco.org/en/iggp/geoparks/kula-salihli" target="_blank" rel="noopener noreferrer">Kula-Salihli UNESCO Küresel Jeoparkı</a>.</li>
+      </ol>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a><p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p></div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a><a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a><a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a><a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a><a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal"><a href="hakkinda.html" class="footer-link">Hakkında</a><a href="iletisim.html" class="footer-link">İletişim</a><a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a><a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a><a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>
