@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">İslam dünyasının tarihsel gelişimi</title>
+  <desc id="desc">Hicaz'dan Şam ve Bağdat'a, farklı bölgesel merkezlere uzanan, tek bir devlet haritası olmayan şematik tarih çizgisi.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f8efd9"/>
+      <stop offset="1" stop-color="#e7d8b7"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" x2="1">
+      <stop offset="0" stop-color="#ad7545"/>
+      <stop offset="1" stop-color="#537a70"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="640" rx="28" fill="url(#paper)"/>
+  <circle cx="1018" cy="135" r="70" fill="#e1aa55" opacity=".72"/>
+  <path d="M0 400c165-56 302-14 451 12s327 48 749-36v264H0z" fill="#728776" opacity=".86"/>
+  <path d="M0 475c205-61 357-7 520 18s398 40 680-24v171H0z" fill="#536f66" opacity=".88"/>
+  <text x="66" y="77" fill="#31413b" font-family="Georgia,serif" font-size="38" font-weight="700" letter-spacing="2">İSLAM DÜNYASI</text>
+  <text x="68" y="116" fill="#59675a" font-family="Arial,sans-serif" font-size="19" letter-spacing="2">ARABİSTAN'DAN ÇOK MERKEZLİ TARİHE</text>
+  <path d="M156 292c218-134 427-134 636 0c48 38 108 52 154 38" fill="none" stroke="#f5e7cc" stroke-width="16" stroke-linecap="round"/>
+  <path d="M156 292c218-134 427-134 636 0c48 38 108 52 154 38" fill="none" stroke="url(#route)" stroke-width="7" stroke-linecap="round" stroke-dasharray="2 2"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g transform="translate(155 292)">
+      <circle r="25" fill="#a8663d" stroke="#f7ecd5" stroke-width="7"/>
+      <text y="-66" fill="#35443b" font-size="22" font-weight="700">HİCAZ</text>
+      <text y="-39" fill="#59675a" font-size="16">7. yüzyıl</text>
+      <rect x="-100" y="39" width="200" height="32" rx="12" fill="#33433d"/>
+      <text y="60" fill="#f8efd9" font-size="16" font-weight="700">VAHİY · HİCRET</text>
+    </g>
+    <g transform="translate(418 242)">
+      <circle r="25" fill="#a8663d" stroke="#f7ecd5" stroke-width="7"/>
+      <text y="-66" fill="#35443b" font-size="22" font-weight="700">ŞAM</text>
+      <text y="-39" fill="#59675a" font-size="16">Emevîler</text>
+      <rect x="-100" y="39" width="200" height="32" rx="12" fill="#33433d"/>
+      <text y="60" fill="#f8efd9" font-size="16" font-weight="700">İMPARATORLUK</text>
+    </g>
+    <g transform="translate(682 292)">
+      <circle r="25" fill="#8a7650" stroke="#f7ecd5" stroke-width="7"/>
+      <text y="-66" fill="#35443b" font-size="22" font-weight="700">BAĞDAT</text>
+      <text y="-39" fill="#59675a" font-size="16">Abbâsîler</text>
+      <rect x="-100" y="39" width="200" height="32" rx="12" fill="#33433d"/>
+      <text y="60" fill="#f8efd9" font-size="16" font-weight="700">İLİM · TİCARET</text>
+    </g>
+    <g transform="translate(946 330)">
+      <circle r="25" fill="#537a70" stroke="#f7ecd5" stroke-width="7"/>
+      <text y="-66" fill="#35443b" font-size="22" font-weight="700">FARKLI MERKEZLER</text>
+      <text y="-39" fill="#59675a" font-size="16">Afrika · İran · Güney Asya</text>
+      <rect x="-108" y="39" width="216" height="32" rx="12" fill="#33433d"/>
+      <text y="60" fill="#f8efd9" font-size="16" font-weight="700">YEREL TOPLUMLAR</text>
+    </g>
+  </g>
+  <rect x="54" y="544" width="1092" height="56" rx="17" fill="#33433d"/>
+  <text x="600" y="580" fill="#f4e7ca" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" text-anchor="middle">İNANÇ · SİYASET · GÖÇ · BİLGİ · ALIŞVERİŞ</text>
+</svg>

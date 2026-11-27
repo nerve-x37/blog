@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      document.documentElement.classList.remove('light','dark');
+      document.documentElement.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Sayfa Bulunamadı — Valexirion</title>
+  <meta name="description" content="Aradığınız sayfa bulunamadı. Valexirion ana sayfasına dönebilirsiniz." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- 404 sayfası iç içe yollarda da gösterilebildiği için dosya yolları mutlak (/...) yazıldı -->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    .nf-wrap { max-width: 640px; margin: 0 auto; padding: calc(64px + 4rem) 1.5rem 5rem; text-align: center; box-sizing: border-box; }
+    .nf-code { font-family: 'Playfair Display', serif; font-size: clamp(4rem, 14vw, 7rem); font-weight: 900; line-height: 1; color: var(--accent); margin: 0 0 .5rem; }
+    .nf-wrap h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; color: var(--text); margin: 0 0 1rem; }
+    .nf-wrap p { font-family: 'Merriweather', serif; font-size: .96rem; line-height: 1.8; color: var(--text-2); margin: 0 0 2rem; }
+    .nf-btn { display: inline-block; padding: .75rem 1.5rem; border-radius: 999px; background: var(--accent); color: #fff; font: 600 .9rem 'Inter', sans-serif; text-decoration: none; }
+    .nf-btn:hover { opacity: .85; }
+  </style>
+</head>
+<body class="font-ui">
+  <nav id="navbar" class="navbar">
+    <div class="navbar-inner">
+      <a href="/index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="/index.html#bilim"     class="nav-cat-link">Bilim</a>
+        <a href="/index.html#tarih"     class="nav-cat-link">Tarih</a>
+        <a href="/index.html#sinema"    class="nav-cat-link">Sinema</a>
+        <a href="/index.html#muzik"     class="nav-cat-link">M&uuml;zik</a>
+        <a href="/index.html#felsefe"   class="nav-cat-link">Felsefe</a>
+        <a href="/index.html#belgesel"  class="nav-cat-link">Belgesel</a>
+        <a href="/index.html#doga"      class="nav-cat-link">Do&#287;a</a>
+        <a href="/index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="nf-wrap">
+      <p class="nf-code">404</p>
+      <h1>Sayfa bulunamadı</h1>
+      <p>Aradığınız sayfa taşınmış, silinmiş veya adres yanlış yazılmış olabilir.</p>
+      <a class="nf-btn" href="/index.html">Ana sayfaya dön</a>
+    </div>
+  </main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

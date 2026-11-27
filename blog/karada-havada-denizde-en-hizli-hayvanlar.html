@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karada, Havada ve Denizde En Hızlı Hayvanlar | Valexirion</title>
+  <meta name="description" content="Çita, gökdoğan ve yelken balığının hızlarını bilimsel ölçümlerle karşılaştırın; dalış, kısa sprint ve tartışmalı rekorları birbirinden ayırın." />
+  <link rel="canonical" href="https://valexirion.com/karada-havada-denizde-en-hizli-hayvanlar.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Karada, Havada ve Denizde En Hızlı Hayvanlar" />
+  <meta property="og:description" content="Karada çita, havada dalış yapan gökdoğan, denizde ise tartışmalı yelken balığı rekoru: hız verileri ne söylüyor?" />
+  <meta property="og:url" content="https://valexirion.com/karada-havada-denizde-en-hizli-hayvanlar.html" />
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f6/Cheetah_chase.jpg" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Karada, Havada ve Denizde En Hızlı Hayvanlar" />
+  <meta name="twitter:description" content="Üç farklı ortam, üç farklı hız ölçümü: çita, gökdoğan ve yelken balığının rekorlarını kaynaklarla inceleyin." />
+  <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/f/f6/Cheetah_chase.jpg" />
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@300;400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    .speed-figure { margin: 0 0 2rem; }
+    .speed-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); }
+    .speed-figure figcaption { margin-top: .6rem; color: var(--text-3); font-size: .82rem; }
+    .speed-table-wrap { overflow-x: auto; margin: 1.5rem 0 2rem; }
+    .speed-table { width: 100%; border-collapse: collapse; min-width: 620px; }
+    .speed-table caption { margin-bottom: .6rem; text-align: left; font-weight: 700; }
+    .speed-table th, .speed-table td { padding: .8rem; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+    .speed-table th { background: var(--bg-3); color: var(--text-1); }
+    .source-marker { font-size: .78em; vertical-align: super; text-decoration: none; }
+    @media (max-width: 560px) { .speed-figure img { border-radius: var(--radius); } }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Karada, Havada ve Denizde En Hızlı Hayvanlar",
+      "description": "Çita, gökdoğan ve yelken balığının hızlarını bilimsel ölçümlerle karşılaştırıyor; dalış, kısa sprint ve tartışmalı rekorları ayırıyor.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Cheetah_chase.jpg",
+      "mainEntityOfPage": "https://valexirion.com/karada-havada-denizde-en-hizli-hayvanlar.html",
+      "datePublished": "2026-11-13",
+      "dateModified": "2026-11-13",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="doga">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9 9 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>&#8250;</span>
+        <a href="kategori-doga.html">Doğa</a><span>&#8250;</span>
+        <span>En Hızlı Hayvanlar</span>
+      </div>
+      <span class="article-cat-badge">Doğa · Hayvanlar</span>
+      <h1 class="article-title">Karada, Havada ve Denizde<br><em>En Hızlı Hayvanlar</em></h1>
+      <p class="article-subtitle">Çitanın sprinti, gökdoğanın dalışı ve yelken balığının tartışmalı rekoru. Hızları yan yana koyarken ölçümlerin gerçekte ne söylediğine de bakalım.</p>
+      <div class="article-meta">
+        <span class="article-date">13 Kasım 2026</span>
+        <span class="article-read-time">9 dk okuma</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <p class="article-lead"><strong>Karada çita, havada dalış yapan gökdoğan, denizde ise çoğu listede yelken balığı öne çıkar.</strong> Ama bu üç “rekor” aynı tür ölçüm değil: çita yere basarak kısa süreli sprint atar, gökdoğan yerçekiminin de yardımıyla dik dalar, balıkların hızıysa su altında ölçülür ve çoğu zaman avlanma anına dayanır. Bu nedenle en hızlıları sıralarken yalnızca büyük sayıya değil, o sayının nasıl elde edildiğine de bakmak gerekir.</p>
+
+      <h2>Karada: çita, kısa mesafenin sprinteri</h2>
+      <figure class="speed-figure">
+        <img src="img/external-media-placeholder.svg" data-external-src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Cheetah_chase.jpg" alt="Afrika savanında koşan bir çita" fetchpriority="high" loading="eager" decoding="async"/>
+        <figcaption>Çita, kısa mesafede hızlanmak için özelleşmiş bir kara avcısıdır. Fotoğraf: Hein Waschefort, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Cheetah_chase.jpg" target="_blank" rel="noopener noreferrer">görsel ve lisans kaydı</a>.</figcaption>
+      </figure>
+      <p>Çita (<em>Acinonyx jubatus</em>) en hızlı kara hayvanı olarak bilinir. Uzun bacakları, esnek omurgası ve denge sağlayan kuyruğu hızlanıp yön değiştirmesine yardım eder; ancak bu yapı uzun süreli koşu için değil, avın peşinde kısa ve yoğun bir hamle için uygundur. San Diego Zoo, çitanın en yüksek hızını saatte 70 mile, yani yaklaşık 112 kilometreye kadar verir.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a></p>
+      <p>Bu yaygın rakamı, doğadaki ölçümle karıştırmamak önemli. Wilson ve çalışma arkadaşları Botsvana’da beş yabani çitayı GPS ve hareket sensörleriyle izledi; 367 av koşusunda kaydedilen en yüksek hız saatte 93 kilometreydi. Çalışma, bu hayvanların her avda rekor hızına çıkmadığını da gösterdi: çoğu kovalamaca daha düşük hızlarda gerçekleşti. Dolayısıyla 112 km/sa sıkça aktarılan üst sınır; 93 km/sa ise belirli bir saha araştırmasında gerçekten kaydedilmiş tepe değerdir. İkisi farklı şeyleri anlatır.<a class="source-marker" href="#kaynak-2" aria-label="Kaynak 2">[2]</a></p>
+
+      <h2>Havada: gökdoğan, dalışın gücüyle</h2>
+      <figure class="speed-figure">
+        <img src="img/gokdogan.webp" alt="Gökdoğan açık gökyüzünde süzülürken" loading="lazy" decoding="async"/>
+        <figcaption>Gökdoğan uçuş sırasında. Fotoğraf: Tisha Mukherjee / Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Peregrine_Falcon_in_Baruipur_February_2026_by_Tisha_Mukherjee_01.jpg" target="_blank" rel="noopener noreferrer">görsel ve lisans kaydı</a>.</figcaption>
+      </figure>
+      <p>Gökdoğan (<em>Falco peregrinus</em>) avını yakalamak için yüksekten hızla aşağı süzülür. Bu dik dalış, İngilizcede “stoop” diye anılır ve kuşu yatay uçuşundan çok daha hızlı hâle getirir. Audubon, gökdoğanın böyle bir dalışta yaklaşık saatte 200 mile — yaklaşık 320 km/sa — ulaşabileceğini ihtiyatlı biçimde belirtir; National Geographic de avına dalarken 200 mil/saatin üzerine çıkabildiğini aktarır.<a class="source-marker" href="#kaynak-3" aria-label="Kaynak 3">[3]</a><a class="source-marker" href="#kaynak-4" aria-label="Kaynak 4">[4]</a></p>
+      <p>Bu yüzden gökdoğan “dünyanın en hızlı hayvanı” diye anıldığında, kastedilen genellikle bir dalış anıdır; düz uçuşta kanat çırparak ulaştığı hız değildir. Hızın kesin değeri de kuşun dalış açısına, rüzgâra ve ölçüm yöntemine bağlıdır. Başka bir deyişle, rekor etkileyicidir ama çitanın koşu hızıyla bire bir aynı koşullarda yapılmış bir yarış değildir.</p>
+
+      <h2>Denizde: yelken balığı ve ölçülmesi zor rekor</h2>
+      <figure class="speed-figure">
+        <img src="img/yelken-baligi.webp" alt="Yelken balığı su yüzeyinden sıçrarken" loading="lazy" decoding="async"/>
+        <figcaption>Yelken balığı su yüzeyinden sıçrarken. Fotoğraf: Galomalavasi / Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Malavasi2022--8.jpg" target="_blank" rel="noopener noreferrer">görsel ve lisans kaydı</a>.</figcaption>
+      </figure>
+      <p>Yelken balığı (<em>Istiophorus platypterus</em>), iğne biçimli uzun çenesi ve büyük sırt yüzgeciyle tanınır; popüler listelerde çoğu zaman denizin en hızlı balığı diye geçer. Ona atfedilen saatte 100 kilometreyi aşan hızlar güvenilir bir deniz rekoru gibi sunulmamalı. Hakemli çalışmalarda aktarılan eski tahminlerden biri yaklaşık 35 m/s, yani saatte 126 kilometre düzeyindeydi; bunların bir bölümü oltaya takılmış balıkların misinayı boşaltma hızından türetilmişti. Balığın gerçek yüzme hızıyla misinanın sudaki hareketi aynı ölçüm değil.<a class="source-marker" href="#kaynak-5" aria-label="Kaynak 5">[5]</a></p>
+      <p>2015’te yüksek hızlı video ve ivmeölçer kullanan bir araştırma, avlanma sırasında yelken balıklarının yaklaşık 7 m/s, yani saatte 25 km civarında kısa hız patlamaları yaptığını ve ölçülen hızın 10 m/s’yi aşmadığını bildirdi. 2016’da yayımlanan başka bir çalışma, kas kasılma süresinden hareketle yelken balığının ulaşabileceği teorik üst hızı yaklaşık 8,3 ± 1,4 m/s — kabaca 30 km/sa — olarak tahmin etti. Bu ikinci sayı doğrudan bir yarışta kronometreyle ölçülmüş değer değil, fizyolojik verilerden çıkarılmış bir tahmindir.<a class="source-marker" href="#kaynak-5" aria-label="Kaynak 5">[5]</a><a class="source-marker" href="#kaynak-6" aria-label="Kaynak 6">[6]</a></p>
+      <p>Bu çalışmalar yelken balığının hızlı bir yüzücü olduğunu destekliyor; fakat “bütün deniz hayvanları arasında tartışmasız en hızlı” olduğunu kanıtlamıyor. Farklı türler, farklı derinlikler ve farklı ölçüm yöntemleri karşılaştırılmadan okyanusun kesin şampiyonunu ilan etmek doğru olmaz. En güvenli ifade şu: Yelken balığı denizin en hızlıları arasında sayılır, ancak internette dolaşan en yüksek hız rakamları sağlam ölçümle doğrulanmış değildir. Türün biyolojisi ve dağılımı için Florida Doğa Tarihi Müzesi’nin balık profiline de bakılabilir.<a class="source-marker" href="#kaynak-7" aria-label="Kaynak 7">[7]</a></p>
+
+      <h2>Üç ortam, üç farklı hız tanımı</h2>
+      <div class="speed-table-wrap">
+        <table class="speed-table">
+          <caption>Hız iddialarını ölçüm türüyle birlikte okuyun</caption>
+          <thead>
+            <tr><th scope="col">Ortam</th><th scope="col">Öne çıkan hayvan</th><th scope="col">Kaynaklarda geçen değer</th><th scope="col">Önemli not</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Kara</th><td>Çita</td><td>93 km/sa saha kaydı; 112 km/sa sık aktarılan üst hız</td><td>Av sırasında kısa sprint; değerler farklı kaynak ve yöntemlerden geliyor.</td></tr>
+            <tr><th scope="row">Hava</th><td>Gökdoğan</td><td>Dalışta yaklaşık 320 km/sa</td><td>Dik dalış hızı; yatay uçuş hızı değil.</td></tr>
+            <tr><th scope="row">Deniz</th><td>Yelken balığı</td><td>Av hamlesinde yaklaşık 25 km/sa; kas verilerinden yaklaşık 30 km/sa tahmin</td><td>Yüksek popüler rekor iddiası doğrulanmış ölçüm değil; deniz canlılarının kesin sıralaması belirsiz.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Hız rekorlarında neden temkinli olmak gerekir?</h2>
+      <p>Bir hayvanın “en yüksek hızı”, tek başına sabit bir biyolojik özellik gibi düşünülemez. Ölçümün kısa bir sıçramayı mı, uzun süre korunan hızı mı anlattığı; hayvanın avlanıp avlanmadığı; hızın doğrudan sensörle mi yoksa dolaylı bir hesapla mı bulunduğu sonucu değiştirir. Gökdoğanın dalışı yerçekimiyle hız kazanır, çitanın ısırıp yön değiştirdiği av kovalamacası düz bir pist yarışı değildir, balığın hareketini su içinde izlemek ise teknik olarak güçtür.</p>
+      <p>Bu yüzden kısa cevap hâlâ akılda kalıcı: karada çita, havada dalan gökdoğan, denizde ise çoğu zaman yelken balığı. Daha doğru cevap ise küçük bir dipnot taşır: rekorlar ancak hangi hareketin, hangi koşulda ve nasıl ölçüldüğü söylendiğinde anlam kazanır. Hız, doğada bir kupa değil; avı yakalamaya, tehlikeden sıyrılmaya ve enerji harcamaya dair bir uyumdur.</p>
+
+      <h2>Kaynaklar ve ileri okuma</h2>
+      <ol>
+        <li id="kaynak-1">San Diego Zoo Wildlife Alliance, <a href="https://animals.sandiegozoo.org/animals/cheetah" target="_blank" rel="noopener noreferrer">“Cheetah”</a>; çitanın kısa mesafedeki hızı ve bedensel uyumları.</li>
+        <li id="kaynak-2">A. M. Wilson ve diğerleri, “Locomotion dynamics of hunting in wild cheetahs,” <em>Nature</em> 498 (2013), 185–189. <a href="https://doi.org/10.1038/nature12295" target="_blank" rel="noopener noreferrer">DOI: 10.1038/nature12295</a>.</li>
+        <li id="kaynak-3">National Audubon Society, <a href="https://www.audubon.org/field-guide/bird/peregrine-falcon" target="_blank" rel="noopener noreferrer">“Peregrine Falcon”</a>; dalış hızına ilişkin temkinli değerlendirme.</li>
+        <li id="kaynak-4">National Geographic, <a href="https://www.nationalgeographic.com/animals/birds/facts/peregrine-falcon" target="_blank" rel="noopener noreferrer">“Peregrine Falcon”</a>; av dalışı ve 200 mil/saat üzerindeki hız iddiası.</li>
+        <li id="kaynak-5">Stefano Marras ve diğerleri, “Not So Fast: Swimming Behavior of Sailfish during Predator–Prey Interactions using High-Speed Video and Accelerometry,” <em>Integrative and Comparative Biology</em> 55, no. 4 (2015), 719–727. <a href="https://doi.org/10.1093/icb/icv017" target="_blank" rel="noopener noreferrer">DOI: 10.1093/icb/icv017</a>.</li>
+        <li id="kaynak-6">Morten B. S. Svendsen ve diğerleri, “Maximum swimming speeds of sailfish and three other large marine predatory fish species based on muscle contraction time and stride length: a myth revisited,” <em>Biology Open</em> 5 (2016), 1415–1419. <a href="https://doi.org/10.1242/bio.019919" target="_blank" rel="noopener noreferrer">DOI: 10.1242/bio.019919</a>; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5087677/" target="_blank" rel="noopener noreferrer">açık erişimli makale</a>.</li>
+        <li id="kaynak-7">Florida Museum of Natural History, <a href="https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/sailfish/" target="_blank" rel="noopener noreferrer">“Sailfish”</a>; yelken balığının tür bilgileri.</li>
+        <li id="kaynak-gorsel">Hein Waschefort, <a href="https://commons.wikimedia.org/wiki/File:Cheetah_chase.jpg" target="_blank" rel="noopener noreferrer">“Cheetah chase”</a>, Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>.</li>
+        <li id="kaynak-gorsel-gokdogan">Tisha Mukherjee, <a href="https://commons.wikimedia.org/wiki/File:Peregrine_Falcon_in_Baruipur_February_2026_by_Tisha_Mukherjee_01.jpg" target="_blank" rel="noopener noreferrer">“Peregrine Falcon in Baruipur February 2026”</a>, Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
+        <li id="kaynak-gorsel-yelken-baligi">Galomalavasi, <a href="https://commons.wikimedia.org/wiki/File:Malavasi2022--8.jpg" target="_blank" rel="noopener noreferrer">“Sailfish Costa Rica”</a>, Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</li>
+      </ol>
+      <p style="font-size:.85rem;color:var(--text-3)">Hızlar kaynaklardaki ölçüm ve tahmin türleri korunarak verildi; farklı ortamlardaki değerler doğrudan, eş koşullarda yapılmış bir yarışın sonuçları değildir. Yelken balığının eski rekor iddiaları, daha yeni doğrudan gözlemler ve fizyolojik tahminlerle aynı kesinlikte sunulmadı. Kaynaklara 13 Kasım 2026 tarihinde erişildi.</p>
+      <p><a href="kategori-doga.html">Doğa yazılarına dön</a></p>
+    </div>
+  </article>
+
+  <section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">İlgili Yazılar</h2>
+      <div class="related-grid">
+        <a href="kedigiller.html" class="related-card"><div class="related-img"><img src="img/cita.webp" alt="Çita, kedigiller familyasının hızlı koşan üyelerinden biri" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"/></div><div class="related-body"><span class="related-cat">Yaban Hayatı</span><h3 class="related-card-title">Kedigiller: Türler, Yaşam Alanları ve Avlanma</h3></div></a>
+        <a href="turkiyede-vahsi-hayvanlar.html" class="related-card"><div class="related-img"><img src="img/external-media-placeholder.svg" data-external-src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Savsatkarag%C3%B6l.jpg/960px-Savsatkarag%C3%B6l.jpg" alt="Şavşat Karagöl ve çevresindeki doğal yaşam alanı" style="width:100%;height:100%;object-fit:cover" loading="lazy" decoding="async"/></div><div class="related-body"><span class="related-cat">Yaban Hayatı</span><h3 class="related-card-title">Türkiye’de Hangi Vahşi Hayvanlar Yaşıyor?</h3></div></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

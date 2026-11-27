@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" role="img" aria-labelledby="title desc">
+  <title id="title">İpek Yolu ağının şematik güzergâhları</title>
+  <desc id="desc">Chang'an ve Dunhuang'dan Tarım Havzası'nın kuzey ve güney kollarına, Kaşgar, Semerkant, Merv ve Akdeniz'e uzanan kara bağlantıları ile Hint Okyanusu deniz ağını gösteren ölçekli olmayan şema.</desc>
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f1e7"/>
+      <stop offset="1" stop-color="#e9e1d1"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#9c5e32"/>
+    </marker>
+    <marker id="sea-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#277c9e"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="560" rx="18" fill="url(#paper)"/>
+  <path d="M0 325 C180 300 290 345 420 325 S740 310 870 335 1010 310 1100 326 L1100 560 0 560Z" fill="#d9e8e4"/>
+  <g fill="#586b65" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">
+    <text x="60" y="58">DOĞU ASYA</text>
+    <text x="360" y="58">TARIM HAVZASI</text>
+    <text x="645" y="58">ORTA ASYA</text>
+    <text x="895" y="58">İRAN VE BATI</text>
+  </g>
+  <g fill="none" stroke="#9c5e32" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)">
+    <path d="M142 205 C195 205 218 205 265 205"/>
+    <path d="M300 205 C353 190 365 145 432 142"/>
+    <path d="M300 214 C352 235 367 286 432 286"/>
+    <path d="M462 144 C514 148 532 185 589 205"/>
+    <path d="M462 284 C514 276 533 232 589 213"/>
+    <path d="M622 205 C678 205 697 205 747 205"/>
+    <path d="M782 205 C832 205 851 205 902 205"/>
+    <path d="M937 205 C983 205 1000 205 1043 205"/>
+  </g>
+  <g fill="none" stroke="#277c9e" stroke-width="4" stroke-dasharray="10 9" stroke-linecap="round" marker-end="url(#sea-arrow)">
+    <path d="M178 410 C284 440 333 436 428 410"/>
+    <path d="M460 410 C552 385 625 385 710 410"/>
+    <path d="M741 410 C831 438 887 437 970 410"/>
+  </g>
+  <g fill="#fffdf8" stroke="#9c5e32" stroke-width="4">
+    <circle cx="125" cy="205" r="13"/>
+    <circle cx="282" cy="205" r="13"/>
+    <circle cx="447" cy="142" r="13"/>
+    <circle cx="447" cy="286" r="13"/>
+    <circle cx="605" cy="205" r="13"/>
+    <circle cx="763" cy="205" r="13"/>
+    <circle cx="918" cy="205" r="13"/>
+    <circle cx="1060" cy="205" r="13"/>
+  </g>
+  <g fill="#fffdf8" stroke="#277c9e" stroke-width="4">
+    <circle cx="158" cy="410" r="11"/>
+    <circle cx="444" cy="410" r="11"/>
+    <circle cx="727" cy="410" r="11"/>
+    <circle cx="988" cy="410" r="11"/>
+  </g>
+  <g fill="#263d43" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle">
+    <text x="125" y="180">Chang'an</text>
+    <text x="282" y="180">Dunhuang</text>
+    <text x="447" y="116">Kucha</text>
+    <text x="447" y="318">Khotan</text>
+    <text x="605" y="180">Kaşgar</text>
+    <text x="763" y="180">Semerkant</text>
+    <text x="918" y="180">Merv</text>
+    <text x="1050" y="180">Akdeniz</text>
+  </g>
+  <g fill="#244957" font-family="Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+    <text x="158" y="443">Çin kıyıları</text>
+    <text x="444" y="443">Hint limanları</text>
+    <text x="727" y="443">Arap Denizi</text>
+    <text x="988" y="443">Batı limanları</text>
+  </g>
+  <g fill="#40565c" font-family="Arial, sans-serif" font-size="14">
+    <text x="70" y="490">Kara kolları</text>
+    <path d="M70 507h74" stroke="#9c5e32" stroke-width="4"/>
+    <text x="245" y="490">Hint Okyanusu deniz ağı</text>
+    <path d="M245 507h74" stroke="#277c9e" stroke-width="4" stroke-dasharray="9 7"/>
+    <text x="520" y="490">Şematik gösterim: ölçekli değildir; kolların kullanımı dönemlere göre değişmiştir.</text>
+  </g>
+</svg>

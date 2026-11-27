@@ -1,0 +1,7 @@
+# Keep local notes and unpublished previews out of the public site repository.
+/DURUM.md
+/_onizleme.html
+/_kuru-onizleme.html
+
+# These are local content-generation and maintenance tools, not site assets.
+/*.py

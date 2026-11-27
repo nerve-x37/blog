@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      document.documentElement.classList.remove('light','dark');
+      document.documentElement.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kedigiller Ailesi: Evrimin Sessiz Avcıları — Köken, Evrim, Türler ve Evcilleşme — Valexirion</title>
+  <meta name="description" content="10-15 milyon yıllık evrimin ürünü olan kedigiller ailesinin kökeni, saber-dişli kedilerden modern aslan ve kaplanlar, evcil kedi ve 37 yaşayan türün tam anatomisi — IUCN, NatGeo, Smithsonian verileriyle." />
+
+  <link rel="canonical" href="https://valexirion.com/kedigiller.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Kedigiller Ailesi: Evrimin Sessiz Avcıları — Valexirion" />
+  <meta property="og:description" content="10-15 milyon yıllık evrimin ürünü olan kedigiller ailesinin kökeni, saber-dişli kedilerden modern aslan ve kaplanlar, evcil kedi ve 37 yaşayan türün tam anatomisi." />
+  <meta property="og:url" content="https://valexirion.com/kedigiller.html" />
+  <meta property="og:image" content="https://valexirion.com/img/cita.webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kedigiller Ailesi: Evrimin Sessiz Avcıları — Valexirion" />
+  <meta name="twitter:description" content="10-15 milyon yıllık evrimin ürünü olan kedigiller ailesinin tam anatomisi — IUCN, NatGeo ve Smithsonian verileriyle." />
+  <meta name="twitter:image" content="https://valexirion.com/img/cita.webp" />
+
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  
+
+  <link rel="stylesheet" href="style.css" />
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Kedigiller: 25 Milyon Yıllık Avcının Evrimi — Aslanlar, Kaplanlar ve 41 Tür","description":"Miyosen çağında Asya'da doğan ilk kediden bugün 41 türe; sabre-dişli devlerden evcil kediye — IUCN, National Geographic ve Science dergisi kaynaklarıyla kedigiller ailesinin tam anatomisi.","image":"https://valexirion.com/img/cita.webp","mainEntityOfPage":"https://valexirion.com/kedigiller.html","inLanguage":"tr-TR","publisher":{"@type":"Organization","name":"Valexirion","url":"https://valexirion.com/"}}</script>
+</head>
+<body class="font-ui" data-page-category="doga">
+
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim"     class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih"     class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema"    class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik"     class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe"   class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel"  class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga"      class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Men&uuml;y&uuml; a&ccedil;/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim"     class="mobile-link">Bilim</a>
+      <a href="index.html#tarih"     class="mobile-link">Tarih</a>
+      <a href="index.html#sinema"    class="mobile-link">Sinema</a>
+      <a href="index.html#muzik"     class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe"   class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel"  class="mobile-link">Belgesel</a>
+      <a href="index.html#doga"      class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <!-- MAKALE BAŞLIĞI -->
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a>
+        <span>&#8250;</span>
+        <a href="index.html#doga">Do&#287;a</a>
+        <span>&#8250;</span>
+        <span>Do&#287;a Bilimleri</span>
+      </div>
+      <span class="article-cat-badge">Doğa</span>
+      <h1 class="article-title">
+        Kedigiller Ailesi: Evrimin Sessiz Avc&#305;lar&#305;<br>
+        <em>K&ouml;ken, Evrim, 37 T&uuml;r ve Evcille&#351;menin Hikayesi</em>
+      </h1>
+      <p class="article-subtitle">
+        10&ndash;15 milyon y&#305;l &ouml;nce Asya'da ortaya &#231;&#305;kan kedigiller ailesi (Felidae), bug&uuml;n Antarktika hari&ccedil; t&uuml;m k&#305;talarda ya&#351;ayan 37 t&uuml;r, 3 altaile ve onlarca alt t&uuml;rden olu&#351;uyor. Smilodon'un k&iacute;l&#305;&#231; di&#351;lerinden kar leopar&#305;n&305;n sessiz izlerine, evcil kedinin 10.000 y&#305;ll&#305;k serüveninden Bengal kaplanlar&#305;n&#305;n y&uuml;z y&#305;lda yar&#305; popülasyonunu yitirme hikayesine kadar &mdash; IUCN, National Geographic, Smithsonian ve Oxford kaynaklarıyla güncel verilerin tam dökümü.
+      </p>
+      
+        <div class="article-share">
+          <button class="share-btn" onclick="navigator.share ? navigator.share({title: document.title, url: location.href}) : navigator.clipboard.writeText(location.href)" aria-label="Paylaş">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            Paylaş
+          </button>
+        </div>
+      </div>
+  </header>
+
+  
+
+  <!-- MAKALE İÇERİĞİ -->
+  <article class="article-content-wrap">
+    <div class="article-content">
+
+      <div class="article-hero-img">
+        <img src="img/aslans.webp" alt="Kedigiller — Evrimin Sessiz Avcıları" loading="eager" onerror="this.parentElement.style.display='none'" decoding="async" fetchpriority="high">
+      </div>
+
+      <p class="article-lead">
+        Bir aslan kükrediğinde sesi 8 kilometre öteden duyulabilir. Bir kar leoparı, kendi vücut ağırlığının üç katı avı yüzlerce metre aşağı taşıyabilir. Evcil bir kedi, köpeklere göre insan vücudunu çok daha az "köle" olarak tanımlayan bağımsız bir zihinle evrimi izler. Hepsinin ortak atası, 10-15 milyon yıl önce Asya'nın ormanlarından çıktı. Bugün 37 tür, Antarktika hariç her kıtada yaşıyor; ama bu sayı, ilk evrimsel patlamadan bu yana dramatik biçimde küçüldü. Bu yazı, kedigiller ailesinin tam hikayesini anlatıyor.
+      </p>
+
+      <!-- BÖLÜM 1 -->
+      <h2>Kedigiller Ne Zaman ve Nerede Ortaya Çıktı? Eosen'den Miyosen'e Uzun Yolculuk</h2>
+
+      <p>
+        Kedigillerin hikayesi, memelilerin büyük patlama yaşadığı <strong>Eosen çağına</strong> (yaklaşık 55-34 milyon yıl önce) kadar uzanır. Bu dönemde "Miacidae" olarak bilinen ilk et yiyici memeli grubu, hem köpekgiller hem kedigiller hem de pek çok başka yırtıcı ailenin ortak atalarını içeriyordu. Ancak modern anlamda "kedi" yapısına sahip ilk canlılar, çok daha sonra Miyosen çağında sahneye çıktı.
+      </p>
+
+      <p>
+        <strong>Proailurus lemanensis</strong> ("ilk kedi" anlamına gelir), yaklaşık <strong>25 milyon yıl önce</strong> Oligosen-Miyosen sınırında Avrupa'da yaşadı. Bugünkü bilinen en eski gerçek kedigil atasıdır. Vücut yapısı ağaçlarda yaşamaya uygundu; fosilleri Fransa ve Pakistan'da bulundu. Smithsonian Institution'ın Ulusal Doğa Tarihi Müzesi'ne göre Proailurus, modern kedilerin beden planını ilk kez ortaya koyan türdü — esnek omurga, dönen kol eklemi ve geri çekilebilir pençeler bu dönemde evrimleşti.
+      </p>
+
+      <p>
+        Ardından, yaklaşık <strong>20 milyon yıl önce</strong>, büyük bir radyasyon başladı. <strong>Pseudaelurus</strong> cinsi Asya'da evrimleşerek hem Avrupa'ya hem Kuzey Amerika'ya yayıldı. Bu tür, iki büyük evrimsel dala ayrılan köprü cinstir: Bir kol modern kedigillere (Felidae), diğer kol ise en ikonik nesli tükenmiş gruba — <strong>saber-dişli kedilere (Machairodontinae)</strong> — doğru evrimleşti.
+      </p>
+
+      <!-- İstatistik kutusu -->
+      <div style="background: var(--bg-secondary,#f8f9fa); border-left: 4px solid var(--accent,#2563eb); padding:1.5rem 2rem; margin:2rem 0; border-radius:0 8px 8px 0;">
+        <p style="font-weight:700; margin-bottom:0.8rem; font-size:1.05rem;">&#128062; Kedigiller Ailesinin Kronolojisi — Smithsonian, Oxford University Press, IUCN 2024</p>
+        <ul style="margin:0; padding-left:1.2rem; line-height:2.2; font-size:0.95rem;">
+          <li><strong>~55 milyon yıl önce (Eosen):</strong> Miacidae — kedigillerin uzak ataları ortaya çıktı</li>
+          <li><strong>~25 milyon yıl önce (Oligosen sonu):</strong> Proailurus — bilinen ilk gerçek kedigil atası, Avrupa</li>
+          <li><strong>~20 milyon yıl önce (Miyosen başı):</strong> Pseudaelurus — modern kedigillerin ve saber-dişlilerin ortak atası, Asya kökenli</li>
+          <li><strong>~16-11 milyon yıl önce (Orta Miyosen):</strong> Machairodontinae (saber-dişliler) ve modern Felidae'nin yolları ayrıldı</li>
+          <li><strong>~10.8 milyon yıl önce:</strong> Pantherinae (büyük kediler alt ailesi) evrimleşmeye başladı — Johnson vd. 2006, Science</li>
+          <li><strong>~6.7 milyon yıl önce:</strong> Puma lineajı (puma ve çita) ayrıştı</li>
+          <li><strong>~3.4 milyon yıl önce:</strong> Leopar lineajı ayrıştı</li>
+          <li><strong>~2.5 milyon yıl önce:</strong> Aslan ve jaguar lineajları ayrıştı</li>
+          <li><strong>~2 milyon yıl önce:</strong> Smilodon — Kuzey ve Güney Amerika'nın ikonik saber-dişlisi ortaya çıktı</li>
+          <li><strong>~10.000 yıl önce (Holosen başı):</strong> Saber-dişliler yok oldu; evcil kedi soyu Yakın Doğu'da ayrıştı</li>
+          <li><strong>Bug&uuml;n:</strong> 37 yaşayan tür, 14 nesli tükenmiş cins, 3 altaile</li>
+        </ul>
+      </div>
+
+      <p>
+        Kedigillerin Asya'dan tüm dünyaya yayılması beş büyük dalga hâlinde gerçekleşti. Oxford University Press'ten Warren E. Johnson ve W. E. Johnson'ın 2006 tarihli <em>Science</em> dergisi makalesine göre tüm modern kedigillerin <strong>ortak atası yaklaşık 10-15 milyon yıl önce Asya'da</strong> yaşıyordu; oradan Beringia (bugünkü Bering Boğazı'nın oluşturmadığı kara köprüsü) üzerinden Kuzey Amerika'ya, ardından Güney Amerika'ya ve Afrika'ya yayıldılar. Avrupa ise farklı dönemlerde hem Asya'dan hem Afrika'dan yeniden kolonize edildi.
+      </p>
+
+      <!-- BÖLÜM 2 -->
+      <h2>Saber-Dişli Kediler: Evrimin En İkonik Dalı</h2>
+
+      <p>
+        Modern kedigillerin kardeş grubu olan <strong>Machairodontinae</strong>, yaklaşık 16 milyon yıldan 10.000 yıla kadar yaşadı. İsimlerini devasa, kılıç benzeri üst köpek dişlerinden alan bu altaile, tarihte bilinen en büyük kedigilleri barındırıyordu. Türlerin çoğu <strong>Afrika, Avrupa, Asya ve Amerika</strong>'da geniş bir coğrafyaya yayılmıştı.
+      </p>
+
+      <p>
+        En tanınanları olan <strong>Smilodon fatalis</strong>, bugünkü Kuzey ve Güney Amerika'da 2,5 milyon yıldan 10.000 yıl önceye kadar yaşadı. Vücut ağırlığı 150-280 kg arasındaydı — bugünkü aslanın iki katına yakın. Üst köpek dişleri 18-22 cm uzunluğuna ulaşıyordu. Kemik yapısı avcılığa değil, devasa avı sabitleyip boğmaya uygundu; hız değil güç üzerine evrimleşmişti. La Brea zift çukurlarında (Los Angeles) 166.000'den fazla Smilodon kemiği bulundu — bu onu dünya tarihinin en zengin fosil kaydına sahip büyük memelilerinden biri yapıyor.
+      </p>
+
+      <p>
+        Saber-dişlilerin yok oluşu, büyük bir bilimsel tartışmanın konusudur. Smithsonian Magazine'in 2023 analizine göre <strong>iki ana neden</strong> öne çıkıyor: Buzul çağının sona ermesiyle birlikte büyük av hayvanlarının (mammut, dev tembel ayılar, bison) yok olması ve Homo sapiens'in bu kıtalara ulaşması. Bu iki baskının eş zamanlı gelmesi, büyük gövdeli saber-dişlilerin adaptasyon süresini aştı ve soyu tükendi.
+      </p>
+
+      <!-- BÖLÜM 3 -->
+      <h2>Modern Kedigillerin Evrimi: 8 Lineaj, 37 Tür</h2>
+
+      <p>
+        Bugün yaşayan 37 kedigil türü, <strong>8 evrimsel lineaj</strong> (soy hattı) içinde düzenleniyor. Bu sınıflandırma Johnson vd.'nin 2006 <em>Science</em> makalesi ve O'Brien ile Johnson'ın 2007 <em>Scientific American</em> makalesine dayanıyor; IUCN Kedigiller Uzman Grubu (Cat Specialist Group) da bu çerçeveyi kabul ediyor.
+      </p>
+
+      <!-- Lineaj kutusu -->
+      <div style="background: var(--bg-secondary,#f8f9fa); border:1px solid var(--border,#e2e8f0); padding:1.5rem 2rem; margin:2rem 0; border-radius:8px;">
+        <p style="font-weight:700; margin-bottom:0.75rem; font-size:1rem;">&#128062; Modern Kedigillerin 8 Evrimsel Lineajı — Johnson vd. 2006, IUCN Cat SG 2025</p>
+        <div class="table-scroll"><table style="width:100%; border-collapse:collapse; font-size:0.9rem; line-height:1.8;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--border,#e2e8f0);">
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Lineaj Adı</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Yaklaşık Ayrışma</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Temsilci Türler</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Tür Sayısı</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Panthera lineajı</strong></td>
+              <td style="padding:0.4rem 0.6rem;">~10.8 My</td>
+              <td style="padding:0.4rem 0.6rem;">Aslan, kaplan, leopar, jaguar, kar leoparı, bulutlu leopar</td>
+              <td style="padding:0.4rem 0.6rem;">7</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Puma lineajı</strong></td>
+              <td style="padding:0.4rem 0.6rem;">~6.7 My</td>
+              <td style="padding:0.4rem 0.6rem;">Puma, çita, jaguarundi</td>
+              <td style="padding:0.4rem 0.6rem;">3</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Lynx lineajı</strong></td>
+              <td style="padding:0.4rem 0.6rem;">~7.2 My</td>
+              <td style="padding:0.4rem 0.6rem;">Vaşak (4 tür: Avrasya, Kanada, İber, kızıl vaşak)</td>
+              <td style="padding:0.4rem 0.6rem;">4</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Leopard cat lineajı</strong></td>
+              <td style="padding:0.4rem 0.6rem;">~5.9 My</td>
+              <td style="padding:0.4rem 0.6rem;">Leopar kedisi, balıkçı kedi, düz başlı kedi, pas lekeli kedi, Pallas kedisi</td>
+              <td style="padding:0.4rem 0.6rem;">5</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Ocelot lineajı</strong></td>
+              <td style="padding:0.4rem 0.6rem;">~8.0 My</td>
+              <td style="padding:0.4rem 0.6rem;">Ocelot, margay, oncilla, Güney Amerikan pampas kedisi, Andean kedi, Geoffrey's kedi</td>
+              <td style="padding:0.4rem 0.6rem;">6</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Bay cat lineajı</strong></td>
+              <td style="padding:0.4rem 0.6rem;">~9.4 My</td>
+              <td style="padding:0.4rem 0.6rem;">Borneo körfez kedisi, Asya altın kedisi, mermer kedi</td>
+              <td style="padding:0.4rem 0.6rem;">3</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Caracal lineajı</strong></td>
+              <td style="padding:0.4rem 0.6rem;">~8.5 My</td>
+              <td style="padding:0.4rem 0.6rem;">Karakulak, Afrika altın kedisi, serval</td>
+              <td style="padding:0.4rem 0.6rem;">3</td>
+            </tr>
+            <tr>
+              <td style="padding:0.4rem 0.6rem;"><strong>Felis lineajı</strong></td>
+              <td style="padding:0.4rem 0.6rem;">~6.2 My</td>
+              <td style="padding:0.4rem 0.6rem;">Evcil kedi, yaban kedisi, kum kedisi, orman kedisi, bataklık vaşağı, kara ayaklı kedi, Çin dağ kedisi</td>
+              <td style="padding:0.4rem 0.6rem;">6</td>
+            </tr>
+          </tbody>
+        </table></div>
+        <p style="font-size:0.82rem; color:var(--text-3,#8a8a8c); margin-top:0.75rem; margin-bottom:0;">My = Milyon yıl önce &middot; Toplam: 37 tür</p>
+      </div>
+
+      <p>
+        Bu 37 türün çoğu, kamuoyunun büyük bölümüne tanıdık değildir. National Geographic'e göre kedigillerin yaklaşık <strong>yüzde 80'i "küçük kedi"</strong> kategorisinde yer alır — yani aslan, kaplan, leopar ve jaguar dışındaki türler. Bunların birçoğu gece aktif, yalnız yaşayan ve insan gözünden uzak canlılardır; popülasyon verileri hâlâ yetersizdir.
+      </p>
+
+      <!-- BÖLÜM 4 -->
+      <h2>Bugün Kaç Tür Var? IUCN Koruma Durumu ve Nüfus Verileri</h2>
+
+      <p>
+        IUCN Kırmızı Listesi (Mayıs 2025 güncellemesi) ve Cat Specialist Group (CSG) 2024-2025 değerlendirmelerine göre 37 yaşayan kedigil türünün <strong>tamamı bir tehdit kategorisinde</strong> yer alıyor ya da veri yetersizliği nedeniyle tam olarak değerlendirilememiş durumda. Hiçbir kedigil türü "Asgari Endişe (Least Concern)" kategorisinde değildir — bu gerçek, ailenin genel durumunun ne kadar kritik olduğunu ortaya koyuyor.
+      </p>
+
+      <div style="background: var(--bg-secondary,#f8f9fa); border:1px solid var(--border,#e2e8f0); padding:1.5rem 2rem; margin:2rem 0; border-radius:8px; overflow-x:auto;">
+        <p style="font-weight:700; margin-bottom:0.75rem; font-size:1rem;">&#127758; Tüm 37 Kedigil Türü — IUCN Kırmızı Listesi 2025, CSG Verileri, NatGeo</p>
+        <table style="width:100%; border-collapse:collapse; font-size:0.86rem; line-height:1.7;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--border,#e2e8f0);">
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Tür (Bilimsel Adı)</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Yaşam Alanı</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Tahmini Nüfus</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">IUCN Durumu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background: rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Kaplan</strong> (<em>Panthera tigris</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Güney ve G.D. Asya, Rusya Far East</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~3.900</strong> (yabanda)</td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#ef4444; font-weight:700;">EN TEHLİKEDE (EN)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background: rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Kar Leoparı</strong> (<em>Panthera uncia</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Orta Asya dağları (Himalaya, Altay, Tiyanşan)</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>2.710 – 3.386</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background: rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Aslan</strong> (<em>Panthera leo</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Sahraaltı Afrika, Hindistan (Gir Ormanı)</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~20.000 – 25.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Jaguar</strong> (<em>Panthera onca</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Orta ve Güney Amerika (Amazon odaklı)</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~64.000 – 173.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Leopar</strong> (<em>Panthera pardus</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Afrika (geniş), G. ve G.D. Asya</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~250.000</strong> (azalıyor)</td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Bulutlu Leopar</strong> (<em>Neofelis nebulosa</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Himalaya eteği, Güneydoğu Asya</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>&lt; 10.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Sunda Bulutlu Leoparı</strong> (<em>Neofelis diardi</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Borneo, Sumatra</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>&lt; 10.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Çita</strong> (<em>Acinonyx jubatus</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Afrika savanası, küçük İran nüfusu</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~7.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Puma</strong> (<em>Puma concolor</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Kuzey ve Güney Amerika (en geniş dağılım)</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~50.000+</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>İber Vaşağı</strong> (<em>Lynx pardinus</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">İspanya, Portekiz (dar alan)</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~1.668</strong> (2023, artıyor)</td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Avrasya Vaşağı</strong> (<em>Lynx lynx</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Avrupa, Orta Asya, Sibirya ormanları</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~45.000 – 50.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Kanada Vaşağı</strong> (<em>Lynx canadensis</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Kanada, Alaska, kuzey ABD</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~200.000 – 250.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Kızıl Vaşak (Bobcat)</strong> (<em>Lynx rufus</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Kuzey Amerika</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~3.500.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Serval</strong> (<em>Leptailurus serval</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Sahraaltı Afrika</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor (stabil)</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Karakulak (Caracal)</strong> (<em>Caracal caracal</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Afrika, Orta Doğu, G. Asya</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor (stabil)</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Ocelot</strong> (<em>Leopardus pardalis</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Güney ve Orta Amerika, G. Texas</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~800.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background: rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Andean Kedi</strong> (<em>Leopardus jacobita</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">And Dağları (Peru, Bolivya, Arjantin)</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~1.400</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#ef4444; font-weight:700;">TEHLİKEDE (EN)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background: rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Balıkçı Kedi</strong> (<em>Prionailurus viverrinus</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">G. ve G.D. Asya sulak alanları</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Azalıyor</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background: rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Borneo Körfez Kedisi</strong> (<em>Catopuma badia</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Yalnızca Borneo</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>&lt; 2.500</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#ef4444; font-weight:700;">TEHLİKEDE (EN)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background: rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Düz Başlı Kedi</strong> (<em>Prionailurus planiceps</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">G.D. Asya nehir havzaları</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>&lt; 2.500</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#ef4444; font-weight:700;">TEHLİKEDE (EN)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background: rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Sumatran Kedisi</strong> (<em>Prionailurus javanensis</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Sumatra, Borneo, Java, Bali</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Azalıyor</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Pallas Kedisi (Manul)</strong> (<em>Otocolobus manul</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Orta Asya çayırları ve dağları</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~58.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#3b82f6; font-weight:700;">YAKINDA TEHDİT ALTINDA (NT)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Yaban Kedisi</strong> (<em>Felis silvestris</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Avrupa, Orta Doğu, Orta Asya, Afrika</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Yaygın, hibridizasyon sorunu var</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Kum Kedisi</strong> (<em>Felis margarita</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Kuzey Afrika, Orta Doğu, Orta Asya çölleri</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background: rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Çin Dağ Kedisi</strong> (<em>Felis bieti</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Yalnızca Çin (Tibetli plato etekleri)</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>&lt; 10.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background: rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Kara Ayaklı Kedi</strong> (<em>Felis nigripes</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Güney Afrika kuru savanası</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>&lt; 10.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Orman Kedisi</strong> (<em>Felis chaus</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Orta Doğu, G. ve G.D. Asya, Mısır</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Yaygın ama azalıyor</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#3b82f6; font-weight:700;">YAKINDA TEHDİT ALTINDA (NT)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Jaguarundi</strong> (<em>Herpailurus yagouaroundi</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Güney ve Orta Amerika</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Margay</strong> (<em>Leopardus wiedii</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Orta ve G. Amerika tropik ormanları</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor (azalıyor)</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#3b82f6; font-weight:700;">YAKINDA TEHDİT ALTINDA (NT)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Oncilla</strong> (<em>Leopardus tigrinus</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">G. Amerika tropikal ve subtropikal alan</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor (azalıyor)</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Geoffrey's Kedi</strong> (<em>Leopardus geoffroyi</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">G. Amerika ılıman bölgeleri</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor (stabil)</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Güney Amerika Pampas Kedisi</strong> (<em>Leopardus colocolo</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">G. Amerika çayır ve ormanları</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor (azalıyor)</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#3b82f6; font-weight:700;">YAKINDA TEHDİT ALTINDA (NT)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Leopar Kedisi</strong> (<em>Prionailurus bengalensis</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">G. ve G.D. Asya</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Geniş; bölgeden bölgeye değişiyor</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EN AZ ENDİŞE (LC)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Pas Lekeli Kedi</strong> (<em>Prionailurus rubiginosus</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Sri Lanka, Hindistan</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor (azalıyor)</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#3b82f6; font-weight:700;">YAKINDA TEHDİT ALTINDA (NT)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Afrika Altın Kedisi</strong> (<em>Caracal aurata</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Orta Afrika tropik ormanları</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor (azalıyor)</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Asya Altın Kedisi</strong> (<em>Catopuma temminckii</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Himalaya eteği, G.D. Asya</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor (azalıyor)</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#3b82f6; font-weight:700;">YAKINDA TEHDİT ALTINDA (NT)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Mermer Kedi</strong> (<em>Pardofelis marmorata</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">G.D. Asya tropik ormanları</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Bilinmiyor (azalıyor)</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#f59e0b; font-weight:700;">SAVUNMASIZ (VU)</span></td>
+            </tr>
+            <tr>
+              <td style="padding:0.4rem 0.6rem;"><strong>Evcil Kedi</strong> (<em>Felis catus</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Dünya geneli (insan yerleşimi)</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~600 milyon</strong> (evcil + başıboş)</td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#22c55e; font-weight:700;">EHLİLEŞTİRİLMİŞ</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.82rem; color:var(--text-3,#8a8a8c); margin-top:0.75rem; margin-bottom:0;">EN = Endangered · VU = Vulnerable · NT = Near Threatened · LC = Least Concern &middot; Kaynak: IUCN Red List Mayıs 2025, IUCN Cat SG 2024-2025</p>
+      </div>
+
+      <!-- BÖLÜM 5 -->
+      <h2>Büyük Kedilerin Detaylı Portresi: Aslan, Kaplan, Leopar, Jaguar ve Çita</h2>
+
+      <h3>1. Aslan (<em>Panthera leo</em>) — Afrika Savanasının Sosyal Avcısı</h3>
+      <p>
+        Aslanlar, kedigiller ailesinin tek sosyal türüdür. "Güruh" (pride) adı verilen 4-37 bireylik gruplar hâlinde yaşarlar. IUCN'nin 2023 değerlendirmesine göre yabanda <strong>yaklaşık 20.000-25.000 aslan</strong> kaldı — 1900'deki tahmini 200.000 sayısının yalnızca yüzde 10'u. Tüm yabanda yaşayan aslanların yüzde 80'inden fazlası Sahraaltı Afrika'da bulunuyor; Asya populasyonu ise yalnızca Hindistan'ın Gir Ormanı Ulusal Parkı'nda ~650 bireyden oluşuyor.
+      </p>
+
+      <p>
+        National Geographic'e göre aslan lineajı, yaklaşık <strong>2.5 milyon yıl önce</strong> Afrika'da evrimleşti. Mağara aslanı (<em>Panthera spelaea</em>) ve Amerikan aslanı (<em>Panthera atrox</em>) gibi nesli tükenmiş yakın akrabalarıyla birlikte Kuzey Amerika ve Avrupa'ya kadar yayıldı; buzul çağının sonunda bu populasyonlar yok oldu. Günümüzde iki alt tür kabul ediliyor: <strong>Afrika aslanı</strong> (<em>P. l. leo</em>) ve <strong>Asya aslanı</strong> (<em>P. l. persica</em>). Bir zamanlar tüm Hindistan'a yayılan Asya aslanının yaşam alanı, bugün yalnızca 1.412 km²'lik Gir Ormanı'na sıkışmış durumda.
+      </p>
+
+      <h3>2. Kaplan (<em>Panthera tigris</em>) — Geniş Yüzgeçli Yüzücü, Tehlike Altındaki Dev</h3>
+      <p>
+        Kedigiller ailesinin en büyük üyesi olan kaplan, aynı zamanda en fazla tehdit altında olan büyük kedi türüdür. WWF ve IUCN'nin 2022 global sayımına göre yabanda <strong>yaklaşık 3.900 kaplan</strong> kaldı; bu rakam 1900'deki tahmini 100.000'in yüzde dördünden azdır. Yalnızca son 100 yılda üç alt tür — Bali kaplanı (1940'lar), Hazar kaplanı (1970'ler) ve Java kaplanı (1980'ler) — tamamen yok oldu.
+      </p>
+
+      <p>
+        Bugün <strong>altı yaşayan alt tür</strong> tanınmaktadır:
+      </p>
+
+      <div style="background: var(--bg-secondary,#f8f9fa); border:1px solid var(--border,#e2e8f0); padding:1.5rem 2rem; margin:1.5rem 0; border-radius:8px; overflow-x:auto;">
+        <table style="width:100%; border-collapse:collapse; font-size:0.88rem; line-height:1.8;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--border,#e2e8f0);">
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Alt Tür</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Yaşam Alanı</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Yabanda Tahmini Sayı (2024)</th>
+              <th style="text-align:left; padding:0.4rem 0.6rem;">Durum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background:rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Bengal Kaplanı</strong> (<em>P. t. tigris</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Hindistan, Bangladeş, Nepal, Bhutan</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~2.500 – 3.000</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#ef4444;">Tehlikede (EN)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background:rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Amur (Sibirya) Kaplanı</strong> (<em>P. t. altaica</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Rusya Far East, Çin kuzeydoğu sınırı</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~500 – 600</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#ef4444;">Tehlikede (EN)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background:rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Sumatra Kaplanı</strong> (<em>P. t. sumatrae</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Yalnızca Sumatra adası</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~400 – 600</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#ef4444;">Kritik Tehlikede (CR)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background:rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Malayan Kaplanı</strong> (<em>P. t. jacksoni</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Malezya Yarımadası</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>~80 – 120</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#ef4444;">Kritik Tehlikede (CR)</span></td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border,#e2e8f0); background:rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Güney Çin Kaplanı</strong> (<em>P. t. amoyensis</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Yalnızca Çin (fonksiyonel olarak yabanda yok)</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>Yabanda 0</strong> (kültür: ~100)</td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#ef4444;">Kritik Tehlikede (CR)</span></td>
+            </tr>
+            <tr style="background:rgba(239,68,68,0.05);">
+              <td style="padding:0.4rem 0.6rem;"><strong>Indochina Kaplanı</strong> (<em>P. t. corbetti</em>)</td>
+              <td style="padding:0.4rem 0.6rem;">Tayland, Kamboçya, Myanmar, Vietnam</td>
+              <td style="padding:0.4rem 0.6rem;"><strong>&lt; 250</strong></td>
+              <td style="padding:0.4rem 0.6rem;"><span style="color:#ef4444;">Tehlikede (EN)</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.82rem; color:var(--text-3,#8a8a8c); margin-top:0.75rem; margin-bottom:0;">Kaynak: WWF Global Tiger Status 2024, IUCN 2022, National Geographic</p>
+      </div>
+
+      <h3>3. Leopar (<em>Panthera pardus</em>) — En Geniş Yaşam Alanı, Artan Tehdit</h3>
+      <p>
+        Leopar, büyük kediler arasında en geniş coğrafi dağılıma sahip türdür: Afrika'dan Orta Doğu'ya, Kafkasya'dan Uzakdoğu'ya kadar uzanır. Bu geniş dağılım, leoparı iklim değişikliğine ve habitat kaybına en dayanıklı büyük kedi gibi gösterse de IUCN verileri endişe verici bir tablo ortaya koyuyor. Leoparın tarihi yaşam alanının <strong>yüzde 75'i</strong> kaybedilmiş durumda ve toplam populasyon hızla azalıyor.
+      </p>
+
+      <p>
+        Dokuz alt türü tanınan leoparın en eleştirel tehlikedeki formu, yalnızca Uzakdoğu Rusya ve Kuzey Çin'de yaşayan <strong>Amur Leoparı</strong> (<em>P. p. orientalis</em>)'dır. IUCN'nin son değerlendirmesine göre yabandaki birey sayısı <strong>yalnızca ~100</strong>'dür — yeryüzündeki en ender büyük kedi.
+      </p>
+
+      <h3>4. Jaguar (<em>Panthera onca</em>) — Amerika'nın En Büyük Yırtıcısı</h3>
+      <p>
+        Kuzey ve Güney Amerika'nın en büyük yırtıcı kedisi olan jaguar, kıta tarihinde leoparla yakın akrabadır; milyonlarca yıl önce ortak bir Asya atasından ayrıştı. Amazon'dan Meksika'ya geniş bir alanda yaşıyor; ancak yaşam alanının yaklaşık <strong>yüzde 50'si</strong> son 150 yılda yok oldu. Dünyanın jaguar nüfusunun yüzde 64'ü Brezilya Amazon'unda yaşıyor. Pantera çırağının büyüsünü yansıtan su altında yüzebilme ve avlayabilme yeteneği, onu diğer büyük kedilerden ayırır.
+      </p>
+
+      <h3>5. Çita (<em>Acinonyx jubatus</em>) — Hızın Bedeli</h3>
+      <p>
+        Çita, karaların en hızlı hayvanıdır: Kısa mesafelerde 110-120 km/sa ulaşabilir. Ancak bu hız, ciddi bir bedelinin ürünüdür: Çitalar, büyük yırtıcılarla güç mücadelesini kaybetmek yerine hız üzerine evrimleşmiş; bunun sonucunda kemik yoğunluğu azalmış, pençeler yalnızca kısmen geri çekilebilir hâle gelmiş ve kısa süren bir avın ardından neredeyse 20 dakika oksijen borcu ödüyorlar. Şu an yabanda <strong>yaklaşık 7.000</strong> çita yaşıyor. Asyalı çita (<em>A. j. venaticus</em>) alt türünün yabanda kalan sayısı ise yalnızca <strong>~12</strong> bireydir ve tümü İran'da yaşıyor — bu onu günümüzün işlevsel olarak yok olma eşiğindeki en kritik büyük kedigil alt türü yapıyor.
+      </p>
+
+      <!-- BÖLÜM 6 -->
+      <h2>Kedigillerin Coğrafi Yayılımı: Hangi Kıtada Kaç Tür Var?</h2>
+
+      <div style="background: var(--bg-secondary,#f8f9fa); border-left: 4px solid var(--accent,#2563eb); padding:1.5rem 2rem; margin:2rem 0; border-radius:0 8px 8px 0;">
+        <p style="font-weight:700; margin-bottom:0.8rem; font-size:1.05rem;">&#127758; Kıta Bazında Kedigil Tür Dağılımı — IUCN Cat SG 2024</p>
+        <ul style="margin:0; padding-left:1.2rem; line-height:2.2; font-size:0.95rem;">
+          <li><strong>Asya:</strong> 16 tür — kedigiller çeşitliliği açısından en zengin kıta; kaplan, kar leoparı, bulutlu leopar, Borneo körfez kedisi dahil</li>
+          <li><strong>Amerika (Kuzey + Güney):</strong> 14 tür — jaguar, puma, ocelot, margay, oncilla, vaşak ve diğer Neotropikal küçük kediler</li>
+          <li><strong>Afrika:</strong> 9 tür — aslan, leopar, çita, serval, karakulak, Afrika altın kedisi dahil</li>
+          <li><strong>Avrupa:</strong> 3 tür — Avrasya vaşağı, İber vaşağı, Avrupa yaban kedisi; aslan ve leopar tarihsel alanlarda yok oldu</li>
+          <li><strong>Avustralya ve Okyanusya:</strong> 0 yerli kedigil türü (yalnızca insan eliyle taşınan evcil/başıboş kediler)</li>
+          <li><strong>Antarktika:</strong> 0 kedigil türü</li>
+        </ul>
+      </div>
+
+      <!-- BÖLÜM 7 -->
+      <h2>Evcil Kedinin Hikayesi: 10.000 Yıllık Ortak Yaşam</h2>
+
+      <p>
+        Evcil kedi (<em>Felis catus</em>), tüm evcil hayvanlar içinde belki de evcilleşme sürecini en az "insan yönetiminde" geçiren türdür. Köpekler 15.000-40.000 yıl önce, insan-kurt ortak avlanmasının ürünü olarak aktif bir evcilleştirme süreciyle şekillendi. Kediler ise tamamen farklı bir hikayeyi izledi.
+      </p>
+
+      <p>
+        <em>Science</em> ve <em>Nature</em> dergilerinde yayımlanan genomik araştırmalara göre evcil kedinin atası, <strong>Yakın Doğu yaban kedisi</strong> (<em>Felis silvestris lybica</em>)'dır. Evcilleşme süreci <strong>yaklaşık 10.000 yıl önce</strong>, modern Türkiye, Suriye, Irak ve İsrail topraklarını kapsayan "Verimli Hilal" bölgesinde başladı. Çıkış noktası, tarımın ortaya çıkmasıdır: İnsanlar tahıl depoladı; tahıl depoları kemirici çekti; kemiriciler yaban kedisi çekti. Kedi, insanları avcı olarak tercih etti; insan, varlığına tahammül etti ve zamanla bundan memnuniyet duydu.
+      </p>
+
+      <p>
+        Bu süreç, klasik anlamda bir evcilleştirme değil, <strong>karşılıklı bir yakınlaşmadır</strong>. 2017'de <em>Nature Ecology &amp; Evolution</em>'da yayımlanan geniş kapsamlı genomik çalışmada araştırmacılar, 9.000 yıl öncesine ait Kıbrıs kedilerinin, bugünkü evcil kedilerle aynı genetik grupta yer aldığını ve kemirici faunasının izini takip ederek Kıbrıs'a ulaşmış olması gerektiğini ortaya koydu. Kedinin bu adaya ulaşması, ancak deniz yoluyla insan eliyle gerçekleşebilirdi; bu da evcilleşmenin 10.000 yıl öncesinden de eski olabileceğini gösteriyor.
+      </p>
+
+      <p>
+        Antik Mısır, bu süreci kültürel olarak pekiştirdi. MÖ 2000-1000 dönemine ait mezar resimleri, kedilerin Mısır hanehalkına tam anlamıyla dahil olduğunu belgeliyor. Kedi tanrıçası <strong>Bastet</strong>'e adanmış tapınaklar, binlerce mumyalanmış kedi barındırıyordu. Ticaret gemileriyle birlikte Akdeniz'e yayılan evcil kedi, Avrupa'ya ve sonunda tüm dünyaya ulaştı.
+      </p>
+
+      <p>
+        Bugün dünyada <strong>yaklaşık 373-600 milyon evcil kedi</strong> yaşıyor; kayıt dışı başıboş populasyonlar dahil edildiğinde bu rakam çok daha yüksek. Amerika Birleşik Devletleri'nde 94 milyon, Avrupa'da ~100 milyon evcil kedi olduğu tahmin ediliyor. Her yıl kedi sahipliği artmaya devam ediyor.
+      </p>
+
+      <!-- BÖLÜM 8 -->
+      <h2>Nesli Tükenmiş Kedigiller: Kayıp Olanlar</h2>
+
+      <p>
+        Fosil kayıtlarında tanımlanan kedigil cinslerinin büyük çoğunluğu bugün artık yaşamıyor. IUCN ve Smithsonian Natural History Museum verilerine göre geçmişte bilinen en az <strong>14 nesli tükenmiş cins</strong> ve onlarca tür mevcuttu. Bunların en dikkat çekicileri:
+      </p>
+
+      <div style="background: var(--bg-secondary,#f8f9fa); border:1px solid var(--border,#e2e8f0); padding:1.5rem 2rem; margin:2rem 0; border-radius:8px;">
+        <p style="font-weight:700; margin-bottom:0.75rem; font-size:1rem;">&#129478; Önemli Nesli Tükenmiş Kedigil Türleri — Smithsonian, Paleobiology Database 2025</p>
+        <ul style="margin:0; padding-left:1.2rem; line-height:2.2; font-size:0.93rem;">
+          <li><strong>Smilodon fatalis</strong> — Kuzey ve G. Amerika, 2,5 milyon–10.000 yıl önce; ağırlık ~280 kg, köpek dişi ~22 cm</li>
+          <li><strong>Smilodon populator</strong> — G. Amerika; kedigiller tarihinin en büyük üyelerinden, ağırlık ~400 kg tahmin ediliyor</li>
+          <li><strong>Homotherium latidens</strong> — Avrupa, Asya, Afrika; kılıç dişli ama Smilodon'dan farklı yapıda; son ~12.000 yıl önce</li>
+          <li><strong>Machairodus giganteus</strong> — Avrupa ve Asya, Miyosen-Pliyosen; bilinen en büyük saber-dişlilerden biri</li>
+          <li><strong>Dinofelis</strong> — Afrika, Asya, Avrupa; sabit ve kısmen keskin köpek dişli "yanlış saber-dişli"; insan atalarının muhtemel predatörü</li>
+          <li><strong>Mağara Aslanı</strong> (<em>Panthera spelaea</em>) — Avrupa ve Asya; modern aslanın 25% daha büyük akrabası; ~13.000 yıl önce yok oldu</li>
+          <li><strong>Amerikan Aslanı</strong> (<em>Panthera atrox</em>) — Kuzey ve G. Amerika; tarihsel en büyük Pantherinae üyelerinden; ~11.000 yıl önce yok oldu</li>
+          <li><strong>Avrupa Jaguar</strong> (<em>Panthera gombaszoegensis</em>) — Avrupa'da yaklaşık 2-1,5 milyon yıl önce yaşadı</li>
+          <li><strong>Bali Kaplanı</strong> (<em>P. t. balica</em>) — 1940'larda yok oldu; son bireylerin 1930'larda Bali'de vurulduğu tahmin ediliyor</li>
+          <li><strong>Hazar Kaplanı</strong> (<em>P. t. virgata</em>) — Orta Asya (İran, Türkmenistan, Kafkasya); 1970'lerde yok oldu</li>
+          <li><strong>Java Kaplanı</strong> (<em>P. t. sondaica</em>) — 1980'lerde yok oldu; son güvenilir gözlem 1970'lerde yapıldı</li>
+          <li><strong>Florida Panteri</strong> (<em>Puma concolor coryi</em>) — Teknik olarak yok olmadı; süregelen koruma programlarıyla ~200 bireylik kritik populasyon Florida'da yaşıyor</li>
+        </ul>
+      </div>
+
+      <!-- BÖLÜM 9 -->
+      <h2>Kedigiller Neden Bu Kadar Başarılı Bir Avcıydı? Evrimsel Adaptasyonlar</h2>
+
+      <p>
+        Kedigillerin 10-15 milyon yıldır dünya genelinde bu kadar yaygın olmasının arkasında, birbirine kenetlenmiş birkaç temel evrimsel yenilik yatıyor. National Geographic ve Smithsonian Magazin'e göre bu adaptasyonlar şöyle sıralanıyor:
+      </p>
+
+      <p>
+        <strong>Geri çekilebilir pençeler:</strong> Çita hariç tüm kedigillerde pençeler kasılarak geri çekilir; bu hem pençeyi keskin tutar hem de sessiz yürümeyi sağlar. Evrimsel yazında bu özellik, "mükemmel avlanma aleti"nin simgesi olarak kabul edilir.
+      </p>
+
+      <p>
+        <strong>Tapetum lucidum (yansıtıcı ağ tabakası):</strong> Kedilerin gözlerinin geceleri parlamasının nedeni olan bu yapı, retinaya ulaşan ışığı iki kez kullanarak gece görüşünü insan gözünden 6-8 kat güçlü hâle getirir.
+      </p>
+
+      <p>
+        <strong>Sessiz adım:</strong> Kedigillerin ayak tabanında yastık dokusu, her adımda titreşimi söndürür. Bu, av hayvanının duymadan yaklaşan bir yırtıcının farkına varmamasını sağlar.
+      </p>
+
+      <p>
+        <strong>Esnek omurga:</strong> Kediler, koşu sırasında omurgalarını yay gibi büküp uzatarak her adımda ek itme gücü üretir. Bu yapı, kısa mesafe hızını dramatik biçimde artırır.
+      </p>
+
+      <p>
+        <strong>Uzmanlaşmış ses üretimi:</strong> Aslan, kaplan, leopar ve jaguar "kükreyebilir" ama mırlayamaz — gırtlaklarındaki özel kıkırdak yapısı bunu sağlar. Küçük kediler ise tersine mırlayabilir (hem nefes verirken hem alırken) ama kükreyemez. Çita ise ne büyük ne de küçük kedi gibi ses üretir; köpeklere özgü bir "havlama" benzeri ses çıkarır.
+      </p>
+
+      <!-- BÖLÜM 10 -->
+      <h2>Bugün Ne Kadar Kedigil Türü Tehlike Altında?</h2>
+
+      <p>
+        IUCN May&#305;s 2025 verilerine göre 37 yaşayan kedigil türünden:
+      </p>
+
+      <div style="background: var(--bg-secondary,#f8f9fa); border-left: 4px solid var(--accent,#2563eb); padding:1.5rem 2rem; margin:2rem 0; border-radius:0 8px 8px 0;">
+        <ul style="margin:0; padding-left:1.2rem; line-height:2.4; font-size:0.95rem;">
+          <li><strong style="color:#ef4444;">Kritik Tehlikede (CR):</strong> 2 tür — Sumatra kaplanı, Malayan kaplanı</li>
+          <li><strong style="color:#ef4444;">Tehlikede (EN):</strong> 4 tür — kaplan (tür düzeyi), Andean kedi, Borneo körfez kedisi, düz başlı kedi</li>
+          <li><strong style="color:#f59e0b;">Savunmasız (VU):</strong> 14 tür — aslan, jaguar, leopar, kar leoparı, çita, bulutlu leopar, İber vaşağı, balıkçı kedi, Sunda bulutlu leoparı, Sumatran kedi, Afrika altın kedisi, mermer kedi, oncilla, kara ayaklı kedi, Çin dağ kedisi</li>
+          <li><strong style="color:#3b82f6;">Yakında Tehdit Altında (NT):</strong> 5 tür — Pallas kedisi, orman kedisi, margay, G. Amerika pampas kedisi, Asya altın kedisi, pas lekeli kedi</li>
+          <li><strong style="color:#22c55e;">En Az Endişe (LC):</strong> 8 tür — puma, Avrasya vaşağı, Kanada vaşağı, kızıl vaşak, serval, karakulak, ocelot, Geoffrey's kedi, jaguarundi, yaban kedisi, kum kedisi, leopar kedisi</li>
+          <li><strong>Veri Yetersiz (DD) / Değerlendirilmemiş:</strong> Çeşitli küçük türler</li>
+        </ul>
+      </div>
+
+      <p>
+        Temel tehditler şunlar: habitat kaybı ve parçalanması (özellikle tropikal ormansızlaşma), yasa dışı avcılık ve kaçakçılık (kemik, deri, canlı ticaret), av hayvanlarının azalması, insan-yaban hayatı çatışması ve iklim değişikliği. WWF'ye göre dünya genelinde büyük kedigil popülasyonları <strong>son 50 yılda ortalama yüzde 40</strong> azaldı.
+      </p>
+
+      <!-- KAYNAK KUTUSU -->
+      <div style="background: var(--bg-secondary,#f8f9fa); border:1px solid var(--border,#e2e8f0); padding:1.5rem 2rem; margin:2rem 0; border-radius:8px;">
+        <p style="font-weight:700; margin-bottom:0.75rem; font-size:1rem;">&#128218; Bu Yazıda Başvurulan Kaynaklar</p>
+        <ul style="margin:0; padding-left:1.2rem; line-height:2; font-size:0.92rem;">
+          <li>IUCN Red List (Mayıs 2025). <em>Felidae — Species assessments.</em> iucnredlist.org</li>
+          <li>IUCN Cat Specialist Group (2024–2025). <em>Wild Cats: Status Survey and Conservation Action Plan.</em> catsg.org</li>
+          <li>Johnson, W.E. vd. (2006). <em>The Late Miocene Radiation of Modern Felidae: A Genetic Assessment.</em> Science, 311(5757), 73–77.</li>
+          <li>O'Brien, S.J. &amp; Johnson, W.E. (2007). <em>The evolution of cats.</em> Scientific American, 297(1), 68–75.</li>
+          <li>Nyakatura, K. &amp; Bininda-Emonds, O.R.P. (2012). <em>Updating the evolutionary history of Carnivora (Mammalia): a new species-level supertree complete with divergence time estimates.</em> BMC Biology.</li>
+          <li>Ottoni, C. vd. (2017). <em>The palaeogenetics of cat dispersal in the ancient world.</em> Nature Ecology &amp; Evolution, 1, 0139.</li>
+          <li>National Geographic (2025). <em>Big Cats; Wild Cat Species Guide; Lion; Tiger; Leopard; Jaguar; Cheetah.</em> nationalgeographic.com</li>
+          <li>National Geographic Education (2025). <em>Felidae — Cat Family Overview.</em> nationalgeographic.org</li>
+          <li>Smithsonian National Museum of Natural History (2025). <em>Cats: Wild to Tame; Proailurus; Smilodon; Machairodontinae.</em> naturalhistory.si.edu</li>
+          <li>Smithsonian Magazine (2023). <em>Why Did the Saber-Toothed Cat Go Extinct?</em> smithsonianmag.com</li>
+          <li>WWF Global (2024). <em>Wild Cat Population Report; Tiger Global Status 2022–2024; Big Cats.</em> worldwildlife.org</li>
+          <li>WWF (2022). <em>Global Tiger Status: Estimated wild tiger population.</em> panda.org</li>
+          <li>Sunquist, M. &amp; Sunquist, F. (2002). <em>Wild Cats of the World.</em> University of Chicago Press.</li>
+          <li>Kitchener, A.C. vd. (2017). <em>A revised taxonomy of the Felidae.</em> Cat News Special Issue 11. IUCN/SSC Cat SG.</li>
+          <li>Paleobiology Database (2025). <em>Felidae occurrences; Machairodontinae taxonomy.</em> paleobiodb.org</li>
+          <li>Florida Fish and Wildlife Conservation Commission (2025). <em>Florida Panther Recovery Program.</em></li>
+          <li>Türkiye &amp; Çevre: Karakulak (<em>Caracal caracal</em>) ve Vaşak (<em>Lynx lynx</em>) Türkiye'de kayıtlı kedigil türleridir. Doğa Koruma ve Milli Parklar Genel Müdürlüğü, 2024.</li>
+        </ul>
+      </div>
+
+      <!-- SONUÇ -->
+      <h2>Sonuç: Evrimin Mühendisleri, Korumacılığın Sembolü</h2>
+
+      <p>
+        Kedigiller, 10-15 milyon yıllık bir evrimsel ustalaşmanın ürünüdür. Proailurus'un Oligosen ormanlarından bugünkü Bengal kaplanı'nın Bengal deltasına, Smilodon'un La Brea zift çukurlarından İber vaşağının İspanya koruma alanlarına uzanan bu çizgi; evrimsel biyolojinin, paleontolojinin ve koruma biliminin en zengin kesişim noktalarından birini oluşturuyor.
+      </p>
+
+      <p>
+        Ama rakamlar çarpıcı bir gerçeği gözler önüne seriyor: 37 yaşayan türün neredeyse tamamı tehdit altında. Yüz yıl önce 100.000 olan kaplan sayısı, bugün 3.900'e düştü. Aslan, 50 yıl önce 200.000 iken şimdi 20.000-25.000 kaldı. Çita, İran'da 12 bireylik işlevsel bir son nüfusla tutunmaya çalışıyor. Bu kayıplar yalnızca biyolojik değil; milyonlarca yıllık evrimin birer sonucu olan bu türlerle birlikte ekosistemlerin işleyişi, av-avcı dengeleri ve genetik çeşitlilik de kaybediliyor.
+      </p>
+
+      <p>
+        İber vaşağı örneği ise umut taşıyor: 2002'de yalnızca ~94 bireyle neslin eşiğinden dönen bu tür, 2023'te ~1.668 bireye ulaştı — son 20 yılın en büyük büyük kedi koruma başarısı olarak kayıtlara geçti. Bu örnek, politika iradesi, habitat restorasyonu ve bilimsel izlemenin birleşimi olduğunda neyin mümkün olduğunu net biçimde ortaya koyuyor. Kedigillerin geri kalanları için de bu pencere hâlâ açık — ama kapanıyor.
+      </p>
+
+    </div><!-- /article-content -->
+  </article>
+
+  
+
+  <!-- İLGİLİ YAZILAR -->
+  <section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">&#304;lgili Yaz&#305;lar</h2>
+      <div class="related-grid">
+        <a href="mamut.html" class="related-card">
+          <div class="related-img"><img src="img/mamut.webp" alt="Mamutlar Geri mi Dönüyor?" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/></div>
+          <div class="related-body">
+            <span class="related-cat">Do&#287;a Bilimleri</span>
+            <h3 class="related-card-title">Mamutlar Geri mi D&ouml;n&uuml;yor? Nesli T&uuml;kenmi&#351; Devin Yeniden Do&#287;u&#351;u</h3>
+            <p class="related-meta">Elif &#350;en &middot; 15 dk</p>
+          </div>
+        </a>
+        <a href="dinozorlar.html" class="related-card">
+          <div class="related-img"><img src="img/dinozor.webp" alt="Dinozorlar Dönemi" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/></div>
+          <div class="related-body">
+            <span class="related-cat">Do&#287;a</span>
+            <h3 class="related-card-title">Dinozorlar D&ouml;nemi: Ya&#351;ayan C&acirc;nl&#305;lar ve B&uuml;y&uuml;k Y&#305;k&#305;m</h3>
+            <p class="related-meta">Can &Ouml;zkan &middot; 15 dk</p>
+          </div>
+        </a>
+        <a href="evrim.html" class="related-card">
+          <div class="related-img"><img src="img/evrim.webp" alt="Evrim Teorisi" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/></div>
+          <div class="related-body">
+            <span class="related-cat">Bilim &amp; Evrim</span>
+            <h3 class="related-card-title">Evrim Teorisi: Ya&#351;am&#305;n Milyarlarca Y&#305;ll&#305;k Yolculu&#287;u</h3>
+            <p class="related-meta">Elif &#350;en &middot; 7 dk</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

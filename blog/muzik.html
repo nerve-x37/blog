@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    // Tema flaşını önle: CSS yüklenmeden önce doğru class'ı uygula
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      var html = document.documentElement;
+      html.classList.remove('light','dark');
+      html.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dünyanın Müzik Türleri &mdash; Valexirion</title>
+  <meta name="description" content="Pop, Rock, Metal, Synthwave, Trance, Progressive, Tekno, Deep House, Space Müzik ve Geleneksel müzik türlerine kapsamlı bir rehber." />
+
+  <link rel="canonical" href="https://valexirion.com/muzik.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Dünyanın Müzik Türleri" />
+  <meta property="og:description" content="Pop, Rock, Metal, Synthwave, Trance, Progressive, Tekno, Deep House, Space Müzik ve Geleneksel müzik türlerine kapsamlı bir rehber." />
+  <meta property="og:url" content="https://valexirion.com/muzik.html" />
+  <meta property="og:image" content="https://valexirion.com/img/muzik.webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dünyanın Müzik Türleri" />
+  <meta name="twitter:description" content="Pop, Rock, Metal, Synthwave, Trance, Progressive, Tekno, Deep House, Space Müzik ve Geleneksel müzik türlerine kapsamlı bir rehber." />
+  <meta name="twitter:image" content="https://valexirion.com/img/muzik.webp" />
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Dünyanın Müzik Türleri","description":"Pop, Rock, Metal, Synthwave, Trance, Progressive, Tekno, Deep House, Space Müzik ve Geleneksel müzik türlerine kapsamlı bir rehber.","image":"https://valexirion.com/img/muzik.webp","mainEntityOfPage":"https://valexirion.com/muzik.html","inLanguage":"tr-TR","publisher":{"@type":"Organization","name":"Valexirion","url":"https://valexirion.com/"}}</script>
+</head>
+<body class="font-ui" data-page-category="muzik">
+<div id="scroll-progress" class="scroll-progress-bar"></div>
+<nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim"    class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih"    class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema"   class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik"    class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe"  class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga"     class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+
+      <!-- Sağ araçlar -->
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/>
+          </svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Men&uuml;y&uuml; a&ccedil;/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div><!-- /navbar-inner -->
+
+    <!-- Mobil menü paneli -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim"    class="mobile-link">Bilim</a>
+      <a href="index.html#tarih"    class="mobile-link">Tarih</a>
+      <a href="index.html#sinema"   class="mobile-link">Sinema</a>
+      <a href="index.html#muzik"    class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe"  class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga"     class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a>
+        <span>&#8250;</span>
+        <a href="index.html">Müzik</a>
+        <span>&#8250;</span>
+        <span>Dünyanın Müzik Türleri</span>
+      </div>
+      <span class="article-cat-badge">Müzik</span>
+      <h1 class="article-title">
+        Dünyanın Müzik Türleri:<br>
+        <em>Pop'tan Trance'e, Gelenekselden Dijitale</em>
+      </h1>
+      <p class="article-subtitle">
+        Dünyanın dört bir yanında var olan müzik türlerinin kökenleri, karakteristik özellikleri
+        ve kültürel anlamı üzerine kapsamlı bir rehber. Çünkü müzik, insanlığın en evrensel dilidir.
+      </p>
+
+        <div class="article-share">
+          <button class="share-btn" onclick="navigator.share ? navigator.share({title:document.title,url:location.href}) : navigator.clipboard.writeText(location.href)" aria-label="Paylaş">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+            </svg>
+            Paylaş
+          </button>
+        </div>
+      </div>
+  </header>
+
+  
+
+  
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <div class="article-hero-img article-hero-img--video">
+        <iframe data-external-src="https://www.youtube-nocookie.com/embed/px8UMTDWDSs" title="Costa Mee - Deep Inside My Mind (Lyric Video)" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+    <!-- Yazı kapak resmi -->
+    <div class="article-hero-img">
+      <img src="img/walker.webp" alt="Dünyanın Müzik Türleri" loading="eager" onerror="this.parentElement.style.display='none'" decoding="async" fetchpriority="high">
+    </div>
+
+      <p class="article-lead">
+        Müzik, insanlığın yazıdan önce var olan en eski anlaşma biçimidir. Arkeologlar
+        60.000 yıllık kemik flütler bulduğunda anladılar ki ritim ve melodi, dil ve
+        medeniyetten önce geliyordu. Peki bugün dünyada kac müzik türü vardır?
+      </p>
+
+      <p>
+        Akademik kaynaklar 300''den fazla ana müzik türünü tanımlar; alt türleri ve bölgesel
+        varyasyonları eklendiğinde bu sayı birkaç bine ulaşır. Müzik, yalnızca eğlence
+        değildir; kimlik, ritüel, direniş ve iyileşme aracıdır. Bu yazı, farklı dünyanın
+        farklı köşelerinden doğan 12 temel müzik kültürüne bir pencere sunuyor.
+      </p>
+
+      <h2>1. Pop Müzik: Çağın Ortak Dili</h2>
+
+      <p>
+        1950''lerin Amerika'sında rock and roll ile şekillenen pop müzik, bugün dünyanın
+        her köşesinde dinlenen en geniş kapsamlı türlerden biridir. "Populer" sözcüğünden
+        gelen adi, onun en büyük gücü ve en büyük zayıflığını aynı anda tanımlar: herkese
+        ulaşmak için evrensel bir dil konuşur.
+      </p>
+
+      <p>
+        K-Pop'tan Latin Pop'a, Afrobeats'ten Turk Pop'una kadar bugün pop müzik tek bir
+        ses değildir; her kültürün kendi ritmini ve hikâyesini evrensel bir zemine oturttuğu
+        zengin bir mozaiktir. BTS'in Guney Kore''den dünyaya açılması, Bad Bunny'nın
+        İspanyolca ile global listelere tırmanması bu kültürel çeşitliliğin en parlak
+        örnekleridir.
+      </p>
+
+      <blockquote class="article-blockquote">
+        "Pop müzik, çağın vicdanını ve isteklerini yansıtan bir ayna gibidir. Onu hafife
+        almak, insanlığın ortak rüyalarını hafife almaktır." &mdash; Greil Marcus
+      </blockquote>
+
+      <h2>2. Turk Sanat Müziği: Makam ve Duygu</h2>
+
+      <p>
+        Osmanlı sarayı atmosferinde şekillenen Turk Sanat Müziği, Doğu makamlarını ve
+        Batı armoni anlayışını sentezleyen eşsiz bir gelenektir. Ud, kanun, ney ve tanbur
+        gibi enstrümanların eşliğinde icra edilen bu müzik; güfte, makam ve usul ucgeninde
+        hareket eder.
+      </p>
+
+      <p>
+        Hicaz, Rast, Usak, Segah gibi makamlar yalnızca nota dizileri değildir; her biri
+        belirli bir duygu haritasını taşır. Hicaz makamının özlem ve gurbet hissi, Batı
+        müziğinin majör-minör ikiliği ile ifade edilemeyecek kadar derin bir katman içerir.
+        Munir Nurettin Selcuk, Safiye Ayla ve Zeki Muren bu geleneğin yıldızlarıdır.
+      </p>
+
+      <h2>3. Rock ve Metal: Öfkenin Mimarisi</h2>
+
+      <p>
+        1950''lerde elektrik gitarın icadı, müzik tarihinin en keskin kırıkları arasında
+        yer alır. Rock müzik, gençliğin toplumsal baskıya karşı ilk büyük kolektif sesi
+        oldu. Elvis'in karizmasıyla başlayan yolculuk, Beatles'in armonik deneyleri ve
+        Led Zeppelin'in ağır ritmiyle büyüdü.
+      </p>
+
+      <p>
+        Metal ise bu ağacın en kalın damarından süzüldü. Black Sabbath'in karanlık
+        rifleriyle başlayan yolculuk; Thrash Metal (Metallica, Slayer), Death Metal,
+        Black Metal ve Progressive Metal gibi alt türlere dönüştü. Metal, aksine
+        görünüş'lerin cok teknik ve entelektüel bir müzik geleneğidir; klasik müzikle
+        olan paralellikleri akademisyenleri bile meşgul etmektedir.
+      </p>
+
+      <h2>4. Cyberpunk Synthwave: Gelecek Nostaljisi</h2>
+
+      <p>
+        Synthwave, 1980''lerin elektronik seslerini, neon ışıklı distopik kentleri ve
+        sinema müziğinin dramatik yapısını bir araya getiren türdü. Teknik olarak
+        "retro-futürizm" kategorisinde anılır: geçmişte hayal edilen bir gelecektir bu.
+      </p>
+
+      <p>
+        John Carpenter'in sinema müzikleri, Vangelis'in Blade Runner skoru ve Giorgio
+        Moroder'in Italo Disco sentezleri, Synthwave'in genetik mirasını oluşturur.
+        Kavinsky, Perturbator ve Gunship gibi sanatçılar bu sesi 2010''larda yeniden
+        keşfederek siber-estetik bir kimlikle sundu. Cyberpunk alt türü ise bu formülü
+        daha karanlık ve endüstriyel bir zemine taşıyor.
+      </p>
+
+      <h2>5. Trance Music: Bilinçaltı Yolculugu</h2>
+
+      <p>
+        Trance, elektronik müziğin en meditatif kolu olarak 1990''ların Frankfurt gece
+        klublerinde doğdu. Dakikada 128 ile 145 vuruşu arasında gidip gelen temposu,
+        tekrar eden melodic döngüleri ve özenle yerleştirilmiş "breakdown" ve "buildup"
+        yapılarıyla dinleyiciyi trans benzeri bir deneyime taşıyan, benzersiz bir türdü.
+      </p>
+
+      <p>
+        ATB, Paul van Dyk ve Armin van Buuren bu müziğin ilk büyük isimleriydi.
+        Progressive Trance, Uplifting Trance, Psytrance ve Dark Trance gibi alt türler
+        zamanla ayrıştı. Psytrance, Hindistan'in Goa plajlarından dünyaya yayılan,
+        manevi ritüel ile elektronik ritmin buluşmasını temsil eder.
+      </p>
+
+      <h2>6. Progressive Rock ve Metal: Akılcı Devrim</h2>
+
+      <p>
+        Progressive müzik, müziksel kalıpları reddetmenin manifestosudur. 7/8, 11/4 ya da
+        13/16 gibi alışılagelmişin dışında zaman imzaları; on dakikayı aşan parça yapıları;
+        klasik konçerto formunun rock enstrümanlarıyla yeniden yaratılması bu türün
+        ayırt edici özellikleridir.
+      </p>
+
+      <p>
+        Yes, King Crimson, Genesis ve Emerson Lake &amp; Palmer bu geleneğin 1970''lerdeki
+        one çıkan isimleridir. Dream Theater ve Tool ise bu mirası 21. yüzyıla taşıyan
+        sanatçıların başında gelir. Bir Tool albümünde Fibonacci dizisi temelli ritimlere
+        rastlamak bu türde sanatsal iddiasızlığın olmadığının göstergesidir.
+      </p>
+
+      <h2>7. Tekno: Makinenin Kalp Ati</h2>
+
+      <p>
+        Tekno, 1980''lerin Detroit'inde doğdu; sanayi sonrası bir kentte işçi sınıfının
+        fabrikasız kalmışlığının ve geleceğe duyulan karışık duyguların müziğiydi. Juan
+        Atkins, Derrick May ve Kevin Saunderson &mdash; "Detroit'in Büyük Uclusu" olarak
+        bilinen bu uc isim &mdash; bu sesi dünya sahnesine taşıyanlardır.
+      </p>
+
+      <p>
+        Tekno'nun en belirgin özelliği soyutluğudur: vokal nadirdir, melodi ikincil
+        plana atılmış, ritim her seyin odağına yerleştirilmiştir. Berlin'in efsanevi
+        kulüplerinde (Berghain, Tresor) gelişen Avrupa teknosu bugün dünyanın en
+        etkili dans müziği kültürlerinden biri haline gelmiştir.
+      </p>
+
+      <h2>8. Deep House: Ruhu Işıtan Ev Müziği</h2>
+
+      <p>
+        Deep House, 1980''lerin Chicago'şundan çıktı; gospel ve soul'un sıcaklığını
+        elektronik ritimlerle birleştirdi. Larry Heard (Mr. Fingers) ve Frankie Knuckles
+        bu türde dönemin en etkili isimleriydi. Derin bas sesleri, jazzy piyano akoru
+        ve duygusal vokal örnekleri Deep House'un imzasıdır.
+      </p>
+
+      <p>
+        Bugün Deep House, Tropical House (tropikal ve yaz hisleri yaratan bir alt tur)
+        ile ic ice geçmiş; Scandinavian minimal Deep House ile Afrika kokenli Afro-House
+        gibi alt türler doğurmuştur. Bu müzik türü yalnızca dans pistiyle sınırlı
+        kalmamış; kafelerde, yoga stüdyolarinda ve kostal tatil mekânlarında da ev
+        sahibi olmuştur.
+      </p>
+
+      <h2>9. Space Müzik ve Ambient: Sessizliğin Tonu</h2>
+
+      <p>
+        Space müzik, dinleyiciyi yer çekiminden koparma iddiasındaki bir alt türdü. Brian
+        Eno'nun "ambient" kavramını geliştirmesiyle başlayan bu yolculuk; Klaus Schulze ve
+        Tangerine Dream'in kozmik sentezleriyle şekillendi. Geniş, yüzme hissi veren pad
+        sesleri, cok yavaş gelişen melodiler ve sinyalizasyonu andıran ritimler bu türün
+        karakteristik öğeleridir.
+      </p>
+
+      <p>
+        Space müzik bugün meditasyon, odaklanma ve stres azaltma amaçlı kullanılan
+        "fonksiyonel müzik" kategorisine de giriyor. NASA bile bazı misyonlar için
+        uzay temalı ambient parçalar seçmektedir.
+      </p>
+
+      <h2>10. Tropikal Müzikler: Samba'dan Cumbia'ya</h2>
+
+      <p>
+        Latin Amerika müziği tek bir tur değildir; her bölgesi kendi ritim dilini
+        oluşturmuştur. Brezilya'nın Samba ve Bossa Nova'si, Kolombiya'nın Cumbia'si,
+        Kuba'nın Son ve Salsa'si, Meksika'nın Mariachi'si bu zengin tabitin en parlak
+        örnekleridir. Tropikal müzik; Afrikan ritimlerini, Iberyali gitar geleneklerini
+        ve yerel Indigenous müziğini harmanlayarak ortaya çıktı.
+      </p>
+
+      <p>
+        Tropikal müziğinin ritim yapısı son derece karmaşıktır. Clave (ritim deseni),
+        perküsyon katmanları ve cross-rhythm teknikleri, Batı müziği teorisiyle
+        eğitim almış mûzisyenleri bile zorlar. Bugün Reggaeton ve Latin trap gibi
+        türler bu geleneksel ritim zenginliğini pop formatlarla birleştiriyor.
+      </p>
+
+      <h2>11. Geleneksel ve Halk Müziği: Hafızanın Sesi</h2>
+
+      <p>
+        Geleneksel müzik, bir halkın kolektif hafızasıdır. Anadolu'nun bağlama geleneğinden
+        Irlanda'nın Celtic fiddle müziğine, Japonya'nın koto geleneğinden Hindistan'in
+        raga sistemine kadar her kültür binlerce yıllık bir birikim taşır. Bu müzikler
+        çoğu zaman notsuzdu; kulaktan kulağa, ustadan öğrenciye aktarılırdı.
+      </p>
+
+      <p>
+        UNESCO, 2003 yılından itibaren tehlike altındaki geleneksel müzikleri "İnsanlığın
+        Somut Olmayan Mirası" listesine almaya başladı. Aşık geleneğimiz, Mevlevi ayini
+        müziği ve zeybek ritmi bu liste üzerinden uluslararası tanınma kazanmıştır.
+        Geleneksel müziklerin yaşatılması, bir halkın kimliğini ve dilini yaşatmakla
+        eşanlamlıdır.
+      </p>
+
+      <h2>Sonuç: Müzik Sınır Tanımaz</h2>
+
+      <p>
+        Pop, Rock, Trance, Tekno, Deep House, Synthwave, Space, Tropikal, Geleneksel
+        &mdash; bu türler arasındaki sınırlar bugün her geçen gun daha da muğlak hale
+        geliyor. Nigerial Afrobeats ile Tekno birleşiyor, Hintli classical ile elektronik
+        müzik sentezleniyor, Anadolu halk melodileri Deep House aranjmanlarında hayat
+        buluyor.
+      </p>
+
+      <p>
+        Belki de müziği sınıflandırmaya çalışmak, su akışını set yaparak durdurmaya
+        benziyor. Müzik daima tasar, daima şekil değiştirir. Önemli olan kulak vermek;
+        farklı kültürlerin sesini duymak ve o seste paylaşılan insanlığı fark etmektir.
+      </p>
+
+    </div><!-- /article-content -->
+  </article>
+
+  
+
+    
+
+<section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">İlgili Yazılar</h2>
+      <div class="related-grid">
+        <a href="belgeseller.html" class="related-card">
+          <div class="related-img">
+            <img src="img/aslan.webp" alt="Belgesel Önerileri: Ekranda Düşünce" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Belgesel</span>
+            <h3 class="related-card-title">Belgesel Önerileri: Ekranda Düşünce</h3>
+            <p class="related-meta">Valexirion Ekibi &middot; 8 dk</p>
+          </div>
+        </a>
+        <a href="dijital-yalnizlik.html" class="related-card">
+          <div class="related-img">
+            <img src="img/tek.webp" alt="Dijital Yalnızlık Çağı: Sosyal Medya ve Toplumsal Çözülme" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Felsefe</span>
+            <h3 class="related-card-title">Dijital Yalnızlık Çağı: Sosyal Medya ve Toplumsal Çözülme</h3>
+            <p class="related-meta">Selin Arslan &middot; 11 dk</p>
+          </div>
+        </a>
+        <a href="cortex.html" class="related-card">
+          <div class="related-img">
+            <img src="img/cortex.webp" alt="Beyin Korteksi: Yapısı, Fonksiyonları ve Nasıl Çalışır?" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Bilim</span>
+            <h3 class="related-card-title">Beyin Korteksi: Yapısı, Fonksiyonları ve Nasıl Çalışır?</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+    
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

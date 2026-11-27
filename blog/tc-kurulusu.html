@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    // Tema flaşını önle: CSS yüklenmeden önce doğru class'ı uygula
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      var html = document.documentElement;
+      html.classList.remove('light','dark');
+      html.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Türkiye Cumhuriyeti'nin Kuruluşu &#8212; Valexirion</title>
+  <meta name="description" content="Mondros Mütarekesi'nden Cumhuriyet'in ilanına uzanan süreci; savaş, işgal, diplomasi, toplumsal dönüşüm ve siyasal muhalefet bağlamında inceleyin." />
+  <link rel="canonical" href="https://valexirion.com/tc-kurulusu.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Türkiye Cumhuriyeti'nin Kuruluşu" />
+  <meta property="og:description" content="Mondros Mütarekesi'nden Cumhuriyet'in ilanına uzanan süreci; savaş, işgal, diplomasi, toplumsal dönüşüm ve siyasal muhalefet bağlamında inceleyin." />
+  <meta property="og:url" content="https://valexirion.com/tc-kurulusu.html" />
+  <meta property="og:image" content="https://valexirion.com/img/ataturk.webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Türkiye Cumhuriyeti'nin Kuruluşu" />
+  <meta name="twitter:description" content="Mondros Mütarekesi'nden Cumhuriyet'in ilanına uzanan süreci; savaş, işgal, diplomasi, toplumsal dönüşüm ve siyasal muhalefet bağlamında inceleyin." />
+  <meta name="twitter:image" content="https://valexirion.com/img/ataturk.webp" />
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Türkiye Cumhuriyeti'nin Kuruluşu","description":"Mondros Mütarekesi'nden Cumhuriyet'in ilanına uzanan süreci; savaş, işgal, diplomasi, toplumsal dönüşüm ve siyasal muhalefet bağlamında inceleyin.","image":"https://valexirion.com/img/ataturk.webp","mainEntityOfPage":"https://valexirion.com/tc-kurulusu.html","inLanguage":"tr-TR","publisher":{"@type":"Organization","name":"Valexirion","url":"https://valexirion.com/"}}</script>
+</head>
+<body class="font-ui" data-page-category="tarih">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+<nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim"    class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih"    class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema"   class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik"    class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe"  class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga"     class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+
+      <!-- Sağ araçlar -->
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/>
+          </svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Men&uuml;y&uuml; a&ccedil;/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div><!-- /navbar-inner -->
+
+    <!-- Mobil menü paneli -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim"    class="mobile-link">Bilim</a>
+      <a href="index.html#tarih"    class="mobile-link">Tarih</a>
+      <a href="index.html#sinema"   class="mobile-link">Sinema</a>
+      <a href="index.html#muzik"    class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe"  class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga"     class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <!-- BAŞLIK ALANI -->
+  <header class="article-header">
+    <div class="article-header-inner">
+
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a>
+        <span>›</span>
+        <span>Tarih</span>
+        <span>›</span>
+        <span>Türkiye Cumhuriyeti'nin Kuruluşu</span>
+      </div>
+
+      <span class="article-cat-badge">Tarih</span>
+
+      <h1 class="article-title">
+        Türkiye Cumhuriyeti'nin Kuruluşu:<br>
+        <em>Savaş, Siyaset ve Toplumsal Dönüşüm</em>
+      </h1>
+
+      <p class="article-subtitle">
+        Mondros Mütarekesi'nden Cumhuriyet'in ilanına uzanan süreç; askerî mücadelelerin
+        yanı sıra farklı siyasi aktörleri, toplumsal çatışmaları, diplomatik uzlaşmaları ve köklü reformları içeriyordu.
+      </p>
+
+        <div class="article-share">
+          <button class="share-btn"
+            onclick="navigator.share ? navigator.share({title: document.title, url: location.href}) : navigator.clipboard.writeText(location.href)"
+            aria-label="Paylaş">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684"/>
+            </svg>
+            Paylaş
+          </button>
+        </div>
+    </div>
+  </header>
+
+  <!-- Kapak Görseli -->
+  <div style="max-width:860px;margin:0 auto 2rem;padding:0 1.5rem;">
+    <img src="img/ataturk.webp" alt="Mustafa Kemal Atatürk"
+      style="width:100%;max-height:480px;object-fit:cover;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,.22);" loading="eager" decoding="async" fetchpriority="high"/>
+    <p style="text-align:center;font-size:.8rem;color:#888;margin-top:.6rem;">
+      Mustafa Kemal Atatürk — Türkiye Cumhuriyeti'nin kurucusu
+    </p>
+  </div>
+
+  
+
+  
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+<h2>Osmanlı İmparatorluğu'nun Çöküşü ve Arka Plan</h2>
+
+<p>
+Cumhuriyet'in kuruluşu, Osmanlı İmparatorluğu'nun son dönemindeki askerî yenilgiler, anayasal ve siyasi krizler, borçlar ve toprak kayıpları bağlamında gelişti. Avrupa diplomasisinde kullanılan “Hasta Adam” ifadesi döneme ait bir siyasi nitelemedir; imparatorluğun çok uluslu ve çok dinli toplumunu, reform girişimlerini ve farklı bölgelerdeki deneyimleri tek başına açıklamaz.<sup><a href="#kaynak-1">[1]</a></sup>
+</p>
+
+<p>
+1914'te Almanya ile ittifak yapan Osmanlı İmparatorluğu Birinci Dünya Savaşı'na birden fazla cephede katıldı. Çanakkale'deki savunmanın yanı sıra Kafkasya, Irak, Filistin ve Suriye cephelerinde ağır kayıplar yaşandı. 1915-16'da Osmanlı yönetiminin Ermenileri kitlesel biçimde tehcir etmesi ve sistematik öldürmeler, yüz binlerce insanın ölümüne yol açtı; ABD Holokost Anı Müzesi bu süreci Ermeni Soykırımı olarak tanımlar ve ölü sayısını 664 bin ile 1,2 milyon arasında verir. 30 Ekim 1918 tarihli <strong>Mondros Mütarekesi</strong> ordunun terhisini ve İtilaf kuvvetlerine stratejik noktalara müdahale imkânı veren hükümleri içeriyordu. Mütareke, imparatorluğun savaş sonrası egemenlik alanını ciddi biçimde daralttı.<sup><a href="#kaynak-1">[1]</a>, <a href="#kaynak-5">[5]</a></sup>
+</p>
+
+<p>
+İtilaf donanması Kasım 1918'de İstanbul'a geldi; başkent 1920'de resmen işgal edildi ve Osmanlı Meclisi dağıtıldı. Padişah VI. Mehmed (Vahdettin) ile İstanbul hükümetleri, işgal koşullarında devletin devamı için farklı uzlaşma yolları ararken, Anadolu'da başka bir siyasi ve askerî merkez oluştu. İtilaf kuvvetleri ile Yunan ordusu Anadolu'nun farklı bölgelerini işgal etti; bu süreçte İstanbul yönetimi, Ankara hareketi ve yerel aktörler arasında meşruiyet mücadelesi yaşandı.<sup><a href="#kaynak-1">[1]</a></sup>
+</p>
+
+<h2>Mustafa Kemal Kimdir?</h2>
+
+<p>
+1881'de Selanik'te doğan Mustafa Kemal, Osmanlı askerî okullarında eğitim gördü ve 1905'te Harp Akademisi'nden mezun oldu. 1915'te Çanakkale cephesindeki komutanlığıyla tanındı; daha sonra Doğu ve Suriye cephelerinde görev yaptı. Askerî itibarı ve siyasal örgütlenmedeki rolü, onu millî hareketin önde gelen isimlerinden biri hâline getirdi. Çanakkale'ye atfedilen meşhur sözler tarih yazımında sıkça aktarılır; ancak doğrudan alıntılar kaynak ve bağlam belirtilmeden kesin tarihsel kanıt gibi sunulmamalıdır.<sup><a href="#kaynak-1">[1]</a></sup>
+</p>
+
+<p>
+Mustafa Kemal, savaşın son döneminde Suriye'deki Yıldırım Orduları'nda görev yaptı ve Mondros'tan sonra İstanbul'a döndü. 1919'da Anadolu'ya geçerek millî direnişin örgütlenmesinde etkili oldu. Süreç yalnızca tek bir kişinin kararıyla değil; yerel Müdafaa-i Hukuk örgütleri, kongreler, askerî kadrolar, mebuslar ve farklı toplumsal kesimlerin katılımıyla şekillendi.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h2>Samsun'a Çıkış ve Millî Uyanış (19 Mayıs 1919)</h2>
+
+<p>
+Mustafa Kemal, Osmanlı hükümetince 9. Ordu Müfettişi olarak görevlendirildi ve 19 Mayıs 1919'da Samsun'a çıktı. Görevinin resmî çerçevesi bölgedeki asayiş ve silahsızlandırma meselelerini ele almaktı; sonraki adımları ise millî direniş örgütlenmesinin parçasına dönüştü. 15 Mayıs'ta Yunan kuvvetleri, İtilaf donanmasının bulunduğu sırada İzmir'e çıktı. İşgal ve ilk günlerde yaşanan şiddet, Anadolu'daki tepkileri büyüttü; olayları yalnızca tek bir “kıvılcım”la açıklamak, savaş sonrası işgal ve siyasi kriz bağlamını daraltır.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<p>
+Mustafa Kemal, Amasya'ya geçerek hazırladığı bildiriyi 22 Haziran 1919'da yayımladı.
+<strong>Amasya Genelgesi</strong>, “milletin bağımsızlığını yine milletin azim ve kararı kurtaracaktır” ifadesiyle millî iradeyi öne çıkardı. Metin, İstanbul hükümetinin yeterliliğini sorguluyor ve kongrelerle temsilî bir direniş örgütlenmesini amaçlıyordu. Bu, Osmanlı hükümetiyle Ankara hareketi arasındaki siyasi ayrışmanın önemli aşamalarından biriydi.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h2>Erzurum ve Sivas Kongreleri</h2>
+
+<p>
+Temmuz-Ağustos 1919'da toplanan <strong>Erzurum Kongresi</strong>, başlangıçta doğu illerinin savunma örgütlerini bir araya getirdi; alınan kararlar ülke bütünlüğü, temsil ve direniş ilkelerini içeriyordu. Mustafa Kemal kongrede Heyet-i Temsiliye başkanlığına seçildi.
+</p>
+
+<p>
+Eylül 1919'daki <strong>Sivas Kongresi</strong>, farklı bölgesel Müdafaa-i Hukuk örgütlerini ortak bir çatı altında birleştirme yönünde adım attı. Kongre, Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti'nin ülke çapındaki örgütlenmesini güçlendirdi. İstanbul hükümetiyle bağların kopması tek bir toplantıda tamamlanmadı; Damat Ferit Paşa hükümetiyle haberleşmenin kesilmesi ve yeni hükümetin kurulması bu siyasi ayrışmayı derinleştirdi.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h2>Büyük Millet Meclisi'nin Açılışı (23 Nisan 1920)</h2>
+
+<p>
+İtilaf kuvvetlerinin Mart 1920'de İstanbul'u resmen işgal etmesi ve Meclis-i Mebusan'ın dağıtılmasının ardından, Ankara'da yeni bir meclis toplama süreci başlatıldı. <strong>Türkiye Büyük Millet Meclisi (TBMM)</strong> 23 Nisan 1920'de açıldı. Açılış, dönemin siyasi kültürü içinde dinî törenlerle de desteklendi; bu, meclisin farklı toplumsal kesimler nezdinde meşruiyet kurma çabasının parçasıydı. Meclis, egemenliği millete dayandıran bir siyasal iddia ortaya koydu.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<p>
+TBMM, yasama ve yürütme yetkilerini mecliste toplayan bir yönetim modeli benimsedi. Üyeleri arasında eski mebuslar, subaylar, din adamları ve farklı mesleklerden temsilciler bulunuyordu. Meclis Mustafa Kemal'i başkan seçti ve yeni yönetimin temel kurumu hâline geldi; bu kurumlaşma, hem savaş koşullarının hem de egemenliğin kimde olacağına ilişkin siyasi mücadelenin ürünüydü.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h2>Savaş cepheleri ve sivil kayıplar</h2>
+
+<p>
+Millî hareketin askerî mücadelesi farklı cephelerde yürütüldü; taraflar ve yerel ittifaklar zaman içinde değişti. Bu savaş yılları yalnızca orduları değil, sivilleri de etkiledi. İşgal, karşılıklı şiddet, zorunlu göç ve mülteci hareketleri Türk ve Müslüman toplulukların yanı sıra Rum ve Ermeni topluluklarında da ağır sonuçlar doğurdu. Örneğin 1922'de İzmir'e girilmesi sonrasındaki çatışma ve kargaşada binlerce kişi öldü; Rum asker ve mülteciler İtilaf gemileriyle tahliye edildi.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h3>Yunan Kuvvetleri (Batı Cephesi)</h3>
+<p>
+Batı Cephesi'nde Yunan ordusuyla çatışmalar 1919'da İzmir'in işgalinin ardından yoğunlaştı. İnönü muharebeleri, Kütahya-Eskişehir çarpışmaları ve Ağustos-Eylül 1921'deki <strong>Sakarya Meydan Muharebesi</strong> savaşın seyrini etkiledi. Sakarya'nın ardından TBMM, Mustafa Kemal'e Gazi unvanı ve mareşallik rütbesi verdi. Askerî başarı, diplomatik koşulları ve tarafların müzakere gücünü de etkiledi.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<p>
+Son büyük taarruz, <strong>Büyük Taarruz</strong> (26 Ağustos 1922) ve ardından gelen
+<strong>Başkomutan Meydan Muharebesi / Dumlupınar</strong> ile tamamlandı. Türk kuvvetleri Yunan ordusunu Anadolu'dan çıkardı ve 9 Eylül 1922'de İzmir'e girdi. Şehrin ele geçirilmesini izleyen yangın, can kayıpları ve sivil tahliyeleri, zafer anlatısının yanında bölgedeki Rum ve diğer sivillerin yaşadığı yıkımı da tarihsel bağlamın parçası kılar.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h3>Ermenistan ve Doğu Cephesi</h3>
+<p>
+1920'de Kazım Karabekir komutasındaki Türk kuvvetleri ile Ermenistan arasında savaş yaşandı. Aralık 1920'de imzalanan Gümrü (Aleksandropol) Antlaşması yürürlüğe giremedi; doğu sınırının düzenlenmesinde 1921 Moskova ve Kars antlaşmaları belirleyici oldu. Savaş ve sınır değişiklikleri bölgedeki Ermeni ve Müslüman sivillerin yaşamını da etkiledi.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h3>Fransız Kuvvetleri (Güney Cephesi)</h3>
+<p>
+Fransız kuvvetleri güneyde, özellikle Çukurova ve çevresinde bulundu; yerel milisler ve Ankara kuvvetleriyle çatışmalar yaşandı. 20 Ekim 1921 tarihli Ankara Antlaşması sonrasında Fransız kuvvetleri bölgeden çekildi. Urfa, Maraş ve Antep'teki mücadeleler yerel halkın deneyiminde önemli yer tuttu; Antep'e 1921'de Gazi unvanı verildi.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h3>İtilaf varlığı ve İngiltere</h3>
+<p>
+İngiltere, İstanbul ve Boğazlar çevresindeki İtilaf işgal düzeninin başlıca aktörlerindendi; ancak Ankara ile doğrudan geniş çaplı bir kara savaşı yürütmedi. Ekim 1922 Mudanya Mütarekesi, Doğu Trakya'nın çatışmasız devrini ve barış görüşmelerine geçişi sağladı; İtilaf kuvvetleri İstanbul'dan Lozan Antlaşması sonrasında çekildi.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h3>İç Ayaklanmalar</h3>
+<p>
+Dış cephelerin yanı sıra Ankara yönetimine karşı Anzavur, Düzce-Hendek, Yozgat ve Konya ayaklanmaları gibi iç çatışmalar yaşandı. Bu hareketlerin nedenleri tek tip değildi: hanedan ve hilafete bağlılık, yerel güç mücadeleleri, asker toplama ve vergi uygulamalarına tepki, dinî-siyasi söylemler ve İstanbul hükümetinin Ankara'ya karşı tutumu farklı yerlerde etkili oldu. Bunları yalnızca yabancı kışkırtmasıyla açıklamak, yerel dinamikleri ve dönemin meşruiyet çatışmasını göz ardı eder.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h2>Hilafet, Tarikatlar ve Dinî Muhalefet</h2>
+
+<p>
+Millî hareketin meşruiyeti dinî ve siyasi söylemler üzerinden de tartışıldı. Dinî kanaat önderleri ve tarikat çevreleri tek bir siyasi çizgide değildi: bazıları Ankara'yı destekledi, bazıları İstanbul hükümetini veya hilafeti savundu, bazıları da yerel koşullara göre tutum aldı. Bu nedenle dönemin çatışmasını bütün dinî gruplara mal etmek doğru değildir.<sup><a href="#kaynak-3">[3]</a></sup>
+</p>
+
+<h3>Şeyhülislam Dürrizade Abdullah'ın Fetvası</h3>
+<p>
+Nisan 1920'de Şeyhülislam Dürrizade Abdullah'ın fetvası, Ankara hareketini dinî bakımdan gayrimeşru ve cezalandırılabilir ilan etti. Ankara'da müftü Rıfat Börekçi'nin öncülüğünde yayımlanan karşı fetva ise direnişi meşru savunma olarak değerlendirdi. Bu metinler, İstanbul ile Ankara arasındaki siyasi egemenlik mücadelesinin dinî meşruiyet dilinde de yürütüldüğünü gösterir; fetvaların hangi koşullarda hazırlandığına ilişkin anlatılarda tek bir dış yönlendirme iddiası kesin olgu gibi sunulmamalıdır.<sup><a href="#kaynak-3">[3]</a></sup>
+</p>
+
+<h3>Şeyh Said İsyanı ve merkezîleşme</h3>
+<p>
+1925 Şeyh Said isyanı, dinî söylemin yanı sıra Kürt kimliği, merkezîleşme ve bölgesel siyasetle ilgili unsurları da içeren bir ayaklanmaydı; nedenleri tarihçiler arasında tartışılır. İsyan bastırıldı ve Şeyh Said ile yargılanan bazı isimler Diyarbakır'da idam edildi. Olay, Takrir-i Sükûn Kanunu ve olağanüstü yargı uygulamalarıyla birlikte siyasal alanın daralmasına yol açtı. Bu gelişmeleri bütün tarikatların tutumuna veya tek bir nedene bağlamak mümkün değildir.<sup><a href="#kaynak-4">[4]</a></sup>
+</p>
+
+<h3>Tekke ve Zaviyelerin Kapatılması (1925)</h3>
+<p>
+30 Kasım 1925 tarihli 677 sayılı Kanun tekke ve zaviyeleri kapattı; şeyhlik, dervişlik, müritlik ve dedelik gibi unvan ve faaliyetleri yasakladı. Kanun, yalnızca bir isyan tedbiri değil, laikleştirme ve dinî kurumları devlet denetimine alma siyasetinin parçasıydı. Uygulama dinî hayatı ve kurumları köklü biçimde etkiledi; destekleyenler bunu hukuk birliği ve laikleşme, eleştirenler ise inanç ve örgütlenme özgürlüğünün daraltılması açısından değerlendirir.<sup><a href="#kaynak-3">[3]</a></sup>
+</p>
+
+<h3>İstiklal Mahkemeleri ve yargı süreçleri</h3>
+<p>
+Savaş ve erken Cumhuriyet döneminde kurulan <strong>İstiklal Mahkemeleri</strong>, ayaklanma, firar ve rejime karşı eylem suçlamalarını olağanüstü yetkilerle yargıladı. Bu mahkemeler hızlı kararlar ve idam cezaları verdi; savunma, temyiz ve siyasal muhalefet alanlarının sınırlılığı nedeniyle tarih yazımında hukuk güvenceleri ve siyasi amaçları bakımından eleştirilir.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<p>
+1926'daki <strong>İzmir Suikastı</strong> davasında Mustafa Kemal'e yönelik suikast planı suçlamasıyla eski İttihatçılar ve siyasi isimler yargılandı; bazı sanıklar idam edildi, bazıları beraat etti. Şeyh Said isyanı sonrasındaki yargılamalarda da idam cezaları verildi. Sanıkların dinî unvanları, tek başına yargılamaların dinî kimliğe yönelik olduğunu kanıtlamaz; davalar güvenlik ve rejim muhalefeti bağlamında, aynı zamanda olağanüstü yargı yetkileri ve siyasi baskı tartışmalarıyla birlikte değerlendirilmelidir.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h2>Lozan Antlaşması (24 Temmuz 1923)</h2>
+
+<p>
+Kasım 1922-Temmuz 1923 arasında süren <strong>Lozan Konferansı</strong>'nda Türk heyetine İsmet İnönü başkanlık etti. Antlaşma, Türkiye'nin sınırlarının büyük bölümünü uluslararası düzeyde tanıdı, kapitülasyonları kaldırdı ve yeni devletin egemenliğini güçlendirdi. Antlaşma ayrıca Müslüman ve gayrimüslim yurttaşlar için eşit haklar ve azınlıkların korunmasına ilişkin hükümler içeriyordu. Bununla birlikte Musul meselesi çözümsüz kaldı; Boğazlar uluslararası bir rejime ve askerden arındırma hükümlerine bağlandı, Osmanlı borçları paylaştırıldı ve gümrük tarifelerine geçici sınırlamalar getirildi. Boğazlar üzerindeki düzenleme 1936 Montrö Sözleşmesi'yle değişti. Lozan bu nedenle önemli bir diplomatik uzlaşma ve egemenlik kazanımı olmakla birlikte, tarafların tavizler verdiği ve bazı meseleleri sonraya bıraktığı bir antlaşmaydı.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<p>
+Türkiye ile Yunanistan arasında 30 Ocak 1923'te imzalanan sözleşme, din ölçütüne dayalı zorunlu nüfus mübadelesini düzenledi; İstanbul'daki Rumlar ile Batı Trakya'daki Müslümanlar istisna tutuldu. Yaklaşık 1,2 milyon Ortodoks ve 400 bin Müslümanın yer değiştirmesi, insanların evlerinden ayrılmasına ve mülklerini geride bırakmasına yol açtı. Rakamlar kaynak ve sayım ölçütüne göre değişebilse de, mübadelenin insani ve toplumsal maliyeti antlaşmanın ayrılmaz parçasıdır.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h2>Saltanatın Kaldırılması ve Cumhuriyetin İlanı</h2>
+
+<p>
+1 Kasım 1922'de TBMM saltanatı kaldırdı; halifelik ayrı bir makam olarak 1924'e kadar sürdü. VI. Mehmed, Kasım 1922'de İngiliz savaş gemisi HMS Malaya ile İstanbul'dan ayrılarak Malta'ya gitti. Bu gelişme, Ankara'nın egemenlik iddiasını güçlendirdi ve Osmanlı hanedanının siyasi iktidarını sona erdirdi.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<p>
+29 Ekim 1923'te TBMM anayasa değişikliğini kabul ederek <strong>Türkiye Cumhuriyeti</strong>'ni ilan etti; Mustafa Kemal ilk cumhurbaşkanı, İsmet İnönü ilk başbakan oldu. Cumhuriyet, meclis egemenliğini yeni rejimin temeli olarak tanımladı. Bu değişim, savaş ve müzakere döneminden sonra yeni devlet kurumlarının kurulmasının başlangıcıydı.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h2>Hilafetin Kaldırılması (3 Mart 1924)</h2>
+
+<p>
+3 Mart 1924'te TBMM halifeliği kaldırdı; Abdülmecid ve hanedan üyeleri ülke dışına çıkarıldı. Aynı gün Tevhid-i Tedrisat Kanunu kabul edildi ve dinî mahkemeler kaldırıldı. Ankara bu adımları egemenliği tek merkezde toplama ve laik hukuk-eğitim kurumları kurma yönünde gerekçelendirdi. Karar, İslam dünyasında ve Türkiye'de tartışma yarattı; dinî kurumların tasfiyesi ile yeni devletin merkezîleşmesi birlikte değerlendirilmelidir.<sup><a href="#kaynak-3">[3]</a></sup>
+</p>
+
+<h2>Reformlar ve yeni devlet kurumları</h2>
+
+<p>
+1920'ler ve 1930'larda TBMM ve hükümetler, Mustafa Kemal'in liderliğinde siyasal, hukuki ve toplumsal kurumları dönüştüren reformlar yaptı. Değişiklikler modernleşme ve ulus-devlet kurma hedefleri taşıyordu; bir bölümü gündelik yaşamı hızla değiştirdi ve yukarıdan uygulanan politikalar olarak tartışıldı:<sup><a href="#kaynak-3">[3]</a></sup>
+</p>
+
+<ul>
+  <li><strong>1924 Anayasası:</strong> Türkiye'nin ilk cumhuriyet anayasası yürürlüğe girdi.</li>
+  <li><strong>Hukuk reformu (1926):</strong> İsviçre Medenî Kanunu başta olmak üzere Avrupa hukuklarından uyarlanan yeni kanunlar kabul edildi; aile hukuku, evlilik ve miras hükümleri değişti. Reformlar laik hukuk birliğini güçlendirdi, ancak toplumsal kabul ve uygulanışları zaman içinde farklılık gösterdi.</li>
+  <li><strong>Şapka Kanunu (1925):</strong> Kamusal kıyafete ilişkin düzenlemeler yapıldı ve fesin kullanımı sınırlandırıldı. Uygulama bazı bölgelerde protestolarla karşılandı; Takrir-i Sükûn dönemi ve İstiklal Mahkemeleri bağlamında cezalar verildi. Bu politikayı yalnızca sembolik bir değişim olarak görmek, zorlayıcı uygulama boyutunu dışarıda bırakır.</li>
+  <li><strong>Latin Alfabesi (1928):</strong> Arap alfabesinin yerini Latin temelli Türk alfabesi aldı; okuryazarlık oranının artırılması hedeflendi.</li>
+  <li><strong>Seçme ve seçilme hakları:</strong> Kadınlar 1930'da belediye, 1933'te muhtarlık ve 1934'te milletvekili seçimlerinde seçme ve seçilme hakkı kazandı. Bu önemli hukuki değişiklik, tek parti yönetimi koşullarında ve sınırlı siyasi rekabet içinde gerçekleşti.</li>
+  <li><strong>Soyadı Kanunu (1934):</strong> Her Türk vatandaşının soyadı alması zorunlu hâle getirildi. Mustafa Kemal'e TBMM tarafından "Atatürk" soyadı verildi.</li>
+  <li><strong>Dil ve Tarih Devrimleri:</strong> Türk Dil Kurumu (1932) ve Türk Tarih Kurumu (1931) kurularak dil sadeleştirme ve tarih yazımı çalışmaları başlatıldı.</li>
+</ul>
+
+<h2>Karşılaştığı Zorluklar ve İç Muhalefet</h2>
+
+<p>
+Reformlar ve yeni yönetim modeli, farklı görüşlerin ve siyasi muhalefetin bulunduğu bir ortamda uygulandı. Muhalefet yalnızca kişisel iktidar mücadelelerinden ibaret değildi; parti programları, merkezîleşme, laiklik ve reformların hızı üzerine anlaşmazlıkları da içeriyordu.
+</p>
+
+<h3>Siyasi muhalefet ve tek parti düzeni</h3>
+<p>
+1924'te kurulan Terakkiperver Cumhuriyet Fırkası, Rauf Orbay, Kâzım Karabekir ve Ali Fuat Cebesoy gibi eski komutanları ve mebusları bir araya getirdi. Parti, Şeyh Said isyanı sonrasında Takrir-i Sükûn Kanunu kapsamında kapatıldı. Hükümet isyanla bağlantı gerekçesini öne sürerken, muhalefetin kapatılması erken Cumhuriyet'te çok partili rekabetin sınırlarını da gösterir.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h3>1930 Serbest Cumhuriyet Fırkası Deneyi</h3>
+<p>
+Atatürk'ün teşvikiyle Fethi Okyar 1930'da Serbest Cumhuriyet Fırkası'nı kurdu. Parti kısa sürede hükümete yönelik geniş bir hoşnutsuzluğu görünür kıldı; yerel gerilimler ve partinin geleceğine ilişkin anlaşmazlıklar sonrasında kendi kendini feshetti. Aynı yıl Menemen'de Derviş Mehmet ve yanındakilerin çıkardığı olayda yedek subay öğretmen Mustafa Fehmi Kubilay öldürüldü. Olayda dinî sloganlar kullanıldı; ancak tek bir olaydan bütün tarikatların veya muhalefetin niteliğine dair genelleme yapılamaz. Serbest Fırka deneyiminin sona ermesi, çok partili siyasetin henüz kurumsallaşmadığını gösterir.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h3>Ekonomik Baskılar</h3>
+<p>
+Savaşların ardından nüfusun büyük bölümünün kırsalda yaşadığı ve sanayi altyapısının sınırlı olduğu bir ülkede ekonomik toparlanma önemli bir sorundu. 1929 Dünya Ekonomik Buhranı dış ticaret ve tarım gelirlerini olumsuz etkiledi; 1930'larda devletin ekonomideki rolü genişledi. Devletçilik hem kaynak ve sanayi yatırımlarını örgütlemeyi hem de bağımsız kalkınma hedefini amaçladı.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h2>Atatürk'ün Son Yılları ve Mirası</h2>
+
+<p>
+Mustafa Kemal Atatürk 10 Kasım 1938'de İstanbul'da hayatını kaybetti. Liderliği döneminde alfabe, hukuk, eğitim, kıyafet, kadınların siyasi hakları ve ekonomi alanlarında önemli değişiklikler yapıldı. Bu dönüşüm, yeni kurumlar ve yurttaşlık tanımları oluştururken, tek parti yönetimi, devletin din üzerindeki denetimi ve bazı reformların zorlayıcı uygulanması nedeniyle farklı değerlendirmelere konu oldu.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<p>
+Atatürk, Türkiye'nin kurucu cumhurbaşkanı ve erken Cumhuriyet reformlarının başlıca siyasi lideriydi; ancak Cumhuriyet'in kuruluşu tek kişinin eseri değildi. TBMM üyeleri, askerî kadrolar, yerel direniş örgütleri, diplomatlar ve toplumun farklı kesimleri sürece katkıda bulundu. Atatürk'ün mirası; egemenlik ve kurumsal dönüşümün yanı sıra tek parti yönetimi, siyasi muhalefetin sınırlandırılması ve laikleştirme politikalarının toplumsal sonuçları üzerinden de değerlendirilir. Bu boyutları birlikte ele almak, dönemin hem kazanımlarını hem de çatışmalarını daha dengeli gösterir.<sup><a href="#kaynak-2">[2]</a></sup>
+</p>
+
+<h3>Kaynaklar</h3>
+<ol>
+  <li id="kaynak-1">Helen Chapin Metz (ed.). (1995). <a href="https://countrystudies.us/turkey/2.htm" target="_blank" rel="noopener noreferrer"><em>Turkey: A Country Study</em>, “History”</a> ve <a href="https://countrystudies.us/turkey/12.htm" target="_blank" rel="noopener noreferrer">“World War I”</a>. Library of Congress.</li>
+  <li id="kaynak-2">Helen Chapin Metz (ed.). (1995). <a href="https://countrystudies.us/turkey/13.htm" target="_blank" rel="noopener noreferrer"><em>Turkey: A Country Study</em>, “Atatürk and the Turkish Nation”</a>. Library of Congress.</li>
+  <li id="kaynak-3">Helen Chapin Metz (ed.). (1995). <a href="https://countrystudies.us/turkey/37.htm" target="_blank" rel="noopener noreferrer"><em>Turkey: A Country Study</em>, “Secularist Policies”</a>. Library of Congress.</li>
+  <li id="kaynak-4">McDowall, David. (2004). <em>A Modern History of the Kurds</em> (3. baskı). I.B. Tauris.</li>
+  <li id="kaynak-5">United States Holocaust Memorial Museum. <a href="https://encyclopedia.ushmm.org/content/en/article/the-armenian-genocide-1915-16-overview" target="_blank" rel="noopener noreferrer">The Armenian Genocide (1915–16): Overview</a>.</li>
+</ol>
+
+<h2>Zaman Çizelgesi: Kuruluşun Ana Kilometre Taşları</h2>
+
+<table style="width:100%;border-collapse:collapse;font-size:.92rem;margin:1.5rem 0;">
+  <thead>
+    <tr style="background:rgba(0,0,0,.06);">
+      <th style="padding:.6rem 1rem;text-align:left;border-bottom:2px solid #ddd;">Tarih</th>
+      <th style="padding:.6rem 1rem;text-align:left;border-bottom:2px solid #ddd;">Olay</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">30 Ekim 1918</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Mondros Mütarekesi imzalandı</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">13 Kasım 1918</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">İtilaf donanması İstanbul'a girdi</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">15 Mayıs 1919</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Yunan kuvvetleri İzmir'e çıktı</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">19 Mayıs 1919</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Mustafa Kemal Samsun'a ayak bastı</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">22 Haziran 1919</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Amasya Genelgesi yayımlandı</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Temmuz–Ağustos 1919</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Erzurum Kongresi toplandı</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Eylül 1919</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Sivas Kongresi toplandı</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">23 Nisan 1920</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Büyük Millet Meclisi Ankara'da açıldı</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Ağustos–Eylül 1921</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Sakarya Meydan Muharebesi — Türk zaferi</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">26–30 Ağustos 1922</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Büyük Taarruz ve Dumlupınar zaferi</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">9 Eylül 1922</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Türk kuvvetleri İzmir'e girdi</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">1 Kasım 1922</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Saltanat kaldırıldı</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">24 Temmuz 1923</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Lozan Antlaşması imzalandı</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">29 Ekim 1923</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Türkiye Cumhuriyeti ilan edildi</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">3 Mart 1924</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Halifelik kaldırıldı</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Şubat–Nisan 1925</td><td style="padding:.5rem 1em;border-bottom:1px solid #eee;">Şeyh Said isyanı bastırıldı; lider idam edildi</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Kasım 1925</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Tekke ve zaviyeler kapatıldı; fes yasaklandı</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">1926</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Laik hukuk sistemi yürürlüğe girdi; İzmir suikastı davası</td></tr>
+    <tr><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">1928</td><td style="padding:.5rem 1rem;border-bottom:1px solid #eee;">Latin alfabesi kabul edildi</td></tr>
+    <tr><td style="padding:.5rem 1rem;">10 Kasım 1938</td><td style="padding:.5rem 1rem;">Atatürk hayatını kaybetti</td></tr>
+  </tbody>
+</table>
+
+    </div>
+  </article>
+
+  
+
+  
+
+<section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">İlgili Yazılar</h2>
+      <div class="related-grid">
+        <a href="siyasi-tarih.html" class="related-card">
+          <div class="related-img">
+            <img src="img/siyasi.webp" alt="Dünya Siyaseti ve Tarihi" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Tarih</span>
+            <h3 class="related-card-title">Dünya Siyaseti ve Tarihi: İnsanlığı Şekillendiren Güçler</h3>
+            <p class="related-meta">Alp Yıldız · 16 dk</p>
+          </div>
+        </a>
+        <a href="antik-medeniyetler.html" class="related-card">
+          <div class="related-img">
+            <img src="img/medeniyetler.webp" alt="Antik Medeniyetlerin Yıkılışı" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Tarih</span>
+            <h3 class="related-card-title">Antik Medeniyetlerin Yıkılışı: Roma, Mezopotamya ve Mısır</h3>
+            <p class="related-meta">Naz Kaya · 12 dk</p>
+          </div>
+        </a>
+        <a href="felsefe-dusunce.html" class="related-card">
+          <div class="related-img">
+            <img src="img/sokrates.webp" alt="Antik Felsefe" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Felsefe</span>
+            <h3 class="related-card-title">Sokrates'ten Nietzsche'ye: Batı Felsefesinin Serüveni</h3>
+            <p class="related-meta">Selin Arslan · 12 dk</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- FOOTER -->
+     
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

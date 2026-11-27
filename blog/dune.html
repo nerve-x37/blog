@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    // Tema flaşını önle: CSS yüklenmeden önce doğru class'ı uygula
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      var html = document.documentElement;
+      html.classList.remove('light','dark');
+      html.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+
+  
+
+  
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dune Evreni: Çevre, Din ve İktidarın Zamansız Alegorisi &#8212; Valexirion</title>
+  <meta name="description" content="Frank Herbert'in 1965'te kaleme aldığı bu roman, bugün neden hâlâ tüm zamanların en büyük bilim kurgu eseri sayılıyor? İktidar ve ekoloji üzerine derin bir okuma." />
+  <link rel="canonical" href="https://valexirion.com/dune.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Dune Evreni: Çevre, Din ve İktidarın Zamansız Alegorisi" />
+  <meta property="og:description" content="Frank Herbert'in 1965'te kaleme aldığı bu roman, bugün neden hâlâ tüm zamanların en büyük bilim kurgu eseri sayılıyor? İktidar ve ekoloji üzerine derin bir okuma." />
+  <meta property="og:url" content="https://valexirion.com/dune.html" />
+  <meta property="og:image" content="https://valexirion.com/img/dune.webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dune Evreni: Çevre, Din ve İktidarın Zamansız Alegorisi" />
+  <meta name="twitter:description" content="Frank Herbert'in 1965'te kaleme aldığı bu roman, bugün neden hâlâ tüm zamanların en büyük bilim kurgu eseri sayılıyor? İktidar ve ekoloji üzerine derin bir okuma." />
+  <meta name="twitter:image" content="https://valexirion.com/img/dune.webp" />
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Dune Evreni: Çevre, Din ve İktidarın Zamansız Alegorisi","description":"Frank Herbert'in 1965'te kaleme aldığı bu roman, bugün neden hâlâ tüm zamanların en büyük bilim kurgu eseri sayılıyor? İktidar ve ekoloji üzerine derin bir okuma.","image":"https://valexirion.com/img/dune.webp","mainEntityOfPage":"https://valexirion.com/dune.html","inLanguage":"tr-TR","publisher":{"@type":"Organization","name":"Valexirion","url":"https://valexirion.com/"}}</script>
+</head>
+<body class="font-ui" data-page-category="sinema">
+<div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- ============================================
+       NAVBAR (yazı sayfasında aynı navbar kullanılır)
+       ============================================ -->
+      <nav id="navbar" class="navbar">
+    <div class="navbar-inner">
+
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-dot">&#9679;</span> Valexirion
+      </a>
+
+      <!-- Masaüstü menüsü -->
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim"    class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih"    class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema"   class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik"    class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe"  class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga"     class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+
+      <!-- Sağ araçlar -->
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/>
+          </svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Men&uuml;y&uuml; a&ccedil;/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div><!-- /navbar-inner -->
+
+    <!-- Mobil menü paneli -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim"    class="mobile-link">Bilim</a>
+      <a href="index.html#tarih"    class="mobile-link">Tarih</a>
+      <a href="index.html#sinema"   class="mobile-link">Sinema</a>
+      <a href="index.html#muzik"    class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe"  class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga"     class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       YAZI BAŞLIK ALANI
+       Başlık, kategori, yazar, tarih ve okuma süresi
+       ============================================ -->
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a>
+        <span>›</span>
+        <a href="index.html">Kitap Eleştirileri</a>
+        <span>›</span>
+        <span>Dune Evreni</span>
+      </div>
+
+      <span class="article-cat-badge">Kitap Eleştirileri</span>
+
+      <h1 class="article-title">
+        Dune Evreni: Çevre,<br>
+        <em>Din ve İktidarın Zamansız Alegorisi</em>
+      </h1>
+
+      <p class="article-subtitle">
+        Frank Herbert’in Dune’u, iktidar, din ve ekoloji üzerinden insanlığın güç mücadelesini anlatan kült bir bilim kurgu eseridir.
+      </p>
+
+        <div class="article-share">
+          <button class="share-btn" onclick="navigator.share ? navigator.share({title: document.title, url: location.href}) : navigator.clipboard.writeText(location.href)" aria-label="Paylaş">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+            </svg>
+            Paylaş
+          </button>
+        </div>
+      </div>
+  </header>
+
+<!-- ============================================
+       YAZI İÇERİĞİ
+       Asıl metin burada yer alır
+       .article-content ile okunabilirlik stilleri uygulanır
+       Geniş satır aralığı, okunabilir font boyutu
+       ============================================ -->
+    <!-- ============================================
+       REKLAM ALANI 1 — 728x90 (Leaderboard)
+       Banner reklam için placeholder
+       Gerçek reklam kodu ile değiştirilebilir
+       ============================================ -->
+  
+
+  
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+    <!-- Yazı kapak resmi -->
+    <div class="article-hero-img">
+      <img src="img/dune1.webp" alt="Dune Evreni" loading="eager" onerror="this.parentElement.style.display='none'" decoding="async" fetchpriority="high">
+    </div>
+
+<h2>Dune Evreni: Çevre, Din ve İktidarın Zamansız Alegorisi</h2>
+
+<p>
+Frank Herbert’in 1965’te yayımladığı Dune, bilim kurgu türünün ötesine geçerek siyaset bilimi, ekoloji, din sosyolojisi ve ekonomi-politik alanlarını bir araya getiren çok katmanlı bir romandır. Hikâye, çöl gezegeni Arrakis üzerinde geçer ve evrendeki en değerli kaynak olan melanj (baharat) üzerinden şekillenen küresel güç mücadelesini anlatır.
+</p>
+
+<h3>Arrakis ve Ekolojik Sistem</h3>
+<p>
+Arrakis, su kaynaklarının yok denecek kadar az olduğu, tamamen çölleşmiş bir gezegendir. Bu sert çevresel koşullar, yalnızca yaşam biçimlerini değil aynı zamanda politik ve ekonomik düzeni de belirler. Roman, ekolojik kıtlığın medeniyet yapıları üzerindeki doğrudan etkisini çarpıcı şekilde ortaya koyar.
+</p>
+
+<h3>Melanj (Baharat) ve Stratejik Güç</h3>
+<p>
+Melanj, yalnızca bir kaynak değil; uzay yolculuğunu mümkün kılan, yaşam süresini uzatan ve bilinç genişlemesi sağlayan stratejik bir maddedir. Bu nedenle evrendeki tüm siyasi güçlerin kontrol etmeye çalıştığı merkezî bir enerji ve ekonomi unsurudur.
+</p>
+
+<h3>İktidar Yapıları ve Feodal Sistem</h3>
+<p>
+Dune evreni, imparatorluk, büyük hanedanlar ve siyasi fraksiyonlar arasında bölünmüş feodal bir güç yapısı sunar. Bu sistemde ittifaklar, ihanetler ve stratejik hamleler, galaktik ölçekte güç dengelerini sürekli olarak değiştirir.
+</p>
+
+<h3>Din, Kehanet ve Manipülasyon</h3>
+<p>
+Roman, dinin kitle kontrolü ve siyasi meşruiyet aracı olarak nasıl kullanılabileceğini Fremen kültürü üzerinden detaylı şekilde işler. Bene Gesserit tarikatının genetik ve dini planlamaları, inanç sistemlerinin nasıl mühendislik ile şekillendirilebileceğini gösterir.
+</p>
+
+<h3>Paul Atreides ve Mesih Arketipi</h3>
+<p>
+Paul Atreides karakteri, kehanetler ve politik zorunluluklar arasında sıkışmış bir “mesih figürü” olarak sunulur. Onun yükselişi, bireysel irade ile toplumsal beklentiler arasındaki çatışmayı temsil eder ve kaçınılmaz güç yozlaşmasını sorgular.
+</p>
+
+<h3>Fremen Kültürü ve Hayatta Kalma Stratejisi</h3>
+<p>
+Fremenler, Arrakis’in ekstrem koşullarına uyum sağlamış yerli halktır. Su yönetimi, toplumsal dayanışma ve çevresel adaptasyon becerileri, onları hem kültürel hem de ekolojik açıdan güçlü bir topluluk haline getirir.
+</p>
+
+<h3>Kitap Eleştirisi</h3>
+<p>
+Dune, bilim kurgu edebiyatında yalnızca bir hikâye değil, aynı zamanda politik teori ve felsefi analiz metni olarak da değerlendirilebilir. Frank Herbert’in en güçlü yönü, ekoloji, din ve iktidar gibi karmaşık kavramları tek bir anlatı içinde bütünleştirebilmesidir. Bu yönüyle eser, sadece bir dünya inşası değil, aynı zamanda sistem eleştirisidir.
+</p>
+
+<p>
+Bununla birlikte romanın dili zaman zaman yoğun, anlatımı ise detaylı ve yavaş ilerleyen bir yapıdadır. Bu durum bazı okuyucular için zorlayıcı olabilir. Ayrıca karakter gelişiminden çok fikir ve sistem anlatımına odaklanması, hikâye merkezli roman arayanlar için dezavantaj oluşturabilir.
+</p>
+
+<p>
+Buna rağmen Dune, hem bilim kurgu türünün hem de politik alegori edebiyatının en önemli eserlerinden biri olarak kabul edilir. Modern dünyada kaynak savaşları, enerji politikaları ve çevresel krizler açısından hâlâ güçlü bir referans noktasıdır.
+</p>
+
+<h3>Sonuç</h3>
+<p>
+Dune, yalnızca bir bilim kurgu romanı değil; çevre, din ve iktidar ilişkilerini analiz eden çok katmanlı bir düşünce sistemidir. Günümüz dünyasının politik ve ekolojik sorunlarını anlamak için hâlâ güncelliğini koruyan zamansız bir eserdir.
+</p>
+
+<h2>Film uyarlamalarının fragmanları</h2>
+<figure style="max-width:780px;margin:1.75rem auto 2.5rem">
+  <div class="article-hero-img article-hero-img--video">
+    <iframe data-external-src="https://www.youtube-nocookie.com/embed/n9xhJrPXop4" title="Dune resmî fragmanı — Warner Bros." loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <figcaption style="font-size:.75rem;line-height:1.6;color:var(--text-3);margin-top:.65rem">
+    Denis Villeneuve&rsquo;nin <em>Dune</em> uyarlaması: <a href="https://www.youtube.com/watch?v=n9xhJrPXop4" target="_blank" rel="noopener noreferrer">Warner Bros. resmî fragmanı</a>.
+  </figcaption>
+</figure>
+<figure style="max-width:780px;margin:1.75rem auto 2.5rem">
+  <div class="article-hero-img article-hero-img--video">
+    <iframe data-external-src="https://www.youtube-nocookie.com/embed/Way9Dexny3w" title="Dune: Part Two resmî fragmanı — Warner Bros." loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <figcaption style="font-size:.75rem;line-height:1.6;color:var(--text-3);margin-top:.65rem">
+    <em>Dune: Part Two</em>: <a href="https://www.youtube.com/watch?v=Way9Dexny3w" target="_blank" rel="noopener noreferrer">Warner Bros. resmî fragmanı</a>.
+  </figcaption>
+</figure>
+
+    </div><!-- /article-content -->
+  </article>
+
+  <!-- ============================================
+       REKLAM ALANI 2 — 300x250 (Rectangle)
+       Yazı ortası reklam alanı
+       Gerçek reklam kodu buraya yapıştırılabilir
+       ============================================ -->
+  
+
+  
+
+<!-- ============================================
+       İLGİLİ YAZILAR
+       Okuyucuya önerilen ilgili içerikler
+       Manuel olarak düzenlenebilir
+       ============================================ -->
+    <section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">İlgili Yazılar</h2>
+      <div class="related-grid">
+        <a href="open.html" class="related-card">
+          <div class="related-img">
+            <img src="img/open.webp" alt="Oppenheimer: Tarihin En Büyük Sırrı" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Sinema</span>
+            <h3 class="related-card-title">Oppenheimer: Tarihin En Büyük Sırrı</h3>
+            <p class="related-meta">Mert Öztürk &middot; 9 dk</p>
+          </div>
+        </a>
+        <a href="yapay-zeka.html" class="related-card">
+          <div class="related-img">
+            <img src="img/yapay.webp" alt="AGI'nin Eşiğinde: Yapay Genel Zeka Gerçekten Yakın mı?" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Bilim</span>
+            <h3 class="related-card-title">AGI'nin Eşiğinde: Yapay Genel Zeka Gerçekten Yakın mı?</h3>
+            <p class="related-meta">Alp Yıldız &middot; 10 dk</p>
+          </div>
+        </a>
+        <a href="felsefe-dusunce.html" class="related-card">
+          <div class="related-img">
+            <img src="img/sokrates.webp" alt="Sokrates'ten Nietzsche'ye: Batı Felsefesinin Serüveni" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Felsefe</span>
+            <h3 class="related-card-title">Sokrates'ten Nietzsche'ye: Batı Felsefesinin Serüveni</h3>
+            <p class="related-meta">Selin Arslan &middot; 12 dk</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- FOOTER -->
+      <!-- ============================================
+       REKLAM ALANI 3 — 728x90 (Footer Leaderboard)
+       Yazı sonunda, footer öncesi reklam alanı
+       ============================================ -->
+  
+
+  
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

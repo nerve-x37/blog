@@ -1,0 +1,215 @@
+/* ============================================================
+   VALEXIRION — ANA SAYFA TASARIMI (home.css)
+   Yalnızca body.vx-home altında çalışır; yazı sayfaları etkilenmez.
+   style.css'den SONRA yüklenir.
+   ============================================================ */
+
+/* ---------- Tema değişkenleri ---------- */
+body.vx-home{
+  --bg:#0a0a0b; --bg-2:#151517; --bg-3:#232326;
+  --text:#f4f4f5; --text-2:#a6a6ae; --text-3:#7b7b84;
+  --accent:#4aa8ff; --accent-hover:#7bc0ff; --accent-soft:rgba(74,168,255,.14);
+  --border:rgba(255,255,255,.10); --border-2:rgba(255,255,255,.18);
+  --navbar-bg:rgba(10,10,11,.90);
+  --hero:#0878b8; --pill-bg:rgba(255,255,255,.9); --pill-tx:#111;
+  --wrap:1200px; --gut:clamp(16px,3vw,32px); --nav-h:64px;
+  --f:"Space Grotesk","Inter",system-ui,sans-serif;
+  font-family:var(--f); padding-top:var(--nav-h);
+}
+html.light body.vx-home{
+  --bg:#f4f4f1; --bg-2:#ffffff; --bg-3:#e8e8e3;
+  --text:#101012; --text-2:#4a4a52; --text-3:#74747c;
+  --accent:#0b68c4; --accent-hover:#08529c; --accent-soft:rgba(11,104,196,.10);
+  --border:rgba(0,0,0,.10); --border-2:rgba(0,0,0,.18);
+  --navbar-bg:rgba(244,244,241,.92);
+}
+@media(min-width:1024px){ body.vx-home{--nav-h:114px} }
+
+/* ---------- NAVBAR: ortada logo, altta kategori şeridi ---------- */
+.vx-home .navbar-inner{max-width:calc(var(--wrap) + 2*var(--gut));padding:0 var(--gut)}
+.vx-home .navbar-logo{font-family:var(--f);font-size:1.15rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.vx-home .theme-btn,.vx-home .search-trigger-btn{border-radius:999px}
+@media(max-width:360px){
+  .vx-home .navbar-inner{padding:0 12px}
+  .vx-home .navbar-logo{font-size:.9rem;letter-spacing:.04em}
+}
+@media(min-width:1024px){
+  .vx-home .navbar-inner{display:grid;grid-template-columns:1fr auto 1fr;grid-template-rows:64px 48px;height:auto;column-gap:1rem}
+  .vx-home .navbar-logo{grid-column:2;grid-row:1;justify-self:center}
+  .vx-home .navbar-tools{grid-column:3;grid-row:1;justify-self:end}
+  .vx-home .desktop-nav{grid-column:1/-1;grid-row:2;justify-content:center;gap:.25rem;border-top:1px solid var(--border);flex:none}
+  .vx-home .nav-cat-link{font-family:var(--f);font-size:.82rem;font-weight:500;padding:.55rem 1rem;color:var(--text-2);border-radius:999px;white-space:nowrap}
+  .vx-home .nav-cat-link:hover{color:var(--text);background:var(--bg-3)}
+  .vx-home .nav-cat-link.active{color:var(--text);background:var(--bg-3)}
+}
+.vx-home .mobile-menu{max-height:calc(100dvh - 64px)}
+
+/* ---------- HERO ---------- */
+.vx-home .hero-wrapper{padding:0;background:transparent;border:0}
+.vx-home .hero{
+  position:relative;display:flex;max-width:var(--wrap);width:calc(100% - 2*var(--gut));
+  margin:clamp(14px,2.5vw,28px) auto 0;padding:0;gap:0;min-height:clamp(440px,48vw,580px);
+  background:var(--hero);color:#fff;border-radius:clamp(12px,1.6vw,18px);overflow:hidden;isolation:isolate;
+}
+.vx-home .hero-content{
+  position:relative;z-index:2;flex:0 0 52%;max-width:52%;min-height:inherit;
+  padding:clamp(22px,3.4vw,44px);display:flex;flex-direction:column;justify-content:flex-start;
+}
+.vx-home .hero-badge{
+  margin:0 0 auto;padding:5px 14px;background:var(--pill-bg);color:var(--pill-tx);border:0;border-radius:999px;
+  font:600 .72rem/1.3 var(--f);letter-spacing:.02em;text-transform:none;
+}
+.vx-home .hero-title{
+  margin:clamp(36px,7vw,100px) 0 1rem;color:#fff;font:700 clamp(1.9rem,4.1vw,3.5rem)/1.04 var(--f);
+  letter-spacing:-.03em;text-transform:uppercase;text-wrap:balance;
+}
+.vx-home .hero-title em{display:inline;font-style:normal;color:inherit;font-weight:inherit}
+.vx-home .hero-divider{display:none}
+.vx-home .hero-desc{
+  max-width:46ch;margin:0;color:rgba(255,255,255,.9);font:400 clamp(.9rem,1.15vw,1rem)/1.65 var(--f);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+}
+.vx-home .hero-meta{margin-top:1.1rem;padding:0;border:0;color:rgba(255,255,255,.85);font:500 .74rem/1.4 var(--f);text-transform:uppercase;letter-spacing:.03em}
+.vx-home .hero-meta strong{color:#fff;font-weight:600}
+.vx-home .hero .hero-read-btn{
+  display:inline-flex!important;align-self:flex-start;margin-top:1.5rem;padding:.7rem 1.5rem;background:#fff;color:#111;
+  border-radius:999px;font:600 .8rem var(--f);text-transform:uppercase;letter-spacing:.03em;transition:transform .2s,background .2s;
+}
+.vx-home .hero .hero-read-btn:hover{background:#e8f3fb;transform:translateY(-2px)}
+
+/* Sağdaki iki görsel panel */
+.vx-home .hero-bg{
+  position:absolute;z-index:1;top:0;bottom:0;right:25.5%;width:26.5%;aspect-ratio:auto;
+  border-radius:clamp(18px,2.4vw,30px);background-size:cover;background-position:center;
+  box-shadow:0 0 0 12px var(--bg);outline:0;overflow:visible;transform:none;transition:none;
+}
+.vx-home .hero-bg:hover{transform:none;box-shadow:0 0 0 12px var(--bg)}
+.vx-home .hero-bg::after{
+  content:"";position:absolute;top:0;bottom:0;left:calc(100% + 12px);width:98%;
+  border-radius:inherit;background:inherit;background-size:auto 170%;background-position:100% 60%;
+  box-shadow:0 0 0 12px var(--bg);filter:saturate(1.1) blur(1.5px);
+}
+.vx-home .hero-overlay{display:none}
+
+@media(max-width:900px){
+  .vx-home .hero-content{flex-basis:56%;max-width:56%}
+  .vx-home .hero-bg{right:27%;width:29%}
+}
+@media(max-width:700px){
+  .vx-home .hero{flex-direction:column;min-height:0}
+  .vx-home .hero-bg{position:relative;order:-1;right:auto;width:100%;height:clamp(200px,52vw,300px);flex:none;border-radius:0;box-shadow:none}
+  .vx-home .hero-bg:hover{box-shadow:none}
+  .vx-home .hero-bg::after{display:none}
+  .vx-home .hero-content{flex:none;max-width:100%;min-height:0;padding:22px 20px 26px}
+  .vx-home .hero-badge{margin:0 0 1rem;align-self:flex-start}
+  .vx-home .hero-title{margin:0 0 .85rem;font-size:clamp(1.6rem,7.4vw,2.2rem)}
+}
+
+/* ---------- INTRO (manifesto bandı) ---------- */
+.vx-home .vx-intro{width:calc(100% - 2*var(--gut));max-width:var(--wrap);margin:clamp(40px,6vw,72px) auto 0;padding:0}
+.vx-home .vx-intro-inner{
+  display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(18px,4vw,56px);align-items:end;
+  padding:clamp(22px,3vw,34px) 0 0;border:0;border-top:1px solid var(--border);border-radius:0;background:none;overflow:visible;
+}
+.vx-home .vx-intro-inner::after{display:none}
+.vx-home .vx-eyebrow{grid-column:1/-1;display:flex;align-items:center;gap:9px;margin:0;color:var(--text-3);font:500 .72rem/1.4 var(--f);letter-spacing:.04em}
+.vx-home .vx-eyebrow span{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.vx-home .vx-intro h2{margin:0;max-width:none;color:var(--text);font:700 clamp(1.6rem,3.6vw,2.9rem)/1.08 var(--f);letter-spacing:-.03em;text-transform:uppercase;text-wrap:balance}
+.vx-home .vx-intro h2 em{font-style:normal;font-weight:inherit;color:var(--text-2)}
+.vx-home .vx-intro-copy{margin:0 0 14px;max-width:46ch;color:var(--text-2);font:400 .95rem/1.7 var(--f)}
+.vx-home .vx-intro-tags{display:flex;flex-wrap:wrap;gap:8px}
+.vx-home .vx-intro-tags span{padding:6px 13px;border:1px solid var(--border-2);border-radius:999px;color:var(--text);background:transparent;font:500 .78rem var(--f)}
+.vx-home .vx-editorial-link{display:inline-block;margin-top:1rem;color:var(--accent);font:500 .82rem/1.5 var(--f);text-decoration:underline;text-underline-offset:3px}
+.vx-home .vx-editorial-link:hover{color:var(--accent-hover)}
+.vx-home .vx-editorial-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+@media(max-width:800px){.vx-home .vx-intro-inner{grid-template-columns:1fr;align-items:start}}
+/* Kategori filtresi açıkken (hero gizli) intro da gizlenir */
+body.vx-home:has(#hero-section[style*="display: none"]) .vx-intro{display:none}
+
+/* ---------- ANA İÇERİK ---------- */
+.vx-home .main-content{max-width:calc(var(--wrap) + 2*var(--gut));padding:clamp(36px,5vw,64px) var(--gut) clamp(40px,6vw,80px)}
+.vx-home .homepage-curated{margin-top:0;display:flex;flex-direction:column;gap:clamp(48px,7vw,88px)}
+.vx-home .recent-strip-section{order:-1}
+.vx-home .curation-section{margin:0}
+.vx-home .section-heading{text-align:left;margin:0 0 clamp(16px,2.4vw,26px)}
+.vx-home .section-heading h2{margin:0 0 .35rem;font:700 clamp(1.5rem,3vw,2.2rem)/1.1 var(--f);letter-spacing:-.03em;text-transform:uppercase;color:var(--text)}
+.vx-home .section-heading p{margin:0;font:400 .9rem/1.5 var(--f);color:var(--text-2)}
+
+/* Son Yazılar → bento grid (görseldeki "Last news") */
+.vx-home .recent-strip{
+  display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(10px,1.6vw,18px);
+  overflow:visible;padding:0;scroll-snap-type:none;
+}
+.vx-home .recent-card{
+  position:relative;grid-column:span 3;min-height:clamp(250px,24vw,300px);display:flex;flex-direction:column;justify-content:flex-end;
+  padding:clamp(14px,1.6vw,20px);border:0;border-radius:clamp(10px,1.2vw,14px);background:var(--bg-2);overflow:hidden;isolation:isolate;flex:none;
+}
+.vx-home .recent-card:nth-child(1){grid-column:span 6;min-height:clamp(300px,34vw,420px)}
+.vx-home .recent-card:nth-child(2),.vx-home .recent-card:nth-child(3){grid-column:span 3;min-height:clamp(300px,34vw,420px)}
+.vx-home .recent-card:hover{transform:none;box-shadow:none}
+.vx-home .recent-card-img{position:absolute;inset:0;height:auto;z-index:-2;background-size:cover;background-position:center;transition:transform .6s ease}
+.vx-home .recent-card:hover .recent-card-img{transform:scale(1.05)}
+.vx-home .recent-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(0,0,0,.86) 0%,rgba(0,0,0,.45) 38%,rgba(0,0,0,0) 68%)}
+.vx-home .recent-card-body{display:contents}
+.vx-home .recent-card-cat{
+  position:absolute;top:clamp(12px,1.4vw,16px);left:clamp(12px,1.4vw,16px);margin:0;padding:4px 12px;background:var(--pill-bg);color:var(--pill-tx);
+  border-radius:999px;font:600 .7rem/1.3 var(--f);text-transform:none;letter-spacing:.01em;
+}
+.vx-home .recent-card-title{margin:0 0 .5rem;color:#fff;font:500 clamp(1rem,1.5vw,1.2rem)/1.3 var(--f);-webkit-line-clamp:3}
+.vx-home .recent-card .card-image-credit{color:rgba(255,255,255,.72);font-size:.62rem}
+.vx-home .recent-card:nth-child(1) .recent-card-title{font-size:clamp(1.2rem,2vw,1.6rem);font-weight:600}
+.vx-home .recent-card:hover .recent-card-title{color:#fff;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.vx-home .recent-card-meta{color:rgba(255,255,255,.75);font:500 .7rem/1.4 var(--f);text-transform:uppercase;letter-spacing:.03em}
+@media(max-width:1023px){
+  .vx-home .recent-strip{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .vx-home .recent-card,.vx-home .recent-card:nth-child(2),.vx-home .recent-card:nth-child(3){grid-column:span 3;min-height:clamp(240px,34vw,320px)}
+  .vx-home .recent-card:nth-child(1){grid-column:span 6;min-height:clamp(300px,46vw,400px)}
+}
+@media(max-width:600px){
+  .vx-home .recent-strip{grid-template-columns:1fr}
+  .vx-home .recent-card,.vx-home .recent-card:nth-child(n){grid-column:1/-1;min-height:250px}
+  .vx-home .recent-card:nth-child(1){min-height:300px}
+}
+
+/* Kürasyon Köşeleri */
+.vx-home .curation-grid{gap:clamp(10px,1.6vw,18px)}
+.vx-home .path-card{border-radius:clamp(10px,1.2vw,14px);box-shadow:none}
+.vx-home .path-card:hover{transform:none;box-shadow:none}
+.vx-home .path-card-title{font-family:var(--f);font-weight:600}
+.vx-home .path-card-desc{font-family:var(--f)}
+.vx-home .path-card-eyebrow{font-family:var(--f);text-transform:none;letter-spacing:.01em;font-size:.7rem}
+@media(max-width:639px){.vx-home .path-card{aspect-ratio:16/10}}
+
+/* ---------- Kategori filtresi sonuç kartları ---------- */
+.vx-home .cards-grid{gap:clamp(10px,1.6vw,18px);grid-template-columns:1fr}
+@media(min-width:640px){.vx-home .cards-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.vx-home .cards-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.vx-home .card{position:relative;min-height:clamp(300px,30vw,380px);border-radius:clamp(10px,1.2vw,14px);background:var(--bg-2);isolation:isolate}
+.vx-home .card:hover{transform:none}
+.vx-home .card-link{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end}
+.vx-home .card-img-wrap{position:absolute;inset:0;aspect-ratio:auto;z-index:-2}
+.vx-home .card-img{transition:transform .6s ease}
+.vx-home .card:hover .card-img{transform:scale(1.05)}
+.vx-home .card-link::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.45) 45%,rgba(0,0,0,0) 72%)}
+.vx-home .card-badge{top:14px;left:14px;padding:4px 12px;background:var(--pill-bg);color:var(--pill-tx);backdrop-filter:none;font:600 .7rem/1.3 var(--f);letter-spacing:.01em;z-index:2}
+.vx-home .card-body{padding:clamp(14px,1.6vw,20px)}
+.vx-home .card-image-credit{color:rgba(255,255,255,.72);font-size:.62rem}
+.vx-home .card-title{color:#fff;font:500 clamp(1rem,1.4vw,1.15rem)/1.3 var(--f);margin-bottom:.4rem}
+.vx-home .card:hover .card-title{color:#fff}
+.vx-home .card-excerpt{color:rgba(255,255,255,.82);font:400 .82rem/1.55 var(--f);margin-bottom:.6rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vx-home .card-meta{color:rgba(255,255,255,.72);font:500 .7rem/1.4 var(--f);text-transform:uppercase;letter-spacing:.03em}
+.vx-home .no-results{padding:3rem 0}
+
+/* ---------- Arama, footer, genel ---------- */
+.vx-home .search-modal{font-family:var(--f)}
+.vx-home .site-footer{margin-top:0;background:var(--bg-2);border-top:1px solid var(--border)}
+.vx-home .footer-inner{background:transparent}
+.vx-home :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.vx-home img,.vx-home svg{max-width:100%}
+@media(prefers-reduced-motion:reduce){
+  .vx-home *,.vx-home *::before,.vx-home *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .vx-home .hero-content>*,.vx-home .homepage-curated{opacity:1!important}
+}
+
+/* Son Yazılar: 21 kayıttan ilk 15'i gösterilir (3 + 4×3 → ızgara boşluksuz dolar; tablette de çift sayı) */
+.vx-home .recent-card:nth-child(n+16){display:none}

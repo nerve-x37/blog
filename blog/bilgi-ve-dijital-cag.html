@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilgi ve Dijital Çağ: Verinin, Ağların ve İnsanların Dünyası — Valexirion</title>
+  <meta name="description" content="Bilgi ve Dijital Çağı; bilgisayarların, internetin ve Web'in tarihini, gündelik yaşama etkilerini, eşitsizliklerini ve çevresel maliyetlerini kaynaklarla inceleyin." />
+  <link rel="canonical" href="https://valexirion.com/bilgi-ve-dijital-cag.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Bilgi ve Dijital Çağ: Verinin, Ağların ve İnsanların Dünyası" />
+  <meta property="og:description" content="Bilgisayar, internet ve Web'in gelişimini; bunların hayatımızı nasıl dönüştürdüğünü ve hangi eşitsizlikleri sürdürdüğünü anlatan kaynaklı bir rehber." />
+  <meta property="og:url" content="https://valexirion.com/bilgi-ve-dijital-cag.html" />
+  <meta property="og:image" content="https://valexirion.com/img/eniac-1946-us-army.webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bilgi ve Dijital Çağ: Verinin, Ağların ve İnsanların Dünyası" />
+  <meta name="twitter:description" content="ENIAC'tan internete ve yapay zekâya uzanan dijital dönüşümün tarihini ve insani boyutlarını keşfedin." />
+  <meta name="twitter:image" content="https://valexirion.com/img/eniac-1946-us-army.webp" />
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@300;400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    .digital-figure { margin: 0 0 2.5rem; }
+    .digital-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); }
+    .digital-figure figcaption { margin-top: .6rem; color: var(--text-3); font-size: .82rem; }
+    .period-range { margin: 1.5rem 0; padding: 1rem 1.2rem; border-left: 3px solid #60a5fa; background: rgba(96, 165, 250, .08); border-radius: 0 var(--radius) var(--radius) 0; }
+    .digital-index { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 1.5rem 0 2.5rem; }
+    .digital-index a { padding: .9rem; border: 1px solid var(--border); border-radius: var(--radius); color: inherit; text-decoration: none; transition: border-color .2s, transform .2s; }
+    .digital-index a:hover, .digital-index a:focus-visible { border-color: #60a5fa; transform: translateY(-2px); }
+    .digital-index strong, .digital-index span { display: block; }
+    .digital-index strong { margin-bottom: .3rem; color: var(--text-1); }
+    .digital-index span { color: var(--text-3); font-size: .86rem; }
+    .digital-timeline { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin: 1.2rem 0 2rem; }
+    .digital-timeline div { padding: 1rem; border: 1px solid var(--border); border-radius: var(--radius); }
+    .digital-timeline strong { display: block; margin-bottom: .35rem; color: var(--text-1); }
+    .digital-timeline span { color: var(--text-3); font-size: .9rem; }
+    .source-marker { font-size: .78em; vertical-align: super; text-decoration: none; }
+    @media (max-width: 760px) { .digital-index { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 480px) { .digital-index, .digital-timeline { grid-template-columns: 1fr; } .digital-figure img { border-radius: var(--radius); } }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Bilgi ve Dijital Çağ: Verinin, Ağların ve İnsanların Dünyası",
+      "description": "Bilgisayar, internet ve Web'in gelişimini; dijital dönüşümün toplumsal ve çevresel etkileriyle inceliyor.",
+      "image": "https://valexirion.com/img/eniac-1946-us-army.webp",
+      "mainEntityOfPage": "https://valexirion.com/bilgi-ve-dijital-cag.html",
+      "datePublished": "2026-11-13",
+      "dateModified": "2026-11-13",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="tarih">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9.003 9.003 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>&#8250;</span>
+        <a href="index.html#tarih">Tarih</a><span>&#8250;</span>
+        <span>Bilgi ve Dijital Çağ</span>
+      </div>
+      <span class="article-cat-badge">Tarih · Bilgi ve Dijital Çağ</span>
+      <h1 class="article-title">Bilgi ve Dijital Çağ:<br><em>Verinin, Ağların ve İnsanların Dünyası</em></h1>
+      <p class="article-subtitle">Bir ekranın arkasında bilgisayarlar, kablolar, elektrik ve insan emeği var. Dijital dönüşüm, yalnızca bilgiye ulaşma hızımızı değil; kimin bilgi ürettiğini, kimin erişebildiğini ve kimin karar verdiğini de değiştirdi.</p>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367 2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure class="digital-figure">
+        <img src="img/eniac-1946-us-army.webp" alt="1946'da Moore School'daki ENIAC bilgisayarı; ön planda bir asker işlev tablolarından birinin anahtarlarını ayarlıyor" fetchpriority="high" loading="eager" decoding="async"/>
+        <figcaption>ENIAC, Moore School, 1946. Ön planda Cpl. Irwin Goldstein görülüyor. Fotoğraf kaydındaki kredi: “U.S. Army Photo”. ABD federal hükümetinin resmî görevi sırasında çekilmiş eser olarak Wikimedia Commons'ta ABD'de kamu malı işaretlenmiştir: <a href="https://commons.wikimedia.org/wiki/File:Classic_shot_of_the_ENIAC.jpg" target="_blank" rel="noopener noreferrer">fotoğraf ve hak bilgisi</a>.</figcaption>
+      </figure>
+
+      <p class="article-lead"><strong>Kısa cevap:</strong> Bilgi ve Dijital Çağ, bilginin elektronik araçlarla üretilip saklandığı, işlendiği ve ağlar üzerinden dolaşıma girdiği toplumsal dönüşümü anlatır. Bilgi insanlık için yeni değil; değişen, onu işleme ve paylaşma ölçeğimiz. Bilgisayarlar ve internet bu dönüşümün araçları oldu, fakat onlara erişim ve sağladıkları imkânlar herkes için aynı değil.</p>
+
+      <nav class="digital-index" aria-label="Bilgi ve Dijital Çağ konu başlıkları">
+        <a href="#donem"><strong>Dönemin sınırları</strong><span>Neden tek bir başlangıç yılı yok?</span></a>
+        <a href="#zaman-cizgisi"><strong>Kısa zaman çizgisi</strong><span>Bilgisayardan ağa</span></a>
+        <a href="#internet-web"><strong>İnternet ve Web</strong><span>Birbirine bağlı ama farklı kavramlar</span></a>
+        <a href="#insanlar"><strong>İnsanların emeği</strong><span>Bilgisayarın ardındaki ekipler</span></a>
+        <a href="#etkiler"><strong>Gündelik hayata etkisi</strong><span>Fırsatlar, eşitsizlik ve güven</span></a>
+        <a href="#maliyet"><strong>Dijitalin fiziksel yüzü</strong><span>Enerji ve altyapı</span></a>
+      </nav>
+
+      <h2 id="donem">Bilgi ve Dijital Çağ hangi yıllarda başladı?</h2>
+      <p class="period-range"><strong>Bu dönem için herkesin kabul ettiği tek bir başlangıç yılı yok.</strong> “Bilgi Çağı” çoğunlukla 20. yüzyılın ikinci yarısından bugüne uzanan toplumsal ve ekonomik dönüşümü anlatır; “Dijital Çağ” ise sayısal elektronik, bilgisayarlar ve ağların yaygınlaşmasını vurgular. Bazı anlatılar elektronik bilgisayarların doğuşunu, bazıları kişisel bilgisayarların ve internetin yaygınlaşmasını başlangıç alır. Bunlar keskin bir takvim sınırından çok, farklı hızlarda yaşanan değişimleri tarif eder.</p>
+      <p>Bilgi her zaman toplumların gücü ve gündelik yaşamıyla ilişkiliydi: sözlü aktarım, yazı, kütüphaneler, matbaa ve telgraf dijital ağlardan çok önce bilgi dolaşımını değiştirmişti. Dijital dönüşümün farkı, çok büyük miktarda verinin makinelerce hızla işlenebilmesi ve uzak yerler arasında kopyalanıp gönderilebilmesidir. Hakemli bir <em>Science</em> araştırması, 1986–2007 arasındaki küresel saklama, iletişim ve hesaplama kapasitesini inceleyerek analogdan dijitale geçişin boyutunu ortaya koyar.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a></p>
+
+      <h2 id="zaman-cizgisi">Bilgisayardan bağlantılı dünyaya</h2>
+      <div class="digital-timeline" aria-label="Bilgi ve dijital teknolojilerin yaklaşık tarihçesi">
+        <div><strong>1946 · ENIAC</strong><span>Genel amaçlı elektronik bilgisayarların öncü örneklerinden ENIAC kamuya tanıtıldı.</span></div>
+        <div><strong>1969 · ARPANET</strong><span>İlk ağ düğümleri bağlandı; yılın sonunda dört bilgisayar aynı ağdaydı.</span></div>
+        <div><strong>1983 · TCP/IP</strong><span>ARPANET'in TCP/IP'ye geçişi, farklı ağların ortak protokollerle iletişimi için önemli bir adımdı.</span></div>
+        <div><strong>1989–1991 · World Wide Web</strong><span>Tim Berners-Lee'nin CERN'de geliştirdiği Web fikri öneriden ilk tarayıcı ve sunucuya dönüştü.</span></div>
+        <div><strong>1990'lar–2000'ler</strong><span>Kişisel bilgisayarlar, ticari internet, tarayıcılar ve geniş bant bağlantılar daha fazla haneye ulaştı.</span></div>
+        <div><strong>2010'lar–bugün</strong><span>Akıllı telefonlar, bulut hizmetleri, sosyal platformlar ve yapay zekâ bağlantılı yaşamı büyüttü.</span></div>
+      </div>
+      <p>Bu çizgi, tek bir icadın dünyayı bir gecede değiştirdiği anlamına gelmez. İnternetin arkasında paket anahtarlama araştırmaları, üniversiteler, kamu yatırımları, mühendisler ve ortak standartlar vardı. ARPANET'in ilk dört bilgisayarı 1969 sonunda birbirine bağlandı; farklı ağların birlikte çalışmasını sağlayan protokoller ve sonraki altyapı çalışmaları bugünkü internetin önünü açtı.<a class="source-marker" href="#kaynak-2" aria-label="Kaynak 2">[2]</a></p>
+
+      <h2 id="internet-web">İnternet ile World Wide Web aynı şey değil</h2>
+      <p><strong>İnternet</strong>, bilgisayar ağlarını birbirine bağlayan küresel altyapıdır. <strong>World Wide Web (Web)</strong> ise bu altyapının üzerinde çalışan; sayfaları ve belgeleri bağlantılarla birbirine ulaştıran sistemlerden biridir. E-posta, dosya aktarımı ve başka hizmetler de interneti kullanır; Web'in kendisi internetin tamamı değildir.</p>
+      <p>Tim Berners-Lee, 1989'da CERN'deki bilgi paylaşımı sorunlarına çözüm olarak bağlantılı bir bilgi sistemi önerdi. 1990'da ilk Web tarayıcısı ve sunucusu üzerinde çalışıldı; proje daha sonra CERN dışındaki kullanıcılara açıldı. W3C'nin tarihçesi, Web'in tek kişinin bir anda “icat ettiği” bitmiş bir ürün olmadığını; öneri, yazılım, sunucu, tarayıcı ve açık standartların adım adım geliştiğini gösterir.<a class="source-marker" href="#kaynak-3" aria-label="Kaynak 3">[3]</a> <a href="https://www.w3.org/History/1989/proposal.html" target="_blank" rel="noopener noreferrer">Berners-Lee'nin 1989 tarihli ilk önerisini</a> de okuyabilirsiniz.</p>
+
+      <h2 id="insanlar">Makinelerin arkasındaki insanlar</h2>
+      <p>1946'da tanıtılan ENIAC büyük bir bilgisayardı; ama onu çalışır hâle getirmek yalnızca donanım tasarlamakla olmadı. Pennsylvania Üniversitesi'nin tarihçesine göre makinenin programlanması ve işletilmesinde Kathleen McNulty, Jean Jennings Bartik, Frances Snyder Holberton, Marlyn Wescoff Meltzer, Frances Bilas Spence ve Ruth Lichterman Teitelbaum görev aldı. Basının ilk haberlerinde bu kadınların emeği büyük ölçüde görünmez kalmıştı. Bu örnek, teknoloji tarihinin yalnızca makineyi tasarlayan isimlerden değil, onu programlayan, onaran ve kullanan ekiplerden de oluştuğunu hatırlatır.<a class="source-marker" href="#kaynak-4" aria-label="Kaynak 4">[4]</a></p>
+      <p>Dijital araçlar bugün de kendi kendine ortaya çıkmıyor: yazılımı geliştirenler, veriyi düzenleyenler, cihaz ve ağları üretenler, altyapıyı ayakta tutanlar ve kullananlar bu sistemin parçası. Otomasyon bazı görevleri hızlandırırken başka işlerin niteliğini ve gerekli becerileri değiştiriyor. Bu değişimin getirisi ve yükü çalışanlar, şirketler ve toplumlar arasında eşit dağılmıyor.</p>
+
+      <h2 id="etkiler">Bilginin artması, eşit erişim anlamına gelmiyor</h2>
+      <p>Dijital ağlar uzaktan öğrenmeyi, haberleşmeyi, bilimsel işbirliğini ve kültürel üretimi kolaylaştırdı. Bir sanatçı eserini geniş kitlelerle paylaşabiliyor; bir öğrenci daha önce ulaşamadığı kaynaklara erişebiliyor; farklı ülkelerdeki araştırma ekipleri aynı veri üzerinde çalışabiliyor. Ancak bağlantı, cihaz, eğitim, dil ve erişilebilir tasarım eksik olduğunda bu imkânlar kâğıt üzerinde kalabilir. Dijital bölünme yalnızca internete sahip olup olmamak değil; bağlantının kalitesi, güvenilir bilgiye erişim ve teknolojiyi anlamlı biçimde kullanabilme farkıdır.</p>
+      <p>Çevrimiçi bilgi bolluğu, bilginin doğruluğunu kendiliğinden garanti etmez. Arama ve öneri sistemleri bazı içerikleri görünür kılarken diğerlerini geri plana iter; yanlış bilgi, kişisel verilerin izinsiz kullanımı, gözetim ve çevrimiçi taciz gerçek sorunlardır. Teknolojinin etkisini değerlendirirken “ne yapabiliyor?” sorusunun yanına “kimin denetiminde, kimin yararına ve kimin hakkı pahasına?” sorularını da koymak gerekir. Günlük örnekleri <a href="dijital-muzik-donusumu.html">müziğin dijitalleşmesi</a> ve <a href="sosyal-medya-algoritmalari.html">sosyal medya algoritmaları</a> yazılarımızda görebilirsiniz.</p>
+
+      <h2 id="maliyet">Bulutun da bir fiziksel dünyası var</h2>
+      <p>“Bulut”ta saklanan fotoğraf ve belgeler gerçekte sunucularda durur; ağ cihazları ve veri merkezleri elektrikle çalışır. Dijital hizmetlerin büyümesi enerji talebini de önemli bir araştırma ve politika konusu hâline getirdi. Uluslararası Enerji Ajansı, veri merkezlerinin elektrik tüketimini düzenli olarak izliyor; bu altyapının etkisini değerlendirirken verimlilik, kullanılan elektriğin kaynağı ve artan hesaplama ihtiyacı birlikte düşünülmeli.<a class="source-marker" href="#kaynak-5" aria-label="Kaynak 5">[5]</a> Elektronik cihazların üretiminde kullanılan ham maddeler, kullanım ömrü ve atık yönetimi de dijital yaşamın görünmeyen maliyetleri arasındadır.</p>
+
+      <h2>Yapay zekâ bu çağın devamı mı?</h2>
+      <p>Evet; günümüzdeki yapay zekâ, bilgisayarların işlem gücü, büyük veri kümeleri ve ağlar üzerine kuruludur. Ancak yapay zekâyı internetle veya tüm dijital teknolojilerle aynı şey saymamak gerekir: dijital altyapı daha geniş, yapay zekâ ise bu altyapıda geliştirilen yöntem ve sistemlerden biridir. Üretken yapay zekâ yeni metin, görüntü ve ses araçları sunarken telif, doğruluk, emek, mahremiyet ve hesap verebilirlik sorularını da gündeme taşıyor. Konuyu <a href="yapay-zeka.html">yapay zekâ rehberimizde</a> ayrıntılı ele alıyoruz.</p>
+
+      <h2>Sanayi Çağı'ndan Bilgi ve Dijital Çağ'a</h2>
+      <p>Sanayi Çağı makinelerin fiziksel üretimi ölçeklendirdiği bir dönüşümse, Bilgi ve Dijital Çağ bilginin işlenmesini, saklanmasını ve ağlar üzerinden paylaşılmasını ölçeklendirdi. İkisi birbirini izleyen, birbirinden kopuk kutular değil: bilgisayarlar fabrikalarda üretildi, sanayi de bugün dijital sistemlerle çalışıyor. Önceki dönemi <a href="sanayi-cagi.html">Sanayi Çağı yazımızda</a>, daha uzun teknolojik bağlantıları ise <a href="teknolojik-kesifler-haritasi.html">Teknolojik Keşifler Haritası'nda</a> okuyabilirsiniz.</p>
+
+      <h2>Kaynaklar ve görsel bilgisi</h2>
+      <ol>
+        <li id="kaynak-1">Martin Hilbert ve Priscila López, “The World's Technological Capacity to Store, Communicate, and Compute Information,” <em>Science</em> 332, no. 6025 (2011): 60–65. <a href="https://doi.org/10.1126/science.1200970" target="_blank" rel="noopener noreferrer">Hakemli makale, DOI</a>.</li>
+        <li id="kaynak-2">Barry M. Leiner ve diğerleri, “A Brief History of the Internet,” Internet Society, 1997. <a href="https://www.internetsociety.org/internet/history-internet/brief-history-internet/" target="_blank" rel="noopener noreferrer">İnternetin tarihçesi</a>; ayrıca <a href="https://www.computerhistory.org/internethistory/" target="_blank" rel="noopener noreferrer">Computer History Museum, Internet History 1962–1992</a>.</li>
+        <li id="kaynak-3">World Wide Web Consortium (W3C), <a href="https://www.w3.org/History.html" target="_blank" rel="noopener noreferrer">“A Little History of the World Wide Web”</a> ve Tim Berners-Lee'nin <a href="https://www.w3.org/History/1989/proposal.html" target="_blank" rel="noopener noreferrer">1989 tarihli CERN önerisi</a>.</li>
+        <li id="kaynak-4">University of Pennsylvania, School of Engineering, <a href="https://www.engineering.upenn.edu/about/history-heritage/eniac/" target="_blank" rel="noopener noreferrer">“Celebrating Penn Engineering History: ENIAC”</a>.</li>
+        <li id="kaynak-5">International Energy Agency (IEA), <a href="https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks" target="_blank" rel="noopener noreferrer">Data Centres Electricity Consumption</a>; sayfa Haziran 2026 bulgularını ve veri merkezi elektrik tüketimi verilerini içerir.</li>
+        <li id="kaynak-gorsel">“Classic shot of the ENIAC,” 1946. “U.S. Army Photo”; Wikimedia Commons dosya kaydı, ABD federal hükümeti işi olarak ABD'de kamu malı: <a href="https://commons.wikimedia.org/wiki/File:Classic_shot_of_the_ENIAC.jpg" target="_blank" rel="noopener noreferrer">fotoğraf, açıklama ve hak bilgisi</a>.</li>
+      </ol>
+      <p style="font-size:.85rem;color:var(--text-3)">Bilgi ve Dijital Çağ için tek bir küresel başlangıç tarihi yoktur; zaman çizgisi, farklı dönemlerde olgunlaşan teknolojilerden seçilmiş kilometre taşlarını gösterir. ENIAC fotoğrafı ABD federal hükümetinin resmî görevi sırasında çekilmiştir; kullanım öncesi yerel telif kurallarını ve Commons kaydını kontrol edin.</p>
+      <p><a href="index.html#tarih">Tarih yazılarına dön</a></p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCR Nedir? Nasıl Çalışır ve Nerelerde Kullanılır? — Valexirion</title>
+  <meta name="description" content="PCR'nin DNA'yı nasıl çoğalttığını, denatürasyon, primer bağlanması ve uzama aşamalarını; RT-PCR ve qPCR farklarını ve başlıca kullanım alanlarını öğrenin." />
+  <link rel="canonical" href="https://valexirion.com/pcr-nedir-nasil-calisir-kullanim-alanlari.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="PCR Nedir? Nasıl Çalışır ve Nerelerde Kullanılır?" />
+  <meta property="og:description" content="PCR'nin hedef DNA'yı nasıl çoğalttığını, RT-PCR ve qPCR farklarını ve kullanım alanlarını sade bir dille açıklıyoruz." />
+  <meta property="og:url" content="https://valexirion.com/pcr-nedir-nasil-calisir-kullanim-alanlari.html" />
+  <meta property="og:image" content="https://valexirion.com/img/pcr-thermal-cycler.webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PCR Nedir? Nasıl Çalışır ve Nerelerde Kullanılır?" />
+  <meta name="twitter:description" content="DNA'nın laboratuvarda çoğaltılmasını sağlayan PCR tekniği ve tıp, araştırma, adli bilimler ile diğer kullanım alanları." />
+  <meta name="twitter:image" content="https://valexirion.com/img/pcr-thermal-cycler.webp" />
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@300;400;700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    .pcr-index, .pcr-steps, .pcr-types { display: grid; gap: .75rem; margin: 1.4rem 0 2.2rem; }
+    .pcr-index { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .pcr-index a, .pcr-steps div, .pcr-types div { padding: .95rem; border: 1px solid var(--border); border-radius: var(--radius); color: inherit; }
+    .pcr-index a { text-decoration: none; }
+    .pcr-index a:hover, .pcr-index a:focus-visible { border-color: var(--accent); }
+    .pcr-index strong, .pcr-index span, .pcr-steps strong, .pcr-steps span, .pcr-types strong { display: block; }
+    .pcr-index strong, .pcr-steps strong, .pcr-types strong { margin-bottom: .35rem; color: var(--text-1); }
+    .pcr-index span, .pcr-steps span, .pcr-types p { color: var(--text-3); font-size: .9rem; }
+    .pcr-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .pcr-types { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    @media (max-width: 760px) { .pcr-index, .pcr-steps, .pcr-types { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 480px) { .pcr-index, .pcr-steps, .pcr-types { grid-template-columns: 1fr; } }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "PCR Nedir? Nasıl Çalışır ve Nerelerde Kullanılır?",
+      "description": "PCR'nin hedef DNA'yı hangi aşamalarla çoğalttığını, RNA örneklerinde RT-PCR ve ölçüm yapan qPCR yöntemlerini, uygulama alanlarını ve sınırlamalarını açıklayan rehber.",
+      "image": "https://valexirion.com/img/pcr-thermal-cycler.webp",
+      "mainEntityOfPage": "https://valexirion.com/pcr-nedir-nasil-calisir-kullanim-alanlari.html",
+      "datePublished": "2026-11-13",
+      "dateModified": "2026-11-13",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="bilim">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a><a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a><a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a><a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a><a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a><a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a><a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a><a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a><a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb"><a href="index.html">Ana Sayfa</a><span>&#8250;</span><a href="index.html#bilim">Bilim</a><span>&#8250;</span><span>Moleküler Biyoloji</span></div>
+      <span class="article-cat-badge">Bilim · Moleküler Biyoloji</span>
+      <h1 class="article-title">PCR Nedir?<br><em>Nasıl çalışır, nerelerde kullanılır?</em></h1>
+      <p class="article-subtitle">Bir örnekteki çok küçük miktardaki DNA parçası laboratuvarda nasıl milyonlarca kopyaya çıkarılır? PCR'nin temel mantığına, farklı türlerine ve gündelik hayattaki kullanım alanlarına bakalım.</p>
+      <div class="article-meta">
+        <span class="article-date">13 Kasım 2026</span>
+        <span class="article-read-time">9 dk okuma</span>
+      </div>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367-2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure style="max-width:900px;margin:0 auto 2.5rem">
+        <div class="article-hero-img">
+          <img src="img/pcr-thermal-cycler.webp" alt="DNA örneklerini programlanan sıcaklık döngülerinde tutan Eppendorf Mastercycler 5330 termal döngü cihazı" fetchpriority="high" loading="eager" decoding="async" />
+        </div>
+        <figcaption style="font-size:.8rem;color:var(--text-3);margin-top:.65rem">PCR'de kullanılan bir termal döngü cihazı örneği. Fotoğraf: Magnus Manske; kontrast düzenlemesi: AaronY, <a href="https://commons.wikimedia.org/wiki/File:Pcr_machine2.jpg" target="_blank" rel="noopener noreferrer">Public Domain</a>.</figcaption>
+      </figure>
+
+      <p class="article-lead"><strong>PCR, belirli bir DNA parçasını laboratuvarda çoğaltma yöntemidir.</strong> Açılımı “polimeraz zincir reaksiyonu” olan teknik, başlangıçta örnekte çok az bulunan bir DNA bölgesinden analiz edilebilecek kadar kopya üretmeyi sağlar. PCR bütün DNA'yı rastgele çoğaltmaz: Hangi bölgenin hedefleneceğini kısa DNA parçaları olan primerler belirler. Bu nedenle yöntem, tıbbi testlerden genetik araştırmalara ve adli incelemelere kadar farklı alanlarda kullanılır.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a></p>
+
+      <nav class="pcr-index" aria-label="PCR konuları">
+        <a href="#temel"><strong>PCR ne yapar?</strong><span>Hedef DNA'yı kopyalama</span></a>
+        <a href="#asamalar"><strong>Nasıl çalışır?</strong><span>Üç temel ısı aşaması</span></a>
+        <a href="#turler"><strong>RT-PCR ve qPCR</strong><span>Birbirinden farklı terimler</span></a>
+        <a href="#alanlar"><strong>Nerelerde kullanılır?</strong><span>Tıp, araştırma ve adli bilimler</span></a>
+        <a href="#sinirlar"><strong>Sonuç ne anlatır?</strong><span>Yöntemin sınırları</span></a>
+      </nav>
+
+      <h2 id="temel">PCR tam olarak ne yapıyor?</h2>
+      <p>Bir DNA örneğini, içinde aradığımız kısa bir paragrafın bulunduğu çok uzun bir kitap gibi düşünebiliriz. PCR, bu kitabın tamamını değil, primerlerin işaret ettiği bölümü çoğaltır. Karışımdaki DNA polimeraz enzimi, var olan DNA zincirlerini kalıp olarak kullanır ve yeni zincirler kurar. Yeni kopyalar da sonraki döngülerde kalıp hâline gelebilir. Böylece hedef DNA parçasının miktarı artar.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a></p>
+      <p>Bir PCR karışımında genellikle hedefi içeren DNA örneği, iki primer, DNA polimeraz, DNA'nın yapı taşları olan nükleotitler ve enzimin çalışmasını sağlayan uygun bir tampon bulunur. Karışımın sıcaklığını programlı biçimde değiştirip sabit tutan cihaza <strong>termal döngü cihazı</strong> denir. Kullanılan enzim ve sıcaklıklar yönteme göre değişebilir; yaygın örneklerden Taq polimeraz, ısıya dayanıklı bir DNA polimerazdır.</p>
+
+      <h2 id="asamalar">PCR nasıl çalışır? Üç aşama, tekrar eden bir döngü</h2>
+      <p>Termal döngü cihazı sıcaklığı sırayla değiştirir. Her döngüde hedef DNA zincirleri ayrılır, primerler hedef bölgeye tutunur ve polimeraz yeni DNA zincirlerini uzatır. Bu üç aşama birçok kez tekrarlandığında hedef parçanın kopya sayısı artar.<a class="source-marker" href="#kaynak-2" aria-label="Kaynak 2">[2]</a></p>
+
+      <div class="pcr-steps" aria-label="PCR'nin üç temel aşaması">
+        <div><strong>1 · Denatürasyon</strong><span>Isı, çift sarmallı DNA'nın iki zincirini birbirinden ayırır.</span></div>
+        <div><strong>2 · Primerlerin bağlanması</strong><span>Sıcaklık düşürülünce primerler hedef dizinin uygun kısımlarına tutunur.</span></div>
+        <div><strong>3 · Uzama</strong><span>DNA polimeraz primerlerden başlayarak yeni DNA zincirini oluşturur.</span></div>
+      </div>
+      <figure style="max-width:900px;margin:0 auto 2rem">
+        <div class="article-hero-img">
+          <img src="img/pcr-amplification-diagram.svg" alt="PCR aşamaları: hedef DNA'nın ısıtılarak ayrılması, primerlerin hedef bölgeye bağlanması ve DNA polimerazın yeni zincirleri oluşturması" loading="lazy" decoding="async" />
+        </div>
+        <figcaption style="font-size:.8rem;color:var(--text-3);margin-top:.65rem">PCR'nin moleküler aşamalarını gösteren özgün, sadeleştirilmiş şema.</figcaption>
+      </figure>
+
+      <p>İdeal koşullarda her döngü hedef DNA miktarını yaklaşık iki katına çıkarabilir; örneğin 30 döngü, teorik olarak 2<sup>30</sup> kopya artışı demektir. Gerçek reaksiyonlar bu ideal hesaba tam uymaz: Reaktifler azalabilir, ürünler birikebilir ve çoğalma zamanla yavaşlayabilir. Bu yüzden “PCR her koşulda tam olarak milyarlarca kopya üretir” demek doğru olmaz; sonuç, örnek ve kullanılan testin performansına bağlıdır.</p>
+
+      <h2 id="turler">PCR, RT-PCR ve qPCR aynı şey mi?</h2>
+      <p>Bu kısaltmalar birbirine benzediği için sıkça karıştırılır. Temel PCR DNA'yı çoğaltır; RNA'yı doğrudan kalıp olarak kullanmaz. Ancak RNA'nın incelenmesi de mümkündür: Önce RNA, ters transkriptaz enzimiyle tamamlayıcı DNA'ya (cDNA) çevrilir, ardından PCR uygulanır.</p>
+      <div class="pcr-types">
+        <div><strong>Klasik PCR</strong><p>DNA'yı çoğaltır. Döngüler tamamlandıktan sonra ürün, örneğin jel elektroforeziyle incelenebilir.</p></div>
+        <div><strong>RT-PCR</strong><p>Buradaki “RT”, ters transkripsiyonu anlatır: RNA önce cDNA'ya çevrilir, sonra bu DNA çoğaltılır.</p></div>
+        <div><strong>qPCR ve RT-qPCR</strong><p>qPCR, çoğalmayı floresan sinyalle döngüler sırasında izleyip miktar hakkında ölçüm yapar. RT-qPCR, RNA'yı cDNA'ya çevirme adımını da içerir.</p></div>
+      </div>
+      <figure style="max-width:780px;margin:0 auto 2rem">
+        <div class="article-hero-img">
+          <img src="img/agarose-gel-electrophoresis.webp" alt="Agaroz jel elektroforezinde DNA parçalarının yeşil ışık altında görünümü" loading="lazy" decoding="async" />
+        </div>
+        <figcaption style="font-size:.8rem;color:var(--text-3);margin-top:.65rem">Agaroz jelde ayrılmış DNA parçalarının gerçek fotoğrafı; PCR ürünleri de uygun koşullarda bu yöntemle incelenebilir. Görsel belirli bir PCR testinin sonucu değildir. Maryfilip98, <a href="https://commons.wikimedia.org/wiki/File:Electrophoresis_on_agarose_gel.JPG" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>; WebP'ye dönüştürülmüştür.</figcaption>
+      </figure>
+      <p>Bu nedenle <strong>RT-PCR</strong> ile <strong>gerçek zamanlı PCR</strong> aynı terim değildir; günlük kullanımda ikisinin kısaltmaları karışabilir. Bir testin adında “RT-PCR” yazması, hangi adımların ve ölçüm biçiminin kullanıldığını tek başına açıklamayabilir. Testin yöntem bilgisine bakmak gerekir.<a class="source-marker" href="#kaynak-2" aria-label="Kaynak 2">[2]</a></p>
+
+      <h2 id="alanlar">PCR hangi alanlarda kullanılır?</h2>
+      <ul>
+        <li><strong>Enfeksiyonların tanısına yardımcı testler:</strong> Bir örnekte belirli bir bakteri veya virüse ait genetik hedef aranabilir. RNA taşıyan virüslerin hedefleri için ters transkripsiyon içeren yöntemler kullanılabilir. COVID-19 testlerinde PCR, nükleik asit çoğaltma testleri (NAAT) ailesindeki yöntemlerden biridir.<a class="source-marker" href="#kaynak-3" aria-label="Kaynak 3">[3]</a></li>
+        <li><strong>Genetik incelemeler:</strong> Belirli DNA bölgeleri, kalıtsal hastalıklarla ilişkili varyantlar veya genetik belirteçler üzerinde çalışmak için çoğaltılabilir. Hangi varyantın inceleneceği teste göre belirlenir; PCR tek başına bütün genetik hastalıkları taramaz.</li>
+        <li><strong>Araştırma ve biyoteknoloji:</strong> DNA parçalarını analiz, klonlama veya dizileme öncesinde çoğaltmak; gen ifadesini RT-qPCR ile incelemek gibi amaçlara hizmet eder.</li>
+        <li><strong>Adli bilimler ve kimlik incelemeleri:</strong> Çok az miktarda biyolojik örnekteki seçilmiş DNA belirteçleri çoğaltılarak karşılaştırma yapılabilir. Sonuçların anlamı örneğin kalitesine, yönteme ve uygun karşılaştırma kurallarına bağlıdır.</li>
+        <li><strong>Gıda, tarım ve çevre araştırmaları:</strong> Gıdalardaki belirli mikroorganizmalar veya genetik diziler araştırılabilir; bitki ve hayvan örneklerinden elde edilen DNA da ekolojik ve biyolojik çalışmalarda incelenebilir.</li>
+      </ul>
+
+      <h2 id="sinirlar">PCR sonucu ne söyler, ne söylemez?</h2>
+      <p>PCR'nin gücü, az miktardaki hedef DNA'yı saptanabilir hâle getirebilmesidir; hassasiyeti aynı zamanda dikkatli örnek alma ve kontaminasyonu önlemeyi de önemli kılar. İstenmeyen DNA'nın örneğe karışması yanlış pozitif sonuca yol açabilir. Örnekte hedef materyal çok azsa, örnek uygun yerden veya zamanda alınmamışsa ya da reaksiyonu etkileyen başka etkenler varsa hedef saptanmayabilir. Kullanılan primerlerin hedef diziyi doğru tanıması da gerekir.<a class="source-marker" href="#kaynak-2" aria-label="Kaynak 2">[2]</a></p>
+      <p>Bir PCR testi yalnızca testin hedeflediği genetik materyali araştırır. Pozitif sonuç her zaman mikroorganizmanın canlı olduğunu, hastalığın ağır seyredeceğini veya kişinin ne kadar bulaştırıcı olduğunu tek başına göstermez. Örneğin CDC, COVID-19 için bazı NAAT testlerinin enfeksiyon sonrasında 90 güne kadar pozitif kalabildiğini bildirir; bu nedenle test seçimi ve sonucun yorumu kişinin durumu ve klinik rehberlikle birlikte ele alınır.<a class="source-marker" href="#kaynak-3" aria-label="Kaynak 3">[3]</a></p>
+      <p>PCR laboratuvarlarda kullanılan bir analiz yöntemidir; kendi başına tedavi önermez. Sağlık testi sonucu kişisel tanı veya tedavinin yerini tutmaz. Belirti ya da sonuçla ilgili kaygınız varsa sağlık uzmanına başvurun.</p>
+
+      <h2>Özetle</h2>
+      <p>PCR, primerlerle sınırları belirlenen bir DNA parçasını tekrarlanan sıcaklık döngüleriyle çoğaltır. RNA hedefleri için önce cDNA'ya dönüşüm yapılabilir; qPCR ise çoğalmayı gerçek zamanlı izleyerek miktar ölçümüne imkân tanır. Tıp, genetik, araştırma, adli bilimler ve çevresel incelemelerde yararlı olan bu yöntem, yalnızca aradığı genetik hedef hakkında bilgi verir; sonuçların örnek kalitesi ve klinik bağlamla birlikte değerlendirilmesi gerekir.</p>
+
+      <h2>Kaynaklar ve ileri okuma</h2>
+      <ol>
+        <li id="kaynak-1">National Human Genome Research Institute (NHGRI), <a href="https://www.genome.gov/about-genomics/fact-sheets/Polymerase-Chain-Reaction-Fact-Sheet" target="_blank" rel="noopener noreferrer">“Polymerase Chain Reaction (PCR) Fact Sheet”</a>, 17 Ağustos 2020. PCR'nin temel ilkeleri ve kullanım alanları.</li>
+        <li id="kaynak-2">Lilit Garibyan ve Nidhi Avashia, <a href="https://doi.org/10.1038/jid.2013.1" target="_blank" rel="noopener noreferrer">“Research Techniques Made Simple: Polymerase Chain Reaction (PCR)”</a>, <em>Journal of Investigative Dermatology</em>, 133(3), 2013. PCR aşamaları, gerçek zamanlı ölçüm, uygulamalar ve sınırlamalar.</li>
+        <li id="kaynak-3">U.S. Centers for Disease Control and Prevention (CDC), <a href="https://www.cdc.gov/covid/testing/index.html" target="_blank" rel="noopener noreferrer">“Testing for COVID-19”</a>, 10 Mart 2025. NAAT/PCR testleri, test türleri ve sonuçların yorumlanmasına ilişkin güncel rehber.</li>
+        <li id="kaynak-4">Todd C. Lorenz, <a href="https://doi.org/10.3791/3998" target="_blank" rel="noopener noreferrer">“Polymerase Chain Reaction: Basic Protocol Plus Troubleshooting and Optimization Strategies”</a>, <em>Journal of Visualized Experiments</em>, 63, 2012. PCR bileşenleri, temel çalışma ilkesi ve laboratuvar yönteminin sınırları.</li>
+        <li id="kaynak-5">Magnus Manske; kontrast düzenlemesi: AaronY, <a href="https://commons.wikimedia.org/wiki/File:Pcr_machine2.jpg" target="_blank" rel="noopener noreferrer">“Pcr machine2.jpg”</a>, Public Domain. Eppendorf Mastercycler 5330 termal döngü cihazı fotoğrafı.</li>
+        <li id="kaynak-6">Maryfilip98, <a href="https://commons.wikimedia.org/wiki/File:Electrophoresis_on_agarose_gel.JPG" target="_blank" rel="noopener noreferrer">“Electrophoresis on agarose gel”</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Agaroz jel elektroforezi fotoğrafı; WebP'ye dönüştürülmüştür.</li>
+      </ol>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p>Merak et. Sorgula. Keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a><a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a><a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a><a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a><a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a><a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a><a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>
