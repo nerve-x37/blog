@@ -156,6 +156,7 @@ body.vx-home:has(#hero-section[style*="display: none"]) .vx-intro{display:none}
   border-radius:999px;font:600 .7rem/1.3 var(--f);text-transform:none;letter-spacing:.01em;
 }
 .vx-home .recent-card-title{margin:0 0 .5rem;color:#fff;font:500 clamp(1rem,1.5vw,1.2rem)/1.3 var(--f);-webkit-line-clamp:3}
+.vx-home .recent-card .card-image-credit{color:rgba(255,255,255,.72);font-size:.62rem}
 .vx-home .recent-card:nth-child(1) .recent-card-title{font-size:clamp(1.2rem,2vw,1.6rem);font-weight:600}
 .vx-home .recent-card:hover .recent-card-title{color:#fff;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
 .vx-home .recent-card-meta{color:rgba(255,255,255,.75);font:500 .7rem/1.4 var(--f);text-transform:uppercase;letter-spacing:.03em}
@@ -192,6 +193,7 @@ body.vx-home:has(#hero-section[style*="display: none"]) .vx-intro{display:none}
 .vx-home .card-link::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(0,0,0,.88) 0%,rgba(0,0,0,.45) 45%,rgba(0,0,0,0) 72%)}
 .vx-home .card-badge{top:14px;left:14px;padding:4px 12px;background:var(--pill-bg);color:var(--pill-tx);backdrop-filter:none;font:600 .7rem/1.3 var(--f);letter-spacing:.01em;z-index:2}
 .vx-home .card-body{padding:clamp(14px,1.6vw,20px)}
+.vx-home .card-image-credit{color:rgba(255,255,255,.72);font-size:.62rem}
 .vx-home .card-title{color:#fff;font:500 clamp(1rem,1.4vw,1.15rem)/1.3 var(--f);margin-bottom:.4rem}
 .vx-home .card:hover .card-title{color:#fff}
 .vx-home .card-excerpt{color:rgba(255,255,255,.82);font:400 .82rem/1.55 var(--f);margin-bottom:.6rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}

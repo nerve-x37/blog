@@ -10,6 +10,51 @@ function qsAll(selector, parent) {
   return Array.from((parent || document).querySelectorAll(selector));
 }
 
+function escapeAttribute(value) {
+  return String(value || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function backgroundImageAttributes(imageUrl, additionalStyle) {
+  var style = additionalStyle || '';
+  if (/^https?:\/\//i.test(imageUrl || '')) {
+    return ' data-external-bg="' + escapeAttribute(imageUrl) + '" style="' + style +
+      "background-image:url('img/external-media-placeholder.svg');\"";
+  }
+  return ' style="' + style + "background-image:url('" + escapeAttribute(imageUrl) + "');\"";
+}
+
+function escapeHTML(value) {
+  return String(value || '').replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function imageCreditMarkup(item) {
+  if (!item || !item.imageCredit || !item.imageCreditUrl) return '';
+  return '<p class="card-image-credit">Görsel: ' + escapeHTML(item.imageCredit) + '</p>';
+}
+
+function applyExternalBackgrounds() {
+  if (!window.valexirionExternalImagesAllowed) return;
+  qsAll('[data-external-bg]').forEach(function (element) {
+    var imageUrl = element.getAttribute('data-external-bg');
+    if (imageUrl) element.style.backgroundImage = 'url("' + imageUrl.replace(/"/g, '\\"') + '")';
+  });
+}
+
+function setConsentAwareImageSource(image, imageUrl) {
+  if (/^https?:\/\//i.test(imageUrl || '')) {
+    image.setAttribute('data-external-src', imageUrl);
+    image.src = imageUrl;
+    return;
+  }
+  image.src = imageUrl;
+}
+
+window.addEventListener('valexirion:media-consent', function (event) {
+  if (event.detail && event.detail.allowed) applyExternalBackgrounds();
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   var tools = qs('.navbar-tools');
   if (!tools) {
@@ -174,9 +219,17 @@ function addArticleImageCredit(data, pageKey) {
   if (!article || !article.imageCredit) return;
 
   var hero = qs('.article-hero-img');
-  var target = hero
-    ? (hero.closest('.article-hero-figure') || hero.closest('figure') || hero)
-    : (qs('.article-content img') || qs('article img') || qs('main img'));
+  var target;
+  if (/^https?:\/\//i.test(article.img || '')) {
+    target = qsAll('img').find(function (image) {
+      return image.getAttribute('data-external-src') === article.img || image.getAttribute('src') === article.img;
+    });
+    if (!target) return;
+  } else {
+    target = hero
+      ? (hero.querySelector('img') || hero)
+      : (qs('.article-content img') || qs('article img') || qs('main img'));
+  }
   if (!target) return;
 
   if (target.tagName && target.tagName.toLowerCase() === 'img') {
@@ -184,11 +237,32 @@ function addArticleImageCredit(data, pageKey) {
   } else if (!hero && target.parentElement) {
     target = target.closest('figure') || target.parentElement;
   }
-  if (!target || target.querySelector('figcaption, .article-image-caption')) return;
+  if (!target) return;
+  var existingCaption = target.querySelector('figcaption, .article-image-caption');
+  if (existingCaption && existingCaption.textContent.indexOf(article.imageCredit) !== -1) return;
 
   var caption = document.createElement('p');
   caption.className = 'article-image-caption';
-  caption.textContent = 'G\u00f6rsel kayna\u011f\u0131: ' + article.imageCredit;
+  caption.appendChild(document.createTextNode('G\u00f6rsel kayna\u011f\u0131: '));
+  if (article.imageCreditUrl) {
+    var creditLink = document.createElement('a');
+    creditLink.href = article.imageCreditUrl;
+    creditLink.target = '_blank';
+    creditLink.rel = 'noopener noreferrer';
+    creditLink.textContent = article.imageCredit;
+    caption.appendChild(creditLink);
+    if (article.imageLicenseUrl && article.imageLicenseUrl !== article.imageCreditUrl) {
+      caption.appendChild(document.createTextNode(' · '));
+      var licenseLink = document.createElement('a');
+      licenseLink.href = article.imageLicenseUrl;
+      licenseLink.target = '_blank';
+      licenseLink.rel = 'noopener noreferrer';
+      licenseLink.textContent = 'Lisans';
+      caption.appendChild(licenseLink);
+    }
+  } else {
+    caption.appendChild(document.createTextNode(article.imageCredit));
+  }
   target.insertAdjacentElement('afterend', caption);
 }
 
@@ -344,7 +418,7 @@ document.addEventListener('DOMContentLoaded', function () {
         metaHtml +
         (href !== '#' ? '<a class="hero-read-btn" href="' + href + '">Oku</a>' : '') +
       '</div>' +
-      '<div class="hero-bg" style="background-image:url(\'' + img + '\');"></div>' +
+      '<div class="hero-bg"' + backgroundImageAttributes(img) + '></div>' +
       '<div class="hero-overlay"></div>';
   }
 
@@ -380,10 +454,11 @@ document.addEventListener('DOMContentLoaded', function () {
       '<article class="card card-featured" data-category="' + f.category + '" data-subcategory="' + (f.subcategory || '') + '">' +
         '<a href="' + f.href + '" class="card-link card-featured-link">' +
           '<div class="featured-img-wrap">' +
-            '<div class="featured-img" style="background-image:url(\'' + f.img + '\');background-size:cover;background-position:center;"></div>' +
+            '<div class="featured-img"' + backgroundImageAttributes(f.img, 'background-size:cover;background-position:center;') + '></div>' +
             '<span class="card-badge featured-cat-badge">' + f.badge + '</span>' +
           '</div>' +
           '<div class="featured-body">' +
+            imageCreditMarkup(f) +
             '<div class="featured-tag-row">' +
               (f.isNew ? '<span class="featured-new-badge">' + (f.newLabel || 'Yeni') + '</span>' : '') +
               '<span class="featured-date">' + f.date + '</span>' +
@@ -439,10 +514,11 @@ document.addEventListener('DOMContentLoaded', function () {
       '<article class="card" data-category="' + a.category + '" data-subcategory="' + (a.subcategory || '') + '">' +
         '<a href="' + a.href + '" class="card-link">' +
           '<div class="card-img-wrap">' +
-            '<div class="card-img" style="background-image:url(\'' + a.img + '\');background-size:cover;background-position:center;"></div>' +
+            '<div class="card-img"' + backgroundImageAttributes(a.img, 'background-size:cover;background-position:center;') + '></div>' +
             '<span class="card-badge">' + a.badge + '</span>' +
           '</div>' +
           '<div class="card-body">' +
+            imageCreditMarkup(a) +
             '<h2 class="card-title">' + a.title + '</h2>' +
             '<p class="card-excerpt">' + a.excerpt + '</p>' +
             documentaryRatingHtml +
@@ -462,7 +538,7 @@ document.addEventListener('DOMContentLoaded', function () {
     p.desc    = p.desc    || '';
     return (
       '<a href="' + p.href + '" class="path-card">' +
-        '<div class="path-card-img" style="background-image:url(\'' + p.img + '\');background-position:' + (p.imgPosition || 'center') + ';"></div>' +
+        '<div class="path-card-img"' + backgroundImageAttributes(p.img, 'background-position:' + (p.imgPosition || 'center') + ';') + '></div>' +
         '<div class="path-card-overlay"></div>' +
         '<div class="path-card-body">' +
           '<span class="path-card-eyebrow">' + p.eyebrow + '</span>' +
@@ -481,8 +557,9 @@ document.addEventListener('DOMContentLoaded', function () {
     r.title    = r.title    || '';
     return (
       '<a href="' + r.href + '" class="recent-card">' +
-        '<div class="recent-card-img" style="background-image:url(\'' + r.img + '\');"></div>' +
+        '<div class="recent-card-img"' + backgroundImageAttributes(r.img) + '></div>' +
         '<div class="recent-card-body">' +
+          imageCreditMarkup(r) +
           '<span class="recent-card-cat">' + r.category + '</span>' +
           '<h3 class="recent-card-title">' + r.title + '</h3>' +
           (r.meta ? '<span class="recent-card-meta">' + r.meta + '</span>' : '') +
@@ -526,6 +603,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Render bitti → filtre + arama başlat
     initFilterSystem(SEARCH_INDEX);
+    applyExternalBackgrounds();
   }
 
   // ─────────────────────────────────────────
@@ -680,7 +758,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var label = CATEGORY_LABELS[item.category] || item.badge;
         return (
           '<div class="search-result-item" data-href="' + item.href + '">' +
-            '<div class="search-result-thumb" style="background-image:url(\'' + item.img + '\')"></div>' +
+            '<div class="search-result-thumb"' + backgroundImageAttributes(item.img) + '></div>' +
             '<div class="search-result-body">' +
               '<div class="search-result-title">'   + escHtml(item.title)   + '</div>' +
               '<div class="search-result-excerpt">' + escHtml(item.excerpt) + '</div>' +

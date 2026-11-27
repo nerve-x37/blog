@@ -10,8 +10,9 @@
   "articles": [
     {
       "href": "turkiyede-unesco-doga-alanlari.html",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/The_travertine_terraces_of_Pamukkale_4.jpg/1280px-The_travertine_terraces_of_Pamukkale_4.jpg",
+      "img": "img/turkiye-pamukkale-unesco.webp",
       "imageCredit": "Slyronit · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:The_travertine_terraces_of_Pamukkale_4.jpg",
       "category": "tarih",
       "subcategory": "unesco",
       "badge": "UNESCO Alanları",
@@ -23,8 +24,9 @@
     },
     {
       "href": "sibirya-vahsi-yasam-ekosistemi.html",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Ergaki%2C_Forest_clearing_in_taiga%2C_Sayan_Mountains%2C_Siberia%2C_Russia.jpg/1280px-Ergaki%2C_Forest_clearing_in_taiga%2C_Sayan_Mountains%2C_Siberia%2C_Russia.jpg",
+      "img": "img/sibirya-ergaki.webp",
       "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Ergaki,_Forest_clearing_in_taiga,_Sayan_Mountains,_Siberia,_Russia.jpg",
       "category": "doga",
       "subcategory": "ekosistemler",
       "badge": "Ekosistemler",
@@ -36,8 +38,9 @@
     },
     {
       "href": "gobeklitepe-kazilar-bize-ne-soyluyor.html",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Gobeklitepe_Panorama.jpg/1280px-Gobeklitepe_Panorama.jpg",
+      "img": "img/gobeklitepe-panorama.webp",
       "imageCredit": "Spica-Vega Photo Arts (Banu Nazikcan) · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Gobeklitepe_Panorama.jpg",
       "category": "tarih",
       "subcategory": "arkeoloji",
       "badge": "Arkeoloji",
@@ -49,8 +52,9 @@
     },
     {
       "href": "misir-piramitleri-nasil-yapildi.html",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Great_Pyramid_of_Giza%2C_Giza%2C_Egypt4.jpg/1280px-Great_Pyramid_of_Giza%2C_Giza%2C_Egypt4.jpg",
+      "img": "img/great-pyramid-giza.webp",
       "imageCredit": "Diego Delso · CC BY-SA 3.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza,_Giza,_Egypt4.jpg",
       "category": "tarih",
       "subcategory": "antik-misir",
       "badge": "Antik Mısır",
@@ -62,8 +66,9 @@
     },
     {
       "href": "turkiyede-sehirlesme-1923ten-bugune.html",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/PXL_20241210_132320110_Istanbul_Cityscape_from_Bosphorus_Strait_Cruise_T%C3%BCrkiye_08.jpg/1280px-PXL_20241210_132320110_Istanbul_Cityscape_from_Bosphorus_Strait_Cruise_T%C3%BCrkiye_08.jpg",
+      "img": "img/istanbul-bosphorus-cityscape.webp",
       "imageCredit": "Sourabh.biswas003 · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:PXL_20241210_132320110_Istanbul_Cityscape_from_Bosphorus_Strait_Cruise_T%C3%BCrkiye_08.jpg",
       "category": "tarih",
       "subcategory": "turkiyede-sehirlesme",
       "badge": "Türkiye Tarihi",
@@ -153,7 +158,7 @@
     },
     {
       "href": "sel-nasil-olusur-etkileri-sebepleri-sonuclari.html",
-      "img": "img/yagmur-taitung.jpg",
+      "img": "img/yagmur-taitung.webp",
       "imageCredit": "Tzuhsun Hsu · CC BY-SA 2.0 · Wikimedia Commons",
       "category": "doga",
       "subcategory": "meteoroloji",
@@ -179,7 +184,7 @@
     },
     {
       "href": "yagmur-nasil-olusur-ve-yagar.html",
-      "img": "img/yagmur-taitung.jpg",
+      "img": "img/yagmur-taitung.webp",
       "imageCredit": "Tzuhsun Hsu · CC BY-SA 2.0 · Wikimedia Commons",
       "category": "doga",
       "subcategory": "meteoroloji",
@@ -192,7 +197,7 @@
     },
     {
       "href": "turkiye-vahsi-yasam-ekosistemi.html",
-      "img": "img/turkiye-hurmetci-flamingolar.jpg",
+      "img": "img/turkiye-hurmetci-flamingolar.webp",
       "imageCredit": "Ramazancirakoglu · CC BY-SA 4.0 · Wikimedia Commons",
       "category": "doga",
       "subcategory": "doga-yasam-ve-ekosistemler",
@@ -205,7 +210,7 @@
     },
     {
       "href": "internette-bir-adres-yazinca-ne-oluyor.html",
-      "img": "img/internette-adres-yazan-kullanici.jpg",
+      "img": "img/internette-adres-yazan-kullanici.webp",
       "imageCredit": "Alabama Extension · CC0 · Wikimedia Commons",
       "category": "teknoloji",
       "subcategory": "webin-isleyisi",
@@ -218,7 +223,7 @@
     },
     {
       "href": "depremler-dunyanin-icini-nasil-gosteriyor.html",
-      "img": "img/san-francisco-depremi-sismogrami.jpg",
+      "img": "img/san-francisco-depremi-sismogrami.webp",
       "imageCredit": "Introvert · CC BY 2.5 · Wikimedia Commons",
       "category": "bilim",
       "subcategory": "yer-bilimleri",
@@ -231,7 +236,7 @@
     },
     {
       "href": "kuzey-isiklari-nasil-olusuyor.html",
-      "img": "img/kuzey-isiklari-iss.jpg",
+      "img": "img/kuzey-isiklari-iss.webp",
       "imageCredit": "NASA · ISS072-E-159172",
       "category": "bilim",
       "subcategory": "uzay-bilimi",
@@ -244,7 +249,7 @@
     },
     {
       "href": "zaman-neden-herkes-icin-ayni-akmiyor.html",
-      "img": "img/parham-house-clock.jpg",
+      "img": "img/parham-house-clock.webp",
       "imageCredit": "Acabashi · CC BY-SA 4.0 · Wikimedia Commons",
       "category": "felsefe",
       "subcategory": "zaman-felsefesi",
@@ -257,7 +262,7 @@
     },
     {
       "href": "gocmen-kuslar-turkiyede-yollarini-nasil-buluyor.html",
-      "img": "img/leylekler-istanbul-gocu.jpg",
+      "img": "img/leylekler-istanbul-gocu.webp",
       "imageCredit": "Tema · CC BY-SA 3.0 · Wikimedia Commons",
       "category": "doga",
       "subcategory": "kus-gocu",
@@ -270,7 +275,7 @@
     },
     {
       "href": "internet-okyanuslari-nasil-asiyor.html",
-      "img": "img/underwater-cable-seafloor.jpg",
+      "img": "img/underwater-cable-seafloor.webp",
       "imageCredit": "Daniel Nichols / U.S. Navy · Kamu malı · Wikimedia Commons",
       "category": "teknoloji",
       "subcategory": "internet-altyapisi",
@@ -504,7 +509,7 @@
     },
     {
       "href": "helenistik-donem.html",
-      "img": "img/hellenistic-grave-relief.jpg",
+      "img": "img/hellenistic-grave-relief.webp",
       "category": "tarih",
       "subcategory": "helenistik-donem",
       "badge": "Helenistik Dönem",
@@ -516,7 +521,7 @@
     },
     {
       "href": "antik-yunan-helen-donemi.html",
-      "img": "img/exekias-amphora-detail.jpg",
+      "img": "img/exekias-amphora-detail.webp",
       "category": "tarih",
       "subcategory": "antik-yunan",
       "badge": "Antik Yunan",
@@ -528,7 +533,7 @@
     },
     {
       "href": "bilgi-ve-dijital-cag.html",
-      "img": "img/eniac-1946-us-army.jpg",
+      "img": "img/eniac-1946-us-army.webp",
       "category": "tarih",
       "subcategory": "bilgi-ve-dijital-cag",
       "badge": "Bilgi ve Dijital Çağ",
@@ -540,7 +545,7 @@
     },
     {
       "href": "sanayi-cagi.html",
-      "img": "img/spinning-mule-1835.png",
+      "img": "img/spinning-mule-1835.webp",
       "category": "tarih",
       "subcategory": "sanayi-cagi",
       "badge": "Sanayi Çağı",
@@ -552,7 +557,7 @@
     },
     {
       "href": "erken-modern-donem.html",
-      "img": "img/waldseemuller-map-1507.jpg",
+      "img": "img/waldseemuller-map-1507.webp",
       "category": "tarih",
       "subcategory": "erken-modern",
       "badge": "Erken Modern Dönem",
@@ -613,7 +618,7 @@
     },
     {
       "href": "mustafa-kemal-ataturk.html",
-      "img": "img/mustafa-kemal-ataturk-1930.jpg",
+      "img": "img/mustafa-kemal-ataturk-1930.webp",
       "imageCredit": "SKS News · 1930 · Kamu malı",
       "category": "tarih",
       "subcategory": "ataturk-hayati",
@@ -665,6 +670,9 @@
     {
       "href": "progressive-house.html",
       "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/DJ_Sasha_%28Arenele_Romane%2C_Bucharest%2C_2006%29.jpg/960px-DJ_Sasha_%28Arenele_Romane%2C_Bucharest%2C_2006%29.jpg",
+      "imageCredit": "Barbu Cristian · CC BY 2.5",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:DJ%20Sasha%20%28Arenele%20Romane%2C%20Bucharest%2C%202006%29.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by/2.5/",
       "category": "muzik",
       "subcategory": "elektronik-muzik",
       "badge": "Elektronik Müzik",
@@ -690,6 +698,9 @@
     {
       "href": "trance-muzigi.html",
       "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Armin_van_Buuren%2C_November_2025.jpg/1280px-Armin_van_Buuren%2C_November_2025.jpg",
+      "imageCredit": "Web Summit / Sam Barnes / Sportsfile · CC BY 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Armin%20van%20Buuren%2C%20November%202025.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "category": "muzik",
       "subcategory": "elektronik-muzik",
       "badge": "Elektronik Müzik",
@@ -750,6 +761,9 @@
     {
       "href": "hititlerden-urartulara-anadolu.html",
       "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg/1280px-Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg",
+      "imageCredit": "Carole Raddato · CC BY-SA 2.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Lion%20Gate%2C%20Hattusa%2013%20%28cropped%29.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
       "category": "tarih",
       "subcategory": "anadolu-uygarliklari",
       "badge": "Anadolu Uygarlıkları",
@@ -762,6 +776,9 @@
     {
       "href": "dunya-felsefesi-gelenekler.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Temple_12_-_Nalanda_Mahavihara_%2817%29.jpg",
+      "imageCredit": "Sumit Surai · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Temple%2012%20-%20Nalanda%20Mahavihara%20%2817%29.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "felsefe",
       "subcategory": "dunya-felsefesi",
       "badge": "Dünya Felsefesi",
@@ -774,6 +791,9 @@
     {
       "href": "dunya-muzik-tarihi.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/2/20/Baline_Gamelan_of_Indonesia_-_Ugal.jpg",
+      "imageCredit": "Culturehistory · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Baline%20Gamelan%20of%20Indonesia%20-%20Ugal.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "muzik",
       "subcategory": "dunya-muzik-tarihi",
       "badge": "Müzik Tarihi",
@@ -786,6 +806,9 @@
     {
       "href": "roma-bizans-anadolu-konstantinopolis.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ephesus_-_Celsus_Library.jpg",
+      "imageCredit": "Bernard Gagnon · CC BY-SA 3.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Ephesus%20-%20Celsus%20Library.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "category": "tarih",
       "subcategory": "roma-bizans",
       "badge": "Roma ve Bizans",
@@ -822,6 +845,9 @@
     {
       "href": "arabanin-icadi.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Benz_Patent_Motorwagen_1886.jpg/1280px-Benz_Patent_Motorwagen_1886.jpg",
+      "imageCredit": "Stas Kozlovskiy · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Benz%20Patent%20Motorwagen%201886.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "tarih",
       "subcategory": "tarih-teknoloji-tarihi",
       "badge": "Teknoloji Tarihi",
@@ -834,6 +860,9 @@
     {
       "href": "turkiyenin-2024-arkeolojik-kesifleri.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/5/5b/%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_02.jpg",
+      "imageCredit": "Murat Özsoy 1958 · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:%C3%87atalh%C3%B6y%C3%BCk%2C%207400%20BC%2C%20Konya%2C%20Turkey%20-%20UNESCO%20World%20Heritage%20Site%2C%2002.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "tarih",
       "subcategory": "arkeoloji",
       "badge": "Arkeoloji",
@@ -846,6 +875,8 @@
     {
       "href": "zerzevan-kalesi-turizm.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/8/88/Zerzevan_Kalesi_-_VOA_01.jpg",
+      "imageCredit": "mahmut Bozarslan · Kamu malı",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Zerzevan%20Kalesi%20-%20VOA%2001.jpg",
       "category": "tarih",
       "subcategory": "arkeoloji",
       "badge": "Arkeoloji",
@@ -857,7 +888,10 @@
     },
     {
       "href": "cin-hibrit-nukleer-santral.html",
-      "img": "https://world-nuclear-news.org/images/articles/JiangsuXuweiNuclearEnergyHeatingPowerPlantProjectRendering(CNNC)_75866.jpg",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Cooling_towers_of_a_nuclear_power_plant.jpg/1280px-Cooling_towers_of_a_nuclear_power_plant.jpg",
+      "imageCredit": "Vsatinet · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Cooling_towers_of_a_nuclear_power_plant.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "teknoloji",
       "subcategory": "enerji-teknolojileri",
       "badge": "Nükleer Enerji",
@@ -870,6 +904,9 @@
     {
       "href": "teknoloji-dunyasinda-yeni-sicramalar.html",
       "img": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=750&q=85",
+      "imageCredit": "Unsplash · Unsplash License (atıf zorunlu değil)",
+      "imageCreditUrl": "https://unsplash.com/license",
+      "imageLicenseUrl": "https://unsplash.com/license",
       "category": "teknoloji",
       "subcategory": "gelecek-teknolojileri",
       "badge": "Gelecek Teknolojileri",
@@ -882,6 +919,9 @@
     {
       "href": "tarihi-temel-teknoloji-icatlari.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Early_writing_tablet_recording_the_allocation_of_beer.jpg",
+      "imageCredit": "BabelStone · CC BY-SA 3.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Early%20writing%20tablet%20recording%20the%20allocation%20of%20beer.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "category": "teknoloji",
       "subcategory": "teknoloji-tarihcesi",
       "badge": "Teknoloji Tarihi",
@@ -894,6 +934,9 @@
     {
       "href": "turkiyede-vahsi-hayvanlar.html",
       "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Savsatkarag%C3%B6l.jpg/960px-Savsatkarag%C3%B6l.jpg",
+      "imageCredit": "Ömerali Şenakaylı · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Savsatkarag%C3%B6l.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "doga",
       "subcategory": "doga-yasam-ve-ekosistemler",
       "badge": "Yaban Hayatı",
@@ -906,6 +949,9 @@
     {
       "href": "mars-yasam-arayisi.html",
       "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png/1280px-Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png",
+      "imageCredit": "Kevin M. Gill · CC BY 2.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Mars%20-%20August%2030%202021%20-%20Flickr%20-%20Kevin%20M.%20Gill.png",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "category": "bilim",
       "subcategory": "astrofizik",
       "badge": "Astronomi",
@@ -917,7 +963,7 @@
     },
     {
       "href": "venus-neden-en-sicak-gezegen.html",
-      "img": "img/merkur-venus-gunes-karsilastirmasi.png",
+      "img": "img/merkur-venus-gunes-karsilastirmasi.webp",
       "category": "bilim",
       "subcategory": "astronomi",
       "badge": "Astronomi",
@@ -978,6 +1024,9 @@
     {
       "href": "cyberpunk-cyber-city-muzik.html",
       "img": "img/bladerunner1.webp",
+      "imageCredit": "Eiji Kikuta (AG2016), Night cityscape in Nagasaki (CC0)",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Night_cityscape_in_Nagasaki_-_view_from_near_the_mouth_of_Urakami_River_(2016-04-09_by_Eiji_Kikuta_@Pixabay_1342591).jpg",
+      "imageLicenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "category": "muzik",
       "subcategory": "cyberpunk-darksynth",
       "badge": "Darksynth",
@@ -1037,7 +1086,9 @@
     },
     {
       "href": "zeitgeist.html",
-      "img": "img/zeitgeist.jpg",
+      "img": "img/zeitgeist.webp",
+      "imgWidth": 1280,
+      "imgHeight": 720,
       "category": "belgesel",
       "subcategory": "belgesel-siyaset",
       "badge": "Siyaset & Toplum",
@@ -1051,6 +1102,8 @@
     {
       "href": "savage-kingdom.html",
       "img": "img/savage-kingdom.webp",
+      "imgWidth": 1230,
+      "imgHeight": 666,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa",
@@ -1064,6 +1117,8 @@
     {
       "href": "sabi-sand-aslanlari.html",
       "img": "img/brothers-in-blood-sabi-sand.webp",
+      "imgWidth": 1024,
+      "imgHeight": 572,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa",
@@ -1076,6 +1131,8 @@
     {
       "href": "ocean-belgeseli.html",
       "img": "img/ocean-attenborough.webp",
+      "imgWidth": 640,
+      "imgHeight": 334,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa",
@@ -1089,6 +1146,8 @@
     {
       "href": "brandy-hellville-belgeseli.html",
       "img": "img/brandy-hellville.webp",
+      "imgWidth": 1376,
+      "imgHeight": 631,
       "category": "belgesel",
       "subcategory": "belgesel-saglik",
       "badge": "Sağlık & Yaşam",
@@ -1102,6 +1161,8 @@
     {
       "href": "power-belgeseli.html",
       "img": "img/power-belgesel.webp",
+      "imgWidth": 639,
+      "imgHeight": 428,
       "category": "belgesel",
       "subcategory": "belgesel-siyaset",
       "badge": "Siyaset & Toplum",
@@ -1114,6 +1175,8 @@
     {
       "href": "sedef-dugme.html",
       "img": "img/the-pearl-button.webp",
+      "imgWidth": 1365,
+      "imgHeight": 768,
       "category": "belgesel",
       "subcategory": "belgesel-siyaset",
       "badge": "Siyaset & Toplum",
@@ -1128,6 +1191,8 @@
     {
       "href": "2073.html",
       "img": "img/2073.webp",
+      "imgWidth": 1280,
+      "imgHeight": 720,
       "category": "belgesel",
       "subcategory": "belgesel-siyaset",
       "badge": "Siyaset & Toplum",
@@ -1140,7 +1205,12 @@
     },
     {
       "href": "the-culture-high.html",
-      "img": "img/culture-high.jpg",
+      "img": "img/culture-high.webp",
+      "imageCredit": "Martin Falbisoner, Capitol at Dusk 2 (boyutlandırılmış; CC BY-SA 3.0)",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Capitol_at_Dusk_2.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "imgWidth": 1400,
+      "imgHeight": 702,
       "category": "belgesel",
       "subcategory": "belgesel-saglik",
       "badge": "Sağlık & Yaşam",
@@ -1154,6 +1224,8 @@
     {
       "href": "big-chicken.html",
       "img": "img/chicken.webp",
+      "imgWidth": 1280,
+      "imgHeight": 720,
       "category": "belgesel",
       "subcategory": "belgesel-saglik",
       "badge": "Sağlık & Yaşam",
@@ -1167,6 +1239,8 @@
     {
       "href": "food-inc.html",
       "img": "img/food-inc.webp",
+      "imgWidth": 1024,
+      "imgHeight": 768,
       "category": "belgesel",
       "subcategory": "belgesel-saglik",
       "badge": "Sağlık & Yaşam",
@@ -1179,7 +1253,9 @@
     },
     {
       "href": "racing-extinction.html",
-      "img": "img/racing-extinction.jfif",
+      "img": "img/racing-extinction.webp",
+      "imgWidth": 837,
+      "imgHeight": 366,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa",
@@ -1193,6 +1269,8 @@
     {
       "href": "the-last-lions.html",
       "img": "img/last-lions.webp",
+      "imgWidth": 1279,
+      "imgHeight": 853,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa",
@@ -1206,6 +1284,8 @@
     {
       "href": "planet-earth-ii.html",
       "img": "img/aslan.webp",
+      "imgWidth": 1271,
+      "imgHeight": 768,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa",
@@ -1219,6 +1299,8 @@
     {
       "href": "blue-planet-ii.html",
       "img": "img/ocean.webp",
+      "imgWidth": 1000,
+      "imgHeight": 750,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa",
@@ -1232,6 +1314,8 @@
     {
       "href": "cosmos-spacetime-odyssey.html",
       "img": "img/cosmos-bir-uzay-seruveni.webp",
+      "imgWidth": 620,
+      "imgHeight": 400,
       "category": "belgesel",
       "subcategory": "belgesel-bilim-tarih",
       "badge": "Bilim & Tarih",
@@ -1246,6 +1330,8 @@
     {
       "href": "iyi-geceler-oppy.html",
       "img": "img/good-night-oppy.webp",
+      "imgWidth": 780,
+      "imgHeight": 439,
       "category": "belgesel",
       "subcategory": "belgesel-bilim-tarih",
       "badge": "Bilim & Tarih",
@@ -1260,6 +1346,8 @@
     {
       "href": "prescription-thugs.html",
       "img": "img/prescription-thugs.webp",
+      "imgWidth": 1280,
+      "imgHeight": 1169,
       "category": "belgesel",
       "subcategory": "belgesel-saglik",
       "badge": "Sağlık & Yaşam",
@@ -1273,6 +1361,8 @@
     {
       "href": "the-vietnam-war.html",
       "img": "img/siyasi.webp",
+      "imgWidth": 1269,
+      "imgHeight": 727,
       "category": "belgesel",
       "subcategory": "belgesel-siyaset",
       "badge": "Siyaset & Toplum",
@@ -1286,6 +1376,8 @@
     {
       "href": "inside-job.html",
       "img": "img/inside-job-poster.webp",
+      "imgWidth": 1024,
+      "imgHeight": 572,
       "category": "belgesel",
       "subcategory": "belgesel-siyaset",
       "badge": "Siyaset & Toplum",
@@ -1299,6 +1391,8 @@
     {
       "href": "free-solo.html",
       "img": "img/zirve.webp",
+      "imgWidth": 661,
+      "imgHeight": 302,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa",
@@ -1312,6 +1406,8 @@
     {
       "href": "alpinist.html",
       "img": "img/alpinist.webp",
+      "imgWidth": 1280,
+      "imgHeight": 1793,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa & Macera",
@@ -1325,6 +1421,8 @@
     {
       "href": "our-planet.html",
       "img": "img/our-planet.webp",
+      "imgWidth": 1365,
+      "imgHeight": 768,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa",
@@ -1338,6 +1436,8 @@
     {
       "href": "insan-gezegeni.html",
       "img": "img/human-planet.webp",
+      "imgWidth": 1365,
+      "imgHeight": 768,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa",
@@ -1352,6 +1452,8 @@
     {
       "href": "life-david-attenborough.html",
       "img": "img/life-david-attenborough.webp",
+      "imgWidth": 600,
+      "imgHeight": 390,
       "category": "belgesel",
       "subcategory": "belgesel-doga",
       "badge": "Doğa",
@@ -1366,6 +1468,8 @@
     {
       "href": "winter-on-fire.html",
       "img": "img/winter-on-fire.webp",
+      "imgWidth": 1280,
+      "imgHeight": 1150,
       "category": "belgesel",
       "subcategory": "belgesel-siyaset",
       "badge": "Siyaset & Toplum",
@@ -1754,6 +1858,9 @@
     {
       "href": "blade-runner.html",
       "img": "img/blade.webp",
+      "imageCredit": "Wilfredor, Hong Kong skyscrapers in a night of typhoon (CC0)",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Hong_Kong_skyscrapers_in_a_night_of_typhoon.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "category": "sinema",
       "subcategory": "sinema-felsefi-incelemeler",
       "badge": "Sinema & Kimlik",
@@ -1762,7 +1869,7 @@
     },
     {
       "href": "biyofili.html",
-      "img": "img/biyofili.jpg",
+      "img": "img/biyofili.webp",
       "category": "doga",
       "subcategory": "doga",
       "badge": "Doğa",
@@ -1789,7 +1896,7 @@
     },
     {
       "href": "dunya-uzerindeki-ulkeler-ve-sosyal-iliskiler.html",
-      "img": "img/tarih.png",
+      "img": "img/tarih.webp",
       "category": "bilim",
       "subcategory": "bilim",
       "badge": "Bilim",
@@ -1988,14 +2095,14 @@
     },
     {
       "href": "antik-yunan-helen-donemi.html",
-      "img": "img/exekias-amphora-detail.jpg",
+      "img": "img/exekias-amphora-detail.webp",
       "eyebrow": "Öğrenme Yolu",
       "title": "Helen Dünyası: Polisler, Düşünce ve Gündelik Hayat",
       "desc": "Antik Yunan'ın Arkaik ve Klasik çağlarını kentler, düşünce ve gündelik yaşam üzerinden incele."
     },
     {
       "href": "helenistik-donem.html",
-      "img": "img/hellenistic-grave-relief.jpg",
+      "img": "img/hellenistic-grave-relief.webp",
       "eyebrow": "Öğrenme Yolu",
       "title": "Helenistik Dönem: İskender'den Roma'ya",
       "desc": "İskender'in ardından kurulan krallıkları, kültürler arası temasları ve gündelik hayatı izleyin."
@@ -2009,21 +2116,21 @@
     },
     {
       "href": "erken-modern-donem.html",
-      "img": "img/waldseemuller-map-1507.jpg",
+      "img": "img/waldseemuller-map-1507.webp",
       "eyebrow": "Öğrenme Yolu",
       "title": "Erken Modern Dönem: Bağlanan Dünyalar",
       "desc": "Rönesans'tan bilimsel dönüşüme ve küresel karşılaşmalara uzanan değişimleri izle."
     },
     {
       "href": "sanayi-cagi.html",
-      "img": "img/spinning-mule-1835.png",
+      "img": "img/spinning-mule-1835.webp",
       "eyebrow": "Öğrenme Yolu",
       "title": "Sanayi Çağı: Makine, Fabrika ve İnsan",
       "desc": "Buhar gücünden seri üretime; emeğin, kentlerin ve enerji kullanımının dönüşümünü izle."
     },
     {
       "href": "bilgi-ve-dijital-cag.html",
-      "img": "img/eniac-1946-us-army.jpg",
+      "img": "img/eniac-1946-us-army.webp",
       "eyebrow": "Öğrenme Yolu",
       "title": "Bilgi ve Dijital Çağ: Verinin ve Ağların Dünyası",
       "desc": "Bilgisayar, internet ve Web'in gelişimini; dijitalleşmenin insanlara ve gündelik yaşama etkileriyle izle."
@@ -2032,40 +2139,45 @@
   "recentArticles": [
     {
       "href": "turkiyede-unesco-doga-alanlari.html",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/The_travertine_terraces_of_Pamukkale_4.jpg/1280px-The_travertine_terraces_of_Pamukkale_4.jpg",
+      "img": "img/turkiye-pamukkale-unesco.webp",
       "imageCredit": "Slyronit · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:The_travertine_terraces_of_Pamukkale_4.jpg",
       "category": "UNESCO Alanları",
       "title": "Türkiye'deki UNESCO Alanları: 22 Dünya Mirası, Camili ve Kula-Salihli",
       "meta": "14 Kas 2026 · 9 dk"
     },
     {
       "href": "sibirya-vahsi-yasam-ekosistemi.html",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Ergaki%2C_Forest_clearing_in_taiga%2C_Sayan_Mountains%2C_Siberia%2C_Russia.jpg/1280px-Ergaki%2C_Forest_clearing_in_taiga%2C_Sayan_Mountains%2C_Siberia%2C_Russia.jpg",
+      "img": "img/sibirya-ergaki.webp",
       "imageCredit": "Vyacheslav Argenberg · CC BY 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Ergaki,_Forest_clearing_in_taiga,_Sayan_Mountains,_Siberia,_Russia.jpg",
       "category": "Ekosistemler",
       "title": "Sibirya Vahşi Yaşam Ekosistemi: Tayga, Tundra ve Türler",
       "meta": "14 Kas 2026 · 9 dk"
     },
     {
       "href": "gobeklitepe-kazilar-bize-ne-soyluyor.html",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Gobeklitepe_Panorama.jpg/1280px-Gobeklitepe_Panorama.jpg",
+      "img": "img/gobeklitepe-panorama.webp",
       "imageCredit": "Spica-Vega Photo Arts (Banu Nazikcan) · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Gobeklitepe_Panorama.jpg",
       "category": "Arkeoloji",
       "title": "Göbeklitepe: Kazılar Bize Gerçekten Ne Söylüyor?",
       "meta": "14 Kas 2026 · 11 dk"
     },
     {
       "href": "misir-piramitleri-nasil-yapildi.html",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Great_Pyramid_of_Giza%2C_Giza%2C_Egypt4.jpg/1280px-Great_Pyramid_of_Giza%2C_Giza%2C_Egypt4.jpg",
+      "img": "img/great-pyramid-giza.webp",
       "imageCredit": "Diego Delso · CC BY-SA 3.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza,_Giza,_Egypt4.jpg",
       "category": "Antik Mısır",
       "title": "Mısır Piramitleri Nasıl Yapıldı? Taş, İnsan Gücü ve Mühendislik",
       "meta": "14 Kas 2026 · 12 dk"
     },
     {
       "href": "turkiyede-sehirlesme-1923ten-bugune.html",
-      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/PXL_20241210_132320110_Istanbul_Cityscape_from_Bosphorus_Strait_Cruise_T%C3%BCrkiye_08.jpg/1280px-PXL_20241210_132320110_Istanbul_Cityscape_from_Bosphorus_Strait_Cruise_T%C3%BCrkiye_08.jpg",
+      "img": "img/istanbul-bosphorus-cityscape.webp",
       "imageCredit": "Sourabh.biswas003 · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:PXL_20241210_132320110_Istanbul_Cityscape_from_Bosphorus_Strait_Cruise_T%C3%BCrkiye_08.jpg",
       "category": "Türkiye Tarihi",
       "title": "Türkiye'de Şehirleşme: 1923'ten Bugüne Dönüm Noktaları",
       "meta": "13 Kas 2026 · 10 dk"
@@ -2120,7 +2232,7 @@
     },
     {
       "href": "sel-nasil-olusur-etkileri-sebepleri-sonuclari.html",
-      "img": "img/yagmur-taitung.jpg",
+      "img": "img/yagmur-taitung.webp",
       "imageCredit": "Tzuhsun Hsu · CC BY-SA 2.0 · Wikimedia Commons",
       "category": "Doğa",
       "title": "Sel Nasıl Oluşur? Nedenleri, Etkileri ve Sonuçları",
@@ -2136,7 +2248,7 @@
     },
     {
       "href": "yagmur-nasil-olusur-ve-yagar.html",
-      "img": "img/yagmur-taitung.jpg",
+      "img": "img/yagmur-taitung.webp",
       "imageCredit": "Tzuhsun Hsu · CC BY-SA 2.0 · Wikimedia Commons",
       "category": "Doğa",
       "title": "Yağmur Nasıl Oluşur ve Yeryüzüne Nasıl Yağar?",
@@ -2144,7 +2256,7 @@
     },
     {
       "href": "turkiye-vahsi-yasam-ekosistemi.html",
-      "img": "img/turkiye-hurmetci-flamingolar.jpg",
+      "img": "img/turkiye-hurmetci-flamingolar.webp",
       "imageCredit": "Ramazancirakoglu · CC BY-SA 4.0 · Wikimedia Commons",
       "category": "Doğa",
       "title": "Türkiye’nin Vahşi Yaşam Ekosistemi",
@@ -2152,7 +2264,7 @@
     },
     {
       "href": "internette-bir-adres-yazinca-ne-oluyor.html",
-      "img": "img/internette-adres-yazan-kullanici.jpg",
+      "img": "img/internette-adres-yazan-kullanici.webp",
       "imageCredit": "Alabama Extension · CC0 · Wikimedia Commons",
       "category": "Web Teknolojileri",
       "title": "İnternette Bir Adres Yazınca Ne Oluyor?",
@@ -2160,7 +2272,7 @@
     },
     {
       "href": "depremler-dunyanin-icini-nasil-gosteriyor.html",
-      "img": "img/san-francisco-depremi-sismogrami.jpg",
+      "img": "img/san-francisco-depremi-sismogrami.webp",
       "imageCredit": "Introvert · CC BY 2.5 · Wikimedia Commons",
       "category": "Bilim",
       "title": "Depremler Dünya’nın İçini Nasıl Gösteriyor?",
@@ -2168,7 +2280,7 @@
     },
     {
       "href": "kuzey-isiklari-nasil-olusuyor.html",
-      "img": "img/kuzey-isiklari-iss.jpg",
+      "img": "img/kuzey-isiklari-iss.webp",
       "imageCredit": "NASA · ISS072-E-159172",
       "category": "Bilim",
       "title": "Kuzey Işıkları Nasıl Oluşuyor?",
@@ -2176,7 +2288,7 @@
     },
     {
       "href": "zaman-neden-herkes-icin-ayni-akmiyor.html",
-      "img": "img/parham-house-clock.jpg",
+      "img": "img/parham-house-clock.webp",
       "imageCredit": "Acabashi · CC BY-SA 4.0 · Wikimedia Commons",
       "category": "Felsefe & Bilim",
       "title": "Zaman Neden Herkes İçin Aynı Akmıyor?",
@@ -2184,7 +2296,7 @@
     },
     {
       "href": "gocmen-kuslar-turkiyede-yollarini-nasil-buluyor.html",
-      "img": "img/leylekler-istanbul-gocu.jpg",
+      "img": "img/leylekler-istanbul-gocu.webp",
       "imageCredit": "Tema · CC BY-SA 3.0 · Wikimedia Commons",
       "category": "Doğa",
       "title": "Göçmen Kuşlar Türkiye’de Yollarını Nasıl Buluyor?",
@@ -2192,7 +2304,7 @@
     },
     {
       "href": "internet-okyanuslari-nasil-asiyor.html",
-      "img": "img/underwater-cable-seafloor.jpg",
+      "img": "img/underwater-cable-seafloor.webp",
       "imageCredit": "Daniel Nichols / U.S. Navy · Kamu malı · Wikimedia Commons",
       "category": "İnternet Altyapısı",
       "title": "İnternet Okyanusları Nasıl Aşıyor?",
@@ -2320,35 +2432,35 @@
     },
     {
       "href": "helenistik-donem.html",
-      "img": "img/hellenistic-grave-relief.jpg",
+      "img": "img/hellenistic-grave-relief.webp",
       "category": "Helenistik Dönem",
       "title": "Helenistik Dönem: İskender'den Roma'ya",
       "meta": "13 Kas 2026 · 10 dk"
     },
     {
       "href": "antik-yunan-helen-donemi.html",
-      "img": "img/exekias-amphora-detail.jpg",
+      "img": "img/exekias-amphora-detail.webp",
       "category": "Antik Yunan",
       "title": "Helen Dünyası: Polisler, Düşünce ve Gündelik Hayat",
       "meta": "13 Kas 2026 · 8 dk"
     },
     {
       "href": "bilgi-ve-dijital-cag.html",
-      "img": "img/eniac-1946-us-army.jpg",
+      "img": "img/eniac-1946-us-army.webp",
       "category": "Bilgi ve Dijital Çağ",
       "title": "Bilgi ve Dijital Çağ: Verinin, Ağların ve İnsanların Dünyası",
       "meta": "13 Kas 2026 · 8 dk"
     },
     {
       "href": "sanayi-cagi.html",
-      "img": "img/spinning-mule-1835.png",
+      "img": "img/spinning-mule-1835.webp",
       "category": "Sanayi Çağı",
       "title": "Sanayi Çağı: Buhar, Fabrika ve Değişen Hayat",
       "meta": "13 Kas 2026 · 8 dk"
     },
     {
       "href": "erken-modern-donem.html",
-      "img": "img/waldseemuller-map-1507.jpg",
+      "img": "img/waldseemuller-map-1507.webp",
       "category": "Erken Modern Dönem",
       "title": "Erken Modern Dönem: Rönesans, Reform ve Dünya",
       "meta": "13 Kas 2026 · 10 dk"
@@ -2384,7 +2496,7 @@
     },
     {
       "href": "mustafa-kemal-ataturk.html",
-      "img": "img/mustafa-kemal-ataturk-1930.jpg",
+      "img": "img/mustafa-kemal-ataturk-1930.webp",
       "imageCredit": "SKS News · 1930 · Kamu malı",
       "category": "Atatürk’ün Yaşamı",
       "title": "Mustafa Kemal Atatürk: Selanik’ten Cumhuriyet’e",
@@ -2416,6 +2528,9 @@
     {
       "href": "progressive-house.html",
       "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/DJ_Sasha_%28Arenele_Romane%2C_Bucharest%2C_2006%29.jpg/960px-DJ_Sasha_%28Arenele_Romane%2C_Bucharest%2C_2006%29.jpg",
+      "imageCredit": "Barbu Cristian · CC BY 2.5",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:DJ%20Sasha%20%28Arenele%20Romane%2C%20Bucharest%2C%202006%29.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by/2.5/",
       "category": "Müzik",
       "title": "Progressive House Nedir? Tarihi, Sesi ve DJ’leri",
       "meta": "11 Kas 2026 · 11 dk"
@@ -2431,6 +2546,9 @@
     {
       "href": "trance-muzigi.html",
       "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Armin_van_Buuren%2C_November_2025.jpg/1280px-Armin_van_Buuren%2C_November_2025.jpg",
+      "imageCredit": "Web Summit / Sam Barnes / Sportsfile · CC BY 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Armin%20van%20Buuren%2C%20November%202025.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "category": "Müzik",
       "title": "Trance Müziği: Türleri, Tarihi ve Öne Çıkan DJ’ler",
       "meta": "11 Kas 2026 · 12 dk"
@@ -2466,6 +2584,9 @@
     {
       "href": "hititlerden-urartulara-anadolu.html",
       "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg/1280px-Lion_Gate%2C_Hattusa_13_%28cropped%29.jpg",
+      "imageCredit": "Carole Raddato · CC BY-SA 2.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Lion%20Gate%2C%20Hattusa%2013%20%28cropped%29.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
       "category": "Anadolu Uygarlıkları",
       "title": "Hititlerden Urartulara Anadolu: İki Anadolu Krallığı",
       "meta": "11 Kas 2026 · 10 dk"
@@ -2473,6 +2594,9 @@
     {
       "href": "dunya-felsefesi-gelenekler.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Temple_12_-_Nalanda_Mahavihara_%2817%29.jpg",
+      "imageCredit": "Sumit Surai · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Temple%2012%20-%20Nalanda%20Mahavihara%20%2817%29.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "Dünya Felsefesi",
       "title": "Dünya Felsefesi: Hindistan’dan Çin’e, Afrika’dan İslam Dünyasına",
       "meta": "11 Kas 2026 · 10 dk"
@@ -2480,6 +2604,9 @@
     {
       "href": "dunya-muzik-tarihi.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/2/20/Baline_Gamelan_of_Indonesia_-_Ugal.jpg",
+      "imageCredit": "Culturehistory · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Baline%20Gamelan%20of%20Indonesia%20-%20Ugal.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "Müzik Tarihi",
       "title": "Dünya Müzik Tarihi: Geleneklerden Dijital Çağa",
       "meta": "11 Kas 2026 · 10 dk"
@@ -2487,6 +2614,9 @@
     {
       "href": "roma-bizans-anadolu-konstantinopolis.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ephesus_-_Celsus_Library.jpg",
+      "imageCredit": "Bernard Gagnon · CC BY-SA 3.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Ephesus%20-%20Celsus%20Library.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "category": "Roma ve Bizans",
       "title": "Roma ve Bizans Döneminde Anadolu: Konstantinopolis’in Yükselişi",
       "meta": "11 Kas 2026 · 10 dk"
@@ -2508,6 +2638,9 @@
     {
       "href": "arabanin-icadi.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Benz_Patent_Motorwagen_1886.jpg/1280px-Benz_Patent_Motorwagen_1886.jpg",
+      "imageCredit": "Stas Kozlovskiy · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Benz%20Patent%20Motorwagen%201886.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "Teknoloji Tarihi",
       "title": "Arabanın İcadı: Otomobili Kim Buldu, Nasıl Gelişti?",
       "meta": "11 Kas 2026 · 9 dk"
@@ -2515,6 +2648,9 @@
     {
       "href": "turkiyenin-2024-arkeolojik-kesifleri.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/5/5b/%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_02.jpg",
+      "imageCredit": "Murat Özsoy 1958 · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:%C3%87atalh%C3%B6y%C3%BCk%2C%207400%20BC%2C%20Konya%2C%20Turkey%20-%20UNESCO%20World%20Heritage%20Site%2C%2002.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "Arkeoloji",
       "title": "Türkiye'de 2024'ün Öne Çıkan Arkeolojik Keşifleri",
       "meta": "11 Kas 2026 · 8 dk"
@@ -2522,13 +2658,18 @@
     {
       "href": "zerzevan-kalesi-turizm.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/8/88/Zerzevan_Kalesi_-_VOA_01.jpg",
+      "imageCredit": "mahmut Bozarslan · Kamu malı",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Zerzevan%20Kalesi%20-%20VOA%2001.jpg",
       "category": "Arkeoloji",
       "title": "Zerzevan Kalesi: Arkeolojik Miras ve Turizm",
       "meta": "11 Kas 2026 · 6 dk"
     },
     {
       "href": "cin-hibrit-nukleer-santral.html",
-      "img": "https://world-nuclear-news.org/images/articles/JiangsuXuweiNuclearEnergyHeatingPowerPlantProjectRendering(CNNC)_75866.jpg",
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Cooling_towers_of_a_nuclear_power_plant.jpg/1280px-Cooling_towers_of_a_nuclear_power_plant.jpg",
+      "imageCredit": "Vsatinet · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Cooling_towers_of_a_nuclear_power_plant.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "Nükleer Enerji",
       "title": "Çin'de Dünyanın İlk Hibrit Nükleer Santrali",
       "meta": "11 Kas 2026 · 4 dk"
@@ -2536,6 +2677,9 @@
     {
       "href": "teknoloji-dunyasinda-yeni-sicramalar.html",
       "img": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&h=750&q=85",
+      "imageCredit": "Unsplash · Unsplash License (atıf zorunlu değil)",
+      "imageCreditUrl": "https://unsplash.com/license",
+      "imageLicenseUrl": "https://unsplash.com/license",
       "category": "Gelecek Teknolojileri",
       "title": "Teknoloji Dünyasında Yeni Sıçramalar",
       "meta": "11 Kas 2026 · 5 dk"
@@ -2543,6 +2687,9 @@
     {
       "href": "tarihi-temel-teknoloji-icatlari.html",
       "img": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Early_writing_tablet_recording_the_allocation_of_beer.jpg",
+      "imageCredit": "BabelStone · CC BY-SA 3.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Early%20writing%20tablet%20recording%20the%20allocation%20of%20beer.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "category": "Teknoloji Tarihi",
       "title": "Tarihî ve Temel Teknoloji İcatları",
       "meta": "11 Kas 2026 · 9 dk"
@@ -2550,13 +2697,16 @@
     {
       "href": "turkiyede-vahsi-hayvanlar.html",
       "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Savsatkarag%C3%B6l.jpg/960px-Savsatkarag%C3%B6l.jpg",
+      "imageCredit": "Ömerali Şenakaylı · CC BY-SA 4.0",
+      "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Savsatkarag%C3%B6l.jpg",
+      "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "category": "Yaban Hayatı",
       "title": "Türkiye'de Hangi Vahşi Hayvanlar Yaşıyor?",
       "meta": "11 Kas 2026 · 8 dk"
     },
     {
       "href": "venus-neden-en-sicak-gezegen.html",
-      "img": "img/merkur-venus-gunes-karsilastirmasi.png",
+      "img": "img/merkur-venus-gunes-karsilastirmasi.webp",
       "category": "Astronomi",
       "title": "Merkür Güneş’e Daha Yakın, Peki Neden Venüs Daha Sıcak?",
       "meta": "10 Kas 2026 · 5 dk"
@@ -2788,7 +2938,7 @@
     },
     {
       "href": "mitoloji-psikoloji.html",
-      "img": "img/psikoloji.jpg",
+      "img": "img/psikoloji.webp",
       "category": "Felsefe",
       "title": "Tanrıların Gölgesinde Bilinç: Mitoloji ve Modern Psikoloji"
     },
@@ -2820,7 +2970,7 @@
     },
     {
       "href": "biyofili.html",
-      "img": "img/biyofili.jpg",
+      "img": "img/biyofili.webp",
       "category": "Doğa",
       "title": "Biyofili: Doğayla Kurduğumuz Bağ"
     }

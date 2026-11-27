@@ -29,9 +29,13 @@
         link.href = article.href;
 
         var image = document.createElement('img');
-        image.src = article.img;
+        setConsentAwareImageSource(image, article.img);
         image.alt = article.title;
         image.loading = 'lazy';
+        if (article.imgWidth > 0 && article.imgHeight > 0) {
+          image.width = article.imgWidth;
+          image.height = article.imgHeight;
+        }
 
         var body = document.createElement('div');
         body.className = 'documentary-card-body';
