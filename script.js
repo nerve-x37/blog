@@ -422,6 +422,121 @@ document.addEventListener('DOMContentLoaded', function () {
       '<div class="hero-overlay"></div>';
   }
 
+  function renderOnThisDay(entries) {
+    var section = qs('#on-this-day');
+    if (!section) return;
+    if (!Array.isArray(entries) || entries.length === 0) {
+      throw new Error('tarihte-bugun.json içinde olay bulunamadı.');
+    }
+
+    var categoryLabels = {
+      bilim: 'Bilim',
+      tarih: 'Tarih',
+      sinema: 'Sinema',
+      muzik: 'Müzik'
+    };
+    var today = new Date();
+    var dateParts = [
+      String(today.getMonth() + 1).padStart(2, '0'),
+      String(today.getDate()).padStart(2, '0')
+    ];
+    var todayKey = dateParts.join('-');
+    var yearStart = Date.UTC(2000, 0, 1);
+
+    function getDayIndex(monthDay) {
+      if (!/^\d{2}-\d{2}$/.test(monthDay)) return -1;
+      var parts = monthDay.split('-');
+      var date = new Date(Date.UTC(2000, Number(parts[0]) - 1, Number(parts[1])));
+      if (date.getUTCMonth() !== Number(parts[0]) - 1 ||
+          date.getUTCDate() !== Number(parts[1])) return -1;
+      return Math.floor((date.getTime() - yearStart) / 86400000);
+    }
+
+    var todayIndex = getDayIndex(todayKey);
+    var selected = null;
+    var shortestDistance = Infinity;
+    entries.forEach(function (entry) {
+      if (!entry || !Number.isInteger(entry.year) ||
+          !categoryLabels[entry.category] ||
+          typeof entry.title !== 'string' || !entry.title.trim() ||
+          typeof entry.summary !== 'string' || !entry.summary.trim()) {
+        throw new Error('tarihte-bugun.json içinde geçersiz olay kaydı var.');
+      }
+
+      var eventDay = getDayIndex(entry.date);
+      if (eventDay < 0) throw new Error('Geçersiz olay tarihi: ' + entry.date);
+      var delta = (eventDay - todayIndex + 366) % 366;
+      if (delta > 183) delta -= 366;
+      var distance = Math.abs(delta);
+      if (distance < shortestDistance) {
+        selected = entry;
+        shortestDistance = distance;
+      }
+    });
+
+    if (!selected) throw new Error('Bugün için tarih olayı seçilemedi.');
+    var eventDateParts = selected.date.split('-').map(Number);
+    var eventDate = new Date(2000, eventDateParts[0] - 1, eventDateParts[1], 12);
+    var formatDate = function (date) {
+      return new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long' }).format(date);
+    };
+    var todayTime = qs('#on-this-day-today');
+    todayTime.dateTime = [
+      today.getFullYear(),
+      dateParts[0],
+      dateParts[1]
+    ].join('-');
+    todayTime.textContent = formatDate(today);
+
+    var nearestNote = qs('#on-this-day-nearest');
+    var isFallback = selected.date !== todayKey;
+    nearestNote.hidden = !isFallback;
+    nearestNote.classList.toggle('hidden', !isFallback);
+    if (!nearestNote.hidden) qs('#on-this-day-event-date').textContent = formatDate(eventDate);
+
+    qs('#on-this-day-year').textContent = String(selected.year);
+    qs('#on-this-day-category').textContent = categoryLabels[selected.category];
+    qs('#on-this-day-event-title').textContent = selected.title;
+    qs('#on-this-day-summary').textContent = selected.summary;
+
+    var sourceUrl = new URL(selected.sourceUrl);
+    if (sourceUrl.protocol !== 'https:') {
+      throw new Error('Olay kaynağı HTTPS bağlantısı olmalı: ' + selected.sourceUrl);
+    }
+    var sourceLink = qs('#on-this-day-source');
+    sourceLink.href = sourceUrl.href;
+    sourceLink.textContent = 'Kaynak: ' + sourceUrl.hostname.replace(/^www\./, '') + ' ↗';
+
+    var relatedLink = qs('#on-this-day-related');
+    if (selected.relatedUrl) {
+      if (/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(selected.relatedUrl) ||
+          selected.relatedUrl.indexOf('..') !== -1) {
+        throw new Error('İlgili yazı bağlantısı yerel bir sayfa yolu olmalı.');
+      }
+      relatedLink.href = selected.relatedUrl;
+      relatedLink.textContent = selected.relatedTitle || 'İlgili yazı →';
+      relatedLink.classList.remove('hidden');
+    }
+    section.setAttribute('aria-busy', 'false');
+  }
+
+  fetch('tarihte-bugun.json')
+    .then(function (response) {
+      if (!response.ok) throw new Error('tarihte-bugun.json yüklenemedi (' + response.status + ')');
+      return response.json();
+    })
+    .then(renderOnThisDay)
+    .catch(function (error) {
+      console.error('[Valexirion] Bugünün tarih notu yüklenemedi:', error);
+      var section = qs('#on-this-day');
+      var message = qs('#on-this-day-error');
+      if (section && message) {
+        section.classList.add('is-error');
+        message.classList.remove('hidden');
+        section.setAttribute('aria-busy', 'false');
+      }
+    });
+
   // ─────────────────────────────────────────
   // BLOK B — renderList()
   // Kaynak : data.json → featured, articles[],

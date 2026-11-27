@@ -105,6 +105,34 @@ html.light body.vx-home{
   .vx-home .hero-title{margin:0 0 .85rem;font-size:clamp(1.6rem,7.4vw,2.2rem)}
 }
 
+/* ---------- BUGÜN TARİHTE ---------- */
+.vx-home .on-this-day{
+  display:grid;grid-template-columns:minmax(150px,.32fr) minmax(0,1fr);gap:clamp(18px,3vw,36px);
+  align-items:center;width:calc(100% - 2*var(--gut));max-width:var(--wrap);
+  margin:clamp(20px,3vw,34px) auto 0;padding:clamp(16px,2vw,24px) 0;
+  border-top:1px solid var(--border-2);border-bottom:1px solid var(--border-2);
+}
+.vx-home .on-this-day-date{padding-right:clamp(14px,2vw,24px);border-right:1px solid var(--border-2)}
+.vx-home .on-this-day-kicker{display:block;margin-bottom:.5rem;color:var(--accent);font:600 .68rem/1.4 var(--f);letter-spacing:.07em}
+.vx-home .on-this-day-date>time{color:var(--text);font:700 clamp(1.35rem,2.4vw,2rem)/1.1 var(--f)}
+.vx-home .on-this-day-nearest{margin:.65rem 0 0;color:var(--text-2);font:400 .75rem/1.45 var(--f)}
+.vx-home .on-this-day-content{min-width:0}
+.vx-home .on-this-day-content h2{margin:0 0 .55rem;color:var(--text-2);font:600 .72rem/1.4 var(--f);letter-spacing:.08em;text-transform:uppercase}
+.vx-home .on-this-day-meta{display:flex;gap:.45rem;margin-bottom:.35rem;color:var(--accent);font:600 .7rem/1.4 var(--f);letter-spacing:.04em}
+.vx-home #on-this-day-event-title{margin:0 0 .35rem;color:var(--text);font:600 clamp(1.05rem,1.8vw,1.4rem)/1.2 var(--f)}
+.vx-home .on-this-day-summary{max-width:78ch;margin:0;color:var(--text-2);font:400 .84rem/1.55 var(--f)}
+.vx-home .on-this-day-links{display:flex;flex-wrap:wrap;gap:.5rem 1rem;margin-top:.7rem}
+.vx-home .on-this-day-links a{color:var(--accent);font:600 .73rem/1.4 var(--f);text-decoration:none;text-underline-offset:3px}
+.vx-home .on-this-day-links a:hover{text-decoration:underline}
+.vx-home .on-this-day-error{grid-column:1/-1;margin:0;color:var(--text-2);font:400 .85rem/1.5 var(--f)}
+.vx-home .on-this-day.is-error .on-this-day-date,
+.vx-home .on-this-day.is-error .on-this-day-content{display:none}
+@media(max-width:640px){
+  .vx-home .on-this-day{grid-template-columns:1fr;gap:12px}
+  .vx-home .on-this-day-date{padding:0 0 12px;border-right:0;border-bottom:1px solid var(--border)}
+  .vx-home .on-this-day-date>time{font-size:1.35rem}
+}
+
 /* ---------- INTRO (manifesto bandı) ---------- */
 .vx-home .vx-intro{width:calc(100% - 2*var(--gut));max-width:var(--wrap);margin:clamp(40px,6vw,72px) auto 0;padding:0}
 .vx-home .vx-intro-inner{
