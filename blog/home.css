@@ -135,17 +135,17 @@ body.vx-home:has(#hero-section[style*="display: none"]) .vx-intro{display:none}
 .vx-home .section-heading h2{margin:0 0 .35rem;font:700 clamp(1.5rem,3vw,2.2rem)/1.1 var(--f);letter-spacing:-.03em;text-transform:uppercase;color:var(--text)}
 .vx-home .section-heading p{margin:0;font:400 .9rem/1.5 var(--f);color:var(--text-2)}
 
-/* Son Yazılar → bento grid (görseldeki "Last news") */
+/* Son Yazılar: tek sıra yatay kaydırma */
 .vx-home .recent-strip{
-  display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(10px,1.6vw,18px);
-  overflow:visible;padding:0;scroll-snap-type:none;
+  display:flex;gap:clamp(10px,1.6vw,18px);overflow-x:auto;overflow-y:hidden;
+  padding:0 0 1rem;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;scrollbar-color:var(--border-2) transparent;
 }
 .vx-home .recent-card{
-  position:relative;grid-column:span 3;min-height:clamp(250px,24vw,300px);display:flex;flex-direction:column;justify-content:flex-end;
-  padding:clamp(14px,1.6vw,20px);border:0;border-radius:clamp(10px,1.2vw,14px);background:var(--bg-2);overflow:hidden;isolation:isolate;flex:none;
+  position:relative;flex:0 0 clamp(220px,24vw,280px);min-height:clamp(260px,28vw,340px);
+  display:flex;flex-direction:column;justify-content:flex-end;scroll-snap-align:start;
+  padding:clamp(14px,1.6vw,20px);border:0;border-radius:clamp(10px,1.2vw,14px);background:var(--bg-2);overflow:hidden;isolation:isolate;
 }
-.vx-home .recent-card:nth-child(1){grid-column:span 6;min-height:clamp(300px,34vw,420px)}
-.vx-home .recent-card:nth-child(2),.vx-home .recent-card:nth-child(3){grid-column:span 3;min-height:clamp(300px,34vw,420px)}
 .vx-home .recent-card:hover{transform:none;box-shadow:none}
 .vx-home .recent-card-img{position:absolute;inset:0;height:auto;z-index:-2;background-size:cover;background-position:center;transition:transform .6s ease}
 .vx-home .recent-card:hover .recent-card-img{transform:scale(1.05)}
@@ -160,20 +160,17 @@ body.vx-home:has(#hero-section[style*="display: none"]) .vx-intro{display:none}
 .vx-home .recent-card:nth-child(1) .recent-card-title{font-size:clamp(1.2rem,2vw,1.6rem);font-weight:600}
 .vx-home .recent-card:hover .recent-card-title{color:#fff;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
 .vx-home .recent-card-meta{color:rgba(255,255,255,.75);font:500 .7rem/1.4 var(--f);text-transform:uppercase;letter-spacing:.03em}
-@media(max-width:1023px){
-  .vx-home .recent-strip{grid-template-columns:repeat(6,minmax(0,1fr))}
-  .vx-home .recent-card,.vx-home .recent-card:nth-child(2),.vx-home .recent-card:nth-child(3){grid-column:span 3;min-height:clamp(240px,34vw,320px)}
-  .vx-home .recent-card:nth-child(1){grid-column:span 6;min-height:clamp(300px,46vw,400px)}
-}
-@media(max-width:600px){
-  .vx-home .recent-strip{grid-template-columns:1fr}
-  .vx-home .recent-card,.vx-home .recent-card:nth-child(n){grid-column:1/-1;min-height:250px}
-  .vx-home .recent-card:nth-child(1){min-height:300px}
-}
-
 /* Kürasyon Köşeleri */
-.vx-home .curation-grid{gap:clamp(10px,1.6vw,18px)}
-.vx-home .path-card{border-radius:clamp(10px,1.2vw,14px);box-shadow:none}
+.vx-home .curation-grid{
+  --curation-gap:clamp(10px,1.6vw,18px);
+  display:flex;direction:rtl;gap:var(--curation-gap);overflow-x:auto;overflow-y:hidden;
+  padding:0 0 1rem;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;scrollbar-color:var(--border-2) transparent;
+}
+.vx-home .path-card{
+  direction:ltr;flex:0 0 clamp(220px,calc(33.333% - 12px),380px);
+  aspect-ratio:4 / 3;border-radius:clamp(10px,1.2vw,14px);box-shadow:none;scroll-snap-align:start;
+}
 .vx-home .path-card:hover{transform:none;box-shadow:none}
 .vx-home .path-card-title{font-family:var(--f);font-weight:600}
 .vx-home .path-card-desc{font-family:var(--f)}
@@ -211,5 +208,5 @@ body.vx-home:has(#hero-section[style*="display: none"]) .vx-intro{display:none}
   .vx-home .hero-content>*,.vx-home .homepage-curated{opacity:1!important}
 }
 
-/* Son Yazılar: 21 kayıttan ilk 15'i gösterilir (3 + 4×3 → ızgara boşluksuz dolar; tablette de çift sayı) */
+/* Son yazılarda ilk 15 kart yatay şeritte gösterilir. */
 .vx-home .recent-card:nth-child(n+16){display:none}
