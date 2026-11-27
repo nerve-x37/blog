@@ -128,51 +128,70 @@ body.vx-home:has(#hero-section[style*="display: none"]) .vx-intro{display:none}
 .vx-home .homepage-curated{margin-top:0;display:flex;flex-direction:column;gap:clamp(48px,7vw,88px)}
 .vx-home .recent-strip-section{order:-1}
 .vx-home .curation-section{margin:0}
-.vx-home .section-heading{text-align:left;margin:0 0 clamp(16px,2.4vw,26px)}
+.vx-home .section-heading{position:relative;text-align:left;margin:0 0 clamp(16px,2.4vw,26px);padding-bottom:1rem;border-bottom:1px solid var(--border-2)}
+.vx-home .section-heading::after{content:"";position:absolute;bottom:-1px;left:0;width:2.5rem;border-bottom:2px solid var(--accent)}
 .vx-home .section-heading h2{margin:0 0 .35rem;font:700 clamp(1.5rem,3vw,2.2rem)/1.1 var(--f);letter-spacing:-.03em;text-transform:uppercase;color:var(--text)}
 .vx-home .section-heading p{margin:0;font:400 .9rem/1.5 var(--f);color:var(--text-2)}
 
-/* Son Yazılar: tek sıra yatay kaydırma */
-.vx-home .recent-strip{
-  display:flex;gap:clamp(10px,1.6vw,18px);overflow-x:auto;overflow-y:hidden;
-  padding:0 0 1rem;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
-  scrollbar-width:thin;scrollbar-color:var(--border-2) transparent;
-}
-.vx-home .recent-card{
-  position:relative;flex:0 0 clamp(220px,24vw,280px);min-height:clamp(260px,28vw,340px);
-  display:flex;flex-direction:column;justify-content:flex-end;scroll-snap-align:start;
-  padding:clamp(14px,1.6vw,20px);border:0;border-radius:clamp(10px,1.2vw,14px);background:var(--bg-2);overflow:hidden;isolation:isolate;
-}
-.vx-home .recent-card:hover{transform:none;box-shadow:none}
-.vx-home .recent-card-img{position:absolute;inset:0;height:auto;z-index:-2;background-size:cover;background-position:center;transition:transform .6s ease}
-.vx-home .recent-card:hover .recent-card-img{transform:scale(1.05)}
-.vx-home .recent-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(0,0,0,.86) 0%,rgba(0,0,0,.45) 38%,rgba(0,0,0,0) 68%)}
-.vx-home .recent-card-body{display:contents}
-.vx-home .recent-card-cat{
-  position:absolute;top:clamp(12px,1.4vw,16px);left:clamp(12px,1.4vw,16px);margin:0;padding:4px 12px;background:var(--pill-bg);color:var(--pill-tx);
-  border-radius:999px;font:600 .7rem/1.3 var(--f);text-transform:none;letter-spacing:.01em;
-}
-.vx-home .recent-card-title{margin:0 0 .5rem;color:#fff;font:500 clamp(1rem,1.5vw,1.2rem)/1.3 var(--f);-webkit-line-clamp:3}
-.vx-home .recent-card .card-image-credit{color:rgba(255,255,255,.72);font-size:.62rem}
-.vx-home .recent-card:nth-child(1) .recent-card-title{font-size:clamp(1.2rem,2vw,1.6rem);font-weight:600}
-.vx-home .recent-card:hover .recent-card-title{color:#fff;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
-.vx-home .recent-card-meta{color:rgba(255,255,255,.75);font:500 .7rem/1.4 var(--f);text-transform:uppercase;letter-spacing:.03em}
-/* Kürasyon Köşeleri */
+/* Dergi düzeni: ilk kart iki sütun ve iki satır kaplar. */
+.vx-home .recent-strip,
 .vx-home .curation-grid{
-  --curation-gap:clamp(10px,1.6vw,18px);
-  display:flex;direction:rtl;gap:var(--curation-gap);overflow-x:auto;overflow-y:hidden;
-  padding:0 0 1rem;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
-  scrollbar-width:thin;scrollbar-color:var(--border-2) transparent;
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  grid-auto-rows:clamp(220px,18vw,250px);gap:clamp(10px,1.6vw,18px);
+  overflow:visible;padding:0;
 }
+.vx-home .recent-strip{scroll-snap-type:none}
+.vx-home .recent-card{
+  position:relative;min-width:0;min-height:0;display:flex;flex-direction:column;justify-content:stretch;
+  padding:0;border:1px solid var(--border-2);border-radius:0;
+  background:var(--bg-2);overflow:hidden;isolation:isolate;scroll-snap-align:none;
+}
+.vx-home .recent-card:hover{transform:none;box-shadow:none;border-color:var(--accent)}
+.vx-home .recent-card-img{position:relative;inset:auto;display:block;flex:1 1 0;min-height:0;width:100%;height:auto;z-index:0;background-size:cover;background-position:center;transition:transform .6s ease}
+.vx-home .recent-card:hover .recent-card-img{transform:scale(1.05)}
+.vx-home .recent-card::after{content:none}
+.vx-home .recent-card-body{position:relative;z-index:1;display:flex;flex-direction:column;gap:.25rem;padding:clamp(10px,1.2vw,16px);background:var(--bg-2)}
+.vx-home .recent-card-cat{
+  position:static;display:inline-block;align-self:flex-start;margin:0;padding:0 0 0 .55rem;
+  border-left:2px solid var(--accent);background:transparent;color:var(--accent);
+  border-radius:0;font:600 .68rem/1.4 var(--f);text-transform:uppercase;letter-spacing:.06em;
+}
+.vx-home .recent-card-title{margin:0;color:var(--text);font:500 clamp(.9rem,1.2vw,1.05rem)/1.3 var(--f);-webkit-line-clamp:2}
+.vx-home .recent-card .card-image-credit{color:var(--text-3);font-size:.62rem}
+.vx-home .recent-card:nth-child(1) .recent-card-title{font-size:clamp(1.1rem,1.8vw,1.5rem);font-weight:600}
+.vx-home .recent-card:hover .recent-card-title{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.vx-home .recent-card-meta{color:var(--text-2);font:500 .68rem/1.4 var(--f);text-transform:uppercase;letter-spacing:.03em}
+/* Kürasyon Köşeleri */
 .vx-home .path-card{
-  direction:ltr;flex:0 0 clamp(220px,calc(33.333% - 12px),380px);
-  aspect-ratio:4 / 3;border-radius:clamp(10px,1.2vw,14px);box-shadow:none;scroll-snap-align:start;
+  position:relative;min-width:0;min-height:0;display:flex;flex-direction:column;aspect-ratio:auto;
+  border:1px solid var(--border-2);border-radius:0;box-shadow:none;scroll-snap-align:none;
 }
-.vx-home .path-card:hover{transform:none;box-shadow:none}
-.vx-home .path-card-title{font-family:var(--f);font-weight:600}
-.vx-home .path-card-desc{font-family:var(--f)}
-.vx-home .path-card-eyebrow{font-family:var(--f);text-transform:none;letter-spacing:.01em;font-size:.7rem}
-@media(max-width:639px){.vx-home .path-card{aspect-ratio:16/10}}
+.vx-home .path-card:hover{transform:none;box-shadow:none;border-color:var(--accent)}
+.vx-home .recent-card:nth-child(1),
+.vx-home .path-card:nth-child(1){grid-column:span 2;grid-row:span 2}
+.vx-home .path-card-img{position:relative;inset:auto;display:block;flex:1 1 0;min-height:0;width:100%;height:auto;background-position:center;background-size:cover}
+.vx-home .path-card-overlay{display:none}
+.vx-home .path-card-body{position:relative;inset:auto;flex:0 0 auto;padding:clamp(10px,1.2vw,16px);background:var(--bg-2)}
+.vx-home .path-card-eyebrow{
+  padding:0 0 0 .55rem;margin-bottom:.45rem;border:0;border-left:2px solid var(--accent);
+  border-radius:0;background:transparent;color:var(--accent);backdrop-filter:none;-webkit-backdrop-filter:none;
+  font:600 .68rem/1.4 var(--f);letter-spacing:.06em;text-transform:uppercase;
+}
+.vx-home .path-card-title{margin-bottom:.3rem;font-family:var(--f);font-size:clamp(.95rem,1.2vw,1.1rem);font-weight:600;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vx-home .path-card-desc{margin:0;font-family:var(--f);font-size:.72rem;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vx-home .path-card:nth-child(1) .path-card-title{font-size:clamp(1.2rem,2vw,1.75rem);line-height:1.15}
+.vx-home .path-card:nth-child(1) .path-card-desc{max-width:48ch;font-size:.9rem}
+@media(max-width:900px){
+  .vx-home .recent-strip,.vx-home .curation-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:clamp(220px,26vw,245px)}
+}
+@media(max-width:639px){
+  .vx-home .recent-strip,.vx-home .curation-grid{grid-template-columns:minmax(0,1fr);grid-auto-rows:auto}
+  .vx-home .recent-card,.vx-home .path-card{min-height:260px}
+  .vx-home .recent-card-img,.vx-home .path-card-img{flex:1 1 0;min-height:130px}
+  .vx-home .path-card-body{padding:14px}
+  .vx-home .path-card-desc{font-size:.78rem}
+  .vx-home .recent-card:nth-child(1),.vx-home .path-card:nth-child(1){grid-column:auto;grid-row:auto;min-height:clamp(270px,76vw,340px)}
+}
 
 /* ---------- Kategori filtresi sonuç kartları ---------- */
 .vx-home .cards-grid{gap:clamp(10px,1.6vw,18px);grid-template-columns:1fr}
