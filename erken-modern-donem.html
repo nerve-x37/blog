@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erken Modern Dönem: Rönesans, Reform ve Dünya — Valexirion</title>
+  <meta name="description" content="Yaklaşık 1450–1800 arasındaki Erken Modern dönemi; Rönesans, Reform, bilimsel dönüşüm, küresel temaslar ve sömürgecilik üzerinden inceleyin." />
+  <link rel="canonical" href="https://valexirion.com/erken-modern-donem.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Erken Modern Dönem: Rönesans, Reform ve Dünya" />
+  <meta property="og:description" content="Orta Çağ'dan Sanayi Devrimi'ne geçişi; Avrupa'daki dönüşümler ve dünya toplumları arasındaki bağlantılarla okuyun." />
+  <meta property="og:url" content="https://valexirion.com/erken-modern-donem.html" />
+  <meta property="og:image" content="https://valexirion.com/img/waldseemuller-map-1507.webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Erken Modern Dönem: Rönesans, Reform ve Dünya" />
+  <meta name="twitter:description" content="Yaklaşık 1450–1800: Rönesans, Reform, bilimsel düşünce ve imparatorlukların birbirine bağladığı dünya." />
+  <meta name="twitter:image" content="https://valexirion.com/img/waldseemuller-map-1507.webp" />
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:wght@300;400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    .early-map { margin: 0 0 2.5rem; }
+    .early-map img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); }
+    .early-map figcaption { margin-top: .6rem; color: var(--text-3); font-size: .82rem; }
+    .period-range { margin: 1.5rem 0; padding: 1rem 1.2rem; border-left: 3px solid #60a5fa; background: rgba(96, 165, 250, .08); border-radius: 0 var(--radius) var(--radius) 0; }
+    .period-index { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 1.5rem 0 2.5rem; }
+    .period-index a { padding: .9rem; border: 1px solid var(--border); border-radius: var(--radius); color: inherit; text-decoration: none; transition: border-color .2s, transform .2s; }
+    .period-index a:hover, .period-index a:focus-visible { border-color: #60a5fa; transform: translateY(-2px); }
+    .period-index strong, .period-index span { display: block; }
+    .period-index strong { margin-bottom: .3rem; color: var(--text-1); }
+    .period-index span { color: var(--text-3); font-size: .86rem; }
+    .early-timeline { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; margin: 1.2rem 0 2rem; }
+    .early-timeline div { padding: 1rem; border: 1px solid var(--border); border-radius: var(--radius); }
+    .early-timeline strong { display: block; margin-bottom: .35rem; color: var(--text-1); }
+    .early-timeline span { color: var(--text-3); font-size: .9rem; }
+    .source-marker { font-size: .78em; vertical-align: super; text-decoration: none; }
+    @media (max-width: 760px) { .period-index, .early-timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 480px) { .period-index, .early-timeline { grid-template-columns: 1fr; } .early-map img { border-radius: var(--radius); } }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Erken Modern Dönem: Rönesans, Reform ve Dünya",
+      "description": "Yaklaşık 1450–1800 arasındaki Erken Modern dönemi; Avrupa'daki dönüşümler, küresel bağlantılar ve bu süreçlerin farklı toplumlara etkileri üzerinden inceliyor.",
+      "image": "https://valexirion.com/img/waldseemuller-map-1507.webp",
+      "mainEntityOfPage": "https://valexirion.com/erken-modern-donem.html",
+      "datePublished": "2026-11-13",
+      "dateModified": "2026-11-13",
+      "inLanguage": "tr-TR",
+      "author": { "@type": "Person", "name": "Can Özkan" },
+      "publisher": { "@type": "Organization", "name": "Valexirion", "url": "https://valexirion.com/" }
+    }
+  </script>
+</head>
+<body class="font-ui" data-page-category="tarih">
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+  <nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim" class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="nav-cat-link">Müzik</a>
+        <a href="index.html#felsefe" class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="nav-cat-link">Doğa</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Temayı değiştir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364-.707.707M6.343 17.657l-.707.707m12.021 0-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9.003 9.003 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim" class="mobile-link">Bilim</a>
+      <a href="index.html#tarih" class="mobile-link">Tarih</a>
+      <a href="index.html#sinema" class="mobile-link">Sinema</a>
+      <a href="index.html#muzik" class="mobile-link">Müzik</a>
+      <a href="index.html#felsefe" class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga" class="mobile-link">Doğa</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb">
+        <a href="index.html">Ana Sayfa</a><span>&#8250;</span>
+        <a href="index.html#tarih">Tarih</a><span>&#8250;</span>
+        <span>Erken Modern Dönem</span>
+      </div>
+      <span class="article-cat-badge">Tarih · Erken Modern Dönem</span>
+      <h1 class="article-title">Erken Modern Dönem:<br><em>Bağlanan Dünyalar</em></h1>
+      <p class="article-subtitle">Rönesans'tan bilimsel dönüşüme, okyanus aşırı seferlerden imparatorluklara: yeniliklerin ve karşılaşmaların herkes için aynı anlama gelmediği yüzyıllar.</p>
+      <div class="article-share">
+        <button class="share-btn" type="button" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)" aria-label="Yazıyı paylaş">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342A3 3 0 119 12c0-.482-.114-.938-.316-1.342m0 2.684 6.632 3.316m-6.632-6 6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          Paylaş
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+      <figure class="early-map">
+        <img src="img/waldseemuller-map-1507.webp" alt="Martin Waldseemüller'in 1507 tarihli dünya haritasının gerçek tarihî baskı nüshasının dijital görüntüsü" fetchpriority="high" loading="eager" decoding="async"/>
+        <figcaption>Martin Waldseemüller'in 1507 tarihli dünya haritası. Dönemin Avrupa merkezli coğrafi tasavvurunu gösteren gerçek bir tarihî belgedir; National Library of Australia nüshasının dijital görüntüsü. Wikimedia Commons kaydında kamu malı olarak işaretlenmiştir: <a href="https://commons.wikimedia.org/wiki/File:1507_Waldseem%C3%BCller_map.tif" target="_blank" rel="noopener noreferrer">eser ve lisans kaydı</a>.</figcaption>
+      </figure>
+
+      <p class="article-lead"><strong>Kısa cevap:</strong> Erken Modern Dönem, Avrupa tarihi için çoğunlukla yaklaşık 1450–1800 arasına yerleştirilen bir dönemdir. Rönesans, Reform, matbaanın yayılması, bilimsel dönüşüm ve okyanus aşırı imparatorluklar bu yüzyılları biçimlendirdi. Fakat değişim Avrupa'da başlamış olsa da dünyanın geri kalanı bu tarihte “tarihe katılmadı”; farklı toplumlar zaten kendi kurumları, bilgileri ve ticaret ağlarıyla yaşıyordu.</p>
+
+      <nav class="period-index" aria-label="Erken Modern Dönem konu başlıkları">
+        <a href="#tarih-araligi"><strong>Dönemin sınırları</strong><span>Yaklaşık 1450–1800</span></a>
+        <a href="#ronesans"><strong>Rönesans ve matbaa</strong><span>Bilginin yeniden dolaşıma girmesi</span></a>
+        <a href="#reform"><strong>Reform hareketleri</strong><span>İnanç, iktidar ve toplum</span></a>
+        <a href="#bilim"><strong>Bilimsel dönüşüm</strong><span>Gözlem, deney ve tartışma</span></a>
+        <a href="#kuresel-baglar"><strong>Küresel bağlantılar</strong><span>Ticaret, fetih ve sömürgecilik</span></a>
+        <a href="#sanayiye-gecis"><strong>Sanayiye geçiş</strong><span>18. yüzyılın sonundaki eşik</span></a>
+      </nav>
+
+      <h2 id="tarih-araligi">Erken Modern Dönem hangi yılları kapsar?</h2>
+      <p class="period-range"><strong>Avrupa tarihi için kullanışlı yaklaşık aralık MS 1450–1800'dür.</strong> Başlangıç için 1453'te Konstantinopolis'in Osmanlılar tarafından alınması veya 1492'de Kristof Kolomb'un Karayipler'e ulaşması gibi tarihler seçilir. Dönemin sonu da çoğu anlatımda 1789 Fransız Devrimi ya da 18. yüzyılın sonundaki sanayileşme dönüşümleriyle ilişkilendirilir. Bunlar kesin duvarlar değil, uzun değişimleri konuşmayı kolaylaştıran işaretlerdir.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a></p>
+      <p>1492'yi “Amerika'nın keşfi” diye adlandırmak doğru değildir. Karayipler ve Amerika kıtaları, Avrupalı seferlerden çok önce yerli toplumların yurduydu. Atlantik seferleri Avrupa, Afrika ve Amerika arasındaki temasları yoğunlaştırdı; ticaret ve göç kadar fetih, toprak gasbı, hastalık ve zorla çalıştırma da bu sürecin parçası oldu.<a class="source-marker" href="#kaynak-3" aria-label="Kaynak 3">[3]</a></p>
+
+      <div class="early-timeline" aria-label="Erken Modern Dönemden dönüm noktaları">
+        <div><strong>1453 / 1492</strong><span>Dönem başlangıcı için kullanılan farklı Avrupa merkezli işaretler</span></div>
+        <div><strong>1517</strong><span>Martin Luther'in çıkışıyla simgelenen Reform süreci</span></div>
+        <div><strong>1543</strong><span>Kopernik'in gök modeli üzerine eserinin yayımlanması</span></div>
+        <div><strong>17. yüzyıl</strong><span>Bilim toplulukları, araçlar ve gözleme dayalı araştırmaların gelişmesi</span></div>
+        <div><strong>1760'lardan sonra</strong><span>Britanya'da başlayan sanayileşme dönüşümü</span></div>
+        <div><strong>1789</strong><span>Fransız Devrimi; dönem sonu için sık kullanılan tarihlerden biri</span></div>
+      </div>
+
+      <h2 id="ronesans">Rönesans, hümanizm ve matbaanın etkisi</h2>
+      <p>Rönesans, kabaca 14. yüzyıldan itibaren İtalya'da belirginleşip Avrupa'nın farklı bölgelerine farklı hızlarda yayılan kültürel ve entelektüel dönüşümlere verilen addır. Antik Yunan ve Roma metinlerinin yeniden okunması önemliydi; ancak Rönesans yalnızca “unutulmuş bilginin bir anda geri gelişi” değildi. Sanatçılar, zanaatkârlar, tüccarlar, saraylar ve kent yönetimleri yeni üretim biçimlerini destekledi; İslam dünyası ve Bizans üzerinden aktarılan metinler de bu bilgi dünyasının parçasıydı.<a class="source-marker" href="#kaynak-1" aria-label="Kaynak 1">[1]</a></p>
+      <p>Johannes Gutenberg'in 15. yüzyıl ortalarında Mainz'da geliştirdiği metal harfli baskı düzeni, Avrupa'da kitapların çoğaltılmasını hızlandırdı. Bu, baskının dünyadaki ilk ortaya çıkışı değildi: Çin'de tahta baskı yüzyıllar önce kullanılıyor, hareketli harf denemeleri de yapılıyordu. Avrupa'da matbaanın yaygınlaşması metinlerin dolaşımını artırdı; fakat herkes bir anda okuryazar olmadı. Kâğıt ve kitap maliyeti, eğitim, dil ve toplumsal konum erişimi belirlemeye devam etti.</p>
+
+      <h2 id="reform">Reform: inanç değişirken siyaset de değişti</h2>
+      <p>1517, Martin Luther'in Katolik Kilisesi'ne yönelttiği eleştirilerle başlayan Reform hareketlerini anlatmak için sıkça kullanılan sembolik bir yıldır. Süreç tek kişinin başlattığı, bütün Avrupa'nın aynı anda değiştiği bir olay değildi. Farklı bölgelerde Protestan kiliseleri ortaya çıktı; Katolik dünyasında da kurumsal ve düşünsel yenilenme hareketleri gelişti. Hükümdarlar, kentler, din insanları ve sıradan topluluklar bu çatışma ve uzlaşmalarda farklı taraflar tuttu.</p>
+      <p>Dinî ayrışmalar savaşlara, göçlere ve yeni yönetim biçimlerine yol açtı; aynı zamanda okuryazarlık, ibadet dili ve metinlerin çoğaltılması üzerine tartışmaları büyüttü. Reformu yalnızca “dinin özgürleşmesi” ya da yalnızca “savaşlar” diye anlatmak eksik kalır: insanların inancı, siyasi iktidar ve gündelik yaşam iç içe değişti.</p>
+
+      <h2 id="bilim">Bilimsel dönüşüm: eski otoriteden yeni gözleme</h2>
+      <p>16. ve 17. yüzyıllarda gökbilim, anatomi, fizik ve matematik alanlarında yeni ölçüm araçları ve açıklamalar geliştirildi. Kopernik'in 1543 tarihli eseri Dünya'nın Güneş çevresinde hareket ettiğini savunan modeli ortaya koydu; Galileo'nun teleskop gözlemleri ve Newton'un 1687'de yayımladığı mekanik ilkeler daha sonraki tartışmaları etkiledi. Bu gelişmeler, bilimsel bilginin bir anda ve yalnızca Avrupa'da doğduğu anlamına gelmez. Araştırma, önceki kuşakların birikimi, farklı kültürlerden aktarılan matematik ve astronomi bilgisi, gözlem araçları ve uzun tartışmalarla ilerledi.<a class="source-marker" href="#kaynak-4" aria-label="Kaynak 4">[4]</a></p>
+      <p>“Bilimsel Devrim” sözü bu dönüşümlerin önemini anlatır, ama her tarihçi aynı başlangıç ve bitişi kabul etmez. Yeni yöntemler de eski düşünce biçimlerini bir günde silmedi. Üniversiteler, saray çevreleri, zanaat atölyeleri ve yeni bilim toplulukları arasında bilgi dolaşırken, kimin araştırma yapabildiği ve hangi bilginin kabul gördüğü toplumsal güç ilişkilerinden etkileniyordu.</p>
+
+      <h2 id="kuresel-baglar">Okyanus aşırı seferler: bağlantı kadar şiddet de</h2>
+      <p>Portekiz ve İspanya'nın deniz seferleri 15. yüzyılın sonlarından itibaren Afrika kıyıları, Hint Okyanusu ve Amerika kıtaları arasındaki bağlantıları genişletti. Avrupa için yeni rotalar açılırken, bu denizler ve bölgeler yerel halklar ve tüccarlar tarafından zaten biliniyordu. Seferler yalnızca cesur denizcilerin hikâyesi değildi; kraliyet finansmanı, haritacılık, gemicilik, ticari rekabet ve askeri güç birlikte rol oynadı. Macellan'ın seferini bu bağlamda <a href="ferdinand-macellan.html">ayrıntılı yazımızda</a> okuyabilirsiniz.</p>
+      <p>Bu bağlantılar eşit koşullarda kurulmadı. Avrupa imparatorluklarının Amerika'daki fetihleri yerli toplumların topraklarını ve siyasi yapılarını hedef aldı; hastalıklar ve zorla çalıştırma ağır nüfus kayıplarına yol açtı. Atlantik köle ticaretiyle çok sayıda Afrikalı zorla yerinden edilerek köleleştirildi. Şeker, gümüş ve başka malların üretimi küresel ekonomiyi büyüttü; bedeli çoğu zaman sömürgeleştirilen ve köleleştirilen topluluklara yüklendi. Library of Congress'in 1492 sergisi, temasın farklı topluluklar üzerindeki sonuçlarını ve Amerika'daki toplumların Avrupalılardan önceki varlığını birlikte ele alır.<a class="source-marker" href="#kaynak-3" aria-label="Kaynak 3">[3]</a></p>
+      <p>Bu yüzyılların dünyası Avrupa'yla sınırlı değildi. Osmanlı, Safevi ve Babür imparatorlukları; Ming ve Qing Çin'i; Batı Afrika'daki devletler ve Amerika'daki yerli siyasi topluluklar kendi güç, bilgi ve ticaret ağlarını kuruyordu. Bazı ağlar karşılaştı, bazıları rekabet etti; fikirler, ürünler ve insanlar farklı yönlerde hareket etti. Tarihçi Sanjay Subrahmanyam'ın “bağlantılı tarihler” yaklaşımı, bu ilişkileri tek bir kıtanın ilerleme çizgisine indirgemeden incelemeye çağırır.<a class="source-marker" href="#kaynak-2" aria-label="Kaynak 2">[2]</a></p>
+
+      <h2>Gündelik hayat ve ekonomik dönüşüm</h2>
+      <p>Kentlerde basım atölyeleri, limanlar, pazarlar ve zanaat üretimi büyürken, kırsal yaşam tarıma ve yerel güç ilişkilerine bağlı kalmayı sürdürdü. Uzak mesafe ticareti daha fazla malı dolaşıma soktu; fakat bu zenginliğin nasıl paylaşıldığı eşit değildi. Kadınların, köylülerin, kentli emekçilerin, tüccarların ve imparatorluk yöneticilerinin dönemi deneyimleme biçimleri birbirinden ayrılıyordu. “Modernleşme”yi herkesin refahının aynı anda arttığı düz bir ilerleme gibi anlatmamak gerekir.</p>
+      <p>18. yüzyılın sonlarına doğru Britanya'da kömür, buhar gücü, makineleşme ve fabrika üretimi yeni bir sanayileşme sürecini başlattı. Bu değişim Erken Modern Dönem'in bittiği gün başlamadı; eski üretim ve ticaret biçimleriyle bir süre yan yana ilerledi. Sonraki durak olan Sanayi Devrimi, bu uzun dönüşümün ayrı bir aşamasıdır. Ayrıntılar için <a href="sanayi-cagi.html">Sanayi Çağı rehberimize</a> geçebilirsiniz.</p>
+
+      <h2 id="sanayiye-gecis">Orta Çağ'dan Sanayi Devrimi'ne geçiş</h2>
+      <p>Bu dönemi tek bir icadın ya da “Avrupa'nın dünyayı keşfetmesinin” öyküsü olarak değil; fikirlerin, malların ve iktidarın yeniden düzenlendiği, aynı zamanda sömürgecilik ve kölelik gibi büyük adaletsizliklerin derinleştiği bir süreç olarak okumak daha doğru. Orta Çağ'ın ardından gelen yüzyıllar, Sanayi Devrimi'ne giden yolu hazırladı; ama bu yol tüm toplumlar için aynı fırsatları ve sonuçları üretmedi.</p>
+
+      <h2>İleri okuma</h2>
+      <ul>
+        <li><a href="orta-cag-donemi.html">Orta Çağ: Toprak, Bilgi ve Sofra</a></li>
+        <li><a href="ferdinand-macellan.html">Macellan'ın seferi: keşif, iktidar ve karşılaşma</a></li>
+        <li><a href="osmanli-kurulus-donemi.html">Osmanlı Beyliği nasıl kuruldu?</a></li>
+        <li><a href="selcukludan-osmanliya-anadolu.html">Selçuklulardan Osmanlılara Anadolu</a></li>
+        <li><a href="teknolojik-kesifler-haritasi.html">Teknolojik Keşifler Haritası</a></li>
+        <li><a href="siyasi-tarih.html">Siyasi tarihe genel bakış</a></li>
+      </ul>
+
+      <h2>Kaynaklar ve görsel bilgisi</h2>
+      <ol>
+        <li id="kaynak-1">Merry E. Wiesner-Hanks, <em>Early Modern Europe, 1450–1789</em>, 2. bs., Cambridge University Press, 2013. <a href="https://doi.org/10.1017/CBO9781139381192" target="_blank" rel="noopener noreferrer">Yayınevi DOI kaydı</a>.</li>
+        <li id="kaynak-2">Sanjay Subrahmanyam, “Connected Histories: Notes towards a Reconfiguration of Early Modern Eurasia,” <em>Modern Asian Studies</em>, 31/3 (1997), s. 735–762. <a href="https://doi.org/10.1017/S0026749X00017133" target="_blank" rel="noopener noreferrer">Hakemli makale DOI kaydı</a>.</li>
+        <li id="kaynak-3">Library of Congress, <em>1492: An Ongoing Voyage</em>. <a href="https://www.loc.gov/exhibits/1492/" target="_blank" rel="noopener noreferrer">Dijital sergi</a>; <a href="https://www.loc.gov/exhibits/1492/eurocla.html" target="_blank" rel="noopener noreferrer">“Europe Claims America” bölümü</a>.</li>
+        <li id="kaynak-4">H. Floris Cohen, <em>The Scientific Revolution: A Historiographical Inquiry</em>, University of Chicago Press, 1994. Bilimsel Devrim teriminin tarih yazımındaki kapsamı üzerine akademik çalışma.</li>
+        <li id="kaynak-gorsel">Martin Waldseemüller, <em>Universalis cosmographia</em> (1507), National Library of Australia nüshasının dijital görüntüsü. Wikimedia Commons dosya kaydında eser kamu malı olarak sınıflandırılmıştır: <a href="https://commons.wikimedia.org/wiki/File:1507_Waldseem%C3%BCller_map.tif" target="_blank" rel="noopener noreferrer">görsel ve lisans bilgisi</a>; <a href="https://nla.gov.au/nla.obj-234376081/view" target="_blank" rel="noopener noreferrer">National Library of Australia katalog kaydı</a>.</li>
+      </ol>
+      <p style="font-size:.85rem;color:var(--text-3)">Erken Modern Dönem'in tarih sınırları Avrupa tarih yazımındaki yaklaşık işaretlerdir; başka toplumların dönemlendirmesi farklıdır. Waldseemüller haritası gerçek bir 1507 tarihli belgenin dijital kopyasıdır; çağdaş bir dünya haritası değildir.</p>
+      <p><a href="index.html#tarih">Tarih yazılarına dön</a></p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+          <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+        </div>
+        <nav class="footer-category-grid" aria-label="Kategoriler">
+          <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+          <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+          <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+          <a href="index.html#muzik" class="footer-cat-link">Müzik</a>
+          <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+          <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+          <a href="index.html#doga" class="footer-cat-link">Doğa</a>
+          <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Valexirion. Tüm hakları saklıdır.</span>
+        <span class="footer-legal">
+          <a href="hakkinda.html" class="footer-link">Hakkında</a>
+          <a href="iletisim.html" class="footer-link">İletişim</a>
+          <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+          <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>

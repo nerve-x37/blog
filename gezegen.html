@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>
+    // Tema flaşını önle: CSS yüklenmeden önce doğru class'ı uygula
+    (function(){
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var isDark = saved ? saved === 'dark' : prefersDark;
+      var html = document.documentElement;
+      html.classList.remove('light','dark');
+      html.classList.add(isDark ? 'dark' : 'light');
+    })();
+  </script>
+
+        <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yaşanabilir Gezegenler: Kepler, TRAPPIST ve Alpha Centauri &#8212; Valexirion</title>
+  <meta name="description" content="Yıldızlara ne zaman gideceğiz? Öte gezegen bilimi, Breakthrough Starshot ve insanlığın kozmik geleceğine kapsamlı bir bakış." />
+  <link rel="canonical" href="https://valexirion.com/gezegen.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Valexirion" />
+  <meta property="og:title" content="Yaşanabilir Gezegenler: Kepler, TRAPPIST ve Alpha Centauri" />
+  <meta property="og:description" content="Yıldızlara ne zaman gideceğiz? Öte gezegen bilimi, Breakthrough Starshot ve insanlığın kozmik geleceğine kapsamlı bir bakış." />
+  <meta property="og:url" content="https://valexirion.com/gezegen.html" />
+  <meta property="og:image" content="https://valexirion.com/img/gezegen.webp" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yaşanabilir Gezegenler: Kepler, TRAPPIST ve Alpha Centauri" />
+  <meta name="twitter:description" content="Yıldızlara ne zaman gideceğiz? Öte gezegen bilimi, Breakthrough Starshot ve insanlığın kozmik geleceğine kapsamlı bir bakış." />
+  <meta name="twitter:image" content="https://valexirion.com/img/gezegen.webp" />
+  <link rel="preconnect" data-external-href="https://fonts.googleapis.com" />
+  <link rel="preconnect" data-external-href="https://fonts.gstatic.com" crossorigin />
+  <link data-external-href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Yaşanabilir Gezegenler: Kepler, TRAPPIST ve Alpha Centauri","description":"Yıldızlara ne zaman gideceğiz? Öte gezegen bilimi, Breakthrough Starshot ve insanlığın kozmik geleceğine kapsamlı bir bakış.","image":"https://valexirion.com/img/gezegen.webp","mainEntityOfPage":"https://valexirion.com/gezegen.html","inLanguage":"tr-TR","publisher":{"@type":"Organization","name":"Valexirion","url":"https://valexirion.com/"}}</script>
+</head>
+<body class="font-ui" data-page-category="bilim">
+<div id="scroll-progress" class="scroll-progress-bar"></div>
+<nav id="navbar" class="navbar" aria-label="Ana gezinme">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo"><span class="logo-dot">&#9679;</span> Valexirion</a>
+      <div class="desktop-nav" id="desktop-nav">
+        <a href="index.html#bilim"    class="nav-cat-link">Bilim</a>
+        <a href="index.html#tarih"    class="nav-cat-link">Tarih</a>
+        <a href="index.html#sinema"   class="nav-cat-link">Sinema</a>
+        <a href="index.html#muzik"    class="nav-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe"  class="nav-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="nav-cat-link">Belgesel</a>
+        <a href="index.html#doga"     class="nav-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="nav-cat-link">Teknoloji</a>
+      </div>
+
+      <!-- Sağ araçlar -->
+      <div class="navbar-tools">
+        <button id="theme-toggle" class="theme-btn" aria-label="Tema de&#287;i&#351;tir">
+          <svg id="icon-sun" class="theme-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10 5 5 0 000-10z"/>
+          </svg>
+          <svg id="icon-moon" class="theme-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Men&uuml;y&uuml; a&ccedil;/kapat" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="hamburger-icon" class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-icon" class="hamburger-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+    </div><!-- /navbar-inner -->
+
+    <!-- Mobil menü paneli -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <a href="index.html#bilim"    class="mobile-link">Bilim</a>
+      <a href="index.html#tarih"    class="mobile-link">Tarih</a>
+      <a href="index.html#sinema"   class="mobile-link">Sinema</a>
+      <a href="index.html#muzik"    class="mobile-link">M&uuml;zik</a>
+      <a href="index.html#felsefe"  class="mobile-link">Felsefe</a>
+      <a href="index.html#belgesel" class="mobile-link">Belgesel</a>
+      <a href="index.html#doga"     class="mobile-link">Do&#287;a</a>
+      <a href="index.html#teknoloji" class="mobile-link">Teknoloji</a>
+    </div>
+  </nav>
+
+  <header class="article-header">
+    <div class="article-header-inner">
+      <div class="article-breadcrumb"><a href="index.html">Ana Sayfa</a><span>&#8250;</span><a href="index.html#bilim">Bilim</a><span>&#8250;</span><span>Uzay Bilimleri</span></div>
+      <span class="article-cat-badge">Bilim</span>
+      <h1 class="article-title">
+        Ya&#351;anabilir Gezegenler: Kepler, TRAPPIST ve Alpha Centauri<br>
+        <em>Y&#305;ld&#305;zlara Ne Zaman Gidece&#287;iz?</em>
+      </h1>
+      <p class="article-subtitle">
+        Evrendeki 2 trilyon galaksi i&ccedil;inde ya&#351;ama elveri&#351;li gezegenler bulmak art&#305;k bilim kurgu de&#287;il,
+        veri bilimi. Kepler, TESS, James Webb ve Breakthrough Starshot projesiyle insanl&#305;&#287;&#305;n kozmik gelece&#287;ine kapsaml&#305; bir bak&#305;&#351;.
+      </p>
+
+        <div class="article-share">
+          <button class="share-btn" onclick="navigator.share?navigator.share({title:document.title,url:location.href}):navigator.clipboard.writeText(location.href)">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            Payla&#351;
+          </button>
+        </div>
+      </div>
+  </header>
+
+  
+
+  
+
+  <article class="article-content-wrap">
+    <div class="article-content">
+    <!-- Yazı kapak resmi -->
+    <div class="article-hero-img">
+      <img src="img/gezegen1.webp" alt="Yaşanabilir Gezegenler: Kepler, TRAPPIST ve Alpha Centauri" loading="eager" onerror="this.parentElement.style.display='none'" decoding="async" fetchpriority="high">
+    </div>
+
+      <p class="article-lead">
+        Evren 93 milyar &#305;&#351;&#305;k y&#305;l&#305; geni&#351;li&#287;inde ve yakla&#351;&#305;k 2 trilyon galaksi i&ccedil;eriyor.
+        Bu say&#305;lar&#305; g&ouml;z &ouml;n&uuml;ne ald&#305;&#287;&#305;m&#305;zda &ldquo;Ba&#351;ka ya&#351;am var m&#305;?&rdquo; sorusu anlams&#305;zla&#351;&#305;r;
+        as&#305;l soru &#351;u h&acirc;le gelir: &ldquo;En yak&#305;n ya&#351;anabilir gezegen nerede ve oraya nas&#305;l gideriz?&rdquo;
+      </p>
+
+      <p>
+        NASA&rsquo;n&#305;n Kepler ve TESS uzay teleskoplar&#305; sayesinde 5.000&rsquo;den fazla &ouml;te gezegen
+        (exoplanet) ke&#351;fettik. Bunlar&#305;n y&uuml;zlercesi ya&#351;anabilir b&ouml;lgede yer al&#305;yor.
+        Ancak bir gezegenin ya&#351;anabilir olmas&#305;, &uuml;zerinde ya&#351;am oldu&#287;u anlam&#305;na gelmez;
+        bu b&ouml;lge yaln&#305;zca suyun s&#305;v&#305; h&acirc;lde var olabilece&#287;i s&#305;cakl&#305;k aral&#305;&#287;&#305;na i&#351;aret eder.
+      </p>
+
+      <h2>Ya&#351;anabilir B&ouml;lge (Goldilocks Zone) Nedir?</h2>
+
+      <p>
+        &ldquo;Ne &ccedil;ok s&#305;cak ne &ccedil;ok so&#287;uk&rdquo; ilkesiyle tan&#305;mlanan ya&#351;anabilir b&ouml;lge
+        (habitable zone ya da Goldilocks Zone), bir gezegenin y&uuml;zeyinde s&#305;v&#305; suyun
+        varl&#305;&#287;&#305;na izin veren y&#305;ld&#305;z-gezegen mesafe aral&#305;&#287;&#305;d&#305;r. G&uuml;ne&#351; Sistemi&rsquo;nde
+        bu b&ouml;lge yakla&#351;&#305;k 0,95 ile 1,67 AU (astronomi birimi) aras&#305;nda yer al&#305;r;
+        D&uuml;nya 1 AU mesafededir.
+      </p>
+
+      <p>
+        Ya&#351;anabilirlik yaln&#305;zca mesafeyle belirlenmez. Gezegenin atmosferi, manyetik
+        alan&#305;, jeolojik aktivitesi ve y&#305;ld&#305;z&#305;ndan ald&#305;&#287;&#305; ultraviyole radyasyon da
+        belirleyicidir. Mars, ya&#351;anabilir b&ouml;lge s&#305;n&#305;r&#305;ndad&#305;r; ancak ince atmosferi
+        ve zay&#305;f manyetik alan&#305; nedeniyle y&uuml;zeyinde s&#305;v&#305; su tutamamaktad&#305;r.
+      </p>
+
+      <h2>Kepler Uzay Teleskobu: &Ouml;te Gezegen Av&#305;n&#305;n &Ouml;nc&uuml;s&uuml;</h2>
+
+      <p>
+        NASA&rsquo;n&#305;n 2009 y&#305;l&#305;nda f&#305;rlatt&#305;&#287;&#305; Kepler Uzay Teleskobu, bilim tarihinin
+        en verimli &ouml;te gezegen avc&#305;s&#305;yd&#305;. 2018 y&#305;l&#305;nda yak&#305;t&#305; bitmeden &ouml;nce,
+        Samanyolu&rsquo;nun k&uuml;&ccedil;&uuml;k bir diliminde 2.662 do&#287;rulanm&#305;&#351; &ouml;te gezegen ke&#351;fetti.
+        Kepler&rsquo;in y&ouml;ntemi, transit fotometri olarak bilinir: Bir gezegen y&#305;ld&#305;z&#305;n&#305;n
+        &ouml;n&uuml;nden ge&ccedil;ti&#287;inde y&#305;ld&#305;z&#305;n parlakl&#305;&#287;&#305;nda g&ouml;zlenen k&uuml;&ccedil;&uuml;k d&uuml;&#351;&uuml;&#351;ler
+        kaydedilir. Bu k&uuml;&ccedil;&uuml;lme gezegeni ele verir.
+      </p>
+
+      <p>
+        Kepler&rsquo;in en &ouml;nemli ke&#351;iflerinden biri <strong>Kepler-452b</strong>&rsquo;dir.
+        &ldquo;D&uuml;nya&rsquo;n&#305;n b&uuml;y&uuml;k kuzeni&rdquo; olarak da bilinen bu gezegen, G&uuml;ne&#351;&rsquo;e benzer bir
+        y&#305;ld&#305;z&#305;n (G tipi) ya&#351;anabilir b&ouml;lgesinde y&ouml;r&uuml;nge &ccedil;izmektedir. D&uuml;nya&rsquo;dan
+        1.400 &#305;&#351;&#305;k y&#305;l&#305; uzaktad&#305;r; D&uuml;nya&rsquo;n&#305;n 1,6 kat&#305; b&uuml;y&uuml;kl&uuml;&#287;&uuml;ndedir ve bir
+        y&#305;l&#305; D&uuml;nya y&#305;l&#305;na yak&#305;n, 385 g&uuml;nd&uuml;r. Atmosfer bile&#351;imi hen&uuml;z bilinmemektedir.
+      </p>
+
+      <blockquote class="article-blockquote">
+        &ldquo;Kepler, ilk &ouml;te gezegen haritas&#305;n&#305; &ccedil;&#305;kard&#305;. TESS ise bu haritan&#305;n detaylar&#305;n&#305;
+        dolduruyor. As&#305;l i&#351;, James Webb Uzay Teleskobu ile ba&#351;l&#305;yor.&rdquo;
+        &mdash; Sara Seager, MIT &Ouml;te Gezegen Bilimcisi
+      </blockquote>
+
+      <h2>TRAPPIST-1 Sistemi: Yedi Gezegenli Mucize</h2>
+
+      <p>
+        2017 y&#305;l&#305;nda NASA ve ESO&rsquo;nun ortak a&ccedil;&#305;klamas&#305;yla d&uuml;nyaya tan&#305;t&#305;lan
+        TRAPPIST-1 sistemi, 39 &#305;&#351;&#305;k y&#305;l&#305; uzakl&#305;kta yedisi de D&uuml;nya b&uuml;y&uuml;kl&uuml;&#287;&uuml;nde
+        gezegen bar&#305;nd&#305;ran bir ultra-so&#287;uk c&uuml;ce y&#305;ld&#305;z (M tipi) sistemidir.
+        Bu yedi gezegenin &uuml;&ccedil;&uuml; (TRAPPIST-1e, f ve g) kesin ya&#351;anabilir b&ouml;lgede
+        yer almaktad&#305;r.
+      </p>
+
+      <p>
+        <strong>TRAPPIST-1e</strong>, en umut verici adayd&#305;r. Yo&#287;unlu&#287;u D&uuml;nya&rsquo;ya
+        yak&#305;nd&#305;r ve y&uuml;zeyinde su tutma olas&#305;l&#305;&#287;&#305; en y&uuml;ksek gezegen olarak
+        de&#287;erlendirilir. Ancak M tipi y&#305;ld&#305;zlar g&uuml;&ccedil;l&uuml; flare (parlamas&#305;) aktivitesi
+        g&ouml;sterir; bu radyasyon bir gezegenin atmosferini a&#351;&#305;nd&#305;rabilir. James Webb
+        Uzay Teleskobu, 2024&ndash;2025 g&ouml;zlem sezonu boyunca TRAPPIST-1 gezegenlerinin
+        atmosfer spektrumlar&#305;n&#305; incelemi&#351;tir; sonu&ccedil;lar bilim d&uuml;nyas&#305;nda h&acirc;l&acirc;
+        tart&#305;&#351;&#305;lmaktad&#305;r.
+      </p>
+
+      <h2>Alpha Centauri ve Proxima Centauri b: En Yak&#305;n Kom&#351;umuz</h2>
+
+      <p>
+        Alpha Centauri sistemi, G&uuml;ne&#351;&rsquo;e en yak&#305;n y&#305;ld&#305;z sistemidir: 4,37 &#305;&#351;&#305;k
+        y&#305;l&#305; uzakta. Sistem &uuml;&ccedil; y&#305;ld&#305;zdan olu&#351;ur: Alpha Centauri A, Alpha Centauri B
+        ve onlardan biraz daha uzakta yer alan Proxima Centauri (4,24 &#305;&#351;&#305;k y&#305;l&#305;).
+        2016 y&#305;l&#305;nda ESO gozlemevi, Proxima Centauri&rsquo;nin ya&#351;anabilir b&ouml;lgesinde bir
+        gezegen ke&#351;fetti&#287;ini a&ccedil;&#305;klad&#305;: <strong>Proxima Centauri b</strong>.
+      </p>
+
+      <p>
+        Bu gezegen D&uuml;nya&rsquo;n&#305;n 1,17 kat&#305; k&uuml;tlesinde ve y&#305;ld&#305;z&#305;na son derece yak&#305;n
+        (0,0485 AU) y&ouml;r&uuml;nge &ccedil;izmektedir. Y&#305;ld&#305;z&#305;n&#305; 11,2 g&uuml;nde bir dola&#351;&#305;r.
+        Proxima Centauri de bir M c&uuml;cesi oldu&#287;undan yo&#287;un flare radyasyonu sorun
+        te&#351;kil eder. 2021 y&#305;l&#305;nda Alpha Centauri sisteminde k&#305;z&#305;l&ouml;tesi taramalarla
+        Nept&uuml;n b&uuml;y&uuml;kl&uuml;&#287;&uuml;nde bir gezegen aday&#305; (Alpha Centauri Ab) tespit
+        edilmi&#351;tir; ancak do&#287;rulama &ccedil;al&#305;&#351;malar&#305; s&uuml;rmektedir.
+      </p>
+
+      <h2>Breakthrough Starshot: I&#351;&#305;&#287;a Yolculuk</h2>
+
+      <p>
+        Mevcut en h&#305;zl&#305; uzay arac&#305;m&#305;z olan New Horizons, saniyede yakla&#351;&#305;k 14 km
+        h&#305;zla ilerliyor. Bu h&#305;zla Alpha Centauri&rsquo;ye ula&#351;mak yakla&#351;&#305;k <strong>75.000 y&#305;l</strong>
+        s&uuml;rerdi.
+      </p>
+
+      <p>
+        Stephen Hawking ve Yuri Milner&rsquo;in destekledi&#287;i <strong>Breakthrough Starshot
+        Projesi</strong> (2016), gram a&#287;&#305;rl&#305;&#287;&#305;nda k&uuml;&ccedil;&uuml;k &ldquo;Nanocraft&rdquo;lar&#305; g&uuml;&ccedil;l&uuml; lazer
+        &#305;&#351;&#305;nlar&#305;yla &#305;&#351;&#305;k h&#305;z&#305;n&#305;n y&uuml;zde yirmisine (%20c) ivmelendirmeyi
+        hedefliyor. Bu h&#305;zla Proxima Centauri&rsquo;ye ula&#351;ma s&uuml;resi yakla&#351;&#305;k
+        <strong>20 y&#305;l</strong>. Bununla birlikte yava&#351;lama mekanizmas&#305; ve
+        Nanocraft boyutundaki bir araca bilimsel ekipman s&#305;&#287;d&#305;rma sorunu hen&uuml;z
+        &ccedil;&ouml;z&uuml;me kavu&#351;turulmam&#305;&#351;t&#305;r.
+      </p>
+
+      <h2>Mars: Y&#305;ld&#305;zlara Giden Yolda &#304;lk Durak</h2>
+
+      <p>
+        Uzak y&#305;ld&#305;z sistemlerine yap&#305;lan yolculuktan &ouml;nce insanl&#305;&#287;&#305;n en yak&#305;n &ouml;nceli&#287;i
+        Mars&rsquo;t&#305;r. NASA&rsquo;n&#305;n Artemis program&#305; Ay &uuml;ss&uuml; kurulmas&#305;n&#305; hedeflerken,
+        SpaceX&rsquo;in Starship arac&#305; Mars&rsquo;a insan g&ouml;t&uuml;rmeyi 2030&rsquo;lar&#305;n ortas&#305;na
+        planlamaktad&#305;r. ESA ve &Ccedil;in Ulusal Uzay &#304;daresi de ba&#287;&#305;ms&#305;z Mars misyonlar&#305;
+        &uuml;zerinde &ccedil;al&#305;&#351;maktad&#305;r.
+      </p>
+
+      <p>
+        Mars&rsquo;ta yerle&#351;im i&ccedil;in temel gereksinimler: Yer alt&#305; ya da lav t&uuml;p&uuml; bar&#305;naklar&#305;
+        (radyasyona kar&#351;&#305;), n&uuml;kleer enerji veya g&uuml;ne&#351; &ccedil;iftlikleri, CO&#8322; atmosferinden
+        oksijen &uuml;retimi (MOXIE teknolojisi, Perseverance ile test edilmi&#351;tir), su buz
+        kaynaklar&#305;n&#305;n i&#351;lenmesi ve dikey tar&#305;m sistemleri. &Ouml;yms&uuml;t &uuml;l senaryolara g&ouml;re
+        <strong>2040&rsquo;l&#305; y&#305;llarda</strong> ilk kal&#305;c&#305; Mars &uuml;ss&uuml; kurulabilir.
+      </p>
+
+      <h2>James Webb Uzay Teleskobu: Atmosferlerin Pe&#351;inde</h2>
+
+      <p>
+        2021&rsquo;de f&#305;rlat&#305;lan James Webb Uzay Teleskobu (JWST), &ouml;te gezegen
+        ara&#351;t&#305;rmalar&#305;n&#305; yeni bir &ccedil;a&#287;a ta&#351;&#305;d&#305;. JWST, bir gezegenin y&#305;ld&#305;z&#305;n&#305;n
+        &ouml;n&uuml;nden ge&ccedil;erken atmosfer katmanlar&#305;ndan s&uuml;z&uuml;len &#305;&#351;&#305;&#287;&#305; spektroskopik
+        olarak analiz edebiliyor. Bu y&ouml;ntemle su buhar&#305;, karbondioksit, metan ve
+        hatta oksijen gibi biyoi&#351;aret&ccedil;ilerin (biosignatures) tespiti m&uuml;mk&uuml;n h&acirc;le geldi.
+      </p>
+
+      <p>
+        2023 y&#305;l&#305;nda K2-18b gezegeninde dimetil s&uuml;lf&uuml;r (DMS) adl&#305; molek&uuml;l&uuml;n
+        zay&#305;f izleri saptand&#305;. D&uuml;nya&rsquo;da DMS yaln&#305;zca canl&#305; organizmalar taraf&#305;ndan
+        &uuml;retilir; ancak bilim insanlar&#305; bu bulgunun abiyotik (cans&#305;z) s&uuml;re&ccedil;lerle
+        de a&ccedil;&#305;klanabilece&#287;ini vurgulayarak kesin bir ya&#351;am iddias&#305;ndan ka&ccedil;&#305;n&#305;yor.
+        Veriler 2025 itibar&#305;yla h&acirc;l&acirc; de&#287;erlendirilmektedir.
+      </p>
+
+      <h2>Sonu&ccedil;: Gidecek miyiz?</h2>
+
+      <p>
+        Bug&uuml;n i&ccedil;in ger&ccedil;ek&ccedil;i cevap &#351;udur: Ya&#351;anabilir gezegenler mevcut, ula&#351;&#305;m
+        teknolojimiz ise hen&uuml;z &ccedil;ok yetersiz. En iyimser tahminlerle Proxima Centauri
+        b&rsquo;ye insanl&#305; yolculuk, 22. y&uuml;zy&#305;l&#305;n m&uuml;hendislik ba&#351;ar&#305;s&#305; olabilir.
+        TRAPPIST-1&rsquo;e ise &ccedil;ok daha uzun bir zaman dilimi gerekmektedir.
+      </p>
+
+      <p>
+        Ama insanl&#305;&#287;&#305;n tarihinde bu t&uuml;rden &ldquo;eri&#351;ilmez&rdquo; hedefler hi&ccedil;bir zaman
+        insan&#305; durdurmam&#305;&#351;t&#305;r. Okyanuslar&#305; a&#351;mak imk&acirc;ns&#305;z g&ouml;r&uuml;n&uuml;yordu; k&#305;talar
+        ke&#351;fedildi. Yerce&#351;imini yenmek sa&ccedil;mayd&#305;; uzaya &ccedil;&#305;k&#305;ld&#305;. Y&#305;ld&#305;zlara uzanmak,
+        belki insanl&#305;&#287;&#305;n en b&uuml;y&uuml;k maceras&#305; olacak. Ve bu macera &#351;imdiden ba&#351;lam&#305;&#351; durumda.
+      </p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+<section class="related-section">
+    <div class="related-inner">
+      <h2 class="related-title">İlgili Yazılar</h2>
+      <div class="related-grid">
+        <a href="yapay-zeka.html" class="related-card">
+          <div class="related-img">
+            <img src="img/zeka.webp" alt="Günümüzde AGI Var mı?" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Bilim</span>
+            <h3 class="related-card-title">Günümüzde AGI Var mı?</h3>
+          </div>
+        </a>
+
+        <a href="cortex.html" class="related-card">
+          <div class="related-img">
+            <img src="img/cortex.webp" alt="Beyin Korteksi: Yapısı, Fonksiyonları ve Nasıl Çalışır?" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Bilim</span>
+            <h3 class="related-card-title">Beyin Korteksi: Yapısı, Fonksiyonları ve Nasıl Çalışır?</h3>
+          </div>
+        </a>
+
+        <a href="dune.html" class="related-card">
+          <div class="related-img">
+            <img src="img/dune.webp" alt="Dune Felsefesi" style="width:100%;height:100%;object-fit:cover;" loading="lazy" decoding="async"/>
+          </div>
+          <div class="related-body">
+            <span class="related-cat">Bilim</span>
+            <h3 class="related-card-title">Dune Felsefesi</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+</section>
+
+  
+
+    
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="logo-dot">&#9679;</span> Valexirion
+        </a>
+        <p class="footer-desc">İnsanı, bilimi, medeniyetleri ve düşünceyi araştıran bağımsız dijital yayın. Merak et, sorgula, keşfet.</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/valexirion/" class="footer-social-link footer-social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Valexirion Instagram sayfası">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:iletisim@valexirion.com" class="footer-social-link footer-social-mail" aria-label="Valexirion e-posta adresi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-category-grid" aria-label="Alt bilgi kategorileri">
+        <a href="index.html#bilim" class="footer-cat-link">Bilim</a>
+        <a href="index.html#tarih" class="footer-cat-link">Tarih</a>
+        <a href="index.html#sinema" class="footer-cat-link">Sinema</a>
+        <a href="index.html#muzik" class="footer-cat-link">M&uuml;zik</a>
+        <a href="index.html#felsefe" class="footer-cat-link">Felsefe</a>
+        <a href="index.html#belgesel" class="footer-cat-link">Belgesel</a>
+        <a href="index.html#doga" class="footer-cat-link">Do&#287;a</a>
+        <a href="index.html#teknoloji" class="footer-cat-link">Teknoloji</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Valexirion. T&uuml;m haklar&#305; sakl&#305;d&#305;r.</span>
+      <span class="footer-legal">
+        <a href="hakkinda.html" class="footer-link">Hakkında</a>
+        <a href="iletisim.html" class="footer-link">İletişim</a>
+        <a href="gizlilik-politikasi.html" class="footer-link">Gizlilik Politikası</a>
+        <a href="cerez-politikasi.html" class="footer-link">Çerez Politikası</a>
+        <a href="kullanim-kosullari.html" class="footer-link">Kullanım Koşulları</a>
+      </span>
+      <span class="footer-motto">Merak et. Sorgula. Keşfet.</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  <script src="consent.js"></script>
+</body>
+</html>
