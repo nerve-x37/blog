@@ -2,6 +2,13 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doğa, Ekoloji ve Yaban Hayatı | Valexirion</title>
   <meta name="description" content="Ekosistemleri, yaban hayatını, iklimi ve gezegenin doğal süreçlerini anlatan doğa yazılarını ve çevre incelemelerini keşfedin." />

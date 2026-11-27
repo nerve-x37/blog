@@ -2,6 +2,13 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem('valexirion-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.add(saved ? (saved === 'dark' ? 'dark' : 'light') : (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bilim Yazıları ve Bilimsel Keşifler | Valexirion</title>
   <meta name="description" content="Uzaydan biyolojiye, sağlık ve yer bilimlerine uzanan bilim yazılarını; araştırmalar, kavramlar ve yeni keşiflerle inceleyin." />
