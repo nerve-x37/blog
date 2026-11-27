@@ -891,25 +891,13 @@ document.addEventListener('DOMContentLoaded', function () {
         '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">' +
           '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19V5m-7 7 7-7 7 7"/>' +
         '</svg>' +
-      '</button>' +
-      '<button class="page-nav-button" type="button" data-page-nav="back" ' +
-        'aria-label="Önceki sayfaya dön" title="Geri dön">' +
-        '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">' +
-          '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m7 7-7-7 7-7"/>' +
-        '</svg>' +
       '</button>';
     document.body.appendChild(controls);
 
     controls.addEventListener('click', function (event) {
-      var button = event.target.closest('button[data-page-nav]');
+      var button = event.target.closest('button[data-page-nav="top"]');
       if (!button) return;
-
-      if (button.getAttribute('data-page-nav') === 'top') {
-        window.scrollTo({ top: 0, behavior: 'auto' });
-      } else if (button.getAttribute('data-page-nav') === 'back') {
-        if (window.history.length > 1) window.history.back();
-        else window.location.assign('/index.html');
-      }
+      window.scrollTo({ top: 0, behavior: 'auto' });
     });
   }
 
