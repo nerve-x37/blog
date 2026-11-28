@@ -212,8 +212,8 @@ body.vx-home:has(#hero-section[style*="display: none"]) .vx-intro{display:none}
   border-radius:0;background:transparent;color:var(--accent);backdrop-filter:none;-webkit-backdrop-filter:none;
   font:600 .68rem/1.4 var(--f);letter-spacing:.06em;text-transform:uppercase;
 }
-.vx-home .path-card-title{margin:0 0 .3rem;font-family:var(--f);font-size:clamp(.95rem,1.2vw,1.1rem);font-weight:600;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.vx-home .path-card-desc{margin:0;font-family:var(--f);font-size:.72rem;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vx-home .path-card-title{margin:0 0 .3rem;color:var(--text);font-family:var(--f);font-size:clamp(.95rem,1.2vw,1.1rem);font-weight:600;line-height:1.2;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vx-home .path-card-desc{margin:0;color:var(--text-2);font-family:var(--f);font-size:.72rem;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .vx-home .path-card:nth-child(1) .path-card-img{flex-basis:68%}
 .vx-home .path-card:nth-child(1) .path-card-body{flex-basis:32%}
 .vx-home .path-card:nth-child(1) .path-card-title{font-size:clamp(1.2rem,2vw,1.75rem);line-height:1.15}
