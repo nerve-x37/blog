@@ -1144,3 +1144,15 @@ document.addEventListener('DOMContentLoaded', function () {
     mount();
   }
 })();
+
+(function () {
+  if (document.querySelector('script[data-vx-reader-badge]')) return;
+  var badgeScript = document.createElement('script');
+  badgeScript.src = new URL('reader-badge.js', window.location.href).href;
+  badgeScript.async = true;
+  badgeScript.setAttribute('data-vx-reader-badge', '');
+  badgeScript.onerror = function () {
+    console.error('[Valexirion] Could not load reader badge script.');
+  };
+  document.head.appendChild(badgeScript);
+}());
