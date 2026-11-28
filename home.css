@@ -187,6 +187,9 @@ body.vx-home:has(#hero-section[style*="display: none"]) .vx-intro{display:none}
 }
 .vx-home .recent-card-title{margin:0;color:var(--text);font:500 clamp(.9rem,1.2vw,1.05rem)/1.3 var(--f);-webkit-line-clamp:2}
 .vx-home .recent-card .card-image-credit{color:var(--text-3);font-size:.62rem}
+.vx-home .recent-card[href="gobeklitepe-kazilar-bize-ne-soyluyor.html"] .card-image-credit{
+  overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:.58rem;
+}
 .vx-home .recent-card:nth-child(1) .recent-card-img{flex-basis:68%}
 .vx-home .recent-card:nth-child(1) .recent-card-body{flex-basis:32%}
 .vx-home .recent-card:nth-child(1) .recent-card-title{font-size:clamp(1.1rem,1.8vw,1.5rem);font-weight:600}
