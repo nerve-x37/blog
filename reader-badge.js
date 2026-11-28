@@ -470,6 +470,32 @@
     var input;
     var toolStatus;
 
+    function restoreFromInput() {
+      var imported = decodeBackup(input.value);
+      var added = 0;
+      var index;
+      var entry;
+      var file;
+      if (!imported.valid) {
+        toolStatus.textContent = 'Kod geçersiz.';
+        return;
+      }
+      state = mergeStates(state, readStoredState());
+      state.on = true;
+      for (index = 0; index < imported.entries.length; index += 1) {
+        entry = imported.entries[index];
+        file = entry.slug + '.html';
+        if (!state.r[file]) {
+          state.r[file] = { c: CATEGORIES[entry.category].key, t: Date.now() };
+          added += 1;
+        }
+      }
+      awardCurrentProgress();
+      persistState(state);
+      toolStatus.textContent = added + ' yazı eklendi. Mevcut ilerlemen korundu.';
+      render();
+    }
+
     if (!tools) return false;
     search = tools.querySelector('#search-trigger');
     trigger = makeButton('', 'vx-rb-trigger');
@@ -528,9 +554,14 @@
     input.type = 'text';
     input.autocomplete = 'off';
     input.setAttribute('aria-label', 'Geri yüklenecek yedek kodu');
+    input.setAttribute('aria-describedby', 'vx-rb-import-hint');
     importLabel = createElement('label', '', 'Yedek kodunu buraya yapıştır');
     importLabel.appendChild(input);
     toolsDetails.appendChild(importLabel);
+    var importHint = createElement('p', 'vx-rb-note',
+      'Kodu yapıştırdıktan sonra Enter tuşuna basabilir veya Geri yükle düğmesini seçebilirsin.');
+    importHint.id = 'vx-rb-import-hint';
+    toolsDetails.appendChild(importHint);
     importButton = makeButton('Geri yükle');
     toolsDetails.appendChild(importButton);
     deleteButton = makeButton('Tüm ilerlememi sil');
@@ -603,30 +634,12 @@
         toolStatus.textContent = 'Kod alanı seçildi. Kopyalamak için Ctrl+C kullan.';
       }
     });
-    importButton.addEventListener('click', function () {
-      var imported = decodeBackup(input.value);
-      var added = 0;
-      var index;
-      var entry;
-      var file;
-      if (!imported.valid) {
-        toolStatus.textContent = 'Kod geçersiz.';
-        return;
+    importButton.addEventListener('click', restoreFromInput);
+    input.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        restoreFromInput();
       }
-      state = mergeStates(state, readStoredState());
-      state.on = true;
-      for (index = 0; index < imported.entries.length; index += 1) {
-        entry = imported.entries[index];
-        file = entry.slug + '.html';
-        if (!state.r[file]) {
-          state.r[file] = { c: CATEGORIES[entry.category].key, t: Date.now() };
-          added += 1;
-        }
-      }
-      awardCurrentProgress();
-      persistState(state);
-      toolStatus.textContent = added + ' yazı eklendi. Mevcut ilerlemen korundu.';
-      render();
     });
     deleteButton.addEventListener('click', function () {
       if (!resetArmed) {
